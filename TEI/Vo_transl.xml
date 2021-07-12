@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach Vo)</title>
+                <respStmt>
+                    <resp>vorgelegt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Volterra</settlement>
+                        <repository>Bibl. Guarnacci</repository>
+                        <idno>100 (8653)</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. Otto Schumann and Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                    <witness xml:id="ed.Suttina">Suttina, Luigi (1906/1907): Due Ritmi Bacchici Giusta un Codice Volterrano. In: Studi medievali 2, S. 563–567.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" script="Bastarda" medium="brown ink"></handNote>
+            </handNotes>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+<!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <lg n="1">
+                <l n="1">Ich habe den festen Vorsatz, im Wirtshaus zu sterben. </l>
+                <l n="2">Dort leben die Elenden mit der trockenen Kehle. </l>
+                <l n="3">Dass die Engelschöre schneller kommen, </l>
+                <l n="4">sei Gott dem Weintrinker gewogen.</l>
+            </lg>
+            <lg n="2">
+                <l n="1">Den Wein schätze ich vor allen guten Dingen, </l>
+                <l n="2">denn wir reinigen uns von den Sünden, solange wir trinken; </l>
+                <l n="3">wenn nur eine Menge Wein da ist, schreien wir: </l>
+                <l n="4">Wir loben dich Gott, der du in Ewigkeit lebst. </l>
+            </lg>
+            <lg n="3">
+                <l n="1">Ich will die Wunder des Weins durchgehen: </l>
+                <l n="2">Wein bewirkt, dass der Mensch leichtfüßig springt </l>
+                <l n="3">und er macht den Armen reich, lässt den Lahmen gehen, </l>
+                <l n="4">Stummen gibt er die Redegewandtheit, Tauben die Fähigkeit zu hören. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Man schlägt beim Gelage vor: der Weinglas, die Weinglas, das Weinglas: </l>
+                <l n="2">Maskulin und Feminin gefallen nicht, </l>
+                <l n="3">sondern im Neutrum ist das Weinglas göttlich: </l>
+                <l n="4">Es bringt die Kumpane dazu, das beste Latein zu sprechen. </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Die einzelnen Trinker sind alle leutselig, </l>
+                <l n="2">die Alten wie die Jungen sind der Ewigkeit würdig, </l>
+                <l n="3">solange sie Wein aus guten Fässern zu trinken wissen: </l>
+                <l n="4">Die den Wein nicht lieben, sind alle bösartig. </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Jedem einzelnen gibt die Natur ein eigenes Geschenk; </l>
+                <l n="2">ich konnte nie hungrig studieren: </l>
+                <l n="3">Durst und Hunger hasse ich mehr als den Tod; </l>
+                <l n="4">Meinen Hunger könnte nur ein (Schank-)Bursche besiegen. </l>
+            </lg>
+            <lg n="7">
+                <l n="1">Also liebe ich das Wirtshaus über alles. </l>
+                <l n="2">Dieses habe ich nie verschmäht und werde ich nie verschmähen, </l>
+                <l n="3">bis ich die heligen Engel kommen sehe, </l>
+                <l n="4">die für mich, den Säufer, die ewige Totenmesse singen. </l>
+            </lg>
+            <lg n="8">
+                <l n="1">Die Jahreszeit der Fülle! Kommt, wir wollen jubilieren, </l>
+                <l n="2">mögen wir auch sehen, dass die Äste des Waldes kahl werden, </l>
+                <l n="3">und wir  keine vollen Speisekammern haben, </l>
+                <l n="4">aus der wir den gekelterten Wein fließen sehen. </l>
+            </lg>
+            <lg n="9">
+                <l n="1">Die gefiederten Vögel am Himmel verstummten einfach so </l>
+                <l n="2">und daher verschmachteten einfache Gemüter; </l>
+                <l n="3">schenken die Freuden des Weins nicht mehr </l>
+                <l n="4">als das Geschnatter von hundert Vogelschnäbeln?  </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Cato leht: ‚Nutze erworbenen Reichtum!‘ </l>
+                <l n="2">und tu dies hier beim Getränk, wie es der Weinstock erzeugt </l>
+                <l n="3">und das die schöne Sunamith keineswegs anmutig in sich hineinschüttet; </l>
+                <l n="4">Was für einen Schatz bringt man hervor, wo Hunger und Durst sind?</l>
+            </lg>
+            <lg n="11">
+                <l n="1">Ich hörte spät einen Säufer laut klagen, </l>
+                <l n="2">ganz wie ein Löwenjunges, das vor Huger brüllt: </l>
+                <l n="3">„Wie kommt es, dass ich niemanden Wein trinken sehe, </l>
+                <l n="4">wenn dieser doch macht, dass der Mensch alles weiß!“ </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

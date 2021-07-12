@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach Wi)</title>
+                <respStmt>
+                    <resp>vorgelegt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Wittingau/Třeboň</settlement>
+                        <repository>Státní Archiv</repository>
+                        <idno>A 7</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. Otto Schumann and Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" script="Bastarda" medium="black ink">quickly written</handNote><handNote/>
+            </handNotes>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <facsimile>
+        
+    </facsimile>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+                <pb n="147v"/>
+            <lg n="1" rhyme="aaaa">
+                <lb n="24"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="plenitudo">Plenitudo</w><c> </c>
+                    <w lemma="tempus">t<choice><abbr><am>ꝑ</am></abbr><expan><ex>empor</ex></expan></choice>is</w><c> </c>
+                    <w lemma="venio">venite</w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="exsulto">exultem<choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="licet">licet</w><c> </c>
+                    <w lemma="ramus">ramos</w><c> </c>
+                    <lb n="25"/>
+                    <choice> 
+                        <seg><w lemma="nemus">nemorıs</w></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="#H1"><w lemma="arbor">arboru<choice><am>&#x0304;</am><ex>m</ex></choice></w></add></seg></choice><c> </c>
+                    <w lemma="calvor">cal<choice><orig>u</orig><reg>v</reg></choice>ari</w><c> </c>
+                    <w lemma="video">vıde<choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="quamvis"><choice><am>ꝙ&#x1DD3;</am><ex>quam</ex></choice><choice><orig>u</orig><reg>v</reg></choice>is</w><c> </c>
+                    <w lemma="promptuarium"><choice><am>ꝓ</am><ex>pro</ex></choice>mptuaria</w><c> </c>
+                    <lb n="26"/><w lemma="tantus">ta<choice><am>&#x0304;</am><ex>n</ex></choice>ta</w><c> </c>
+                    <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="habeo">h<choice><abbr>e<am>&#x0304;</am></abbr><expan><ex>ab</ex>e</expan></choice>m<choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="venio">venite</w><c> </c>
+                    <w lemma="ergo">ergo</w><c> </c>
+                    <w lemma="socius">ſoc<choice><orig>ĳ</orig><reg>ii</reg></choice></w><c> </c>
+                    <w lemma="fortis">fortıt<choice><am>&#xF1C8;</am><ex>er</ex></choice></w><c> </c>
+                    <w lemma="bibo">bıb<choice><seg>e</seg><seg><add hei:placeRef="hc:AboveLine" hand="H1">a</add></seg></choice><choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">!</pc><c> </c>
+                </l>
+            </lg>
+                <lg n="2" rhyme="bbbb">
+                    <lb n="27"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                    <l n="1"><w lemma="de">De</w><c> </c>
+                        <w lemma="vagus">vago<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c>
+                        <w lemma="ordo">ordine</w><c> </c>
+                        <w lemma="dico">dıca<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                        <w lemma="vos">vobis</w><c> </c>
+                        <w lemma="ius">iura</w> <pc resp="#PR">,</pc><c> </c>
+                    </l>
+                    <l n="2"><w lemma="qui"><choice><orig>Q</orig><reg>q</reg></choice>uoru<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                        <lb n="28"/><w lemma="ordo">ordo</w><c> </c>
+                        <w lemma="nobilis">nobılis</w><pc resp="#PR">,</pc><c> </c>
+                        <w lemma="dulcis">dulcis</w><c> </c>
+                        <w lemma="sum">eſt</w> <c> </c>
+                        <w lemma="natura">natura</w> 
+                        <pc><orig>.</orig><reg resp="#PR">,</reg></pc><c> </c>
+                    </l>
+                    <l n="3"><w lemma="qui">quos</w><c> </c>
+                        <w lemma="amplus">ampli<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                        <lb n="29"/><w lemma="delecto">delectat</w><c> </c>
+                        <w lemma="triticum">tritıcı</w><c> </c>
+                        <w lemma="mensura">me<choice><am>&#x0304;</am><ex>n</ex></choice>ſura</w><pc><orig>.</orig><reg resp="#PR"></reg></pc><c> </c>
+                    </l>
+                    <l n="4"><w lemma="vel">vel</w><c> </c>
+                        <w lemma="qui">quos</w><c> </c>  
+                        <w lemma="bonus">bene</w><c> </c>
+                        <lb n="30"/><w lemma="satio">ſacıat</w><c> </c>
+                        <w lemma="pinguis">pingwıs</w><c> </c>
+                        <w lemma="assatura">aſſatura</w><pc><orig>/</orig><reg resp="#PR">.</reg></pc><c> </c>
+                    </l>
+                </lg>
+            <lg n="3" rhyme="cccc">
+                <lb n="31"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="igitur">Igit<choice><am>&#xF1C8;</am><ex>ur</ex></choice></w><c> </c>
+                    <w lemma="ad">ad</w><c> </c> 
+                    <w lemma="poculum">poculu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="mane">mane</w><c> </c>
+                    <w lemma="transeo">t<choice><abbr>n<am>&#7635;</am></abbr><expan><ex>a</ex>n</expan></choice>ſeam<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                </l>
+                <l n="2"> <w lemma="et">et</w><c> </c>
+                    <w lemma="usque"><choice><orig>v</orig><reg>u</reg></choice>ſque</w><c> </c>
+                    <pb n="148r"/><lb n="1"/><w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="crepusculum">crepoſculu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="fortis">fortıt<choice><am>&#xF1C8;</am><ex>er</ex></choice></w><c> </c>
+                    <w lemma="bibo">bıbam<choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="donec">donec</w><c> </c>
+                    <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="paries">pare<lb n="2"/>tibus</w><c> </c>
+                    <w lemma="lux">lucem</w><c> </c>
+                    <choice> 
+                        <seg><w lemma="habeo">habeamus</w></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="video">videamus</w></add></seg></choice><c> </c>
+                </l>
+                <l n="4"><choice> 
+                    <seg><w lemma="atque">ac</w></seg>
+                    <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="et">et</w></add></seg></choice><c> </c>
+                    <w lemma="proserno"><choice><am>ꝓ</am><ex>pro</ex></choice>ſtratıs</w><c> </c> 
+                    <w lemma="manus">ma<choice><am>&#x0304;</am><ex>n</ex></choice>ib<choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                    <lb n="3"/><w lemma="stratum">ſtratu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="capio">capiam<choice><am>ꝰ</am><ex>us</ex></choice></w><pc><orig>/</orig><reg resp="#PR">.</reg></pc><c> </c>
+                </l>
+            </lg>
+            <lg n="4" rhyme="dddd">
+                <lb n="4"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="audio">Audi<choice><orig>u</orig><reg>v</reg></choice>i</w><c> </c>
+                    <w lemma="serus">ſero</w><c> </c> 
+                    <w lemma="bibulus">bibulu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="valde">valde</w><c> </c>
+                    <w lemma="conqueror">conq<choice><am>&#x0304;</am><ex>ue</ex></choice>re<choice><am>&#x0304;</am><ex>n</ex></choice>te<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                </l>
+                <l n="2"><w lemma="ut"><choice><orig>v</orig><reg>u</reg></choice>t</w><c> </c>
+                    <w lemma="leo">leo<lb n="5"/>nis</w><c> </c>
+                    <w lemma="catulus">catulu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="valde">valde</w><c> </c>
+                    <w lemma="rugio">rugie<choice><am>&#x0304;</am><ex>n</ex></choice>te<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc><orig>.</orig><reg resp="#PR">:</reg></pc><c> </c>
+                </l>
+                <l n="3"><w lemma="quis"><pc resp="#PR">„</pc><choice><orig>q</orig><reg>Q</reg></choice>uıd</w><c> </c>
+                    <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
+                    <w lemma="hic">h<choice><am>ᶜ</am><ex>oc</ex></choice></w><c> </c>
+                    <w lemma="qui"><choice><am>qd</am><ex>quod</ex></choice></w><c> </c>
+                    <lb n="6"/><w lemma="video">vıdeo</w><c> </c>
+                    <w lemma="nemo">nemine<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="bibo">bıbe<choice><am>&#x0304;</am><ex>n</ex></choice>te<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc><orig>.</orig><reg resp="#PR">,</reg></pc><c> </c>
+                </l>
+                <l n="4"><w lemma="vinum">vinu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="quod">q<choice><am>d</am><ex>uod</ex></choice></w><c> </c>
+                    <w lemma="facio">facit</w><c> </c>
+                    <lb n="7"/><w lemma="homo">hominem</w><c> </c>
+                    <w lemma="omnis">omnia</w><c> </c>
+                    <w lemma="scio">scientem</w><pc><orig>/</orig><reg resp="#PR">!“</reg></pc><c> </c>
+                </l>
+            </lg>
+            <lg n="5" rhyme="eeee">
+                <lb n="8"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="si">Sı</w><c> </c>
+                    <w lemma="tu">tu</w><c> </c> 
+                    <w lemma="nummus">nu<choice><am>&#x0304;</am><ex>m</ex></choice>mis</w><c> </c>
+                    <w lemma="careo">careas</w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="hic">hoc</w><c> </c>
+                    <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
+                    <w lemma="venialis">veniale</w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="pono">pone</w><pc resp="#PR">,</pc><c> </c>
+                    <lb n="9"/><choice> 
+                        <seg><w lemma="si">ſı</w><c> </c></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="quisquis">quid</w></add></seg></choice>
+                    <w lemma="quisquis">quid</w><c> </c>
+                    <w lemma="habeo">h<choice><abbr>e<am>&#x0304;</am></abbr><expan><ex>ab</ex>e</expan></choice>as</w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="memorialis">me<choice><am>&#x0304;</am><ex>m</ex></choice>oriale</w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="tunica">tu<choice><am>&#x0304;</am><ex>n</ex></choice>ıca<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="vel">vel</w><c> </c>
+                    <w lemma="iopula">io<lb n="10"/>pula<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="si">ſi</w><c> </c>
+                    <w lemma="quis">quid</w><c> </c>
+                    <w lemma="habeo">habes</w><c> </c>
+                    <w lemma="talis">tale</w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="pincerna">pincerna</w><c> </c>
+                    <w lemma="totus">totu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <lb n="11"/><w lemma="capio">capiet</w><c> </c>
+                    <w lemma="tandem">tandem</w><c> </c>
+                    <w lemma="femoralis">femorale</w><pc resp="#PR">.</pc><c> </c>
+                </l>
+            </lg>
+            <ab><add hei:placeRef="hc:Inline" hand="H1"><w lemma="versus"><choice><abbr>w<am>&#xF1C8;</am></abbr><expan>vers</expan></choice><choice><am>ꝰ</am><ex>us</ex></choice></w></add></ab>
+            <lg n="6" rhyme="ffff">
+                <lb n="12"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="si">Sı</w><c> </c>
+                    <w lemma="tu">tu</w><c> </c>
+                    <w lemma="nummus">nu<choice><am>&#x0304;</am><ex>m</ex></choice>mis</w><c> </c>
+                    <w lemma="careo">careas</w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="iubeo">iubeas</w><c> </c>
+                    <w lemma="taxillum">taxıllu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc><orig>.</orig><reg resp="#PR">;</reg></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="fortis">for<lb n="13"/>tıt<choice><am>&#xF1C8;</am><ex>er</ex></choice></w><c> </c>
+                    <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="tabula">tabula</w><c> </c>
+                    <w lemma="gero">ger<choice><abbr>e<am>&#xF1C8;</am></abbr><expan><ex>er</ex>e</expan></choice></w><c> </c>
+                    <w lemma="vexillum">vexillu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="si">ſı</w><c> </c>
+                    <w lemma="tunc">tu<choice><am>&#x0304;</am><ex>n</ex></choice>c</w><c> </c>
+                    <w lemma="sors">ſors</w><c> </c>
+                    <lb n="14"/><w lemma="supervenio">ſu<choice><am>ꝑ</am><ex>per</ex></choice>ven<choice><abbr>i<am>&#xF1C8;</am></abbr><expan><ex>er</ex>i</expan></choice>t</w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="qui"><choice><am>ꝙ</am><ex>quod</ex></choice></w><c> </c>
+                    <w lemma="tu">tu</w><c> </c>
+                    <w lemma="vincio">vincas</w><c> </c>
+                    <w lemma="ille">ıllu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="laetus">let<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                    <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w> <c> </c>
+                    <w lemma="intrepidus">ı<choice><am>&#x0304;</am><ex>n</ex></choice>t<choice><abbr>p<am>&#x0364;</am></abbr><expan><ex>re</ex>p</expan></choice>ıd<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>  
+                    <lb n="15"/><w lemma="curro">curras</w><c> </c> 
+                    <w lemma="ad">ad</w><c> </c>
+                    <w lemma="ducillus">ducillum</w><pc><orig>/</orig><reg resp="#PR">.</reg></pc><c> </c>
+                </l>
+            </lg>
+            <lg n="7" rhyme="ffff">
+                <lb n="16"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="porta">Port<choice><seg>e</seg><seg><add hei:placeRef="hc:AboveLine" hand="H1">a</add></seg></choice></w><c> </c>
+                    <choice> 
+                        <seg><w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>ost</ex>r</expan></choice>i</w></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="meus">mei</w></add></seg></choice><c> </c>
+                    <w lemma="hospes">hoſpıtis</w><c> </c>
+                    <w lemma="niteo">nitet</w><c> </c>
+                    <w lemma="margarita">margarit<choice><am>ꝭ</am><ex>is</ex></choice></w><pc><orig>.</orig><reg resp="#PR"></reg></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="et">et</w><c> </c>
+                    <lb n="17"/><w lemma="apertus">a<choice><am>ꝑ</am><ex>per</ex></choice>tis</w><c> </c>
+                    <w lemma="ostia">hoſt<choice><orig>ĳ</orig><reg>ii</reg></choice>s</w><c> </c>
+                    <w lemma="clamo">clamat</w><c> </c>
+                    <pc resp="#PR">„</pc><choice> 
+                        <seg><w lemma="unde"><choice><orig>v</orig><reg>U</reg></choice>nde</w></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="huc"><choice><orig>h</orig><reg>H</reg></choice>uc</w></add></seg></choice><c> </c>
+                    <choice> 
+                        <seg><w lemma="sitis">ſıtis</w></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="eo">eatis</w></add></seg></choice><pc resp="#PR">!“</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="hic"><choice><orig>h</orig><reg>H</reg></choice>ic</w><c> </c>
+                    <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
+                    <lb n="18"/><w lemma="ieiunium">ıeiuniu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="fames">fames</w><c> </c>
+                    <w lemma="neque">ne<choice><am></am><ex>que</ex></choice></w><c> </c>
+                    <w lemma="sitis">ſıtis</w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="4">
+                    <choice>
+                        <seg><w lemma="immo"><choice><orig>y</orig><reg>i</reg></choice><choice><am>&#x0304;</am><ex>m</ex></choice>mo</w></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="aptus">aptu<choice><am>&#x0304;</am><ex>m</ex></choice></w></add></seg></choice><c> </c>
+                    <choice> 
+                        <seg><w lemma="totus">totu<choice><am>&#x0304;</am><ex>m</ex></choice></w></seg>
+                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="quoque"><choice><am>&#x366;</am><ex>quoque</ex></choice></w></add></seg></choice><c> </c>
+                    <w lemma="gaudium">gaudiu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">:</pc><c> </c>
+                    <lb n="19"/><w lemma="quare"><choice><orig>q</orig><reg>Q</reg></choice>uare</w><c> </c>
+                    <w lemma="non">non</w><c> </c>
+                    <w lemma="venio">venitıs</w><pc resp="#PR">?</pc><c> </c>
+                </l>
+            </lg>
+            <ab><add hei:placeRef="hc:Inline" hand="H1"><w lemma="versus"><choice><abbr>w<am>&#xF1C8;</am></abbr><expan>vers</expan></choice><choice><am>ꝰ</am><ex>us</ex></choice></w></add></ab>
+            <lg n="8" rhyme="ghhh">
+                <lb n="20"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="noster">N<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>oste</ex>r</expan></choice></w><c> </c>
+                    <w lemma="ordo">ordo</w><c> </c>
+                    <w lemma="prohibeo"><choice><am>ꝓ</am><ex>pro</ex></choice>hıb<choice><am>ꝫ</am><ex>et</ex></choice></w><c> </c>
+                    <w lemma="matutina">matuti<choice><am>&#x0304;</am><ex>n</ex></choice>as</w><c> </c>
+                    <w lemma="eo">ire</w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="sum">ſ<choice><abbr>t<am>&#x0304;</am></abbr><expan><ex>un</ex>t</expan></choice></w><c> </c>
+                    <w lemma="quidam">q<choice><am>&#x0304;</am><ex>ue</ex></choice>da<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="fantasma">fa<choice><am>&#x0304;</am><ex>n</ex></choice>taſmata</w><pc resp="#PR">,</pc><c> </c>
+                    <lb n="21"/><w lemma="qui">q<choice><am>&#x0304;</am><ex>ue</ex></choice></w><c> </c>
+                    <w lemma="insurgo">i<choice><am>&#x0304;</am><ex>n</ex></choice>ſurgu<choice><abbr>t<am>&#x0304;</am></abbr><expan><ex>n</ex>t</expan></choice></w><c> </c>
+                    <w lemma="mane">mane</w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="unde"><choice><orig>v</orig><reg>u</reg></choice>n<choice><am>&#x0304;</am><ex>de</ex></choice></w><c> </c>
+                    <w lemma="nos">nobis</w><c> </c>
+                    <w lemma="venio">ve<choice><am>&#x0304;</am><ex>n</ex></choice>ıu<choice><am>&#x0304;</am><ex>n</ex></choice>t</w><c> </c>
+                    <w lemma="visio">vıſıo<choice><abbr>e<am>&#x0304;</am></abbr><expan><ex>n</ex>e</expan></choice>s</w><c> </c>
+                    <lb n="22"/><w lemma="vanus">vane</w><pc resp="'PR">;</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="si">ſı</w><c> </c>
+                    <w lemma="qui">q<choice><am>&#x365;</am><ex>ui</ex></choice>s</w><c> </c>
+                    <w lemma="tunc">tu<choice><am>&#x0304;</am><ex>n</ex></choice>c</w><c> </c>
+                    <w lemma="subrigo">ſurrex<choice><abbr>ı<am>&#xF1C8;</am></abbr><expan><ex>er</ex>i</expan></choice>t</w><c> </c>
+                    <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
+                    <w lemma="mens">me<choice><am>&#x0304;</am><ex>n</ex></choice>tıs</w><c> </c> 
+                    <w lemma="sanus">ſane</w><pc><orig>/</orig><reg resp="#PR">.</reg></pc><c> </c>
+                </l>
+            </lg>
+            <lg n="9" rhyme="iiii">
+                <lb n="23"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="noster">N<choice><abbr>ra<am>&#x0304;</am></abbr><expan><ex>ost</ex>ra</expan></choice></w><c> </c>
+                    <w lemma="doceo">docet</w><c> </c> 
+                    <w lemma="regula">r<choice><am>&#xF1C8;</am><ex>eg</ex></choice><choice><abbr>la<am>&#x0304;</am></abbr><expan><ex>u</ex>la</expan></choice></w><c> </c>
+                    <w lemma="valde">valde</w><c> </c>
+                    <w lemma="manifestus">ma<choice><am>&#x0304;</am><ex>n</ex></choice>ıfeſte</w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="nullus">nullu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="inter">ı<choice><am>&#x0304;</am><ex>n</ex></choice>ter</w><c> </c>
+                    <lb n="24"/><w lemma="socius">socıos</w><c> </c>
+                    <w lemma="utor"><choice><orig>v</orig><reg>u</reg></choice>tı</w><c> </c>
+                    <w lemma="duplus">dupla</w><c> </c>
+                    <w lemma="vestis">veſte</w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="tunica">tu<choice><am>&#x0304;</am><ex>n</ex></choice>ica<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w><c> </c>
+                    <w lemma="iopula">iopula<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <lb n="25"/><w lemma="incestus">ı<choice><am>&#x0304;</am><ex>n</ex></choice>ceſte</w><c> </c> 
+                </l>
+                <l n="4"><w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="solus">ſola</w><c> </c>
+                    <w lemma="camisia">camiſıa</w><c> </c>
+                    <w lemma="sic">ſic</w><c> </c>
+                    <w lemma="sedeo">ſedes</w><c> </c>
+                    <w lemma="honestus">honeſte</w> <pc resp="#H1">.</pc><c> </c>
+                </l>
+            </lg>
+            
+            <lg n="10" rhyme="jjjj">
+                <lb n="26"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="noster">Noſtru<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
+                    <w lemma="propono"><choice><am>ꝓ</am><ex>pro</ex></choice>poſıtu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="taberna">thab<choice><abbr>n<am>&#xF1C8;</am></abbr><expan><ex>er</ex>n</expan></choice>a</w><c> </c>
+                    <w lemma="moror">mori</w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="ubi"><choice><orig>v</orig><reg>u</reg></choice>bi</w><c> </c>
+                    <w lemma="potus">pot<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                    <lb n="27"/><w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="desum">deeſt</w><c> </c>
+                    <w lemma="sitio">ſıcıe<choice><am>&#x0304;</am><ex>n</ex></choice>tı</w><c> </c>
+                    <w lemma="os">orı</w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="ubi"><choice><orig>v</orig><reg>u</reg></choice>bi</w><c> </c>
+                    <w lemma="sono">ſona<choice><am>&#x0304;</am><ex>n</ex></choice>t</w><c> </c>
+                    <w lemma="cithara">citha<choice><abbr>e<am>&#xF1C8;</am></abbr><expan><ex>r</ex>e</expan></choice></w><c> </c>
+                    <w lemma="et">et</w><c> </c>  
+                    <w lemma="resono">re<lb n="28"/>ſona<choice><am>&#x0304;</am><ex>n</ex></choice>t</w><c> </c>
+                    <w lemma="chorus">chori</w><c> </c>
+                </l>
+                <l n="4"><w lemma="decanto">d<choice><am>&#x02BC;</am><ex>e</ex></choice>ca<choice><am>&#x0304;</am><ex>n</ex></choice>ta<choice><am>&#x0304;</am><ex>n</ex></choice>tes</w><c> </c>
+                    <w lemma="dulcis">dulcıa</w><c> </c>  
+                    <w lemma="ego">m<choice><am>&#xF1C8;</am><ex>ihi</ex></choice></w><c> </c>
+                    <w lemma="potator">potatori</w><pc resp="#PR">.</pc><c> </c>
+                    </l>
+            </lg>
+            <add hei:placeRef="hc:Inline" hand="#H1"><hi rendition="hc:RedUnderlined"><w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w>
+                <w lemma="aliter">alıt<choice><am>&#xF1C8;</am><ex>er</ex></choice></w></hi></add>            
+            
+            <lg n="11=10b" rhyme="jjjj">
+                <lb n="29"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="noster">N<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>ost</ex>r</expan></choice>u<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
+                    <w lemma="propono"><choice><am>ꝓ</am><ex>pro</ex></choice>po<choice><abbr>ı<am>&#x0304;</am></abbr><expan><ex>ſ</ex>ı</expan></choice>tu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="taberna">thab<choice><abbr>n<am>&#xF1C8;</am></abbr><expan><ex>er</ex>n</expan></choice>a</w><c> </c>
+                    <w lemma="moror">mo<choice><abbr>ı<am>&#xF1C8;</am></abbr><expan><ex>r</ex>i</expan></choice></w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="ubi"><choice><orig>v</orig><reg>u</reg></choice>bı</w><c> </c>
+                    <w lemma="sono">ſona<choice><am>&#x0304;</am><ex>n</ex></choice>t</w><c> </c>
+                    <w lemma="cithara">cıtha<choice><abbr>e<am>&#xF1C8;</am></abbr><expan><ex>r</ex>e</expan></choice></w><c> </c>
+                    <lb n="30"/><w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                    <w lemma="resono">r<choice><am>&#xF1C8;</am><ex>e</ex></choice>ſonant</w><c> </c>
+                    <w lemma="chorus">chori</w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="ubi"><choice><orig>v</orig><reg>u</reg></choice>bı</w><c> </c>
+                    <w lemma="potus">pot<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                    <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="desum">deeſt</w><c> </c>
+                    <w lemma="sitio">ſıcienti</w><c> </c>
+                    <lb n="31"/><w lemma="os">orı</w><pc resp="#PR">.</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="deus"><choice><orig>d</orig><reg>D</reg></choice>eus</w><c> </c>
+                    <w lemma="sum">ſis</w><c> </c>
+                    <w lemma="propitius"><choice><am>ꝓ</am><ex>pro</ex></choice>pici<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                    <w lemma="ego">m<choice><am>&#xF1C8;</am><ex>ihi</ex></choice></w><c> </c>
+                    <w lemma="potator">pot<choice><abbr>o<am>&#x0304;</am></abbr><expan><ex>at</ex>o</expan></choice>ri</w><pc resp="#PR">!</pc><c> </c>
+                </l>
+            </lg>
+            
+            <lg n="12" rhyme="kkkk">
+                <label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
+                <l n="1"><w lemma="omnis">O<choice><abbr>ı<am>&#x0304;</am></abbr><expan><ex>mn</ex>i</expan></choice>b<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                    <w lemma="postpono">p<choice><am>ꝰ</am><ex>ost</ex></choice>po<choice><abbr>ı<am>&#xF1C8;</am></abbr><expan><ex>ſ</ex>ı</expan></choice>t<choice><am>ꝭ</am><ex>is</ex></choice></w><c> </c> 
+                    <lb n="32"/><w lemma="diligo">dılıgo</w><c> </c>
+                    <w lemma="taberna">thab<choice><abbr>n<am>&#xF1C8;</am></abbr><expan><ex>er</ex>n</expan></choice>a<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="qui"><choice><am>ꝙ&#x1DD3;</am><ex>quam</ex></choice></w><c> </c>
+                    <w lemma="in">in</w><c> </c>
+                    <w lemma="nullus"><choice><abbr>u<am>&#x0304;</am></abbr><expan><ex>n</ex>u</expan></choice>llo</w><c> </c>
+                    <w lemma="tempus">t<choice><abbr><am>ꝑ</am></abbr><expan><ex>empor</ex></expan></choice>e</w><c> </c>
+                    <w lemma="sperno">ſp<choice><am>&#xF1C8;</am><ex>re</ex></choice><choice><orig>u</orig><reg>v</reg></choice>i</w><c> </c>
+                    <w lemma="neque">ne<choice><am></am><ex>que</ex></choice></w><c> </c>
+                    <w lemma="sperno">ſ<choice><am>ꝑ</am><ex>per</ex></choice>na<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                </l>
+                <l n="3"><lb n="33"/><w lemma="donec">don<choice><am>ᶜ</am><ex>ec</ex></choice></w><c> </c>
+                    <w lemma="sanctus">ſ<choice><abbr>c<am>&#x0304;</am></abbr><expan><ex>an</ex>c</expan></choice>tos</w><c> </c>
+                    <w lemma="angelus">a<choice><am>&#x0304;</am><ex>n</ex></choice>gelos</w><c> </c>
+                    <w lemma="venio">ve<choice><abbr>ı<am>&#x0304;</am></abbr><expan><ex>n</ex>ı</expan></choice>en<choice><am>ˢ</am><ex>tes</ex></choice></w><c> </c>
+                    <w lemma="cerno">cerna<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                </l>
+                <l n="4"><w lemma="canto">ca<choice><am>&#x0304;</am><ex>n</ex></choice>ta<choice><am>&#x0304;</am><ex>n</ex></choice>tes</w><c> </c>
+                    <w lemma="pro"><choice><am>ꝓ</am><ex>pro</ex></choice></w><c resp="#PR"> </c>
+                    <w lemma="bibulus">bi<lb n="34"/>bulo</w><c> </c>
+                    <w lemma="requies">req<choice><am>&#xF1C8;</am><ex>ui</ex></choice>em</w><c> </c>
+                    <w lemma="aeternus">et<choice><am>&#xF1C8;</am><ex>er</ex></choice>na<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc><orig>/</orig><reg resp="#PR">.</reg></pc>
+                </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

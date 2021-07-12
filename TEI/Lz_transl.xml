@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach Lz)</title>
+                <respStmt>
+                    <resp>übersetzt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Leipzig</settlement>
+                        <repository>Universitätsbibliothek</repository>
+                        <idno>Ms. 1250</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. and transl. Otto Schumann and
+                        Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <lg n="1">
+                <l n="1">Ich will euch von den Regeln des Ordens der Vaganten berichten: </l>
+                <l n="2">Ihr Stand ist vornehm, ihre Art ist angenehm, </l>
+                <l n="3">sie freuen sich ziemlich über einen Laib Weißbrot </l>
+                <l n="4">und sie sättigt ein fetter Braten. </l>
+            </lg>
+            <lg n="2">
+                <l n="1">Unser Orden verbietet es, in den Frühgottesdienst zu gehen; </l>
+                <l n="2">Geister aller Art erheben sich morgens. </l>
+                <l n="3">Davon ereilen uns trügerische Wahnbilder; </l>
+                <l n="4">wenn jemand um diese Zeit aufsteht, ist er nicht bei klarem Verstand. </l>
+            </lg>
+            <lg n="3">
+                <l n="1">Unsere Regel belehrt uns überaus deutlich, </l>
+                <l n="2">dass keiner unter seinen Kumpanen zwei Kleider habe; </l>
+                <l n="3">ein Obergewand mit einem Untergewand sollst du im Sinne des Anstands nicht tragen.</l>
+                <l n="4">Anständig sitzt du so nur im Hemd herum. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Sobald die Jahreszeit der Fülle kommt, wollen wir jubilieren, </l>
+                <l n="2">obwohl wir sehen, dass die Äste des Waldes kahl werden, </l>
+                <l n="3">mögen wir auch keine vollen Speisekammern haben, </l>
+                <l n="4">aus der wir den gekelterten Wein fließen sehen. </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Die gefiederten Vögel am Himmel verstummten einfach so </l>
+                <l n="2">und daher verschmachteten einfache Gemüter; </l>
+                <l n="3">bringen nicht Weinkelche mehr Freude, </l>
+                <l n="4">als das Geschnatter von hundert Vogelschnäbeln?  </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Cato leht: ‚Nutze erworbenen Reichtum!‘ </l>
+                <l n="2">und tu dies hier bei dem Getränk, wie es der Weinstock erzeugt </l>
+                <l n="3">und das die schöne Sunamith anmutig in sich hineinschüttet. </l>
+                <l n="4">Wo bringt man einen Schatz hervor, wenn dort Hunger und Durst sind?</l>
+            </lg>
+            <lg n="7">
+                <l n="1">Die Tore unserer Gastgeber glänzen vor lauter Perlen </l>
+                <l n="2">und sie schreien aus offenen Türen: „Wo seid ihr?“ </l>
+                <l n="3">Hier gibt es kein Fasten, keinen Hunger und keinen Durst, </l>
+                <l n="4">sondern viemehr die Freude in vollen Zügen: Warum kommt ihr nicht? </l>
+            </lg>
+            <lg n="8">
+                <l n="1">Also wollen wir schon morgens zum Becher schreiten </l>
+                <l n="2">und bis zur Abenddämmerung gemeinsam trinken, </l>
+                <l n="3">auf dass wir in den Wänden eine Leitplanke haben; </l>
+                <l n="4">und mit zuckenden Händen suchen wir nach dem Boden. </l>
+            </lg>
+            <lg n="9">
+                <l n="1">Hast du kein Pfand, sollst du den Würfeln befehlen </l>
+                <l n="2">wacker im Stadion (in der Hafenkneipe, P.R.) die Standarte zu tragen, </l>
+                <l n="3">und wenn du darüber hinaus noch jenes Spiel gewinnst, </l>
+                <l n="4">wird der Bauch erquickt werden, wenn er zum Zapfhahn geführt wird. </l>
+            </lg>
+            <lg n="10">
+                <l n="1">Hast du keine Münzen, ist das verzeihlich. </l>
+                <l n="2">Lege, was auch immer du hast, in deiner Erinnerung ab; </l>
+                <l n="3">das Untergewand, das Hemd und dergleichen, </l>
+                <l n="4">der Wirt nimmt alles und schließlich selbst den Schenkel. </l>
+            </lg>
+            <lg n="11">
+                <l n="1">Ich hörte spät einen Säufer laut klagen, </l>
+                <l n="2">ganz wie ein Löwenjunges brüllen: </l>
+                <l n="3">„Wie kommt es, dass ich niemanden Wein trinken sehe, </l>
+                <l n="4">wenn dieser doch macht, dass der Mensch alles weiß!“ </l>
+            </lg>
+            <lg n="12">
+                <l n="1">Wir haben den festen Vorsatz, im Wirtshaus zu sterben, </l>
+                <l n="2">wo es der durstigen Kehle nie an Trank mangelt, </l>
+                <l n="3">wo die Lautenspieler klingen und die Gesänge im Chor widerhallen, </l>
+                <l n="4">wenn sie für mich, den Säufer, die Freuden besingen.</l>
+            </lg>
+            <lg n="13">
+                <l n="1">Unter Anbetracht aller Umstände liebe ich das Wirtshaus, </l>
+                <l n="2">das ich niemals verschmähte und nie verschmähen werde, </l>
+                <l n="3">bis mich die heiligen Engel nach oben ziehen </l>
+                <l n="4">und für mich, den Säufer, die ewige Totenmesse singen. </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

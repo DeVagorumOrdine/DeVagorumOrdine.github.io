@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cum in orbem universum</title>
+                <respStmt>
+                    <resp>vorgelegt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p></p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>München</settlement>
+                        <repository>BSB</repository>
+                        <idno>Cod. lat. mon. 357</idno>
+                        <msName>Codex Buranus</msName>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Vollmann">Carmina Burana. Ed. and transl. Benedikt Konrad
+                        Vollmann. Frankfurt a. M. 1987 (= Bibliothek des Mittelalters 13).</witness>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. and transl. Otto Schumann and
+                        Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" script="frühgotische Minuskel" medium="brown-red ink">carefully written</handNote><handNote/>
+                <handNote xml:id="H2" script="frühgotische Minuskel" medium="red ink"> corrections (same hand?)</handNote><handNote/>
+                <handNote xml:id="H3" script="unknown" medium="unknown">later corrections</handNote><handNote/>
+            </handNotes>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+<!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <pb n="95v"/>
+            <head>
+            <w lemma="item"><hi hei:color="hc:Red">IT<choice><am>&#x0304;</am><ex>EM</ex></choice></hi></w>
+            <pc>.</pc></head>
+                <lg n="1" rhyme="aaaa">
+                    <l n="1"><lb n="3"/>
+                    <w lemma="cum"><hi hei:color="hc:Red">C</hi><hi rendition="hc:RedRetrace">VM</hi></w><c> </c>
+                    <pc resp="#ed.Vollmann">„</pc>
+                    <w lemma="in"><choice><orig><hi rendition="hc:RedRetrace">I</hi></orig><reg>I</reg></choice>n</w><c> </c>
+                    <w lemma="orbis">orbem</w><c> </c>
+                    <w lemma="universus">unıuerſum</w>
+                    <pc resp="#ed.Vollmann">“</pc><c> </c>
+                    <w lemma="decanto">decantat<choice><am>&#xF1C8;</am><ex>ur</ex></choice></w><c> </c>
+                    <pc resp="#ed.Vollmann">„</pc>
+                    <w lemma="eo">ıte</w><pc resp="#ed.Vollmann">!“</pc><pc><choice><orig>.</orig><reg resp="#ed.Vollmann">,</reg></choice></pc><c> </c>
+                    </l>
+                    <l n="2"><w lemma="sacerdos">ſacerdo<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="4"/>tes</w><c> </c>
+                        <w lemma="ambulo">ambulant</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="curro">currunt</w><c> </c>
+                        <w lemma="coenobita">cenobıt<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><pc><orig>.</orig><reg></reg></pc><c> </c>
+                    </l>
+                    <l n="3"><w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                        <w lemma="a">ab</w><c> </c>
+                        <w lemma="evangelium">e<choice><orig>w</orig><reg resp="#PR">v</reg></choice>angelıo</w><c> </c>
+                        <w lemma="iam">iam</w><c> </c>
+                        <lb n="5"/><w lemma="surgo">ſurgunt</w><c> </c>
+                        <w lemma="levita">le<choice><orig>u</orig><reg resp="#PR">v</reg></choice>it<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><pc><choice><orig>.</orig><reg>,</reg></choice></pc><c> </c>
+                    </l>
+                    <l n="4"><w lemma="secta">ſectam</w><c> </c>
+                        <w lemma="noster">noſtram</w><c> </c>
+                        <w lemma="subeo">ſubeunt</w><pc><choice><orig>.</orig><reg>,</reg></choice></pc><c> </c>
+                        <w lemma="qui">qu<choice><orig><choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></orig><reg resp="#PR">ae</reg></choice></w><c> </c>
+                        <w lemma="salus">ſaluſ</w><c> </c>
+                        <w lemma="sum">eſt</w><c> </c>
+                        <w lemma="vita"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>it<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><pc>.</pc><c> </c>
+                        </l>
+                </lg>
+                <lg n="2" rhyme="bbbb">
+                    <l n="1"><lb n="6"/><gap atLeast="6" extent="character"/>
+                        <w lemma="in"><hi hei:color="hc:Red">I</hi>n</w><c> </c>
+                        <w lemma="secta">ſecta</w><c> </c>
+                        <w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>ost</ex>r</expan></choice>a</w><c> </c>
+                        <w lemma="scribo">ſcrıptum</w><c> </c>
+                        <w lemma="sum">eſt</w><pc resp="#ed.Vollmann">:</pc><c> </c>
+                        <pc resp="#ed.Vollmann">‚</pc><w lemma="omnis">omnia</w><c> </c>
+                        <w lemma="probo">probate</w><pc resp="#ed.Vollmann"><orig>.</orig><reg>!‘</reg></pc><c> </c>
+                    </l>
+                    <l n="2"><w lemma="vita"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>itam</w><c> </c>
+                        <lb n="7"/><w lemma="noster">noſtram</w><c> </c>
+                        <w lemma="optimus">optime</w><c> </c>
+                        <w lemma="tu"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>os</w><c> </c>
+                        <w lemma="considero"><choice><am>ↄ</am><ex>con</ex></choice>ſıderate</w><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice><c> </c>
+                    </l>
+                    <l n="3"><w lemma="contra">contra</w><c> </c>
+                        <w lemma="pravus">pra<choice><orig>u</orig><reg resp="#PR">v</reg></choice>os</w><c> </c>
+                        <w lemma="clericus">clericos</w><c> </c>
+                        <w lemma="tu"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>os</w><c> </c>
+                        <lb n="8"/><w lemma="persevero"><choice><am>ꝑ</am><ex>per</ex></choice>ſe<choice><orig>u</orig><reg resp="#PR">v</reg></choice>erate</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="4"><w lemma="qui">qui</w><c> </c>
+                        <w lemma="non">non</w><c> </c>
+                        <w lemma="largus">large</w><c> </c>
+                        <w lemma="tribuo">tribuunt</w><c> </c>
+                        <w lemma="vos"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>obiſ</w><c> </c>
+                        <w lemma="in">in</w><c> </c>
+                        <w lemma="caritas"><choice><orig>k</orig><reg resp="#PR">c</reg></choice>aritate</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">!</corr></choice></pc><c> </c>
+                    </l>
+                </lg>
+                <lg n="3" rhyme="cccc">
+                    <l n="1"><w lemma="et"><hi hei:color="hc:Red">E</hi>t</w><c> </c>
+                        <lb n="9"/> 
+                        <w lemma="nos">nos</w><c> </c>
+                        <w lemma="misericordia">miſerıcoꝛdı<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><c> </c>
+                        <w lemma="nunc">nunc</w><c> </c>
+                        <w lemma="sum">ſumuſ</w><c> </c>
+                        <w lemma="auctor">auctoreſ</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        </l>
+                    <l n="2"><w lemma="quia">quia</w><c> </c>
+                        <w lemma="nos">noſ</w><c> </c>
+                        <w lemma="recipio">recipimuſ</w><c> </c>
+                        <lb n="10"/> <w lemma="magnus">magnos</w><c> </c>
+                        <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                        <w lemma="minor">minoreſ</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">;</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="3"><w lemma="recipio">recipimuſ</w><c> </c>
+                        <w lemma="dives">ꝺi<choice><orig>u</orig><reg resp="#PR">v</reg></choice>iteſ</w><c> </c>
+                        <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                        <w lemma="pauper">pau<choice><am>ꝑ</am><ex>per</ex></choice>ıoreſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="4">
+                        <w lemma="qui">quoſ</w><c> </c>
+                        <w lemma="devotus">ꝺe<choice><orig>u</orig><reg resp="#PR">v</reg></choice>o<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="11"/>ti</w><c> </c>
+                        <w lemma="monachus">monachı</w><c> </c>
+                        <w lemma="dimitto">dimittunt</w><c> </c>
+                        <w lemma="extra">extra</w><c> </c>
+                        <w lemma="foris">foreſ</w><pc>.</pc><c> </c>
+                    </l>
+                </lg>
+                <lg n="4" rhyme="dddd">
+                    <l n="1"><w lemma="nos"><hi hei:color="hc:Red">N</hi>os</w><c> </c>
+                        <w lemma="recipio">recipimuſ</w><c> </c>
+                        <w lemma="monachus">monachu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                        <lb n="12"/><w lemma="cum">cum</w><c> </c>
+                        <w lemma="rasus">raſa</w><c> </c>
+                        <w lemma="corona">coꝛona</w><c> </c>
+                    </l>
+                    <l n="2"><w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                        <w lemma="si">ſi</w> <c> </c>
+                        <w lemma="venio"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>enerıt</w><c> </c>
+                        <w lemma="presbyter">preſbıter</w><c> </c>
+                        <w lemma="cum">cum</w><c> </c>                        
+                        <w lemma="suus">ſua</w><c> </c>
+                        <w lemma="matrona">matrona</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="3"><lb n="13"/><w lemma="magister">magiſtrum</w><c> </c>
+                        <w lemma="cum">cum</w><c> </c>
+                        <w lemma="puer">pueriſ</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="vir"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>irum</w><c> </c>
+                        <w lemma="cum">cum</w><c> </c>
+                        <w lemma="persona"><choice><am>ꝑ</am><ex>per</ex></choice>ſona</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="4">
+                        <w lemma="scholaris">ſcolarem</w><c> </c>
+                        <w lemma="libenter">lıbentı<choice><am>&#x1dd2;</am><ex>us</ex></choice></w><c> </c>
+                        <lb n="14"/><w lemma ="tego">tectum</w><c> </c>
+                        <w lemma="vestis"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>eſte</w><c> </c>
+                        <w lemma ="bonus">bona</w><pc resp="#ed.Vollmann">.</pc><c> </c>
+                    </l>
+                </lg>
+                <lg n="5" rhyme="eeee">
+                    <l n="1"><w lemma="Marchio"><hi hei:color="hc:Red">M</hi>archioneſ</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="Bavarus"><choice><orig>b</orig><reg resp="#ed.Vollmann">B</reg></choice>awari</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="Saxo"><choice><orig>ſ</orig><reg resp="#ed.Vollmann">S</reg></choice>axoneſ</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="australis"><choice><orig>a</orig><reg resp="#ed.Vollmann">A</reg></choice>uſtraleſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="2"><lb n="15"/><w lemma="quotquot">quotquot</w><c> </c>
+                        <w lemma="sum">eſtiſ</w><c> </c>  
+                        <w lemma="nobilis">nobıleſ</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="vos"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>oſ</w><c> </c>
+                        <w lemma="precor">precoꝛ</w><c> </c>                        
+                        <w lemma="sodalis">ſodaleſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="3"><w lemma="auris">aur<subst resp="#H3"><del>eſ</del><add>ibꝰ</add></subst></w><c> </c>
+                        <w lemma="percipio"><choice><am>ꝑ</am><ex>per</ex></choice>cıpıte</w><c> </c>
+                        <w lemma="novus">no<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="16"/><choice><orig>u</orig><reg resp="#PR">v</reg></choice>aſ</w><c> </c>
+                        <w lemma="decretalis">ꝺecretales</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">:</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="4">
+                        <pc resp="#ed.Vollmann">‚</pc><w lemma="qui">q<choice><am>đ</am><ex>uod</ex></choice></w><c> </c>
+                        <w lemma="avarus">a<choice><orig>u</orig><reg resp="#PR">v</reg></choice>ari</w><c> </c>
+                        <w lemma="pereo">pereant</w><c> </c>
+                        <w lemma="et">et</w><c> </c>
+                        <w lemma="non">non</w><c> </c>
+                        <w lemma="liberalis">lıberaleſ</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">!‘</corr></choice></pc><c> </c>
+                    </l>
+                </lg>
+                <lg n="6" rhyme="ffff">
+                    <l n="1"><w lemma="secta"><hi hei:color="hc:Red">S</hi>ecta</w><c> </c>
+                        <w lemma="noster">no<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="17"/>ſtra</w><c> </c>
+                        <w lemma="recipio">recıpıt</w><c> </c>
+                        <w lemma="iustus">iustos</w><c> </c>
+                        <w lemma="et">et</w><c> </c> 
+                        <w lemma="iniustus">in<pc><orig> </orig><reg></reg></pc>iuſtoſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="2"><w lemma="claudus">claudoſ</w><c> </c>
+                        <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>  
+                        <w lemma="debilis">ꝺebıleſ</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="senium">ſenio</w><c> </c>
+                        <w lemma="conburo">conbu<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="18"/>ſtoſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>                    
+                    </l>
+                    <l n="3"><w lemma="bellosus">belloſoſ</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                        <w lemma="pacificus">pacifıcos</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                        <w lemma="mitis">miteſ</w><c> </c>
+                        <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                        <w lemma="insanus">inſanos</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="4">
+                        <w lemma="Boemus"><choice><orig>b</orig><reg resp="#ed.Vollmann">B</reg></choice>oemoſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                        <w lemma="Teutonicus"><choice><orig>t</orig><reg resp="#ed.Vollmann">T</reg></choice>eutonicoſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                        <lb n="19"/><w lemma="S[c]lavus"><choice><orig>s</orig><reg resp="#ed.Vollmann">S</reg></choice>cla<choice><orig>u</orig><reg resp="#PR">v</reg></choice>oſ</w><c> </c>
+                        <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                        <w lemma="Romanus"><choice><orig>r</orig><reg resp="#ed.Vollmann">R</reg></choice>omanos</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                </lg>
+                <lg n="7" rhyme="gg">
+                    <l n="1"><w lemma="statura"><hi hei:color="hc:Red">S</hi>tatur<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><c> </c>
+                        <w lemma="mediocris">medıocreſ</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="gigas">gıganteſ</w><c> </c>
+                        <w lemma="et">et</w><c> </c> 
+                        <w lemma="nanus">gnanos</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="2"><lb n="20"/><w lemma="in">ın</w><c> </c>
+                        <w lemma="persona"><choice><am>ꝑ</am><ex>per</ex></choice>ſoniſ</w><c> </c>
+                        <w lemma="humilis">humiles</w><c> </c>
+                        <w lemma="et">et</w><c> </c>
+                        <w lemma="econtra">econtra</w><c> </c>
+                        <w lemma="vanus"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>anos</w> <pc>.</pc><c> </c>
+                        <gap atLeast="23" extent="character"/>
+                    </l>
+                </lg>
+                <lg n="8" rhyme="hhhh">
+                    <l n="1"><lb n="21"/><gap atLeast="23" extent="character"/><w lemma="de"><hi hei:color="hc:Red">Ꝺ</hi>e</w><c> </c>
+                        <w lemma="vagus"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>ago<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c>
+                        <w lemma="ordo">ordıne</w><c> </c>
+                        <w lemma="dico">dıco</w><c> </c>
+                        <w lemma="vos"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>obıſ</w><c> </c>
+                        <w lemma="ius">iu<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="22"/>ra</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                    </l>
+                    <l n="2"><w lemma="qui">quo<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c>
+                        <w lemma="vita"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>ita</w><c> </c>
+                        <w lemma="nobilis">nobılıſ</w><c> </c>
+                        <w lemma="dulcis">ꝺulcıſ</w><c> </c>
+                        <w lemma="sum">eſt</w><c> </c>
+                        <w lemma="natura">natura</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                    </l>
+                    <l n="3"><w lemma="qui">quo<subst resp="#H2"><del>s</del><add><choice><am>ꝝ</am><ex>rum</ex></choice></add></subst></w><c> </c>
+                        <w lemma="delecto">delectat</w><c> </c>
+                        <w lemma="animus">anim<subst resp="#H2"><del>us</del><add>os</add></subst></w><c> </c>
+                        <pb n="96r"/><lb n="1"/><w lemma="pinguis">pinguiſ</w><c> </c>
+                        <w lemma="assatura">aſſatura</w><c> </c>
+                    </l>
+                    <l n="4"><w lemma="revera">re<choice><orig>u</orig><reg resp="#PR">v</reg></choice>era</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="quam">quam</w><c> </c>
+                        <w lemma="facio">facıat</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                        <w lemma="hordeum">oꝛdeı</w><c> </c>
+                        <w lemma="mensura">mensura</w><pc>.</pc><c> </c> 
+                    </l>
+                </lg>
+            <lg n="9" rhyme="iiii">
+                <l n="1"><w lemma="ordo"><hi hei:color="hc:Red">O</hi>rdo</w><c> </c>
+                    <lb n="2"/> <w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>oste</ex>r</expan></choice></w><c> </c>
+                    <w lemma="prohibeo"><choice><am>ꝓ</am><ex>pro</ex></choice>hibet</w><c> </c>
+                    <w lemma="matutina">matutinas</w><c> </c>
+                    <w lemma="plane">plane</w> <pc><orig>.</orig><reg resp="#ed.Vollmann"></reg></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="sum">ſunt</w><c> </c>
+                    <w lemma="quidam">quedam</w><c> </c>
+                    <w lemma="fantasma">fantaſmata</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="qui">qu<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><c> </c>
+                    <lb n="3"/> <w lemma="vagor"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>agantur</w><c> </c>
+                    <w lemma="mane">mane</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="per"><choice><am>ꝑ</am><ex>per</ex></choice></w><c> </c>
+                    <w lemma="qui">qu<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><c> </c>
+                    <w lemma="nos">nobıſ</w><c> </c>
+                    <w lemma="venio"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>eniunt</w><c> </c>
+                    <w lemma="visio"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>iſioneſ</w><c> </c>
+                    <w lemma="vanus"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>an<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">;</corr></choice></pc><c> </c>
+                </l>
+                <l n="4"><w lemma="sed">ſe<choice><orig>t</orig><reg resp="#PR">d</reg></choice></w><c> </c>
+                    <w lemma="qui">q<choice><am>&#xf02f;</am><ex>ui</ex></choice></w><c> </c>
+                    <lb n="4"/><w lemma="tunc">tunc</w><c> </c>
+                    <w lemma="subrigo">ſurrexerıt</w><c> </c>
+                    <w lemma="non">non</w><c> </c>
+                    <w lemma="sum">eſt</w><c> </c>
+                    <w lemma="mens">mentıſ</w><c> </c> 
+                    <w lemma="sanus">ſan<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w> <pc>.</pc><c> </c>
+                    <!-- In der Ausgabe von Vollmann sind hier die Verse vertauscht. Er reiht fälschlich 9,1 und 9,2 und 14,4 und 9,3. Vers 9,4 fehlt. Die vorliegende Edition folgt der Handschrift. -->
+                </l>
+            </lg>
+            <lg n="10" rhyme="jjjj">
+                <l n="1"><w lemma="ordo"><hi hei:color="hc:Red">O</hi>rdo</w><c> </c>
+                    <lb n="2"/> <w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>oste</ex>r</expan></choice></w><c> </c>
+                    <w lemma="prohibeo"><choice><am>ꝓ</am><ex>pro</ex></choice>hıbet</w><c> </c>
+                    <w lemma="semper">ſem<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="5"/>per</w><c> </c>
+                    <w lemma="matutina">matutinas</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="sed">ſe<choice><orig>t</orig><reg resp="#PR">d</reg></choice></w><c> </c>
+                    <w lemma="statim">ſtatim</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="cum">cum</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="subrigo">ſurgımuſ</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="quaero">querimuſ</w><c> </c> 
+                    <w lemma="popina">p<choice><orig>ru</orig><corr resp="#ed.Vollmann">op</corr></choice>ınaſ</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">;</corr></choice></pc><c> </c>
+                </l>
+                <l n="3"><lb n="6"/>ılluc<c> </c>
+                    <w lemma="fero">ferrı</w><c> </c>
+                    <w lemma="facio">facımuſ</w><c> </c>
+                    <w lemma="vinum"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>inum</w><c> </c>
+                    <w lemma="et">et</w><c> </c>
+                    <w lemma="gallina">gallinaſ</w><pc>.</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="nihil">nil</w><c> </c>
+                    <w lemma="hic">hıc</w><c> </c>
+                    <w lemma="expavesco">expa<choice><orig>u</orig><reg resp="#PR">v</reg></choice>eſcimus</w><c> </c>
+                    <lb n="7"/> <w lemma="praeter">preter</w><c> </c>
+                    <w lemma="Hashardus">Haſhardı</w><c> </c>
+                    <w lemma="minae">minas</w><c> </c> 
+                </l>
+            </lg>
+            <lg n="11" rhyme="kkkk">
+                <l n="1"><w lemma="ordo"><hi hei:color="hc:Red">O</hi>rdo</w><c> </c>
+                    <w lemma="procul"><choice><am>ꝓ</am><ex>pro</ex></choice>cul</w><c> </c>
+                    <w lemma="dubium">ꝺubio</w><c> </c>
+                    <w lemma="noster"><w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>oste</ex>r</expan></choice></w></w><c> </c>
+                    <w lemma="secta">ſecta</w><c> </c>
+                    <w lemma="voco"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>oca<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="8"/>tur</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="qui">quam</w><c> </c>
+                    <w lemma="diversus">ꝺi<choice><orig>u</orig><reg resp="#PR">v</reg></choice>erſı</w><c> </c>
+                    <w lemma="genus">generıſ</w><c> </c>
+                    <w lemma="populus">populuſ</w><c> </c>
+                    <w lemma="sector">ſectatur</w><pc>.</pc><c> </c> 
+                </l>
+                <l n="3"><w lemma="ergo">ergo</w><c> </c>
+                    <pc resp="#ed.Vollmann">›</pc><w lemma="hic">hıc</w><pc resp="#ed.Vollmann">‹</pc><c> </c>
+                    <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                    <pc resp="#ed.Vollmann">›</pc><w lemma="hic">hec</w><pc resp="#ed.Vollmann">‹</pc><c> </c>
+                    <lb n="9"/><w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
+                    <pc resp="#ed.Vollmann">›</pc> <w lemma="hic">hoc</w><pc resp="#ed.Vollmann">‹</pc><c> </c>
+                    <w lemma="is">eı</w><c> </c>
+                    <w lemma="praepono">p<choice><am>&#x304;</am><ex>re</ex></choice>ponatur</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>               
+                </l>
+                <l n="4"><w lemma="qui">quod</w><c> </c>
+                    <w lemma="sum">ſıt</w><c> </c>
+                    <w lemma="omnis">omniſ</w><c> </c>
+                    <w lemma="genus">generiſ</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="qui">qui</w><c> </c> 
+                    <w lemma="tot">tot</w><c> </c> 
+                    <w lemma="hospitor">hoſpıtatur</w><pc>.</pc><c> </c> 
+                </l>
+            </lg>
+            <lg n="12" rhyme="llll">
+                <l n="1"><lb n="11"/><w lemma="ordo"><hi hei:color="hc:Red">O</hi>rdo</w><c> </c>
+                    <w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>oste</ex>r</expan></choice></w><c> </c>
+                    <w lemma="prohibeo"><choice><am>ꝓ</am><ex>pro</ex></choice>hibet</w><c> </c>
+                    <w lemma="utor">uti</w><c> </c>
+                    <w lemma="duplus">ꝺupla</w><c> </c>
+                    <w lemma="vestis"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>eſte</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">;</corr></choice></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="tunica">tunicam</w><c> </c>
+                    <w lemma="qui">qui</w><c> </c> 
+                    <w lemma="recipio">recıpıt</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="ut">ut</w><c> </c>
+                    <w lemma="vado"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>a<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="12"/>ꝺat</w><c> </c>
+                    <w lemma="vix"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>ix</w><c> </c>
+                    <w lemma="honestus">honeſte </w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">;</corr></choice></pc><c> </c>
+                </l>
+                <l n="3"><w lemma="pallium">pallium</w><c> </c>
+                    <w lemma="mox">mox </w><c> </c>
+                    <w lemma="reicio">reicıt</w><pc>.</pc><c> </c>
+                    <w lemma="Decius"><choice><orig>d</orig><reg resp="#ed.Vollmann">D</reg></choice>ecio</w><c> </c>
+                    <w lemma="contestis">conteſte</w><c> </c>
+                </l>
+                <l n="4"><w lemma="cingulum">cingu<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="12"/>lum</w><c> </c>
+                    <w lemma="is">huic</w><c> </c>
+                    <w lemma="detraho">detrahıt</w><c> </c>
+                    <w lemma="ludus">luduſ</w><c> </c>
+                    <w lemma="manifestus">manıfeſte</w><pc>.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="13" rhyme="mmmm">
+                <l n="1"><w lemma="qui"><hi hei:color="hc:Red">Q</hi>uod</w><c> </c>
+                    <w lemma="de">de</w><c> </c>
+                    <w lemma="summus">ſummıſ</w><c> </c>
+                    <w lemma="dico">di<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="13"/>citur</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="in">in</w><c> </c>
+                    <w lemma="imus">imiſ</w><c> </c> 
+                    <w lemma="teneo">teneatur</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">:</corr></choice></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="camisia">camiſıa</w><c> </c>
+                    <w lemma="qui">qui</w><c> </c> 
+                    <w lemma="fruor">fruitur</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="bracum">braciſ</w><c> </c>
+                    <w lemma="non">non</w><c> </c>
+                    <w lemma="utor">u<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="14"/>tatur</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                </l>
+                <l n="3"><w lemma="caliga">calıga</w><c> </c>
+                    <w lemma="si">ſı </w><c> </c>
+                    <w lemma="sequor">ſequitur</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="calceus">calceuſ</w><c> </c>
+                    <w lemma="non">non</w><c> </c>
+                    <w lemma="fero">feratur</w><pc>.</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="nam">nam</w><c> </c>
+                    <w lemma="qui">qui</w><c> </c>
+                    <w lemma="hic">hoc</w><c> </c>
+                    <lb n="15"/><w lemma="transgredior">tranſgreditur</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="excommunico">excommunicatur</w> <pc>.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="14" rhyme="nnnn">
+                <l n="1"><w lemma="nemo"><hi hei:color="hc:Red">N</hi>emo</w><c> </c>
+                    <w lemma="prorsus">proꝛſuſ</w><c> </c>
+                    <w lemma="exeo">exeat</w><c> </c>
+                    <w lemma="hospitium">hoſ<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="16"/>picium</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="ieiunus">ieiunuſ</w><c> </c>
+                </l>
+                <l n="2"><w lemma="et">et</w><pc resp= "#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="si">ſı</w><c> </c> 
+                    <w lemma="pauper">pau<choice><am>ꝑ</am><ex>per</ex></choice></w><c> </c>
+                    <w lemma="sum">fuerıt</w><pc resp= "#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="semper">sem<choice><am>ꝑ</am><ex>per</ex></choice></w><c> </c>
+                    <w lemma="peto">petat</w><c> </c>
+                    <w lemma="munus">munuſ</w> <pc>.</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="incrementum">incre<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="17"/>mentum</w><c> </c>
+                    <w lemma="recipio">recıpıt </w><c> </c>
+                    <w lemma="saepe">ſepe</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="nummus">nummıſ</w><c> </c>
+                    <w lemma="unus">unuſ</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                </l>
+                <l n="4"><w lemma="cum">cum</w><c> </c>
+                    <w lemma="ad">aꝺ</w><c> </c>
+                    <w lemma="ludus">luꝺum</w><c> </c>     
+                    <w lemma="sedeo">ſederit</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <lb n="18"/><w lemma="lusor">luſoꝛ</w><c> </c> 
+                    <w lemma="opportunus">o<choice><am>ꝑ</am><ex>por</ex></choice>tunuſ</w><pc>.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="15" rhyme="oooo">
+                <l n="1"><w lemma="nemo"><hi hei:color="hc:Red">N</hi>emo</w><c> </c>
+                    <w lemma="in">in</w><c> </c>
+                    <w lemma="iter">itinere</w><c> </c>
+                    <w lemma="contrarius">contrariuſ</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="est">sıt</w><c> </c>
+                    <w lemma="ventus"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>entiſ</w><c> </c>
+                </l>
+                <l n="2"><w lemma="nec">nec</w><c> </c> 
+                    <lb n="19"/><w lemma="a">a</w><c> </c> 
+                    <w lemma="paupertate">pau<choice><am>ꝑ</am><ex>per</ex></choice>tate</w><c> </c>
+                    <w lemma="fero">ferat</w><c> </c>
+                    <w lemma="vultus"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>ultum</w><c> </c>
+                    <w lemma="doleo">ꝺolentıſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                </l>
+                <l n="3"><w lemma="sed">ſ<choice><am>ꝫ</am><ex>ed</ex></choice></w><c> </c>
+                    <w lemma="spes">ſpem </w><c> </c>
+                    <w lemma="se">ſıbı</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="propono"><choice><am>ꝓ</am><ex>pro</ex></choice>ponat</w><c> </c>
+                    <w lemma="semper">sem<choice><am>ꝑ</am><ex>per</ex></choice></w><c> </c>
+                    <lb n="20"/><w lemma="consulo">conſulentıſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                </l>
+                <l n="4"><w lemma="nam">nam</w><c> </c>
+                    <w lemma="post">poſt</w><c> </c>
+                    <w lemma="grande">granꝺe</w><c> </c>     
+                    <w lemma="malum">malum</w><c> </c>
+                    <w lemma="sors">ſorſ</w><c> </c>
+                    <w lemma="sequor">ſequitur</w><c> </c>
+                    <w lemma="gaudeo">gauꝺen<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="21"/>tıs</w><pc>.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="16" rhyme="pppp">
+                <l n="1"><w lemma="ad"><hi hei:color="hc:Red">A</hi>ꝺ</w><c> </c>
+                    <w lemma="qui">quos</w><c> </c>
+                    <w lemma="pervenio"><choice><am>ꝑ</am><ex>per</ex></choice><choice><orig>u</orig><reg resp="#PR">v</reg></choice>enerıtıſ</w><pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="dico">dıcatıſ</w><c> </c>
+                    <w lemma="is">eıſ</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
+                    <w lemma="quare">quare</w><pc><orig>.</orig><reg resp="#ed.Vollmann"></reg></pc><c> </c>
+                </l>
+                <l n="2"><w lemma="singuli">ſıngulo<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c> 
+                    <w lemma="cupio">cupı<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="22"/>tıſ</w><c> </c>
+                    <w lemma="mos">moreſ</w><c> </c>
+                    <w lemma="exprobro">exprobrare</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">:</corr></choice></pc><c> </c>
+                </l>
+                <l n="3"><pc resp="#ed.Vollmann">»</pc><w lemma="reprobo">re<choice><am>ꝓ</am><ex>pro</ex></choice>bare</w><c> </c>
+                    <w lemma="reprobus">re<choice><am>ꝓ</am><ex>pro</ex></choice>boſ</w><c> </c>
+                    <w lemma="et">et</w><c> </c>
+                    <w lemma="probus"><choice><am>ꝓ</am><ex>pro</ex></choice>boſ</w><c> </c>
+                    <w lemma="probo"><choice><am>ꝓ</am><ex>pro</ex></choice>bare</w><c> </c>
+                </l>
+                <l n="4"><w lemma="et">et</w><c> </c>
+                    <w lemma="probus">pro<pb n="96v"/><lb n="1"/>boſ</w><c> </c>
+                    <w lemma="ab">ab</w><c> </c>
+                    <w lemma="improbus">improbıſ</w><c> </c>
+                    <w lemma="venio"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>eni</w><c> </c>
+                    <w lemma="segrego">ſegregare</w><pc><choice><orig>.</orig><reg resp="#ed.Vollmann">!«</reg></choice></pc><c> </c>
+                </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

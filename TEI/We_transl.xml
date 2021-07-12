@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach We)</title>
+                <respStmt>
+                    <resp>übersetzt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Wernigerode</settlement>
+                        <repository>Gräflich Stolbergischen Bibliothek</repository>
+                        <idno>Zb 4m</idno>
+                        <!-- Die Handschrift ist verschollen. Grundlage der Edition sind die vorliegenden älteren Editionen; ed. von Strophe 1 und 7 folgt Brodführer; 2-6 folgt Bolte -->
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. Otto Schumann and
+                        Bernhard Bischoff. Heidelberg 1930-1970.
+                        <!-- Die kritische Edition beruft sich auf Bolte, macht aber bei der Übertragung einige Fehler. Daher greife ich direkt auf Bolte zurück. --></witness>
+                    <witness xml:id="ed.Bolte">Bolte, Johannes: Fahrende Leute in der Literatur des 15. und 16. Jahrhunderts. In: Sitzungsberichte 
+                        der preußischen Akademie der Wissenschaften. Philosophisch-historische Klasse 31 (1928), S. 625–655.</witness>
+                    <witness xml:id="desc.Brodführer">Handschriftenarchiv der Berlin-Brandenburgischen Akademie der Wissenschaften: Wernigerode, Fürstliche Bibliothek, Zb 4m, 
+                        beschrieben von E. Brodführer (1914), 69 Bll. – online verfügbar: http://dtm.bbaw.de/HSA/Wernigerode_700445150000.html (Stand: 14.6.2008), S. 42 f.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- entfällt, da die Handschrift selbst verschollen und nicht digitalisiert/kopiert ist -->
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+<!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <lg n="1">
+                <l n="1">Ich berichte euch von den Regeln des Ordens der Vaganten: </l>
+                <l n="2">Ihre Lebensführung ist vornehm, ihre Art angenehm, </l>
+                <l n="3">und ihre Gemüter erfreut ein fetter Braten </l>
+                <l n="4">und ihren Durst stillen drei Mass Wein. </l>
+            </lg>
+            <lg n="2">
+                <l n="1">Unser Orden bringt mehr Beschwernis als der Franziskanerorden, </l>
+                <l n="2">wenn man es sagen darf  wie die Bernhardinerorden; </l>
+                <l n="3">wir ertragen Hunger und Durst, sind nie satt, </l>
+                <l n="4">werden von der Nacktheit bedrückt und haben selten Schuhe an. </l>
+            </lg>
+            <lg n="3">
+                <l n="1">Unser Orden verbietet strikt die Teilnahme am Frühgottesdienst; </l>
+                <l n="2">Geister aller Art treiben in der Frühe ihr Unwesen,</l>
+                <l n="3">durch die uns trügerische Wahnbilder ereilen; </l>
+                <l n="4">Wenn jemand um diese Zeit aufsteht, ist er nicht bei klarem Verstand. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Unsere Regel belehrt uns überaus deutlich, </l>
+                <l n="2">dass keiner in Gesellschaft zwei Kleider habe; </l>
+                <l n="3">du redest wahr, dass ein Obergewand mit Untergewand unzüchtig ist; </l>
+                <l n="4">die Hände stecken im Mantel und du spazierst anständig herum. </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Wir nehmen die Priester mit ihrer Tonsur auf, </l>
+                <l n="2">den Lehrer mit seinen Schülern, den Mann mit seiner Freundin, </l>
+                <l n="3">am liebsten den Studenten mit seinem guten Gewand, </l>
+                <l n="4">den Bauern, den Kürschner, den Handwerker, den Schneider </l>
+                <l n="5">den Seemann, den Händler und vor allem den Krämer.  </l>
+                <l n="6">Am meisten achten wir den Verehrer des Decius [des Gottes des Würfelspiels]. </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Ganz am Ende denkst du über das Wirtshaus nach; </l>
+                <l n="2">jenes verschmähte ich niemals und werde es nie verschmähen, </l>
+                <l n="3">bis mich die heiligen Engel nach oben ziehen </l>
+                <l n="4">und für die Säufer die ewige Totenmesse singen .</l>
+            </lg>
+            <lg n="7">
+                <l n="1">Wir führen unser Leben freilich immer fröhlich, </l>
+                <l n="2">wir tragen den Kopf hoch erhoben, auch wenn wir im Geldbeutel nichts haben. </l>
+                <l n="3">Du aber, Herr, erbarme dich unser! </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

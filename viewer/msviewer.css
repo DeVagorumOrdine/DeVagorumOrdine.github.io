@@ -1,0 +1,6 @@
+#map {
+    width: 550px;
+    height: 700px;
+    border: solid rgb(31, 2, 2) 5px;
+    background-color: gray;
+}

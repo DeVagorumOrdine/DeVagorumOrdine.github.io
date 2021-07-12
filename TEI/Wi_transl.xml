@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach Wi)</title>
+                <respStmt>
+                    <resp>vorgelegt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Wittingau/Třeboň</settlement>
+                        <repository>Státní Archiv</repository>
+                        <idno>A 7</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. Otto Schumann and Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" script="Bastarda" medium="black ink">quickly written</handNote><handNote/>
+            </handNotes>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+                <!-- in eckigen Klammer [...] sind alternative Lesarten "above line" angegeben; in runden Klammern (...) Kommentare in der Linie  -->
+                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <lg n="1">
+                <l n="1">Die Jahreszeit der Fülle! Kommt, wir wollen jubilieren, </l>
+                <l n="2">wenn wir auch sehen, dass die Äste des Waldes [der Bäume] kahl werden! </l>
+                <l n="3">Mögen wir auch keine so großen Speisekammern haben, </l>
+                <l n="4">kommt also meine Kumpanen, wir werden [wollen] wacker trinken! </l>
+            </lg>
+            <lg n="2">
+                <l n="1">Ich will euch von den Regeln des Ordens der Vaganten berichten: </l>
+                <l n="2">Ihr Stand ist vornehm, ihre Art ist angenehm, </l>
+                <l n="3">sie erfreut besonders ein Stück Weißbrot </l>
+                <l n="4">und ihren Hunger stillt ein fetter Braten. </l>
+            </lg>
+            <lg n="3">
+                <l n="1">Also wollen wir uns schon morgens zum Becher schreiten </l>
+                <l n="2">und bis zur Abenddämmerung trinken, </l>
+                <l n="3">bis wir an den Wänden Lichter haben [sehen] </l>
+                <l n="4">und mit ausgestreckten Armen den Boden berühren. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Ich hörte, wie sich spät ein Säufer laut beklagte, </l>
+                <l n="2">und ganz wie ein Löwenjunges brüllte: </l>
+                <l n="3">„Wie kommt es, dass ich niemanden Wein trinken sehe, </l>
+                <l n="4">wenn dieser doch macht, dass der Mensch alles weiß!“ </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Hast du keine Münzen, ist das verzeihlich; </l>
+                <l n="2">lege, was auch immer du hast, in deiner Erinnerung ab: </l>
+                <l n="3">das Untergewand, das Hemd und dergleichen, </l>
+                <l n="4">der Schankwirt wird alles nehmen und schließlich selbst den Schenkel. </l>
+                (Verse) <!-- wie tagge ich am besten diesen Einschub?-->
+            </lg>
+            <lg n="6">
+                <l n="1">Hast du auch keine Münzen, sollst du den Würfeln befehlen, </l>
+                <l n="2">wacker auf dem Tisch die Standarte zu tragen, </l>
+                <l n="3">und wenn dann überraschend dazukommt, dass du jenes Spiel gewinnst, </l>
+                <l n="4">sollst du fröhlich und unverzagt zum Zapfhahn eilen. </l>    
+            </lg>
+            <lg n="7">
+                <l n="1">Das Tor [die Tore] unseres Gastgebers glänzt vor lauter Perlen </l>
+                <l n="2">und er schreit aus der offenen Tür: „Woher seid ihr [kommt hierher]!“ </l>
+                <l n="3">Hier gibt es kein Fasten, keinen Hunger und keinen Durst, </l>
+                <l n="4">sondern vielmehr die Freude in vollen Zügen [und auch wohlangebrachte Freude]: Warum kommt ihr nicht? </l>
+                (Verse) <!-- wie tagge ich am besten diesen Einschub?-->
+            </lg>
+            <lg n="8">
+                <l n="1">Unser Orden verbietet es, in den Frühgottesdienst zu gehen; </l>
+                <l n="2">Geister aller Art erheben sich morgens. </l>
+                <l n="3">Davon ereilen uns trügerische Wahnbilder; </l>
+                <l n="4">wenn jemand um diese Zeit aufsteht, ist er nicht bei klarem Verstand. </l>
+            </lg>
+            <lg n="9">
+                <l n="1">Unsere Regel belehrt uns überaus deutlich, </l>
+                <l n="2">dass keiner unter seinen Kumpanen zwei Kleider habe; </l>
+                <l n="3">das Untergewand oder die Jacke sind nicht obszön, </l>
+                <l n="4">im bloßen Hemd, so sitzt du anständig da.  </l>
+            </lg>
+            <lg n="10">
+                <l n="1">Wir haben den festen Vorsatz, im Wirtshaus zu sterben, </l>
+                <l n="2">wo es der durstigen Kehle nie an Trank mangelt, </l>
+                <l n="3">wo die Lauten klingen und die Gesänge im Chor widerhallen, </l>
+                <l n="4">wenn sie für mich, den Säufer, die Freuden besingen. </l>
+            </lg>
+            <lg n="11=10b">
+                (oder anders) <!-- wie tagge ich am besten diesen Einschub?-->
+                <l n="1">Wir haben den festen Vorsatz, im Wirtshaus zu sterben, </l>
+                <l n="2">wo die Lauten klingen und die Gesänge im Chor widerhallen, </l>
+                <l n="3">wo es der durstigen Kehle nie an Trank mangelt. </l>
+                <l n="4">Gott, mögest du mir, dem Säufer, gewogen sein!</l>
+            </lg>
+            <lg n="12">
+                <l n="1">Unter Anbetracht aller Umstände liebe ich das Wirtshaus, </l>
+                <l n="2">das ich niemals verschmähte und nie verschmähen werde, </l>
+                <l n="3">bis mich die heiligen Engel kommen sehe, </l>
+                <l n="4">die für mich, den Säufer, die ewige Totenmesse singen. </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

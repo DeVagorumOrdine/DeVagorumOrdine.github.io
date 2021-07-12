@@ -1,0 +1,5 @@
+const navbar = "<ul class=\"list list--nav\">\n <li class=\"item item--nav item--current\">\n <a href=\"https://devagorumordine.github.io/\">Startseite</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/edition/\">Edition</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/textgestaltung/\">Textgestaltung</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/literatur/\">Literatur</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/handschriften/\">Handschriften</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/team/\">Team</a>\n </li>\n</ul>\n<button class=\"button button--nav\" aria-label=\"Menu toggle\">\n <svg width=\"16\" height=\"16\" class=\"icon icon--nav\" role=\"img\" alt=\"Menu\"><title>Menu</title><use xlink:href=\"#nav\" fill=\"CurrentColor\"></use></svg>\n</button>"
+
+$(document).ready(function(){
+    $('#navbarcont').append(navbar);
+});

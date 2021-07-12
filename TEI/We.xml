@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach We)</title>
+                <respStmt>
+                    <resp>vorgelegt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Wernigerode</settlement>
+                        <repository>Gräflich Stolbergischen Bibliothek</repository>
+                        <idno>Zb 4m</idno>
+                        <!-- Die Handschrift ist verschollen. Grundlage der Edition sind die vorliegenden älteren Editionen; ed. von Strophe 1 und 7 folgt Brodführer; 2-6 folgt Bolte -->
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. Otto Schumann and
+                        Bernhard Bischoff. Heidelberg 1930-1970.
+                        <!-- Die kritische Edition beruft sich auf Bolte, macht aber bei der Übertragung einige Fehler. Daher greife ich direkt auf Bolte zurück. --></witness>
+                    <witness xml:id="ed.Bolte">Bolte, Johannes: Fahrende Leute in der Literatur des 15. und 16. Jahrhunderts. In: Sitzungsberichte 
+                        der preußischen Akademie der Wissenschaften. Philosophisch-historische Klasse 31 (1928), S. 625–655.</witness>
+                    <witness xml:id="desc.Brodführer">Handschriftenarchiv der Berlin-Brandenburgischen Akademie der Wissenschaften: Wernigerode, Fürstliche Bibliothek, Zb 4m, 
+                        beschrieben von E. Brodführer (1914), 69 Bll. – online verfügbar: http://dtm.bbaw.de/HSA/Wernigerode_700445150000.html (Stand: 14.6.2008), S. 42 f.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <!-- entfällt, da die Handschrift selbst verschollen und nicht digitalisiert/kopiert ist -->
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+<!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+                <pb n="140r"/>
+            <lg n="1" rhyme="aaaa">
+                <l n="1"><w lemma="de"><hi rendition="hc:RedRetrace">D</hi>e</w><c> </c>
+                    <w lemma="ordo">ordine</w><c> </c>                    
+                    <w lemma="vagus">vago<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c>
+                    <w lemma="dico">dico</w><c> </c>
+                    <w lemma="vos">vob<choice><am>&#x0304;</am><ex>is</ex></choice></w><c> </c>
+                    <w lemma="ius"><choice><orig>j</orig><reg>i</reg></choice>ura</w><c> </c>
+                </l>
+                <l n="2"><w lemma="qui">quor<choice><orig>a</orig><corr resp="#ed.Bolte">u</corr></choice><choice><am>&#x0304;</am><ex>m</ex></choice></w><!-- Brodführer schlägt quo<choice><am>&#x0304;</am><ex>n</ex></choice>iam vor --><c> </c> 
+                    <w lemma="vita">vita</w><c> </c>
+                    <del resp="#ed.Bolte"><w lemma="vagus">vago<choice><am>ꝝ</am><ex>rum</ex></choice></w></del><c> </c>
+                    <w lemma="nobilis">nobilis</w><c> </c>
+                    <w lemma="dulcis">dulcis</w><c> </c>
+                    <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
+                    <w lemma="natura">natura</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="et">et</w><c> </c>
+                    <w lemma="qui">quos</w><c> </c>
+                    <w lemma="delecto">delectat</w><c> </c>
+                    <w lemma="animus">anim<choice><orig>u</orig><corr resp="#PR">o</corr></choice>s</w><c> </c>
+                    <w lemma="pinguis">pingwis</w><c> </c>
+                    <w lemma="assatura">assatura</w><c> </c>
+                </l>
+                <l n="4"><w lemma="et">et</w><c> </c>
+                    <w lemma="qui">quos</w><c> </c>
+                    <w lemma="vinum">vinum</w><c> </c>
+                    <w lemma="satio">saciet</w><c> </c>
+                    <w lemma="triplex">triplice</w><c> </c>
+                    <w lemma="mensura">mensura</w><pc resp="#ed.Bolte">.</pc><c> </c> 
+                </l>
+            </lg>
+            <lg n="2" rhyme="bbbb">
+                <l n="1"><w lemma="ordo">Ordo</w><c> </c>
+                    <w lemma="noster">noster</w><c> </c>                    
+                    <w lemma="gravis">gravior</w><c> </c>
+                    <w lemma="sum">est</w><c> </c>
+                    <w lemma="quam">quam</w><c> </c>
+                    <w lemma="Franciscanus">Franciscanus</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="si">si</w><c> </c>
+                    <w lemma="fas">fas</w><c> </c>
+                    <w lemma="sum">est</w><c> </c>
+                    <add resp="#ed.Bolte"><w lemma="hic">hoc</w></add>
+                    <w lemma="dico">dicere</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="tamquam">tamquam</w><c> </c>
+                    <w lemma="Bernhardinus">Bernhardinus</w><pc resp="#ed.Bolte">;</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="fames">famem</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="sitis">sitim</w><c> </c>
+                    <w lemma="patior">patimur</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="numquam">nunquam</w><c> </c>
+                    <w lemma="saturo">saturati</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="nuditas">nuditate</w><c> </c>
+                    <w lemma="premo">premimur</w><c> </c>
+                    <w lemma="raro">raro</w><c> </c>
+                    <w lemma="calceo">calciati</w><pc resp="#ed.Bolte">.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="3" rhyme="cccc">
+                <l n="1"><w lemma="noster">Noster</w><c> </c>
+                    <w lemma="ordo">ordo</w><c> </c>                    
+                    <w lemma="prohibeo">prohibet</w><c> </c>
+                    <w lemma="matutina">matutinas</w><c> </c>
+                    <w lemma="plane">plane</w><pc resp="#ed.Bolte">;</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="sum">sunt</w><c> </c>
+                    <w lemma="quidam">quedam</w><c> </c>
+                    <w lemma="fantasma">fantasmata</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="qui">que</w><c> </c>
+                    <w lemma="vagor">vagantur</w><c> </c>
+                    <w lemma="mane">mane</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="per">per</w><c> </c>
+                    <w lemma="qui">que</w><c> </c>
+                    <w lemma="nos">nobis</w><c> </c>
+                    <w lemma="venio">veniunt</w><c> </c>
+                    <w lemma="visio">visiones</w><c> </c>
+                    <w lemma="vanus">vane</w><pc resp="#ed.Bolte">;</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="si">si</w><c> </c>
+                    <w lemma="quis">quis</w><c> </c>
+                    <w lemma="tunc">tunc</w><c> </c>
+                    <w lemma="subrigo">surrexerit</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="non">non</w><c> </c>
+                    <w lemma="sum">est</w><c> </c>
+                    <w lemma="mens">mentis</w><c> </c>
+                    <w lemma="sanus">sane</w><pc resp="#ed.Bolte">.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="4" rhyme="dddd">
+                <l n="1"><w lemma="noster">Nostra</w><c> </c>
+                    <w lemma="doceo">docet</w><c> </c>                    
+                    <w lemma="regula">regula</w><c> </c>
+                    <w lemma="valde">valde</w><c> </c>
+                    <w lemma="manifestus">manifeste</w><c> </c>
+                </l>
+                <l n="2"><w lemma="nullus">nullum</w><c> </c>
+                    <w lemma="inter">inter</w><c> </c>
+                    <w lemma="socius">socios</w><c> </c>
+                    <w lemma="utor">uti</w><c> </c>
+                    <w lemma="duplus">dupla</w><c> </c>
+                    <w lemma="vestis">veste</w><pc resp="#ed.Bolte">;</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="neque">nec</w><c> </c>
+                    <w lemma="vero">veras</w><c> </c>
+                    <w lemma="tu">tu</w><c> </c>
+                    <w lemma="cum">cum</w><c> </c>
+                    <w lemma="tunica">t<choice><orig>u</orig><reg>u</reg></choice>nica</w><c> </c>
+                    <w lemma="pallium">pallium</w><c> </c>
+                    <w lemma="incestus">inceste</w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="manus">manus</w><c> </c>
+                    <w lemma="sum"><choice><unclear resp="#ed.Bolte">s...</unclear><corr>sunt</corr></choice></w><c> </c>
+                    <w lemma="in">in</w><c> </c>
+                    <w lemma="toga">toga</w><c> </c>
+                    <w lemma="et">et</w><c> </c>
+                    <w lemma="ambulo">ambulas</w><c> </c>
+                    <w lemma="honestus">honeste</w><pc resp="#ed.Bolte">.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="5" rhyme="eeee">
+                <l n="1"><w lemma="presbyter">Prespiteros</w><c> </c>
+                    <w lemma="recipio">recipimus</w><c> </c>                    
+                    <w lemma="cum">cum</w><c> </c>
+                    <w lemma="suus">su<choice><orig>o</orig><reg resp="#ed.Bolte">a</reg></choice></w><c> </c>
+                    <w lemma="corona">corona</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="magister">magistrum</w><c> </c>
+                    <w lemma="cum">cum</w><c> </c>
+                    <w lemma="puer">pueris</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="vir">virum</w><c> </c>
+                    <w lemma="cum">cum</w><c> </c>
+                    <w lemma="persona">persona</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="scholaris">scolarem</w><c> </c>
+                    <w lemma="libenter">libentius</w><c> </c>
+                    <w lemma="secum">secum</w><c> </c>
+                    <w lemma="vestis">veste</w><c> </c>
+                    <w lemma="bonus">bona</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="4"><w lemma="rusticus">rusticum</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="pellifex">pellificem</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="faber">fabrum</w><c> </c>
+                    <w lemma="et">et</w><c> </c>
+                    <w lemma="sartor">sartorem</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="5"><w lemma="nauta">nautam</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="tabernarius">tabernarium</w><c> </c>
+                    <w lemma="neque">nec</w><c> </c>
+                    <w lemma="non">non</w><c> </c>
+                    <w lemma="institor">institorem</w><pc resp="#ed.Bolte">.</pc><c> </c>
+                </l>
+                <l n="6"><add resp="#ed.Bolte"><w lemma="magnus">Maxime</w></add><c> </c>
+                      <w lemma="diligo">d<choice><sic>elie</sic><corr resp="#ed.Bolte">iligi</corr></choice>mus</w><c> </c>
+                      <w lemma="Decius"><choice><orig>d</orig><reg resp="#ed.Bolte">D</reg></choice>ec<choice><sic>e</sic><corr resp="#ed.Bolte">ii</corr></choice></w><c> </c>
+                      <w lemma="cultor">cultorem</w><pc resp="#ed.Bolte">.</pc><c> </c>
+                    </l>
+            </lg>
+            <lg n="6" rhyme="ffff">
+                <l n="1"><w lemma="ultimus"><choice><orig>V</orig><reg resp="#PR">U</reg></choice>ltimo</w><c> </c>
+                    <w lemma="capitulum">capittelo</w><c> </c>                    
+                    <w lemma="tu">tu</w><c> </c>
+                    <w lemma="reputo">reputas</w><c> </c>
+                    <w lemma="taberna">tabernam</w><pc resp="#PR">;</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="ille">ill<choice><orig>u</orig><corr resp="#PR">a</corr></choice>m</w><c> </c>
+                    <w lemma="nullus">nullo</w><c> </c>
+                    <w lemma="tempus">tempore</w><c> </c>
+                    <w lemma="sperno">sprevi</w><c> </c>
+                    <w lemma="neque">nec</w><c> </c>
+                    <w lemma="sperno">spernam</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="donec">donec</w><c> </c>
+                    <w lemma="sanctus">sancti</w><c> </c>
+                    <w lemma="angelus">angeli</w><c> </c>
+                    <add resp="#ed.Bolte"><w lemma="traho">trahunt</w><c> </c>
+                        <w lemma="ego">me</w><c> </c>
+                        <w lemma="supernus">superna</w></add><c> </c>
+                </l>
+                <l n="4"><w lemma="canto">cantantes</w><c> </c>
+                    <w lemma="pro">pro</w><c> </c>
+                    <w lemma="bibulus">bibulis</w><pc resp="#ed.Bolte">:</pc><c> </c>
+                    <w lemma="requiem">Requiem</w><c> </c>
+                    <w lemma="aeternus">eternam</w><pc resp="#ed.Bolte">.</pc><c> </c>
+                </l>
+            </lg>
+            <lg n="7" rhyme="ggh">
+                <l n="1"><w lemma="hic">Hanc</w><c> </c>
+                    <w lemma="nempe">nempe</w><c> </c>
+                    <w lemma="vita">vita<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>                    
+                    <w lemma="duco">duci<choice><am>ꝰ</am><ex>mus</ex></choice></w><c> </c>
+                    <w lemma="assiduus">assidui</w><c> </c>
+                    <w lemma="gaudeo">gaudentes</w><pc resp="#ed.Bolte">,</pc><c> </c>
+                </l>
+                <l n="2"><w lemma="caput"><choice><orig>C</orig><reg>c</reg></choice>aput</w><c> </c>
+                    <w lemma="altus">alte</w><c> </c>
+                    <w lemma="fero">tulimus</w><c> </c>
+                    <w lemma="in">i<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
+                    <w lemma="bursa">borsa</w><c> </c>
+                    <w lemma="nihil">nil</w><c> </c>
+                    <w lemma="habeo">habentes</w><pc resp="#ed.Bolte">.</pc><c> </c>
+                </l>
+                <l n="3"><w lemma="tu">Tu</w><c> </c>
+                    <w lemma="autem">aute<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="dominus">d<choice><abbr>m<am>&#x0304;</am></abbr><expan><ex>o</ex>mine</expan></choice></w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>ost</ex>r</expan></choice>e</w><c> </c>
+                    <w lemma="miseror">miserere</w><pc resp="#ed.Bolte">!</pc>
+                </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

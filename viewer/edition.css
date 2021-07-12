@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Junicode;
+    src: url(https://github.com/DeVagorumOrdine/DeVagorumOrdine.github.io/blob/main/font/junicode-1.002/Junicode.ttf?raw=true);
+  }
+
+/* Palette https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes13 */
+
+#edition * {
+    font-family: Junicode;
+}
+
+.tei-lg {
+    display: block;
+}
+
+.tei-l {
+    display: block;
+}
+
+/* .tei-att-lemma {
+    display: none;
+} */
+
+.tei-w:hover {
+    background-color: aliceblue;
+}
+
+.tei-lg {
+    margin: 2em;
+}
+
+/* Around Layout */
+
+
+
+#optionen-toggle {
+    font-size: small;
+}
+
+
+#anzeige-optionen{
+    position:fixed;
+    top:20px;
+    left:-200px;
+    width:200px;
+    height:300px;
+    background: #77a8a8;
+    padding: 5px;
+    z-index: 90;
+}
+
+#anzeige-optionen * {
+    color: white;
+}
+
+.close {
+    /* float: right; */
+    position: absolute;
+    font-size: small;
+    right: 20px;
+
+}
+
+
+
+/* NAVBAR */
+#navbarcont * {
+    font-size: x-large;
+}

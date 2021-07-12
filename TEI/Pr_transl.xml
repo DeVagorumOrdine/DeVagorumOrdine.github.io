@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach Pr)</title>
+                <respStmt>
+                    <resp>übersetzt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Prag</settlement>
+                        <repository>Nationalbibliothek</repository>
+                        <idno>V G 17</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. and transl. Otto Schumann and
+                        Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" script="Bastarda" medium="brown ink">quickly written</handNote><handNote/>
+            </handNotes>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <lg n="1">
+                <l n="1">Ich will euch von den Regeln des Ordens der Vaganten berichten: </l>
+                <l n="2">Ihr Stand ist vornehm, ihre Art ist angenehm, </l>
+                <l n="3">ein fetter Braten stillt ihren Hunger vortrefflich </l>
+                <l n="4">und sie freuen sich, wenn es drei Portionen sind. </l>
+            </lg>
+            <lg n="2">
+                <l n="1">Wir haben den festen Vorsatz, im Wirtshaus zu sterben, </l>
+                <l n="2">wo die Lauten klingen und die Gesänge der Kleriker widerhallen, </l>
+                <l n="3">wo es der durstigen Kehle nie an Trank mangelt; </l>
+                <l n="4">Gott, mögest du mir, dem Säufer, gewogen sein! </l>
+            </lg>
+            <lg n="3">
+                <l n="1">Hast du keine Münzen, ist das verzeihlich. </l>
+                <l n="2">Lege, was auch immer du hast, in deiner Erinnerung ab; </l>
+                <l n="3">das Untergewand, die Jacke und dergleichen, </l>
+                <l n="4">der Schankwirt nimmt alles und schließlich selbst den Schenkel. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Unsere Regel belehrt uns überaus deutlich, </l>
+                <l n="2">dass keiner unter seinen Kumpanen zwei Kleider habe; </l>
+                <l n="3">das Untergewand oder die Jacke sollst du unzüchtig vertrinken; </l>
+                <l n="4">anständig sitzt du im bloßen Hemd herum. </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Unter Anbetracht aller Umstände, liebe ich das Wirtshaus; </l>
+                <l n="2">ich verschmähte es niemals und werde es nie verschmähen, </l>
+                <l n="3">bis ich die heiligen Engel kommen sehe </l>
+                <l n="4">und sie für die Säufer die ewige Totenmesse singen. </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Also wollen wir schon morgens zum Becher schreiten </l>
+                <l n="2">und bis zur Abenddämmerung wacker trinken, </l>
+                <l n="3">bis wir an den Wänden Lichter sehen </l>
+                <l n="4">und mit ausgestreckten Armen einen festen Halt zu erhaschen suchen. </l>
+            </lg>
+        </body>
+    </text>
+</TEI>
