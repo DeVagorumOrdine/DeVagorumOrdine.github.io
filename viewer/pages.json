@@ -1,10 +1,38 @@
 {
-    "CB219": {
+    "B": {
         "shelfmark": "München, BSB, CB 219",
         "pages": ["95v", "96r", "96v"]
     },
     "Lz": {
         "shelfmark": "Leipzig, Universitätsbibliothek, Ms. 1250",
         "pages": ["33r"]
+    },
+    "M": {
+        "shelfmark": "München, BSB, Cod. lat. mon. 18910",
+        "pages": ["193v"]
+
+    },
+    "Pe": {
+        "shelfmark": "Pécs/Fünfkirchen, Bischöfliche Bibliothek, DD. III. 18",
+        "pages": ["95"]
+    },
+    "Pr": {
+        "shelfmark": "Prag, Nationalbibliothek, V G 17",
+        "pages": ["96v"]
+
+    },
+    "Vo": {
+        "shelfmark": "Volterra, Bibl. Guarnacci, 100 (8653)",
+        "pages": ["13v", "14r"]
+    },
+    "We": {
+        "shelfmark": "Gräflich Stolbergischen Bibliothek zu Wernigerode, Zb 4m",
+        "pages": ["140r"]
+
+    },
+    "Wi": {
+        "shelfmark": "Wittingau/Třeboň, Státní Archiv, A 7",
+        "pages": ["147v", "148r"]
+
     }
 }

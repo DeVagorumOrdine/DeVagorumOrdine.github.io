@@ -1,0 +1,9 @@
+.mss-thumb{
+    height: 150px;
+    width: 100px;
+    float: left;
+}
+
+#ms_list div.list-group-item {
+    height: 190px;
+}

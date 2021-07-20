@@ -1,6 +1,8 @@
 #map {
-    width: 550px;
-    height: 700px;
+    max-width: 800px;
+    height: 1000px;
     border: solid rgb(31, 2, 2) 5px;
     background-color: gray;
+    position: absolute;
+    right: 0;
 }

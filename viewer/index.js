@@ -35,8 +35,6 @@ var msLayer =     new ImageLayer({
     source: new Static({
       attributions: pages[ms]['shelfmark'] + ', ' +  pg,
       url: 'https://devagorumordine.github.io/img/'+ ms +'_' + pg +'.jpg',
-      // url: 'https://devagorumordine.github.io/img/'+ 'CB219_95v' +'.jpg',
-      // url: 'https://devagorumordine.github.io/img/CB219_95v.jpg',
       projection: projection,
       imageExtent: extent,
     }),
@@ -123,17 +121,33 @@ function applyDarstellung(selected){
 
 $(document).ready(function(){
   var source = ms + '-' + pg ;
-  $('#current_page_header').append(pages[ms]['shelfmark'] + '<br/>' + pg);
+  
+  // HEADER and PAGINATION
+  $('#current_page_header').append(pages[ms]['shelfmark']);
+  $.each(pages[ms]['pages'], function(idx, val){
+    if (val == pg){
+      $('#pager').append('<li class="page-item active"><a class="page-link" href="'+
+                          '/edition.html?ms='+ ms + '&pg='+ val +
+                          '">'+val+'</a></li>');  
+    } else {
+      $('#pager').append('<li class="page-item"><a class="page-link" href="'+
+                          '/edition.html?ms='+ ms + '&pg='+ val +
+                          '">'+val+'</a></li>');
+    }
+      
+  });
+  
+  // APPEND THE TEXT
   $('#edition').append(fragments.texts[source]);
   
   
   // Optionen Darstellung
   $('#optionen-toggle').on('click', function(){
-          $('#anzeige-optionen').animate({left: '0px'}, 800);
+          $('#anzeige-optionen').animate({right: '0px'}, 800);
   });
 
   $('#close-options').on('click', function(){
-      $('#anzeige-optionen').animate({left: '-200px'}, 800);
+      $('#anzeige-optionen').animate({right: '-200px'}, 800);
   })
 
 

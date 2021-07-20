@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel edition.html",
-    "build": "parcel build --public-url /resources edition.html --no-source-maps"
+    "start": "parcel edition.html mss.html",
+    "build": "parcel build --public-url /resources edition.html mss.html --no-source-maps"
   },
   "author": "Gustavo Fernandez Riva",
   "license": "ISC",

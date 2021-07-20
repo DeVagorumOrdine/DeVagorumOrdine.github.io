@@ -1,4 +1,10 @@
-const navbar = "<ul class=\"list list--nav\">\n <li class=\"item item--nav item--current\">\n <a href=\"https://devagorumordine.github.io/\">Startseite</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/edition/\">Edition</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/textgestaltung/\">Textgestaltung</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/literatur/\">Literatur</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/handschriften/\">Handschriften</a>\n </li>\n <li class=\"item item--nav\">\n <a href=\"https://devagorumordine.github.io/team/\">Team</a>\n </li>\n</ul>\n<button class=\"button button--nav\" aria-label=\"Menu toggle\">\n <svg width=\"16\" height=\"16\" class=\"icon icon--nav\" role=\"img\" alt=\"Menu\"><title>Menu</title><use xlink:href=\"#nav\" fill=\"CurrentColor\"></use></svg>\n</button>"
+const navbar = "<button class= \"navbar-toggler \" type= \"button \" data-toggle= \"collapse \" data-target= \"#collapsibleNavbar \"> <span class= \"navbar-toggler-icon \"></span> \n </button> "+
+        "<div class= \"collapse navbar-collapse \" id= \"collapsibleNavbar \"> \n <!-- Links --> "+
+        "<ul class= \"navbar-nav \"> "+
+        "<li class= \"nav-item active \"> <a class= \"nav-link \" href= \"https://devagorumordine.github.io/ \">Startseite</a></li>"+
+        "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/mss.html \">Edition</a></li>"+
+        "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/mss.html \">Handschriften</a></li>"+
+        "<li class= \"nav-item \"><a class= \"nav-link \" href= \"# \">Team</a></li></ul></div>"
 
 $(document).ready(function(){
     $('#navbarcont').append(navbar);

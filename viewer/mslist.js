@@ -1,0 +1,23 @@
+import mss from './pages.json'
+
+$(document).ready(function(){
+    $.each(mss, function(key,value){
+        // console.log(key,value);
+        var pages = '';
+        $.each(value['pages'], function(index, pg){
+            if (index != 0){
+                pages += ' - '
+            }
+            pages += '<a href="'+ 'edition.html?ms='+ key +'&pg='+ pg +'">' + pg + '</a>'
+        })
+        
+        $('#ms_list').append('<div class="list-group-item">'+
+        '<img class="mss-thumb m-3" src="https://devagorumordine.github.io/img/'+
+        key +'_'+ value['pages'][0] +'.jpg' +
+        '"></img>'+
+        '<h3 class="m-3">'+key + '</h3>'+
+        '<h4>'+ value['shelfmark']+'</h4>'+
+        pages + 
+        '</div>')
+    })
+});
