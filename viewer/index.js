@@ -100,7 +100,7 @@ map.addLayer(linesLayer)
 
 // EDITION
 function applyDarstellung(selected){
-  console.log(selected);
+  // console.log(selected);
   if (selected == 'transk'){
       $('.tei-ex').hide();
       $('.tei-pc').hide();
@@ -114,6 +114,19 @@ function applyDarstellung(selected){
       $('.tei-sic').hide()
       $('.tei-ex').show();
       $('.tei-reg').show()
+  };
+};
+
+function applyLayout(selected){
+  console.log(selected);
+  if (selected == 'sem'){
+      $('span.tei-lg > br').show();
+      $('span.tei-l > br').show();
+      $('span.tei-lb > br').hide();
+  } else if (selected == 'fac'){
+    $('span.tei-lg > br').hide();
+    $('span.tei-l > br').hide();
+    $('span.tei-lb > br').show();
   };
 };
 
@@ -155,6 +168,12 @@ $(document).ready(function(){
   applyDarstellung( $('input[name=darstellung]:checked').val() );
   $('input[name=darstellung]').on('input', function(){
       applyDarstellung( $(this).val() );
+  });
+
+  //LAYOUT
+  applyLayout( $('input[name=layout]:checked').val() );
+  $('input[name=layout]').on('input', function(){
+      applyLayout( $(this).val() );
   });
 
   // LEMMA

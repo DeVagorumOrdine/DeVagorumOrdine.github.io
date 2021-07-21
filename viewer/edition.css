@@ -9,13 +9,15 @@
     font-family: Junicode;
 }
 
-.tei-lg {
+/* .tei-lg {
     display: block;
 }
 
 .tei-l {
     display: block;
-}
+} */
+
+
 
 /* .tei-att-lemma {
     display: none;
@@ -42,7 +44,7 @@
     position:fixed;
     top:20px;
     width:200px;
-    height:200px;
+    height:300px;
     right: -200px;
     background: #77a8a8;
     padding-top: 10px;

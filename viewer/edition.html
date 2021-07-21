@@ -62,9 +62,9 @@
  <div id="anzeige-optionen">
     <div style="display:block">
        <p>Darstellung<button class="close" id="close-options">x</button></p>
-
     </div>
     <div>
+       <p>Textdarstellung</p>
        <div class="form-check">
           <input class="form-check-input" type="radio" name="darstellung" id="transkriptionInput" value="transk"
              checked>
@@ -79,6 +79,22 @@
           </label>
        </div>
     </div>
+    <div>
+       <p>Absetzung</p>
+      <div class="form-check">
+         <input class="form-check-input" type="radio" name="layout" id="semantic" value="sem"
+            checked>
+         <label class="form-check-label" for="semantic">
+            Strophen und Verse absetzen
+         </label>
+      </div>
+      <div class="form-check">
+         <input class="form-check-input" type="radio" name="layout" id="facsimilar" value="fac">
+         <label class="form-check-label" for="facsimilar">
+            Zeilen nach dem Faksimile absetzen
+         </label>
+      </div>
+   </div>
  </div>
 
  <div class="container-fluid">
