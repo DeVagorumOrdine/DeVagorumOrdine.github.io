@@ -1,2 +1,6 @@
 includes
 index_files
+viewer/node_modules
+viewer/.cache
+viewer/dist
+viewer/html_fragments copy.json
