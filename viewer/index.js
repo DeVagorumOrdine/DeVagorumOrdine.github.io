@@ -88,7 +88,7 @@ var map = new Map({
   view: new View({
     projection: projection,
     center: getCenter(extent),
-    zoom:1,
+    zoom:2,
     maxZoom: 8,
   }),
 });
@@ -123,10 +123,21 @@ function applyLayout(selected){
       $('span.tei-lg > br').show();
       $('span.tei-l > br').show();
       $('span.tei-lb > br').hide();
+
+      $('span.tei-l > span').removeClass('lv-secondary');
+      $('span.tei-l > span').addClass('lv-primary');
+      $('span.tei-lb > span').removeClass('lv-primary');
+      $('span.tei-lb > span').addClass('lv-secondary');
+
   } else if (selected == 'fac'){
     $('span.tei-lg > br').hide();
     $('span.tei-l > br').hide();
     $('span.tei-lb > br').show();
+
+    $('span.tei-l > span').removeClass('lv-primary');
+    $('span.tei-l > span').addClass('lv-secondary');
+    $('span.tei-lb > span').removeClass('lv-secondary');
+    $('span.tei-lb > span').addClass('lv-primary');
   };
 };
 
@@ -160,7 +171,7 @@ $(document).ready(function(){
   });
 
   $('#close-options').on('click', function(){
-      $('#anzeige-optionen').animate({right: '-200px'}, 800);
+      $('#anzeige-optionen').animate({right: '-400px'}, 800);
   })
 
 

@@ -60,10 +60,10 @@
 
 
  <div id="anzeige-optionen">
-    <div style="display:block">
-       <p>Darstellung<button class="close" id="close-options">x</button></p>
+    <div style="display:block; background-color:#a87790; padding-top: 15px; padding-left: 1rem; border-top-left-radius: 15px; border-bottom: solid rgb(224, 191, 223) 1px;">
+       <p style="font-size: large;">Darstellung<button class="close" id="close-options">x</button></p>
     </div>
-    <div>
+    <div class="darstellung-section">
        <p>Textdarstellung</p>
        <div class="form-check">
           <input class="form-check-input" type="radio" name="darstellung" id="transkriptionInput" value="transk"
@@ -79,7 +79,7 @@
           </label>
        </div>
     </div>
-    <div>
+    <div  class="darstellung-section">
        <p>Absetzung</p>
       <div class="form-check">
          <input class="form-check-input" type="radio" name="layout" id="semantic" value="sem"
@@ -99,13 +99,11 @@
 
  <div class="container-fluid">
     <div class="row">
+      <div class="col-md-5">
+         <div id="edition"></div>
+      </div>
        <div class="col-md-7">
           <div id="map" class="w-100"></div>
-       </div>
-       <div class="col-md-5">
-          <div id="edition">
-
-          </div>
        </div>
     </div>
  </div>

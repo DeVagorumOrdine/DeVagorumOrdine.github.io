@@ -5,34 +5,17 @@
 
 /* Palette https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes13 */
 
+#edition {
+    margin-left: 2rem;
+}
+
 #edition * {
     font-family: Junicode;
 }
 
-/* .tei-lg {
-    display: block;
+#map {
+    margin-right: 2rem;
 }
-
-.tei-l {
-    display: block;
-} */
-
-
-
-/* .tei-att-lemma {
-    display: none;
-} */
-
-.tei-w:hover {
-    background-color: aliceblue;
-}
-
-.tei-lg {
-    margin: 2em;
-}
-
-/* Around Layout */
-
 
 
 #optionen-toggle {
@@ -43,12 +26,12 @@
 #anzeige-optionen{
     position:fixed;
     top:20px;
-    width:200px;
-    height:300px;
-    right: -200px;
+    width:400px;
+    height:350px;
+    right: -400px;
     background: #77a8a8;
-    padding-top: 10px;
-    padding-left: 15px;
+    /* padding-top: 10px;
+    padding-left: 15px; */
     z-index: 90;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -58,18 +41,48 @@
     color: white;
 }
 
-.close {
-    /* float: right; */
-    position: absolute;
-    font-size: small;
-    right: 20px;
+.darstellung-section {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
 
+.darstellung-section .form-check {
+    padding-left: 2rem;
+}
+
+.darstellung-section p {
+    margin-bottom: 0;
 }
 
 
+.close {
+    /* float: right; */
+    position: absolute;
+    font-size: large;
+    right: 20px;
+
+}
 
 /* NAVBAR */
 #navbarcont * {
     font-size: x-large;
 }
 
+
+/* TEXT */
+
+.tei-w:hover {
+    background-color: aliceblue;
+}
+
+.lv-primary {
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+}
+
+.lv-secondary {
+    font-size: small;
+    color: #b9b0b0;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+}
