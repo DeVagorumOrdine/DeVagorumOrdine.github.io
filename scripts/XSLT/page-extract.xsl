@@ -8,20 +8,11 @@
   
   <xsl:output encoding="UTF-8" method="xml" indent="no" omit-xml-declaration="no"/>
   
-  <xsl:param name="page">33r</xsl:param>
-<!--  
-  <xsl:template match="@*|node()">
-    <xsl:copy>
-      <xsl:apply-templates select="@*|node()"/>
-    </xsl:copy>
-  </xsl:template>-->
+  <xsl:param name="page">95v</xsl:param>
+
   
-  
-  <!--<xsl:variable name="v1" select="//tei:pb[@n=$page]/following::*"/>
-  <xsl:variable name="v2" select="//tei:pb[@n=$page]/following::tei:pb[1]/following::*"/>
-  <xsl:variable name="excluded" select="$v1 except $v2"></xsl:variable>-->
-  
-  <xsl:variable name="excluded" select="//*[preceding::tei:pb[1]/@n = $page]"/>
+  <xsl:variable name="excluded" select="//node()[preceding::tei:pb[1]/@n = $page]
+    [not(ancestor::*[1]/preceding::tei:pb[1]/@n = $page)]"/>
   
 
   
@@ -32,7 +23,8 @@
       <text>
       <body>
       <xsl:for-each select="$excluded">
-        <xsl:choose>
+        <xsl:copy-of select="."/>
+        <!--<xsl:choose>
           <xsl:when test="self::tei:lg">
             <lg>
               <xsl:attribute name="n">
@@ -52,7 +44,7 @@
             <xsl:copy-of select="./node()"/>
           </xsl:when>
           <xsl:otherwise></xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>-->
       </xsl:for-each>
       </body>
     </text>

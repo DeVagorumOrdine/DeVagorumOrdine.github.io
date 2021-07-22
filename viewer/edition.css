@@ -6,16 +6,18 @@
 /* Palette https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes13 */
 
 #edition {
-    margin-left: 2rem;
+    display: table;
+    margin: auto;
+    /* margin-left: 2rem;
+    position:absolute;
+    right: 2rem; */
 }
 
 #edition * {
     font-family: Junicode;
 }
 
-#map {
-    margin-right: 2rem;
-}
+
 
 
 #optionen-toggle {
@@ -35,6 +37,8 @@
     z-index: 90;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    
+    border: solid rgb(224, 191, 223) 1px;
 }
 
 #anzeige-optionen * {
@@ -71,10 +75,7 @@
 
 /* TEXT */
 
-.tei-w:hover {
-    background-color: aliceblue;
-}
-
+/* lv-primary and lv-secondary are the styles for line and verse number, depending on the layout option chosen */
 .lv-primary {
     padding-right: 1rem;
     padding-left: 0.5rem;
@@ -86,3 +87,23 @@
     margin-right: 0.25rem;
     margin-left: 0.25rem;
 }
+
+.tei-c:before {
+    content: " ";
+}
+
+.tei-w:hover {
+    background-color: aliceblue;
+}
+
+.tei-att-lemma {
+    position:relative;
+    top: -15px;
+    left: -10px;
+    background-color:#d9ecd0;
+}
+
+.tei-hi.hc-Red {
+    color: Red;
+}
+

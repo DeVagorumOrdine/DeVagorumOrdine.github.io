@@ -105,22 +105,27 @@ function applyDarstellung(selected){
       $('.tei-ex').hide();
       $('.tei-pc').hide();
       $('.tei-reg').hide();
+      $('.tei-abbr').show();
+      $('.tei-expan').hide();
       $('.tei-am').show();
       $('.tei-orig').show();
       $('.tei-sic').show()
   } else if (selected == 'edit'){
+      $('.tei-abbr').hide();
       $('.tei-am').hide();
+      $('.tei-expan').show();
       $('.tei-orig').hide();
-      $('.tei-sic').hide()
+      $('.tei-sic').hide();
       $('.tei-ex').show();
       $('.tei-reg').show()
+      $('.tei-pc').show();
   };
 };
 
 function applyLayout(selected){
   console.log(selected);
   if (selected == 'sem'){
-      $('span.tei-lg > br').show();
+      $('span.tei-lg').show();
       $('span.tei-l > br').show();
       $('span.tei-lb > br').hide();
 
@@ -130,7 +135,7 @@ function applyLayout(selected){
       $('span.tei-lb > span').addClass('lv-secondary');
 
   } else if (selected == 'fac'){
-    $('span.tei-lg > br').hide();
+    $('span.tei-lg').hide();
     $('span.tei-l > br').hide();
     $('span.tei-lb > br').show();
 
@@ -189,13 +194,27 @@ $(document).ready(function(){
 
   // LEMMA
   $('.tei-att-lemma').hide();
-  $('.tei-w').on('click', function(){
-      $(this).find('.tei-att-lemma').show();
-  });
+  
+  
+    
+      $( '.tei-w' ).hover( 
+        function(){
+          if ($('input[name=lemma]').is(':checked')){
+            $(this).find('.tei-att-lemma').show();
+          }}, 
+        function(){
+          $(this).find('.tei-att-lemma').hide();
+        });
+  
+  
+  
+  
+  
+  
 
 
 
-  // $('#navbarcont').append("<p>Hola</p>");
+  
 
 
 });
