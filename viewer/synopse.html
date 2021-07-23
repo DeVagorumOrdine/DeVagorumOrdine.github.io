@@ -11,6 +11,7 @@
 
     <script src="./navbar.js"></script>
     <script src="./footer.js"></script>
+    <script src="./synopse.js"></script>
 
 
   </head>
@@ -18,26 +19,40 @@
 
    <nav id="navbarcont" class="navbar navbar-expand-md bg-light navbar-light justify-content-center"></nav>
 
-  <div class="container">
-    <div class="row">
-       <div class="col-md-3">
-        <h3>Synopse</h3>
+  <div class="container-fluid">
+    <div class="row justify-content-center m-4">
+        <h1 class="display-1">Synopse</h1>
+    </div>
+    <div class="row justify-content-center" >
+      <!-- <div class="dropdown">
+         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Spalten
+         </button>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item" href="#">2</a>
+           <a class="dropdown-item" href="#">3</a>
+           <a class="dropdown-item" href="#">4</a>
+           <a class="dropdown-item" href="#">6</a>
+         </div>
+       </div> -->
+       <div>
+         <nav aria-label="Spalten">
+            <ul class="pagination" id="spalten">
+               <li class="page-item" id="spalten-sel-2"><a class="page-link" href="?sp=2">2</a></li>
+               <li class="page-item" id="spalten-sel-3"><a class="page-link" href="?sp=3">3</a></li>
+               <li class="page-item" id="spalten-sel-4"><a class="page-link" href="?sp=4">4</a></li>
+               <li class="page-item" id="spalten-sel-6"><a class="page-link" href="?sp=6">6</a></li>
+            </ul>
+         </nav>
        </div>
-       <div class="col-md-3">
-      </div>
     </div>
  </div>
 
  
 
  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">
-         <div id="edition"></div>
-      </div>
-       <div class="col-md-4">
-          <div id="map" class="w-100"></div>
-       </div>
+    <div class="row" id="texts">
+
     </div>
  </div>
  </div>
