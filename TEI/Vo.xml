@@ -209,7 +209,7 @@
                     <pc>¶</pc><c> </c>
                     <w lemma="vinum">Vini</w><c> </c>
                     <w lemma="mirablis">mı<choice>
-                            <am>&#xF1C8;</am>
+                            <am>&#x0309;</am>
                             <ex>r</ex>
                         </choice>abılıa</w><c> </c>
                     <w lemma="volo">volo</w><c> </c>
@@ -397,7 +397,7 @@
                             <ex>n</ex>
                         </choice>t</w><c> </c>
                     <w lemma="aeternus">et<choice>
-                            <abbr>n<am>&#xF1C8;</am></abbr>
+                            <abbr>n<am>&#x0309;</am></abbr>
                             <expan><ex>er</ex>n</expan>
                         </choice>o</w><c> </c>
                     <w lemma="dignus">ꝺigni</w>
@@ -457,7 +457,7 @@
                             <am>ꝓ</am>
                             <ex>pro</ex>
                         </choice>p<choice>
-                            <am>&#xF1C8;</am>
+                            <am>&#x0309;</am>
                             <ex>ri</ex>
                         </choice>um</w><c> </c>
                     <w lemma="do">ꝺat</w><c> </c>
@@ -486,7 +486,7 @@
                         </choice></w><c> </c>
                     <w lemma="possum">potui</w><c> </c>
                     <w lemma="studeo">stud<choice>
-                            <abbr>e<am>&#xF1C8;</am></abbr>
+                            <abbr>e<am>&#x0309;</am></abbr>
                             <expan><ex>er</ex>e</expan>
                         </choice></w><c> </c>
                     <w lemma="ieiunus">ıeiun<choice>
@@ -544,7 +544,7 @@
                             <ex>m</ex>
                         </choice></w><c> </c>
                     <w lemma="vinco">vınc<choice>
-                            <abbr>e<am>&#xF1C8;</am></abbr>
+                            <abbr>e<am>&#x0309;</am></abbr>
                             <expan><ex>er</ex>e</expan>
                         </choice></w><c> </c>
                     <w lemma="possum">poſſet</w><c> </c>
@@ -671,7 +671,7 @@
                             <orig>u</orig>
                             <reg>v</reg>
                         </choice>a<choice>
-                            <abbr>ı<am>&#xF1C8;</am></abbr>
+                            <abbr>ı<am>&#x0309;</am></abbr>
                             <expan><ex>r</ex>i</expan>
                         </choice></w><c> </c>
                     <w lemma="video">vıdem<choice>
@@ -709,7 +709,7 @@
                         </choice>x</w><c resp="#PR"> </c>
                     <w lemma="qui">quo</w><c> </c>
                     <w lemma="torcularium">torcula<choice>
-                            <abbr>ı<am>&#xF1C8;</am></abbr>
+                            <abbr>ı<am>&#x0309;</am></abbr>
                             <expan><ex>r</ex>i</expan>
                         </choice>a</w><c> </c>
                     <w lemma="fluo">fluere</w><c> </c>
