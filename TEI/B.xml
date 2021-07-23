@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="dvo_B">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -52,25 +52,26 @@
     <text ana="hc:Poem hc:CompleteExpression">
         <body>
             <pb n="95v"/>
-            <head>
-            <w lemma="item"><hi hei:color="hc:Red">IT<choice><am>&#x0304;</am><ex>EM</ex></choice></hi></w>
-            <pc>.</pc></head>
+            <head><w lemma="item"><hi hei:color="hc:Red">IT<choice><am>&#x0304;.</am><ex>EM</ex></choice></hi></w></head>
                 <lg n="1" rhyme="aaaa">
-                    <l n="1"><lb n="3"/>
-                    <w lemma="cum"><hi hei:color="hc:Red">C</hi><hi rendition="hc:RedRetrace">VM</hi></w><c> </c>
-                    <pc resp="#ed.Vollmann">„</pc>
-                    <w lemma="in"><choice><orig><hi rendition="hc:RedRetrace">I</hi></orig><reg>I</reg></choice>n</w><c> </c>
-                    <w lemma="orbis">orbem</w><c> </c>
-                    <w lemma="universus">unıuerſum</w>
-                    <pc resp="#ed.Vollmann">“</pc><c> </c>
-                    <w lemma="decanto">decantat<choice><am>&#xF1C8;</am><ex>ur</ex></choice></w><c> </c>
-                    <pc resp="#ed.Vollmann">„</pc>
-                    <w lemma="eo">ıte</w><pc resp="#ed.Vollmann">!“</pc><pc><choice><orig>.</orig><reg resp="#ed.Vollmann">,</reg></choice></pc><c> </c>
+                    <l n="1">
+                        <lb n="3"/>
+                        <w lemma="cum"><hi hei:color="hc:Red">C</hi><hi rendition="hc:RedRetrace">VM</hi></w><c> </c>
+                        <pc resp="#ed.Vollmann">„</pc>
+                        <w lemma="in"><choice><orig><hi rendition="hc:RedRetrace">I</hi></orig><reg>I</reg></choice>n</w><c> </c>
+                        <w lemma="orbis">orbem</w><c> </c>
+                        <w lemma="universus">unıuerſum</w>
+                        <pc resp="#ed.Vollmann">“</pc><c> </c>
+                        <w lemma="decanto">decantat<choice><am>&#xF1C8;</am><ex>ur</ex></choice></w><c> </c>
+                        <pc resp="#ed.Vollmann">„</pc>
+                        <w lemma="eo">ıte</w><pc resp="#ed.Vollmann">!“</pc><choice><orig><pc>.</pc></orig><reg resp="#ed.Vollmann"><pc>,</pc></reg></choice><c> </c>
                     </l>
-                    <l n="2"><w lemma="sacerdos">ſacerdo<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="4"/>tes</w><c> </c>
+                    <l n="2"><w lemma="sacerdos">ſacerdo<choice><orig><pc force="weak">-</pc></orig><reg resp= "#ed.Vollmann"></reg></choice>
+                        <lb n="4"/>tes</w><c> </c>
                         <w lemma="ambulo">ambulant</w><pc resp="#ed.Vollmann">,</pc><c> </c>
                         <w lemma="curro">currunt</w><c> </c>
-                        <w lemma="coenobita">cenobıt<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w><pc><orig>.</orig><reg></reg></pc><c> </c>
+                        <w lemma="coenobita">cenobıt<choice><orig>ę</orig><reg resp="#PR">ae</reg></choice></w>
+                        <pc><orig>.</orig><reg></reg></pc><c> </c>
                     </l>
                     <l n="3"><w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
                         <w lemma="a">ab</w><c> </c>
@@ -138,11 +139,11 @@
                     <l n="3"><w lemma="recipio">recipimuſ</w><c> </c>
                         <w lemma="dives">ꝺi<choice><orig>u</orig><reg resp="#PR">v</reg></choice>iteſ</w><c> </c>
                         <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
-                        <w lemma="pauper">pau<choice><am>ꝑ</am><ex>per</ex></choice>ıoreſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
+                        <w lemma="pauper">pau<choice><abbr><am>ꝑ</am></abbr><expan>p<ex>er</ex></expan></choice>ıoreſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
                     </l>
                     <l n="4">
                         <w lemma="qui">quoſ</w><c> </c>
-                        <w lemma="devotus">ꝺe<choice><orig>u</orig><reg resp="#PR">v</reg></choice>o<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="11"/>ti</w><c> </c>
+                        <w lemma="devotus">ꝺe<choice><orig>u</orig><reg resp="#PR">v</reg></choice>o<choice><orig><pc force="weak">-</pc></orig><reg resp= "#ed.Vollmann"></reg></choice><lb n="11"/>ti</w><c> </c>
                         <w lemma="monachus">monachı</w><c> </c>
                         <w lemma="dimitto">dimittunt</w><c> </c>
                         <w lemma="extra">extra</w><c> </c>
@@ -193,8 +194,11 @@
                         <w lemma="precor">precoꝛ</w><c> </c>                        
                         <w lemma="sodalis">ſodaleſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
                     </l>
-                    <l n="3"><w lemma="auris">aur<subst resp="#H3"><del>eſ</del><add>ibꝰ</add></subst></w><c> </c>
-                        <w lemma="percipio"><choice><am>ꝑ</am><ex>per</ex></choice>cıpıte</w><c> </c>
+                    <l n="3"><w lemma="auris">aur<subst resp="#H3"><del>eſ</del><add>ib<choice><am>ꝰ</am><ex>us</ex></choice></add></subst></w><c> </c>
+                        <w lemma="percipio"><choice>
+                            <abbr><am>ꝑ</am></abbr>
+                            <expan>p<ex>er</ex></expan>
+                        </choice>cıpıte</w><c> </c>
                         <w lemma="novus">no<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="16"/><choice><orig>u</orig><reg resp="#PR">v</reg></choice>aſ</w><c> </c>
                         <w lemma="decretalis">ꝺecretales</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">:</corr></choice></pc><c> </c>
                     </l>
@@ -219,7 +223,7 @@
                         <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>  
                         <w lemma="debilis">ꝺebıleſ</w><pc resp="#ed.Vollmann">,</pc><c> </c>
                         <w lemma="senium">ſenio</w><c> </c>
-                        <w lemma="conburo">conbu<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="18"/>ſtoſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>                    
+                        <w lemma="conburo">conbu<orig><pc force="weak">-</pc></orig><reg resp= "#ed.Vollmann"></reg><lb n="18"/>ſtoſ</w><pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>                    
                     </l>
                     <l n="3"><w lemma="bellosus">belloſoſ</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>
                         <w lemma="pacificus">pacifıcos</w> <pc><choice><orig>.</orig><corr resp="#ed.Vollmann">,</corr></choice></pc><c> </c>

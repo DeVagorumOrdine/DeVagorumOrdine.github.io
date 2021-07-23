@@ -8,7 +8,7 @@
   
   <xsl:output encoding="UTF-8" method="xml" indent="no" omit-xml-declaration="no"/>
   
-  <xsl:param name="page">95v</xsl:param>
+  <xsl:param name="page">33r</xsl:param>
 
   
   <xsl:variable name="excluded" select="//node()[preceding::tei:pb[1]/@n = $page]

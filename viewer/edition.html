@@ -61,43 +61,67 @@
 
  <div id="anzeige-optionen">
     <div style="display:block; background-color:#a87790; padding-top: 15px; padding-left: 1rem; border-top-left-radius: 15px; border-bottom: solid rgb(224, 191, 223) 1px;">
-       <p style="font-size: large;">Darstellung<button class="close" id="close-options">x</button></p>
+       <p style="font-size: x-large;">Optionen<button class="close" id="close-options">x</button></p>
     </div>
     <div class="darstellung-section">
        <p>Textdarstellung</p>
-       <div class="form-check">
+       <div class="form-check primoption">
           <input class="form-check-input" type="radio" name="darstellung" id="transkriptionInput" value="transk"
              checked>
           <label class="form-check-label" for="transkriptionInput">
-             Transkription
+             Paläographische Transkription
           </label>
        </div>
-       <div class="form-check">
+       <div class="form-check primoption">
           <input class="form-check-input" type="radio" name="darstellung" id="editionInput" value="edit">
           <label class="form-check-label" for="editionInput">
-             Edition
+             Normalisiert/Ediert
           </label>
+       </div>
+       <div class="form-check suboption suboptions-ed">
+         <input class="form-check-input" type="checkbox" name="italic-abbr" id="italic-abbr" value="">
+         <label class="form-check-label" for="italic-abbr">
+         Abbreviaturauflösungen kursiv
+      </label>
+       </div>
+       <div class="form-check suboption suboptions-ed">
+         <input class="form-check-input" type="checkbox" name="pc" id="pc" value="" checked>
+         <label class="form-check-label" for="pc">
+         Interpunktionszeichen
+      </label>
        </div>
     </div>
     <div  class="darstellung-section">
        <p>Absetzung</p>
-      <div class="form-check">
+      <div class="form-check primoption">
          <input class="form-check-input" type="radio" name="layout" id="semantic" value="sem"
             checked>
          <label class="form-check-label" for="semantic">
             Strophen und Verse absetzen
          </label>
       </div>
-      <div class="form-check">
+      <div class="form-check suboption suboptions-3">
+         <input class="form-check-input" type="checkbox" name="lb-show" id="lb-show" value="" checked>
+         <label class="form-check-label" for="lb-show">
+         Zeilenbegin anzeigen
+      </label>
+       </div>
+      <div class="form-check primoption">
          <input class="form-check-input" type="radio" name="layout" id="facsimilar" value="fac">
          <label class="form-check-label" for="facsimilar">
             Zeilen nach dem Faksimile absetzen
          </label>
       </div>
+      <div class="form-check suboption suboptions-4">
+         <input class="form-check-input" type="checkbox" name="l-show" id="l-show" value="" checked>
+         <label class="form-check-label" for="l-show">
+         Verse- und Stropennummer anzeigen
+      </label>
+       </div>
    </div>
    <div  class="darstellung-section">
       <p>Interaktion</p>
-     <div class="form-check">
+     <div class="form-check primoption">
         <input class="form-check-input" type="checkbox" name="lemma" id="lemma" value="" checked>
         <label class="form-check-label" for="lemma">
            Lemma beim Hover anzeigen

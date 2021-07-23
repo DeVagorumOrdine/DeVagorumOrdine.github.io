@@ -9,6 +9,7 @@ ns = {'tei':'http://www.tei-c.org/ns/1.0'}
 
 # Create the XSLT to isolate the page
 transform_stanzas = et.parse('scripts/XSLT/transform-stanzas.xsl')
+remove_empty_elements = et.parse('scripts/XSLT/remove-empty-elements.xsl')
 page_extract = et.parse('scripts/XSLT/page-extract.xsl')
 xsl_main = et.parse('scripts/XSLT/tei-html.xsl')
 
@@ -23,8 +24,13 @@ for file in os.listdir('TEI'):
     root = dom.getroot()
 
     # First we transform all the stanzas and verses into milestones
+    transform = et.XSLT(remove_empty_elements)
+    newdom = transform(dom)
+    root = newdom.getroot()
+
+    # Then we remove empty elements that are useless in the visualization
     transform = et.XSLT(transform_stanzas)
-    newdom1 = transform(dom)
+    newdom1 = transform(newdom)
     root = newdom1.getroot()
 
     for page in root.findall('.//tei:pb', ns):
@@ -39,10 +45,7 @@ for file in os.listdir('TEI'):
         transform = et.XSLT(xsl_main)
         newdom3 = transform(newdom2)
         content = et.tostring(newdom3, encoding=str)
-    
-
-        # content = content.replace('"', '\\"')
-        content = re.sub(r'>[\n\s]*<', '><', content)
+        content = re.sub(r">[\n\s]*<", '><', content)
 
         # SPECIAL CHARS
         content = content.replace('ſ', '<span class="tei-orig">ſ</span><span class="tei-reg">s</span>')

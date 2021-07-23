@@ -29,11 +29,18 @@
     <span class='tei-c'><xsl:apply-templates select="node()"/></span>
   </xsl:template>
 
-  <xsl:template match="tei:pc">
-    <span class='tei-pc'>
-      <xsl:value-of select="."/>
+  <xsl:template match="tei:pc[@resp]">
+    <span class='tei-reg'>
+      <span class="tei-pc"><xsl:value-of select="."/></span>
     </span>
   </xsl:template>
+  <xsl:template match="tei:pc[not(@resp)]">
+    <span class='tei-orig'>
+      <span class="tei-pc"><xsl:value-of select="."/></span>
+    </span>
+  </xsl:template>
+  
+  
   
   <xsl:template match="tei:br">
     <xsl:copy-of select="."/>
@@ -44,7 +51,10 @@
   <xsl:template match="tei:lb">
     <span class="tei-lb">
       <br/>
-      <span class="n"><xsl:value-of select="./@n"/></span>
+      <span class="n">
+        <span style="font-size:small">z. </span>
+        <xsl:value-of select="./@n"/>
+      </span>
     </span>
   </xsl:template>
   
@@ -68,6 +78,12 @@
 
   <xsl:template match="tei:reg">
     <span class="tei-reg">
+      <xsl:apply-templates select="node()"/>
+    </span>
+  </xsl:template>
+  
+  <xsl:template match="tei:surplus">
+    <span class="tei-surplus">
       <xsl:apply-templates select="node()"/>
     </span>
   </xsl:template>

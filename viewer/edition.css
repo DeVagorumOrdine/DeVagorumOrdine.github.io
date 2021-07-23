@@ -5,6 +5,10 @@
 
 /* Palette https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes13 */
 
+* {
+    font-size: 20px;
+}
+
 #edition {
     display: table;
     margin: auto;
@@ -21,7 +25,7 @@
 
 
 #optionen-toggle {
-    font-size: small;
+    font-size: large;
 }
 
 
@@ -29,7 +33,7 @@
     position:fixed;
     top:20px;
     width:400px;
-    height:350px;
+    height:600px;
     right: -400px;
     background: #77a8a8;
     /* padding-top: 10px;
@@ -50,8 +54,12 @@
     padding-top: 1rem;
 }
 
-.darstellung-section .form-check {
+.darstellung-section .form-check.primoption {
     padding-left: 2rem;
+}
+
+.darstellung-section .form-check.suboption {
+    padding-left: 3rem;
 }
 
 .darstellung-section p {
@@ -64,8 +72,8 @@
     position: absolute;
     font-size: large;
     right: 20px;
-
 }
+
 
 /* NAVBAR */
 #navbarcont * {
@@ -79,6 +87,7 @@
 .lv-primary {
     padding-right: 1rem;
     padding-left: 0.5rem;
+    font-size: medium;
 }
 
 .lv-secondary {
@@ -96,14 +105,41 @@
     background-color: aliceblue;
 }
 
+.tei-w {
+    position: relative;
+}
+
 .tei-att-lemma {
-    position:relative;
-    top: -15px;
-    left: -10px;
-    background-color:#d9ecd0;
+    position:absolute;
+    top: -1.7rem;
+    right: -1rem;
+    /* background-color:#d9ecd0; */
+    background-color: #e4d1d1;
+        
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    border: solid #b9b0b0 1px;
+    border-radius: 5px;
+    z-index: 90;
 }
 
 .tei-hi.hc-Red {
     color: Red;
+}
+
+.tei-del {
+    text-decoration: underline;
+    text-decoration-style:dotted;
+}
+
+.tei-add-pal {
+    position: relative;
+    top: -0.2rem;
+}
+.tei-add-pal:before {
+    content: '\\'
+}
+.tei-add-pal:after {
+    content: '/'
 }
 

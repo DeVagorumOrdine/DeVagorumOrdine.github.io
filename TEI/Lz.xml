@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="dvo_Lz">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -64,7 +64,7 @@
                     </l>
                     <l n="3"><lb n="2"/><w lemma="qui">quos</w><c> </c>
                         <w lemma="amplus">amplı<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
-                        <w lemma="delecto">ꝺelectat<choice><sic><choice><am>&#xF1C8;</am><ex>ur</ex></choice></sic><corr></corr></choice></w><c> </c>
+                        <w lemma="delecto">ꝺelectat<sic><choice><am>&#xF1C8;</am><ex>ur</ex></choice></sic></w><c> </c>
                         <w lemma="triticum">trıtıcı</w><c> </c>
                         <w lemma="mensura">me<choice><am>&#x0304;</am><ex>n</ex></choice>ſu<choice><abbr>a<am>&#xF1C8;</am></abbr><expan><ex>r</ex>a</expan></choice></w><c> </c>
                     </l>

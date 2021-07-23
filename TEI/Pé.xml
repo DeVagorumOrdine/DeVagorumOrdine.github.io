@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="dvo_Pé">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -100,7 +100,8 @@
                     <w lemma="intrepidus">ı<choice><am>&#x0304;</am><ex>n</ex></choice>trepid<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>  
                     <w lemma="curro">cu<choice><am>&#x303;</am><ex>r</ex></choice>ras</w><c> </c> 
                     <w lemma="ad">ad</w><c> </c>
-                    <w lemma="ducillus">ducillum</w><pc><orig>/</orig><reg resp="#PR">.</reg></pc><c> </c>
+                    <w lemma="ducillus">ducillum</w>
+                   <choice><orig><pc>/</pc></orig><reg><pc resp="#PR">.</pc></reg></choice>
                </l>
             </lg>
                 <lg n="3" rhyme="cccc">
@@ -119,15 +120,15 @@
                         <w lemma="natura">natu<choice><abbr>a<am>&#xF1C8;</am></abbr><expan><ex>r</ex>a</expan></choice></w> <pc resp="#PR">,</pc><c> </c>
                     </l>
                     <l n="3"><lb n="6"/><w lemma="qui"><choice><orig>Q</orig><reg>q</reg></choice>uos</w><c> </c>
-                        <w lemma="bonus">b<choice><abbr>n<am>&#x0304;</am></abbr><expan><ex>ene</ex></expan></choice></w><c> </c>
-                        <w lemma="oblecto">oblecta<choice><orig><choice><am>&#x0304;</am><ex>n</ex></choice></orig><corr resp="#PR"></corr></choice>t</w><c> </c>
+                        <w lemma="bonus">b<choice><abbr>n<am>&#x0304;</am></abbr><expan><ex>e</ex>n<ex>e</ex></expan></choice></w><c> </c>
+                        <w lemma="oblecto">oblecta<surplus resp="#PR"><choice><am>&#x0304;</am><ex>n</ex></choice></surplus>t</w><c> </c>
                         <w lemma="pinguis">pingwis</w><c> </c>
                         <w lemma="assatura">aſſatu<choice><abbr>a<am>&#xF1C8;</am></abbr><expan><ex>r</ex>a</expan></choice></w>
                     </l>
                     <l n="4"><w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
                         <w lemma="qui">q<choice><am>&#x366;</am><ex>uo</ex></choice>s</w><c> </c>  
                         <w lemma="bonus">b<choice><abbr>n<am>&#x0304;</am></abbr><expan><ex>ene</ex></expan></choice></w><c> </c>
-                        <w lemma="delecto">delecta<choice><orig><choice><am>&#x0304;</am><ex>n</ex></choice></orig><corr resp="#PR"></corr></choice>t</w><c> </c>
+                        <w lemma="delecto">delecta<surplus resp="#PR"><choice><am>&#x0304;</am><ex>n</ex></choice></surplus>t</w><c> </c>
                         <w lemma="vinum">vini</w><c> </c>
                         <w lemma="poto">potatu<choice><abbr>a<am>&#xF1C8;</am></abbr><expan><ex>r</ex>a</expan></choice></w><pc resp="#PR">.</pc><c> </c>
                     </l>
@@ -143,7 +144,8 @@
                     <w lemma="leo">leonis</w><c> </c>
                     <w lemma="catulus">catulu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="valde">vald<choice><am>&#x02BC;</am><ex>e</ex></choice></w><c> </c>
-                    <w lemma="rugio">rugie<choice><am>&#x0304;</am><ex>n</ex></choice>te<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc><orig>.</orig><reg resp="#PR">.</reg></pc><c> </c>
+                    <w lemma="rugio">rugie<choice><am>&#x0304;</am><ex>n</ex></choice>te<choice><am>&#x0304;</am><ex>m</ex></choice></w>
+                    <pc>.</pc>
                 </l>
                 <l n="3"><lb n="8"/><pc resp="#PR">„</pc><w lemma="quis">Quid</w><c> </c>
                     <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
@@ -182,7 +184,8 @@
                     <w lemma="proserno"><choice><am>ꝓ</am><ex>pro</ex></choice>ſtrat<choice><am>ꝭ</am><ex>is</ex></choice></w><c> </c> 
                     <w lemma="manus">ma<choice><am>&#x0304;</am><ex>n</ex></choice>ib<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
                     <w lemma="lectus">lectu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
-                    <w lemma="capio">capiamus</w><pc><orig>/</orig><reg resp="#PR">.</reg></pc><c> </c>
+                    <w lemma="capio">capiamus</w>
+                    <choice><orig><pc>/</pc></orig><reg><pc resp="#PR">.</pc></reg></choice>
                 </l>
             </lg>
             <lg n="6" rhyme="fggg">
@@ -212,7 +215,8 @@
                     <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
                     <w lemma="sum">e<choice><abbr>i<am>&#xF1C8;</am></abbr><expan><ex>r</ex>i</expan></choice>t</w><c> </c>
                     <w lemma="mens">me<choice><am>&#x0304;</am><ex>n</ex></choice>t<choice><am>ꝭ</am><ex>is</ex></choice></w><c> </c> 
-                    <w lemma="sanus">ſane</w><pc><orig>/</orig><reg resp="#PR">.</reg></pc><c> </c>
+                    <w lemma="sanus">ſane</w>
+                    <choice><orig><pc>/</pc></orig><reg><pc resp="#PR">.</pc></reg></choice>
                 </l>
             </lg>
             <lg n="7" rhyme="hhhh">
