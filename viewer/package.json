@@ -2,11 +2,10 @@
   "name": "viewer",
   "version": "1.0.0",
   "description": "Easy viewer for manuscripts",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel edition.html mss.html",
-    "build": "parcel build --public-url /resources edition.html mss.html --no-source-maps"
+    "start": "parcel edition.html mss.html synopse.html team.html",
+    "build": "parcel build --public-url /resources edition.html mss.html synopse.html team.html --no-source-maps"
   },
   "author": "Gustavo Fernandez Riva",
   "license": "ISC",

@@ -316,6 +316,25 @@ $(document).ready(function(){
     });
   
   
+  // Move the image down when there is too much text
+  // var ed_height = $('#edition').height();
+  $(window).scroll(function() {
+    var current_margin = $('#map').css('margin-top');
+    current_margin = parseInt(current_margin);
+    // console.log(current_margin)
+    var top_of_element = $("#map").offset().top;
+    var bottom_of_element = $("#map").offset().top + $("#map").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+
+
+    if (top_of_screen > (bottom_of_element - 300)){
+      $('#map').css('margin-top', current_margin + 500);
+    } else if (bottom_of_screen < top_of_element +300){
+      $('#map').css('margin-top', current_margin - 500);
+    };
+});
+  
   
   
   

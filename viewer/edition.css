@@ -12,6 +12,8 @@
 #edition {
     display: table;
     margin: auto;
+    max-height: 100px;
+    overflow-y: scroll;
     /* margin-left: 2rem;
     position:absolute;
     right: 2rem; */
