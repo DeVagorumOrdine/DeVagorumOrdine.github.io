@@ -10,9 +10,11 @@
   "author": "Gustavo Fernandez Riva",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
     "includes": "0.0.7",
     "ol": "^6.5.0",
-    "ol-ext": "^3.2.2"
+    "ol-ext": "^3.2.2",
+    "popper": "^1.0.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"

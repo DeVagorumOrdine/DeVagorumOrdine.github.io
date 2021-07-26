@@ -20,8 +20,10 @@ for file in os.listdir('TEI'):
         print(file)
 
     dom = et.parse('TEI/'+file)
-
     root = dom.getroot()
+
+    sigle = file[:-4]
+    final_json['texts'][sigle] = {}
 
     # First we transform all the stanzas and verses into milestones
     transform = et.XSLT(remove_empty_elements)
@@ -56,7 +58,7 @@ for file in os.listdir('TEI'):
         
         
 
-        final_json['texts'][file[:-4] + '-' + page_number] = content
+        final_json['texts'][sigle][page_number] = content
 
 
 

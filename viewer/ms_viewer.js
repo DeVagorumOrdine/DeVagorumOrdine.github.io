@@ -13,14 +13,6 @@ import {LineString, Point} from 'ol/geom';
 
 import FontSymbol from 'ol-ext/style/FontSymbol';
 
-import pages from './pages.json'
-import fragments from './html_fragments.json';
-
-const current_url = window.location.search;
-const urlParams = new URLSearchParams(current_url);
-const ms = urlParams.get('ms')
-const pg = urlParams.get('pg')
-
 // Map views always need a projection.  Here we just want to map image
 // coordinates directly to map coordinates, so we create a projection that uses
 // the image extent in pixels.
@@ -96,73 +88,4 @@ var map = new Map({
 map.addLayer(linesLayer)
 
 
-
-$(document).ready(function(){
-  
-  // HEADER and PAGINATION
-  $('#current_page_header').append(pages[ms]['shelfmark']);
-  $.each(pages[ms]['pages'], function(idx, val){
-    if (val == pg){
-      $('#pager').append('<li class="page-item active"><a class="page-link" href="'+
-                          '/edition.html?ms='+ ms + '&pg='+ val +
-                          '">'+val+'</a></li>');  
-    } else {
-      $('#pager').append('<li class="page-item"><a class="page-link" href="'+
-                          '/edition.html?ms='+ ms + '&pg='+ val +
-                          '">'+val+'</a></li>');
-    }
-      
-  });
-  
-  // APPEND THE TEXT
-  $('#edition').append(fragments.texts[ms][pg]);
-  
-
-  // // LEMMA
-  // $('.tei-att-lemma').hide();
-  
-  
-    
-  // $( '.tei-w' ).hover( 
-  //   function(){
-  //     if ($('input[name=lemma]').is(':checked')){
-  //       $(this).find('.tei-att-lemma').show();
-  //     }}, 
-  //   function(){
-  //     $(this).find('.tei-att-lemma').hide();
-  //   });
-  
-  
-  // Move the image when scrolling
-  
-  $(window).scroll(function() {
-    var current_margin = $('#map').css('margin-top');
-    current_margin = parseInt(current_margin);
-    
-    
-
-    var top_of_element = $("#map").offset().top;
-    var bottom_of_element = $("#map").offset().top + $("#map").outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-
-
-    if (top_of_screen > (bottom_of_element - 400)){
-      $('#map').css('margin-top', current_margin + 400);
-    } else if (bottom_of_screen < top_of_element +400){
-      $('#map').css('margin-top', current_margin - 400);
-    };
-});
-  
-  
-  
-  
-  
-
-
-
-  
-
-
-});
 
