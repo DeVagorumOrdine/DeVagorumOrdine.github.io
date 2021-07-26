@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/DeVagorumOrdine/DeVagorumOrdine.github.io/master/dvo.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/DeVagorumOrdine/DeVagorumOrdine.github.io/master/dvo.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="dvo_Wi">
     <teiHeader>
         <fileDesc>
@@ -36,11 +36,17 @@
             <editorialDecl>
                 <normalization><p></p></normalization>
                 <punctuation><p></p></punctuation>
-                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
             </editorialDecl>
             <listPrefixDef>
                 <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
             </listPrefixDef>
+            <charDecl>
+                <char xml:id="qet-ligature">
+                    <localProp name="MUFI" value="LATIN SMALL LETTER Q LIGATED WITH FINAL ET"/>
+                    <mapping type="MUFI"></mapping>
+                    <mapping type="unicode">qꝫ</mapping>
+                </char>
+            </charDecl>
         </encodingDesc>
     </teiHeader>
     <text ana="hc:Poem hc:CompleteExpression">
@@ -90,7 +96,7 @@
                         <w lemma="dulcis">dulcis</w><c> </c>
                         <w lemma="sum">eſt</w> <c> </c>
                         <w lemma="natura">natura</w> 
-                        <pc><orig>.</orig><reg resp="#PR">,</reg></pc><c> </c>
+                        <choice><orig><pc>.</pc></orig><reg>,</reg></choice>
                     </l>
                     <l n="3"><w lemma="qui">quos</w><c> </c>
                         <w lemma="amplus">ampli<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
@@ -261,7 +267,7 @@
                     <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
                     <lb n="18"/><w lemma="ieiunium">ıeiuniu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="fames">fames</w><c> </c>
-                    <w lemma="neque">ne<choice><am></am><ex>que</ex></choice></w><c> </c>
+                    <w lemma="neque">ne<choice><am><g ref="#qz-ligature"></g></am><ex>que</ex></choice></w><c> </c>
                     <w lemma="sitis">ſıtis</w><pc resp="#PR">,</pc><c> </c>
                 </l>
                 <l n="4">
@@ -270,7 +276,13 @@
                         <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="aptus">aptu<choice><am>&#x0304;</am><ex>m</ex></choice></w></add></seg></choice><c> </c>
                     <choice> 
                         <seg><w lemma="totus">totu<choice><am>&#x0304;</am><ex>m</ex></choice></w></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="quoque"><choice><am>&#x366;</am><ex>quoque</ex></choice></w></add></seg></choice><c> </c>
+                        <seg>
+                            <add hei:placeRef="hc:AboveLine" hand="H1">
+                                <w lemma="quoque"><choice>
+                                    <abbr><g ref="#qz-ligature"></g><am>&#x366;</am></abbr>
+                                    <expan>q<ex>uoque</ex></expan></choice></w>
+                            </add>
+                        </seg></choice><c> </c>
                     <w lemma="gaudium">gaudiu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">:</pc><c> </c>
                     <lb n="19"/><w lemma="quare"><choice><orig>q</orig><reg>Q</reg></choice>uare</w><c> </c>
                     <w lemma="non">non</w><c> </c>
@@ -367,9 +379,12 @@
                     <w lemma="ego">m<choice><am>&#x0309;</am><ex>ihi</ex></choice></w><c> </c>
                     <w lemma="potator">potatori</w><pc resp="#PR">.</pc><c> </c>
                     </l>
+                <add hei:placeRef="hc:Inline" hand="#H1">
+                    <hi rendition="hc:RedUnderlined"><w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w>
+                        <w lemma="aliter">alıt<choice><am>&#x0309;</am><ex>er</ex></choice></w></hi>
+                </add>            
             </lg>
-            <add hei:placeRef="hc:Inline" hand="#H1"><hi rendition="hc:RedUnderlined"><w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w>
-                <w lemma="aliter">alıt<choice><am>&#x0309;</am><ex>er</ex></choice></w></hi></add>            
+            
             
             <lg n="11=10b" rhyme="jjjj">
                 <lb n="29"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
@@ -414,7 +429,7 @@
                     <w lemma="nullus"><choice><abbr>u<am>&#x0304;</am></abbr><expan><ex>n</ex>u</expan></choice>llo</w><c> </c>
                     <w lemma="tempus">t<choice><abbr><am>ꝑ</am></abbr><expan><ex>empor</ex></expan></choice>e</w><c> </c>
                     <w lemma="sperno">ſp<choice><am>&#x0309;</am><ex>re</ex></choice><choice><orig>u</orig><reg>v</reg></choice>i</w><c> </c>
-                    <w lemma="neque">ne<choice><am></am><ex>que</ex></choice></w><c> </c>
+                    <w lemma="neque">ne<choice><am><g ref="#qz-ligature"></g></am><ex>que</ex></choice></w><c> </c>
                     <w lemma="sperno">ſ<choice><am>ꝑ</am><ex>per</ex></choice>na<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">,</pc><c> </c>
                 </l>
                 <l n="3"><lb n="33"/><w lemma="donec">don<choice><am>ᶜ</am><ex>ec</ex></choice></w><c> </c>
