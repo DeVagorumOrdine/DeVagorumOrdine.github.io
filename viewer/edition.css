@@ -92,6 +92,13 @@
     font-size: medium;
 }
 
+.lg-primary {
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    font-size: x-large;
+    padding-top: 2rem;
+}
+
 .lv-secondary {
     font-size: small;
     color: #b9b0b0;

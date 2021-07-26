@@ -56,6 +56,9 @@ for file in os.listdir('TEI'):
         content = content.replace('Ꝺ', '<span class="tei-orig">Ꝺ</span><span class="tei-reg">D</span>')
         content = content.replace('ꝺ', '<span class="tei-orig">ꝺ</span><span class="tei-reg">d</span>')
         
+        content = content.replace('<div class="tei-text">', '')
+        content = content[0:-6]
+        
         
 
         final_json['texts'][sigle][page_number] = content

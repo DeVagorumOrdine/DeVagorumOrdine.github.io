@@ -70,14 +70,16 @@ function punctuation(){
   };
   
   function applyLayout(selected){
-    console.log(selected);
+    // console.log(selected);
     if (selected == 'sem'){
       $('span.tei-lg > br').show();
       $('span.tei-l > br').show();
       $('span.tei-lb > br').hide();
   
-      $('span.tei-lg > span').removeClass('lv-secondary');
-      $('span.tei-lg > span').addClass('lv-primary');
+      $('span.tei-lg ').removeClass('lv-secondary');
+      $('span.tei-lg ').addClass('lg-primary');
+      $('span.tei-lg > span ').removeClass('lv-secondary');
+      $('span.tei-lg > span').addClass('lg-primary');
       $('span.tei-l > span').removeClass('lv-secondary');
       $('span.tei-l > span').addClass('lv-primary');
       $('span.tei-lb > span').removeClass('lv-primary');
@@ -100,7 +102,9 @@ function punctuation(){
       $('span.tei-l > br').hide();
       $('span.tei-lb > br').show();
   
-      $('span.tei-lg > span').removeClass('lv-primary');
+      $('span.tei-lg ').removeClass('lg-primary');
+      $('span.tei-lg ').addClass('lv-secondary');
+      $('span.tei-lg > span').removeClass('lg-primary');
       $('span.tei-lg > span').addClass('lv-secondary');
       $('span.tei-l > span').removeClass('lv-primary');
       $('span.tei-l > span').addClass('lv-secondary');
@@ -144,7 +148,6 @@ function punctuation(){
 $(document).ready(function(){
     // Optionen Darstellung
   $('#optionen-toggle').on('click', function(){
-      console.log("WOrking");
     $('#anzeige-optionen').animate({right: '0px'}, 800);
     });
 
