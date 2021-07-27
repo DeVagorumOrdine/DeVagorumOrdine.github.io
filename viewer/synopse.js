@@ -21,7 +21,14 @@ const colorMap = {1: 'red',
     16: 'blue',
 }
 
-var texts_available = '';
+// URL PARAM
+const current_url = window.location.search;
+const urlParams = new URLSearchParams(current_url);
+const spaltenzahl = urlParams.get('sp');
+var show_wits = urlParams.get('wit').split(',');
+
+
+var texts_available = '<option>--</option>';
 $.each(pages, function(key){
     texts_available += '<option>'+key+'</option>';
 });
@@ -45,7 +52,7 @@ function strophen_div(column){
 
 
     $(colId + ' > .stanza').each(function(){
-        $(this).css('margin', '2rem');
+        $(this).css('margin-top', '2rem');
         $(this).css('padding', '1rem');
         var stanza_nr = $(this).children('span.tei-lg').children('span.n').text().substring(5)
         var color = colorMap[stanza_nr];
@@ -58,17 +65,26 @@ function strophen_div(column){
 
 };
 
+function updateSpaltenzahlLinks(){
+    $('.page-link').each(function () { 
+        $(this).attr('href', '?sp=' + $(this).text() + '&wit=' + show_wits.join());
+     });
+};
+
 
 $(document).ready(function(){
-    const current_url = window.location.search;
-    const urlParams = new URLSearchParams(current_url);
-    const spaltenzahl = urlParams.get('sp');
     $('#spalten-sel-'+spaltenzahl).addClass('active');
+    var columnBootst = 2;
+    if (12 % spaltenzahl == 0){
+        columnBootst = 12 / spaltenzahl
+    } else {
+        columnBootst = spaltenzahl + 'r'
+    };
     for(var i=1; i <= spaltenzahl; i++){
-        $('#texts').append('<div class="col-md-3">'+
+        $('#texts').append('<div class="col-md-'+ columnBootst +'">'+
             '<div class="form-group">'+
             '  <div class="form-row align-items-center">'+
-            '       <div class="col-md-3 m-auto">'+
+            '       <div class="col m-auto">'+
                         '<select class="form-control text-selector" id="textauswahl'+i+'">'+
                         texts_available+
                         '</select>'+
@@ -81,9 +97,14 @@ $(document).ready(function(){
         
     };
 
-    $.each( $('.text-col'), function(){
-        load_text( $(this), 'B');
+    $.each( $('.text-col'), function(idx){
+        load_text( $(this), show_wits[idx]);
+        $('#textauswahl' + (idx + 1)).val(show_wits[idx]);
     } );
+
+    updateSpaltenzahlLinks();
+
+    
 
     $('.text-selector').change(function(){
         // console.log($(this).val() );
@@ -94,6 +115,14 @@ $(document).ready(function(){
         vis_opt.applyDarstellung( $('input[name=darstellung]:checked').val() );
         vis_opt.lemma();
         strophen_div(idnr);
+
+        // Update global variable show_wits that stores the wits that are used in the params to load the page
+        show_wits = [];
+        $('.text-selector').each(function(){
+            show_wits.push($(this).val());
+        });
+        updateSpaltenzahlLinks();
+        
     });
 
     for (i=1; i<= spaltenzahl; i++){
