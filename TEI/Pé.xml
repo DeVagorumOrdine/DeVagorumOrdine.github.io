@@ -64,9 +64,9 @@
                     <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
                     <w lemma="habeo">h<choice><abbr>e<am>&#x0304;</am></abbr><expan><ex>ab</ex>e</expan></choice>m<choice><am>ꝰ</am><ex>us</ex></choice></w><pc>,</pc><c> </c>
                 </l>
-                <l n="4"><w lemma="venio">ve<choice><am>&#x0304;</am><ex>n</ex></choice>ite</w><c> </c>
+                <l n="4"><w lemma="venio">ve<choice><am>&#x0304;</am><ex>n</ex></choice>ite</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="onmis">om<choice><am>&#x0304;</am><ex>n</ex></choice>es</w><c> </c>
-                    <w lemma="socius">ſoc<choice><orig>ĳ</orig><reg>ii</reg></choice></w><c> </c>
+                    <w lemma="socius">ſoc<choice><orig>ĳ</orig><reg>ii</reg></choice></w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="fortis">foꝛtit<choice><am>&#x0309;</am><ex>er</ex></choice></w><c> </c>
                     <w lemma="bibo">bibamus</w><pc resp="#PR">!</pc><c> </c>
                 </l>
@@ -165,7 +165,7 @@
             <lg n="5" rhyme="eeee">
                 <l n="1"><lb n="9"/><w lemma="igitur">Igi<choice><am>&#x0309;</am><ex>tur</ex></choice></w><c> </c>
                     <w lemma="ad">ad</w><c resp="#PR"> </c> 
-                    <w lemma="poculum">poc<corr>u</corr>lu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="poculum">poc<choice><orig/><reg resp="#PR">u</reg></choice>lu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="mane">mane</w><c> </c>
                     <w lemma="consurgo"><choice><am>ↄ</am><ex>con</ex></choice>ſurgam<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
                 </l>
