@@ -57,6 +57,7 @@ for file in os.listdir('TEI'):
         content = content.replace('ꝺ', '<span class="tei-orig">ꝺ</span><span class="tei-reg">d</span>')
         
         content = content.replace('<div class="tei-text">', '')
+        content = re.sub(r'\s{2,}', '', content)
         content = content[0:-6]
         
         
