@@ -6,7 +6,7 @@
 /* Palette https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes13 */
 
 * {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #edition {
@@ -71,16 +71,12 @@
 
 .close {
     /* float: right; */
-    position: absolute;
+    position: relative;
     font-size: large;
     right: 20px;
 }
 
 
-/* NAVBAR */
-#navbarcont * {
-    font-size: x-large;
-}
 
 
 /* TEXT */
