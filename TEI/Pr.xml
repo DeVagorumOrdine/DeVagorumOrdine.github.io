@@ -79,7 +79,7 @@
             <lg n="2" rhyme="bbbb">
                 <l n="1"><lb n="4"/><w lemma="noster">N<choice><abbr>rm<am>&#x0304;</am></abbr><expan><ex>ostru</ex>m</expan></choice></w><c> </c>
                     <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
-                    <w lemma="propono"><choice><am>ꝓ</am><ex>pro</ex></choice>poſıtu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
+                    <w lemma="propono"><choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>poſıtu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="in">ın</w><c> </c>
                     <w lemma="taberna">tab<choice><abbr>n<am>&#x0309;</am></abbr><expan><ex>er</ex>n</expan></choice>a</w><c> </c>
                     <w lemma="moror">mo<choice><abbr>ı<am>&#x0309;</am></abbr><expan><ex>r</ex>i</expan></choice></w><pc resp="#PR">,</pc><c> </c>
@@ -100,7 +100,7 @@
                 </l>
                 <l n="4"><w lemma="deus"><orig>d</orig><reg>D</reg>e<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
                     <w lemma="sum">ſıs</w><c> </c> 
-                    <lb n="6"/><w lemma="propitius"><choice><am>ꝓ</am><ex>pro</ex></choice>picius</w> <c> </c>
+                    <lb n="6"/><w lemma="propitius"><choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>picius</w> <c> </c>
                     <w lemma="ego">m<choice><am>&#x0309;</am><ex>ihi</ex></choice></w><c> </c>
                     <w lemma="potator">potato<choice><abbr>ı<am>&#x0309;</am></abbr><expan><ex>r</ex>i</expan></choice></w><pc resp="#PR">!</pc><c> </c>
                 </l>
@@ -151,7 +151,7 @@
                 <l n="3"><w lemma="tunica">tunica<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="vel"><choice><orig>u</orig><reg>v</reg></choice><choice><abbr>l<am>&#x0304;</am></abbr><expan><ex>e</ex>l</expan></choice></w><c> </c>
                     <w lemma="iopula">ıopula<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
-                    <w lemma="perbibo"><choice><am>ꝑ</am><ex>per</ex></choice>bıbas</w><c> </c>
+                    <w lemma="perbibo"><choice><abbr><am>ꝑ</am></abbr><expan>p<ex>er</ex></expan></choice>bıbas</w><c> </c>
                     <lb n="12"/><w lemma="incestus">ınceſte</w><pc resp="#PR">;</pc><c> </c>
                 </l>
                 <l n="4"><w lemma="in">ın</w><c> </c>
@@ -183,7 +183,7 @@
                     <w lemma="cerno">cerna<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                 </l>
                 <l n="4"><w lemma="canto">ca<choice><am>&#x0304;</am><ex>n</ex></choice>tan<choice><am>ˢ</am><ex>tes</ex></choice></w><c> </c>
-                    <w lemma="pro"><choice><am>ꝓ</am><ex>pro</ex></choice></w><c> </c>
+                    <w lemma="pro"><choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice></w><c> </c>
                     <w lemma="bibulus">bıbulis</w><c> </c>
                     <w lemma="requies">r<choice><am>&#x0309;</am><ex>e</ex></choice>q<choice><am>&#x0309;</am><ex>ui</ex></choice>em</w><c> </c>
                     <w lemma="aeternus">et<choice><abbr>n<am>&#x0309;</am></abbr><expan><ex>er</ex>n</expan></choice>a<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">.</pc>

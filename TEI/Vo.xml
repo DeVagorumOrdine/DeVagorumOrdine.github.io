@@ -66,9 +66,9 @@
                         </choice></w><c> </c>
                     <w lemma="sum">eſt</w><c> </c>
                     <w lemma="propono"><choice>
-                            <am>ꝓ</am>
-                            <ex>pro</ex>
-                        </choice>poſıtu<choice>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice>poſıtu<choice>
                             <am>&#x0304;</am>
                             <ex>m</ex>
                         </choice></w><c> </c>
@@ -85,7 +85,7 @@
                             <reg>v</reg>
                         </choice>ent</w><c> </c>
                     <w lemma="miser">miſeri</w><c> </c>
-                    <w lemma="sitio">ſıcienti</w><c> </c>
+                    <w lemma="sitio">ſıcıenti</w><c> </c>
                     <w lemma="os">ori</w>
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
@@ -93,7 +93,7 @@
                     <lb n="15"/>
                     <w lemma="ut"><choice>
                             <orig>V</orig>
-                            <reg>u</reg>
+                            <reg>U</reg>
                         </choice>t</w><c> </c>
                     <w lemma="venio">venient</w><c> </c>
                     <w lemma="cito">cıtıus</w><c> </c>
@@ -109,9 +109,9 @@
                     <w lemma="deus">Deus</w><c> </c>
                     <w lemma="sum">ſıt</w><c> </c>
                     <w lemma="propitius"><choice>
-                            <am>ꝓ</am>
-                            <ex>pro</ex>
-                        </choice>pıcıus</w><c> </c>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice>pıcıus</w><c> </c>
                     <w lemma="vinum">vini</w><c> </c>
                     <w lemma="potator">potatori</w>
                     <pc resp="#ed.Suttina">.</pc><c> </c>
@@ -121,7 +121,7 @@
                 <l n="1">
                     <lb n="17"/>
                     <pc>¶</pc><c> </c>
-                    <w lemma="vinum">Vinu<choice>
+                    <w lemma="vinum">Vınu<choice>
                             <am>&#x0304;</am>
                             <ex>m</ex>
                         </choice></w><c> </c>
@@ -218,7 +218,7 @@
                 </l>
                 <l n="2">
                     <lb n="22"/>
-                    <w lemma="vinum">vinu<choice>
+                    <w lemma="vinum">Vınu<choice>
                             <am>&#x0304;</am>
                             <ex>m</ex>
                         </choice></w><c> </c>
@@ -408,7 +408,10 @@
                     <w lemma="dum"><choice>
                             <orig>D</orig>
                             <reg>d</reg>
-                        </choice>um</w><c> </c>
+                    </choice>u<choice>
+                        <am>&#x0304;</am>
+                        <ex>m</ex>
+                    </choice></w><c> </c>
                     <w lemma="bibo">bibiſſe</w><c> </c>
                     <w lemma="nosco">no<choice>
                             <orig>u</orig>
@@ -454,9 +457,9 @@
                             <ex>que</ex>
                         </choice></w><c> </c>
                     <w lemma="proprius"><choice>
-                            <am>ꝓ</am>
-                            <ex>pro</ex>
-                        </choice>p<choice>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice>p<choice>
                             <am>&#x0309;</am>
                             <ex>ri</ex>
                         </choice>um</w><c> </c>
@@ -489,7 +492,7 @@
                             <abbr>e<am>&#x0309;</am></abbr>
                             <expan><ex>er</ex>e</expan>
                         </choice></w><c> </c>
-                    <w lemma="ieiunus">ıeiun<choice>
+                    <w lemma="ieiunus">ıeıun<choice>
                             <am>ꝰ</am>
                             <ex>us</ex>
                         </choice></w>
@@ -565,9 +568,9 @@
                     <pc>¶</pc><c> </c>
                     <w lemma="ergo">Ergo</w><c> </c>
                     <w lemma="super">su<choice>
-                            <am>ꝑ</am>
-                            <ex>per</ex>
-                        </choice></w><c> </c>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice></w><c> </c>
                     <w lemma="omnis">o<choice>
                             <abbr>ı<am>&#x0304;</am></abbr>
                             <expan><ex>mn</ex>i</expan>
@@ -591,9 +594,9 @@
                             <reg>v</reg>
                         </choice>i</w><c> </c>
                     <w lemma="tempus">t<choice>
-                            <am>ꝑ</am>
-                            <ex>empor</ex>
-                        </choice>e</w><c> </c>
+                        <abbr><am>ꝑ</am></abbr>
+                        <expan><ex>empor</ex></expan>
+                    </choice>e</w><c> </c>
                     <w lemma="neque">ne<choice>
                             <am></am>
                             <ex>que</ex>
@@ -617,8 +620,7 @@
                     <w lemma="cerno">cerna<choice>
                             <am>&#x0304;</am>
                             <ex>m</ex>
-                        </choice></w>
-                    <pc resp="#ed.Suttina">,</pc><c> </c>
+                        </choice></w><c> </c>
                 </l>
                 <l n="4">
                     <lb n="12"/>
@@ -627,9 +629,9 @@
                             <reg>c</reg>
                         </choice>antantes</w><c> </c>
                     <w lemma="pro"><choice>
-                            <am>ꝓ</am>
-                            <ex>pro</ex>
-                        </choice></w><c resp="#PR"> </c>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice></w><c resp="#PR"> </c>
                     <w lemma="bibulus">bıbulo</w><c> </c>
                     <w lemma="requies">requiem</w><c> </c>
                     <w lemma="aeternus">eterna<choice>
@@ -645,9 +647,9 @@
                     <pc>¶</pc><c> </c>
                     <w lemma="plenitudo">Plenitudo</w><c> </c>
                     <w lemma="tempus">t<choice>
-                            <am>ꝑ</am>
-                            <ex>empor</ex>
-                        </choice>ıs</w><c> </c>
+                        <abbr><am>ꝑ</am></abbr>
+                        <expan><ex>empor</ex></expan>
+                    </choice>ıs</w><c> </c>
                     <w lemma="venio">venit</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                     <w lemma="exsulto">exultemus</w>
@@ -687,9 +689,9 @@
                             <reg>l</reg>
                         </choice>ıcet</w><c> </c>
                     <w lemma="promptuarium"><choice>
-                            <am>ꝓ</am>
-                            <ex>pro</ex>
-                        </choice>mptuarıa</w><c> </c>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice>mptuarıa</w><c> </c>
                     <w lemma="plenus">plena</w><c> </c>
                     <w lemma="non">no<choice>
                             <am>&#x0304;</am>
@@ -752,7 +754,10 @@
                 </l>
                 <l n="3">
                     <lb n="19"/>
-                    <w lemma="nonne">no<choice>
+                    <w lemma="nonne"><choice>
+                        <orig>N</orig>
+                        <reg>n</reg>
+                    </choice>o<choice>
                             <am>&#x0304;</am>
                             <ex>n</ex>
                         </choice>ne</w><c> </c>
@@ -825,15 +830,15 @@
                     <w lemma="hic">hoc</w><c> </c>
                     <w lemma="facio">fac</w><c> </c>
                     <w lemma="in">in</w><c> </c>
-                    <w lemma="potus">potibus</w><c> </c>
+                    <w lemma="potus">potibus</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="ut"><choice>
                             <orig>v</orig>
                             <reg>u</reg>
                         </choice>t</w><c> </c>
                     <w lemma="produco"><choice>
-                            <am>ꝓ</am>
-                            <ex>pro</ex>
-                        </choice>ꝺucıt</w><c> </c>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice>ꝺucıt</w><c> </c>
                     <w lemma="vita">vıtıs</w>
                     <pc resp="#ed.Suttina">;</pc><c> </c>
                 </l>
@@ -842,7 +847,10 @@
                     <w lemma="non"><choice>
                             <orig>N</orig>
                             <reg>n</reg>
-                        </choice>on</w><c> </c>
+                    </choice>o<choice>
+                        <am>&#x0304;</am>
+                        <ex>n</ex>
+                    </choice></w><c> </c>
                     <w lemma="decens">ꝺece<choice>
                             <am>&#x0304;</am>
                             <ex>n</ex>
@@ -853,14 +861,11 @@
                             <orig>ſ</orig>
                             <reg>S</reg>
                         </choice>unamitıs</w>
-                    <pc resp="#ed.Suttina">;</pc><c> </c>
+                    <pc resp="#PR">.</pc><c> </c>
                 </l>
                 <l n="4">
                     <lb n="24"/>
-                    <w lemma="quis"><choice>
-                            <orig>Q</orig>
-                            <reg>q</reg>
-                        </choice>uıd</w><c> </c>
+                    <w lemma="quis">Quıd</w><c> </c>
                     <w lemma="thesaurus">the<choice>
                             <orig>ꝫ</orig>
                             <reg>s</reg>
@@ -869,9 +874,9 @@
                             <ex>us</ex>
                         </choice></w><c> </c>
                     <w lemma="prodo"><choice>
-                            <am>ꝓ</am>
-                            <ex>pro</ex>
-                        </choice>derit</w><c> </c>
+                        <abbr><am>ꝓ</am></abbr>
+                        <expan>p<ex>ro</ex></expan>
+                    </choice>derit</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="ubi"><choice>
                             <orig>v</orig>
                             <reg>u</reg>
@@ -927,7 +932,7 @@
                     <pc resp="#PR">„</pc>
                     <w lemma="quis">Quid</w><c> </c>
                     <w lemma="sum">eſt</w><c> </c>
-                    <w lemma="hic">hoc</w><c> </c>
+                    <w lemma="hic">hoc</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="qui"><choice>
                             <am>ꝙ</am>
                             <ex>quod</ex>
@@ -946,14 +951,11 @@
                             <am>&#x0304;</am>
                             <ex>m</ex>
                         </choice></w><c> </c>
-                    <choice>
-                        <sic>
-                            <w lemma="qui">quod</w></sic>
-                        <corr resp="#ed.Suttina">
-                            <w lemma="facio">facit</w></corr>
-                    </choice>
+                    <w lemma="qui">quod</w>
+                        <add resp="#ed.Suttina">
+                            <w lemma="facio">facit</w>
+                        </add>
                     <c> </c>
-                    <w lemma="facio">facit</w><c> </c>
                     <w lemma="homo">ho<choice>
                             <abbr>ıe<am>&#x0304;</am></abbr>
                             <expan><ex>m</ex>i<ex>n</ex>e</expan>
@@ -965,7 +967,7 @@
                             <abbr>ı<am>&#x0304;</am></abbr>
                             <expan><ex>mn</ex>i</expan>
                         </choice>a</w><c> </c>
-                    <w lemma="scio">scıentem</w>
+                    <w lemma="scio">ſcıentem</w>
                     <pc resp="#ed.Suttina">.</pc>
                     <pc resp="#PR">“</pc><c> </c>
                 </l>
