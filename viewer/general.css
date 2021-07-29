@@ -30,3 +30,29 @@
     margin: 10px;
 }
 
+/* Startseite */
+
+.main-selector-div {
+    height: 300px;
+    width: 100%;
+    position:relative;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(119, 168, 168, .4);
+    border: solid 2px rgba(119, 168, 168, .9);
+}
+
+.main-selector-div div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-selector-div:hover {
+    background-color: rgba(217, 236, 208, .7);
+}
+
+.main-selector-div:hover div {
+    color: black;
+}
