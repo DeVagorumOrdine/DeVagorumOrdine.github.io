@@ -52,7 +52,7 @@
                     <w lemma="venio">ve<choice><am>&#x0304;</am><ex>n</ex></choice>ite</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="exsulto">exulte<choice><am>&#x0304;</am><ex>m</ex></choice><choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">,</pc><c> </c>
                 </l>
-                <l n="2"><w lemma="licet">licet</w><c> </c>
+                <l n="2"><w lemma="licet">licet</w><c> </c><note ana="hc:ExemplarNote hc:InterlinearGloss"></note>
                     <w lemma="ramus">ramos</w><c> </c>
                     <w lemma="arbor">a<choice><am>&#x303;</am><ex>r</ex></choice>bo<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c>
                     <w lemma="calvor">cal<choice><orig>u</orig><reg>v</reg></choice>a<choice><abbr>i<am>&#x0309;</am></abbr><expan><ex>r</ex>i</expan></choice></w><c> </c>
@@ -107,10 +107,10 @@
                     <l n="1"><lb n="5"/>
                         <choice>
                             <sic>
-                                <w lemma="divagor">Di<choice><orig>u</orig><reg>v</reg></choice>ago<choice><am>ꝝ</am><ex>rum</ex></choice></w>
+                                <w lemma="divagor">D<sic>i</sic><choice><orig>u</orig><reg>v</reg></choice>ago<choice><am>ꝝ</am><ex>rum</ex></choice></w>
                             </sic>
                             <corr>
-                                <w lemma="de">De</w>
+                                <w lemma="de">D<corr>e</corr></w>
                                 <c> </c>        
                                 <w lemma="vagus"><choice><orig>u</orig><reg>v</reg></choice>ago<choice><am>ꝝ</am><ex>rum</ex></choice></w>
                             </corr>
