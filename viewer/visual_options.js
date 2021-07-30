@@ -150,9 +150,11 @@ function punctuation(){
 
   function korrekturen(){    
     if ($('input[name=korr]').is(':checked')){
-      $('.tei-corr').parent().css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
+      $('.tei-corr').parent('.tei-w').css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
+      $('.tei-corr').css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
     } else {
-      $('.tei-corr').parent().css('text-decoration', 'none');
+      $('.tei-corr').parent('.tei-w').css('text-decoration', 'none');
+      $('.tei-corr').css('text-decoration', 'none');
     }
   }
     
