@@ -9,6 +9,7 @@ function applyDarstellung(selected){
         $('.tei-am').show();
         $('.tei-orig').show();
         $('.tei-sic').show();
+        $('.tei-corr').hide();
         $('.tei-surplus').show()
         $('.tei-del').show();
         $('.tei-add').addClass('tei-add-pal');
@@ -22,6 +23,7 @@ function applyDarstellung(selected){
         $('.tei-expan').show();
         $('.tei-orig').hide();
         $('.tei-sic').hide();
+        $('.tei-corr').show();
         $('.tei-surplus').hide();
         $('.tei-ex').show();
         $('.tei-reg').show()
@@ -35,6 +37,7 @@ function applyDarstellung(selected){
         $('.suboptions-ed').show();
         italicExpansion();
     };
+    
   };
   
 function italicExpansion(){
@@ -145,50 +148,90 @@ function punctuation(){
       });
   }
 
+  function korrekturen(){    
+    if ($('input[name=korr]').is(':checked')){
+      $('.tei-corr').parent().css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
+    } else {
+      $('.tei-corr').parent().css('text-decoration', 'none');
+    }
+  }
+    
+    
+
 $(document).ready(function(){
-    // Optionen Darstellung
+    //MENU DARSTELLUNG
   $('#optionen-toggle').on('click', function(){
     $('#anzeige-optionen').animate({right: '0px'}, 800);
     });
 
-    $('#close-options').on('click', function(){
-    $('#anzeige-optionen').animate({right: '-400px'}, 800);
-    })
+  $('#close-options').on('click', function(){
+  $('#anzeige-optionen').animate({right: '-400px'}, 800);
+  })
 
 
-    // DARSTELLUNG
-    applyDarstellung( $('input[name=darstellung]:checked').val() );
-    $('input[name=darstellung]').on('input', function(){
-    applyDarstellung( $(this).val() );
+  // DARSTELLUNG
+  applyDarstellung( $('input[name=darstellung]:checked').val() );
+  $('input[name=darstellung]').on('input', function(){
+  applyDarstellung( $(this).val() );
+  });
+
+  $('input[name=italic-abbr]').on('input', function(){
+  italicExpansion();
+  });
+  $('input[name=pc]').on('input', function(){
+  punctuation();
+  });
+  $('input[name=korr]').on('input', function(){
+    korrekturen();
     });
 
-    $('input[name=italic-abbr]').on('input', function(){
-    italicExpansion();
-    });
-    $('input[name=pc]').on('input', function(){
-    punctuation();
-    });
-    $('input[name=pc]').on('input', function(){
-    punctuation();
-    });
+  // KORR
+  var bigCorr = $('.tei-corr').has('.tei-w, .tei-pc');
+  var smallCorr = $('.tei-w').has('.tei-corr');
+  bigCorr.add( smallCorr ).hover(
+    function(){
+      var original = $(this).clone();
+      original.find('.tei-att-lemma, .tei-abbr, .tei-am, .tei-corr, .tei-reg').remove();
+      original.find('*').not('.tei-sic').each(function(){
+        $(this).contents().unwrap();
+      });
+      var ediert = $(this).clone();
+      ediert.find('.tei-att-lemma, .tei-sic, .tei-abbr, .tei-am, .tei-orig').remove();
+      ediert.find('*').not('.tei-corr').each(function(){
+        $(this).contents().unwrap();
+      });
+      // $(this).append('<span class="corr-popup">Original: '+ cloned.text() +'</span>');}, 
+      $(this).append('<span class="corr-popup"><i>lect.</i> '+ original.html() + '<br/>' +
+                      '<i>corr.</i> '+ ediert.html() +'</span>'); 
+      $('.corr-popup').find('.tei-corr').show();
+      $('.corr-popup').find('.tei-sic').show();
+      if ($('input[name=lemma]').is(':checked')){
+        $('.corr-popup').css('top', '-5.2rem')
+      } else {
+        $('.corr-popup').css('top', '-3.5rem')
+      };
+        
+    },
+    function(){$(this).find('.corr-popup').remove();})
 
 
+  //LAYOUT
+  applyLayout( $('input[name=layout]:checked').val() );
+  $('input[name=layout]').on('input', function(){
+  applyLayout( $(this).val() );
+  });
+  $('input[name=lb-show]').on('input', function(){
+  lb_show();
+  });
+  $('input[name=l-show]').on('input', function(){
+  l_show();
+  });
 
-    //LAYOUT
-    applyLayout( $('input[name=layout]:checked').val() );
-    $('input[name=layout]').on('input', function(){
-    applyLayout( $(this).val() );
-    });
-    $('input[name=lb-show]').on('input', function(){
-    lb_show();
-    });
-    $('input[name=l-show]').on('input', function(){
-    l_show();
-    });
-
-    // LEMMA
+  // LEMMA
   lemma();
-  
+
+  korrekturen();
+
 
     
 });

@@ -19,10 +19,11 @@
     right: 2rem; */
 }
 
-#edition * {
+#edition *, /* #edition for hss edition and .text-col for synopse*/
+.text-col * { 
     font-family: Junicode;
+    font-size: 18px;
 }
-
 
 
 
@@ -116,19 +117,6 @@
     position: relative;
 }
 
-.tei-att-lemma {
-    position:absolute;
-    top: -1.7rem;
-    right: -1rem;
-    /* background-color:#d9ecd0; */
-    background-color: #e4d1d1;
-        
-    padding-right: 0.2rem;
-    padding-left: 0.2rem;
-    border: solid #b9b0b0 1px;
-    border-radius: 5px;
-    z-index: 90;
-}
 
 .tei-hi.hc-Red {
     color: Red;
@@ -148,6 +136,46 @@
 }
 .tei-add-pal:after {
     content: '/'
+}
+
+
+/* POPUPS */
+
+.tei-att-lemma {
+    position:absolute;
+    top: -1.7rem;
+    left: -1rem;
+    /* background-color:#d9ecd0; */
+    background-color: #e4d1d1;
+        
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    border: solid #b9b0b0 1px;
+    border-radius: 5px;
+    z-index: 90;
+}
+
+.corr-popup {
+    position:absolute;
+    left: -1rem;
+    right: -5rem;
+    /* text-align: center; */
+    background-color:#d9ecd0;
+    background-color:#e4d6ff;
+    /* background-color: #e4d1d1; */
+    
+        
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    border: solid #284d17 1px;
+    border-radius: 5px;
+    z-index: 90;
+    display: inline-block;
+}
+
+.corr-popup > .tei-sic,
+.corr-popup > .tei-corr{
+    font-weight: bold;
 }
 
 
