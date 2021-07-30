@@ -138,6 +138,13 @@
     content: '/'
 }
 
+.tei-sic {
+    position: relative;
+}
+.tei-corr {
+    position: relative;
+}
+
 
 /* POPUPS */
 

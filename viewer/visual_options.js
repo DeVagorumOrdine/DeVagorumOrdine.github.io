@@ -152,9 +152,13 @@ function punctuation(){
     if ($('input[name=korr]').is(':checked')){
       $('.tei-corr').parent('.tei-w').css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
       $('.tei-corr').css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
+      $('.tei-sic').parent('.tei-w').css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
+      $('.tei-sic').css('text-decoration', 'underline 2px').css('text-decoration-color', '#7d62b2');
     } else {
       $('.tei-corr').parent('.tei-w').css('text-decoration', 'none');
       $('.tei-corr').css('text-decoration', 'none');
+      $('.tei-sic').parent('.tei-w').css('text-decoration', 'none');
+      $('.tei-sic').css('text-decoration', 'none');
     }
   }
     
@@ -189,20 +193,28 @@ $(document).ready(function(){
 
   // KORR
   var bigCorr = $('.tei-corr').has('.tei-w, .tei-pc');
+  var bigSic = $('.tei-sic').has('.tei-w, .tei-pc');
   var smallCorr = $('.tei-w').has('.tei-corr');
-  bigCorr.add( smallCorr ).hover(
+  bigCorr.add( smallCorr).add(bigSic).hover(
     function(){
-      var original = $(this).clone();
+      var original = $(this).clone(); // if this is a w and not a corr with w inside
+      if ( $(this).hasClass('tei-corr') ) {
+        original = $(this).prev('.tei-sic').clone();
+      }
       original.find('.tei-att-lemma, .tei-abbr, .tei-am, .tei-corr, .tei-reg').remove();
       original.find('*').not('.tei-sic').each(function(){
         $(this).contents().unwrap();
       });
-      var ediert = $(this).clone();
+      
+      var ediert = $(this).clone();// if this is a w and not a sic with w inside
+      if ( $(this).hasClass('tei-sic') ) {
+        ediert = $(this).next('.tei-corr').clone();
+      }
       ediert.find('.tei-att-lemma, .tei-sic, .tei-abbr, .tei-am, .tei-orig').remove();
       ediert.find('*').not('.tei-corr').each(function(){
         $(this).contents().unwrap();
       });
-      // $(this).append('<span class="corr-popup">Original: '+ cloned.text() +'</span>');}, 
+
       $(this).append('<span class="corr-popup"><i>lect.</i> '+ original.html() + '<br/>' +
                       '<i>corr.</i> '+ ediert.html() +'</span>'); 
       $('.corr-popup').find('.tei-corr').show();
