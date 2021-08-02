@@ -118,19 +118,12 @@ $(document).ready(function(){
   $('#edition').append(fragments.texts[ms][pg]);
   
 
-  // // LEMMA
-  // $('.tei-att-lemma').hide();
-  
-  
-    
-  // $( '.tei-w' ).hover( 
-  //   function(){
-  //     if ($('input[name=lemma]').is(':checked')){
-  //       $(this).find('.tei-att-lemma').show();
-  //     }}, 
-  //   function(){
-  //     $(this).find('.tei-att-lemma').hide();
-  //   });
+  // ÜBERSETZUNG
+
+  $('#uebersetzung').on('click', function(){
+    window.open('/translation.html?ms=' + ms, '', "width=500,height=600,top=300,left=1000");
+    return false;
+  });
   
   
   // Move the image when scrolling
