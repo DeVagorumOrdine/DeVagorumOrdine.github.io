@@ -141,7 +141,11 @@ function punctuation(){
     $( '.tei-w' ).hover( 
       function(){
         if ($('input[name=lemma]').is(':checked')){
-          $(this).find('.tei-att-lemma').show();
+          var lemma_el = $(this).find('.tei-att-lemma');
+          lemma_el.show();
+          if (lemma_el.children('i').length == 0) {
+            lemma_el.prepend('<i>lem: </i>');
+          }
         }}, 
       function(){
         $(this).find('.tei-att-lemma').hide();
@@ -194,7 +198,7 @@ $(document).ready(function(){
   // KORR
   var bigCorr = $('.tei-corr').has('.tei-w, .tei-pc');
   var bigSic = $('.tei-sic').has('.tei-w, .tei-pc');
-  var smallCorr = $('.tei-w').has('.tei-corr');
+  var smallCorr = $('.tei-w').has('.tei-corr').not('.tei-sic .tei-w').not('.tei-corr .tei-w');
   bigCorr.add( smallCorr).add(bigSic).hover(
     function(){
       var original = $(this).clone(); // if this is a w and not a corr with w inside

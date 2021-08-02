@@ -13,7 +13,7 @@ $(document).ready(function(){
         
         $('#ms_list').append('<div class="list-group-item">'+
         '<img class="mss-thumb m-3" src="https://devagorumordine.github.io/img/'+
-        key +'_'+ value['pages'][0] +'.jpg' +
+        key +'_'+ value['pages'][0] +'-thumb.jpg' +
         '"></img>'+
         '<h3 class="m-3">'+key + '</h3>'+
         '<h4>'+ value['shelfmark']+'</h4>'+
