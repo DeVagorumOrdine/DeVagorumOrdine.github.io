@@ -140,8 +140,36 @@
   </xsl:template>
   
   
+<!-- Special Notes on Variants on Original Manuscript -->
+  <xsl:template match="tei:choice[count(tei:seg) > 1][.//tei:note[contains(@ana,'hc:ExemplarNote')]]">
+    <xsl:variable name="number_glosses" as="xs:integer">
+      <xsl:value-of select="count(./preceding::tei:note[contains(@ana,'hc:ExemplarNote')])"/>
+    </xsl:variable>
+    <span>
+      <xsl:attribute name="class">
+        <xsl:text>gloss_target</xsl:text>
+      </xsl:attribute>
+      <xsl:attribute name="id">
+        <xsl:text>gloss_target_</xsl:text>
+        <xsl:value-of select="$number_glosses"/>
+      </xsl:attribute>
+      <xsl:apply-templates select="./tei:seg[1]"></xsl:apply-templates>
+    </span>
+    <span>
+      <xsl:attribute name="class">
+        <xsl:text>gloss_interlinear</xsl:text>
+      </xsl:attribute>
+      <xsl:attribute name="id">
+        <xsl:text>gloss_interlineal_</xsl:text>
+        <xsl:value-of select="$number_glosses"/>
+      </xsl:attribute>
+      <xsl:apply-templates select="./tei:seg[2]"></xsl:apply-templates>
+    </span>
+  </xsl:template>
   
-  
+  <xsl:template match="tei:note[contains(@ana,'hc:InterlinearGloss')]">
+    <xsl:apply-templates select="node()"/>
+  </xsl:template>
   
   
 </xsl:stylesheet>

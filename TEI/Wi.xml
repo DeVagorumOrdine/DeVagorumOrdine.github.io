@@ -64,7 +64,7 @@
                     <lb n="25"/>
                     <choice> 
                         <seg><w lemma="nemus">nemorıs</w></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="#H1"><w lemma="arbor">arboru<choice><am>&#x0304;</am><ex>m</ex></choice></w></add></seg></choice><c> </c>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="arbor">arboru<choice><am>&#x0304;</am><ex>m</ex></choice></w></note></seg></choice><c> </c>
                     <w lemma="calvor">cal<choice><orig>u</orig><reg>v</reg></choice>ari</w><c> </c>
                     <w lemma="video">vıde<choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">,</pc><c> </c>
                 </l>
@@ -78,7 +78,10 @@
                     <w lemma="ergo">ergo</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="socius">ſoc<choice><orig>ĳ</orig><reg>ii</reg></choice></w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="fortis">fortıt<choice><am>&#x0309;</am><ex>er</ex></choice></w><c> </c>
-                    <w lemma="bibo">bıb<choice><seg>e</seg><seg><add hei:placeRef="hc:AboveLine" hand="H1">a</add></seg></choice><choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">!</pc><c> </c>
+                    <w lemma="bibo">bıb<choice>
+                        <seg>e</seg>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss">a</note></seg>
+                    </choice><choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">!</pc><c> </c>
                 </l>
             </lg>
                 <lg n="2" rhyme="bbbb">
@@ -132,11 +135,11 @@
                     <w lemma="lux">lucem</w><c> </c>
                     <choice> 
                         <seg><w lemma="habeo">habeam<choice><am>ꝰ</am><ex>us</ex></choice></w></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="video">videamus</w></add></seg></choice><c> </c>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="video">videamus</w></note></seg></choice><c> </c>
                 </l>
                 <l n="4"><choice> 
                     <seg><w lemma="atque">ac</w></seg>
-                    <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="et">et</w></add></seg></choice><c> </c>
+                    <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="et">et</w></note></seg></choice><c> </c>
                     <w lemma="proserno"><choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>ſtratıs</w><c> </c> 
                     <w lemma="manus">ma<choice><am>&#x0304;</am><ex>n</ex></choice>ib<choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">,</pc><c> </c>
                     <lb n="3"/><w lemma="stratum">ſtratu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
@@ -183,10 +186,10 @@
                     <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
                     <w lemma="venialis">veniale</w><pc>.</pc><c> </c>
                 </l>
-                <l n="2"><w lemma="pono"><orig>p</orig><reg>P</reg>one</w><pc resp="#PR">,</pc><c> </c>
+                <l n="2"><w lemma="pono"><choice><orig>p</orig><reg>P</reg></choice>one</w><pc resp="#PR">,</pc><c> </c>
                     <lb n="9"/><choice> 
                         <seg><w lemma="si">ſı</w><c> </c></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="quisquis">quid</w></add></seg></choice>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="quisquis">quid</w></note></seg></choice>
                     <w lemma="quisquis">quid</w><c> </c>
                     <w lemma="habeo">h<choice><abbr>e<am>&#x0304;</am></abbr><expan><ex>ab</ex>e</expan></choice>as</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
@@ -242,10 +245,10 @@
             </lg>
             <lg n="7" rhyme="ffff">
                 <lb n="16"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
-                <l n="1"><w lemma="porta">Port<choice><seg>e</seg><seg><add hei:placeRef="hc:AboveLine" hand="H1">a</add></seg></choice></w><c> </c>
+                <l n="1"><w lemma="porta">Port<choice><seg>e</seg><seg><note ana="hc:ExemplarNote hc:InterlinearGloss">a</note></seg></choice></w><c> </c>
                     <choice> 
                         <seg><w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>ost</ex>r</expan></choice>i</w></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="meus">mei</w></add></seg></choice><c> </c>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="meus">mei</w></note></seg></choice><c> </c>
                     <w lemma="hospes">hoſpıtis</w><c> </c>
                     <w lemma="niteo">nitet</w><c> </c>
                     <w lemma="margarita">margarit<choice><am>ꝭ</am><ex>is</ex></choice></w><choice><orig><pc>.</pc></orig><reg/></choice><c> </c>
@@ -256,10 +259,10 @@
                     <w lemma="clamo">clamat</w><c> </c>
                     <pc resp="#PR">„</pc><choice> 
                         <seg><w lemma="unde"><choice><orig>v</orig><reg>U</reg></choice>nde</w></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="huc"><choice><orig>h</orig><reg>H</reg></choice>uc</w></add></seg></choice><c> </c>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="huc"><choice><orig>h</orig><reg>H</reg></choice>uc</w></note></seg></choice><c> </c>
                     <choice> 
                         <seg><w lemma="sitis">ſıtis</w></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="eo">eatis</w></add></seg></choice><pc resp="#PR">!“</pc><c> </c>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="eo">eatis</w></note></seg></choice><pc resp="#PR">!“</pc><c> </c>
                 </l>
                 <l n="3"><w lemma="hic"><choice><orig>h</orig><reg>H</reg></choice>ic</w><c> </c>
                     <w lemma="non">no<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
@@ -272,15 +275,15 @@
                 <l n="4">
                     <choice>
                         <seg><w lemma="immo"><choice><orig>y</orig><reg>i</reg></choice><choice><am>&#x0304;</am><ex>m</ex></choice>mo</w></seg>
-                        <seg><add hei:placeRef="hc:AboveLine" hand="H1"><w lemma="aptus">aptu<choice><am>&#x0304;</am><ex>m</ex></choice></w></add></seg></choice><c> </c>
+                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="aptus">aptu<choice><am>&#x0304;</am><ex>m</ex></choice></w></note></seg></choice><c> </c>
                     <choice> 
                         <seg><w lemma="totus">totu<choice><am>&#x0304;</am><ex>m</ex></choice></w></seg>
                         <seg>
-                            <add hei:placeRef="hc:AboveLine" hand="H1">
+                            <note ana="hc:ExemplarNote hc:InterlinearGloss">
                                 <w lemma="quoque"><choice>
                                     <abbr><g ref="#qz-ligature"></g><am>&#x366;</am></abbr>
                                     <expan>q<ex>uoque</ex></expan></choice></w>
-                            </add>
+                            </note>
                         </seg></choice><c> </c>
                     <w lemma="gaudium">gaudiu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">:</pc><c> </c>
                     <lb n="19"/><w lemma="quare"><choice><orig>q</orig><reg>Q</reg></choice>uare</w><c> </c>
@@ -378,12 +381,11 @@
                     <w lemma="ego">m<choice><am>&#x0309;</am><ex>ihi</ex></choice></w><c> </c>
                     <w lemma="potator">potatori</w><pc resp="#PR">.</pc><c> </c>
                     </l>
-                <add hei:placeRef="hc:Inline" hand="#H1">
+            </lg>
+                <ab><add hei:placeRef="hc:Inline" hand="#H1">
                     <hi rendition="hc:RedUnderlined"><w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w><c> </c>
                         <w lemma="aliter">alıt<choice><am>&#x0309;</am><ex>er</ex></choice></w></hi>
-                </add>            
-            </lg>
-            
+                </add></ab>            
             
             <lg n="11=10b" rhyme="jjjj">
                 <lb n="29"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
