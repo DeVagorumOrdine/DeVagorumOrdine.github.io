@@ -14,6 +14,7 @@
     margin: auto;
     max-height: 100px;
     overflow-y: scroll;
+    line-height: 1.5;
     /* margin-left: 2rem;
     position:absolute;
     right: 2rem; */
@@ -145,6 +146,22 @@
     position: relative;
 }
 
+/* INTERLINEAL GLOSSES */
+
+.gloss {
+    position: relative;
+}
+
+.gloss-interlinear {
+    /* color: #284d17; */
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    padding-right: 3px;
+    padding-left: 3px;
+
+}
+
 
 /* POPUPS */
 
@@ -152,7 +169,8 @@
     position:absolute;
     top: -1.7rem;
     left: -1rem;
-    right: -3rem;
+    /* width: 150px; */
+    /* right: -3rem; */
     /* background-color:#d9ecd0; */
     background-color: #e4d1d1;
         

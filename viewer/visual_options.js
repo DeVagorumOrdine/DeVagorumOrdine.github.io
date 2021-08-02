@@ -142,10 +142,20 @@ function punctuation(){
       function(){
         if ($('input[name=lemma]').is(':checked')){
           var lemma_el = $(this).find('.tei-att-lemma');
-          lemma_el.show();
           if (lemma_el.children('i').length == 0) {
             lemma_el.prepend('<i>lem: </i>');
           }
+          lemma_chars = lemma_el.text().length;
+          lemma_el.width(lemma_chars * 9)
+
+          if ($('input[name=int-gloss]').is(':checked')){
+            lemma_el.css('top', '-2.5rem');
+          } else {
+            lemma_el.css('top', '-1.7rem');
+          }
+
+
+          lemma_el.show();
         }}, 
       function(){
         $(this).find('.tei-att-lemma').hide();
@@ -165,19 +175,48 @@ function punctuation(){
       $('.tei-sic').css('text-decoration', 'none');
     }
   }
+
+  function interlinear_glosses(){
+    if ($('input[name=int-gloss]').is(':checked')){
+      $('.gloss-interlinear').show();
+      $('#edition').css('line-height', 2);
+      // $('.gloss-interlinear').css('color', '#a87790');
+      $('.gloss-interlinear').css('color', '#77a8a8');
+      $('.gloss-target').css('text-decoration', 'underline').css('text-decoration-color', '#77a8a8');
+    }else {
+      $('.gloss-interlinear').hide();
+      $('#edition').css('line-height', 1.5);
+      $('.gloss-target').css('text-decoration', 'none');
+    }
+
+    $('.gloss').hover(
+      function(){
+        console.log('In');
+      },
+      function(){
+        console.log('Out');
+      }
+    );
+
+  }
     
     
 
 $(document).ready(function(){
     //MENU DARSTELLUNG
   $('#optionen-toggle').on('click', function(){
-    $('#anzeige-optionen').animate({right: '0px'}, 800);
-    });
+    if ($('#anzeige-optionen').css('right') != '0px'){
+      $('#anzeige-optionen').animate({right: '0px'}, 800);
+    } else {
+      $('#anzeige-optionen').animate({right: '-400px'}, 800);  
+    }
+  });
 
   $('#close-options').on('click', function(){
-  $('#anzeige-optionen').animate({right: '-400px'}, 800);
+    $('#anzeige-optionen').animate({right: '-400px'}, 800);
   })
 
+      
 
   // DARSTELLUNG
   applyDarstellung( $('input[name=darstellung]:checked').val() );
@@ -236,19 +275,28 @@ $(document).ready(function(){
   //LAYOUT
   applyLayout( $('input[name=layout]:checked').val() );
   $('input[name=layout]').on('input', function(){
-  applyLayout( $(this).val() );
-  });
+    applyLayout( $(this).val() );
+    });
   $('input[name=lb-show]').on('input', function(){
-  lb_show();
-  });
+    lb_show();
+    });
   $('input[name=l-show]').on('input', function(){
-  l_show();
-  });
+    l_show();
+    });
+  $('input[name=int-gloss]').on('input', function(){
+    interlinear_glosses();
+    });
 
-  // LEMMA
+  
   lemma();
-
   korrekturen();
+  
+  // GLOSSES
+  if ( $('#edition').has('.gloss').length < 1){
+    $('input[name=int-gloss]').prop( "checked", false );
+    $('input[name=int-gloss]').attr('disabled','disabled');
+  };
+  interlinear_glosses();
 
 
     

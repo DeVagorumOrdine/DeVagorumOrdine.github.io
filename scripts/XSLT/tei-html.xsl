@@ -145,25 +145,27 @@
     <xsl:variable name="number_glosses" as="xs:integer">
       <xsl:value-of select="count(./preceding::tei:note[contains(@ana,'hc:ExemplarNote')])"/>
     </xsl:variable>
-    <span>
-      <xsl:attribute name="class">
-        <xsl:text>gloss_target</xsl:text>
-      </xsl:attribute>
-      <xsl:attribute name="id">
-        <xsl:text>gloss_target_</xsl:text>
-        <xsl:value-of select="$number_glosses"/>
-      </xsl:attribute>
-      <xsl:apply-templates select="./tei:seg[1]"></xsl:apply-templates>
-    </span>
-    <span>
-      <xsl:attribute name="class">
-        <xsl:text>gloss_interlinear</xsl:text>
-      </xsl:attribute>
-      <xsl:attribute name="id">
-        <xsl:text>gloss_interlineal_</xsl:text>
-        <xsl:value-of select="$number_glosses"/>
-      </xsl:attribute>
-      <xsl:apply-templates select="./tei:seg[2]"></xsl:apply-templates>
+    <span class="gloss">
+      <span>
+        <xsl:attribute name="class">
+          <xsl:text>gloss-target</xsl:text>
+        </xsl:attribute>
+        <xsl:attribute name="id">
+          <xsl:text>gloss-target_</xsl:text>
+          <xsl:value-of select="$number_glosses"/>
+        </xsl:attribute>
+        <xsl:apply-templates select="./tei:seg[1]"></xsl:apply-templates>
+      </span>
+      <span>
+        <xsl:attribute name="class">
+          <xsl:text>gloss-interlinear</xsl:text>
+        </xsl:attribute>
+        <xsl:attribute name="id">
+          <xsl:text>gloss-interlineal_</xsl:text>
+          <xsl:value-of select="$number_glosses"/>
+        </xsl:attribute>
+        <xsl:apply-templates select="./tei:seg[2]"></xsl:apply-templates>
+      </span>
     </span>
   </xsl:template>
   
