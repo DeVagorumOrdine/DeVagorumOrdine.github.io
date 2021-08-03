@@ -238,7 +238,8 @@ $(document).ready(function(){
   var bigCorr = $('.tei-corr').has('.tei-w, .tei-pc');
   var bigSic = $('.tei-sic').has('.tei-w, .tei-pc');
   var smallCorr = $('.tei-w').has('.tei-corr').not('.tei-sic .tei-w').not('.tei-corr .tei-w');
-  bigCorr.add( smallCorr).add(bigSic).hover(
+  var smallSic = $('.tei-w').has('.tei-sic').not('.tei-sic .tei-w').not('.tei-corr .tei-w');
+  bigCorr.add( smallCorr).add(bigSic).add(smallSic).hover(
     function(){
       var original = $(this).clone(); // if this is a w and not a corr with w inside
       if ( $(this).hasClass('tei-corr') ) {
