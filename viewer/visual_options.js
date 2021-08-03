@@ -13,7 +13,6 @@ function applyDarstellung(selected){
         $('.tei-surplus').show()
         $('.tei-del').show();
         $('.tei-add').addClass('tei-add-pal');
-        $('.tei-exemplar-note').show();
         $('.tei-hi.Red').css('color', 'red');
         //In the options menu
         $('.suboptions-ed').hide();
@@ -29,9 +28,7 @@ function applyDarstellung(selected){
         $('.tei-ex').show();
         $('.tei-reg').show()
         $('.tei-del').hide();
-        // $('.tei-pc').show();
         $('.tei-add').removeClass('tei-add-pal');
-        $('.tei-exemplar-note').hide();
         $('.tei-hi.Red').css('color', 'black');
   
         punctuation();
@@ -93,10 +90,13 @@ function punctuation(){
       //Menu
       $('.suboptions-3').show();
       $('.suboptions-4').hide();
-  
+      
+      $('.tei-l').show();
+      $('.tei-lg').show();
+      
       //Submenu
       lb_show();
-      $('.tei-l').show();
+      
   
       //Change order of lb and lg/l when next to each other
       $('.pre-lb-verse').show();
