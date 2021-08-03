@@ -78,10 +78,7 @@
                     <w lemma="ergo">ergo</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="socius">ſoc<choice><orig>ĳ</orig><reg>ii</reg></choice></w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="fortis">fortıt<choice><am>&#x0309;</am><ex>er</ex></choice></w><c> </c>
-                    <w lemma="bibo">bıb<choice>
-                        <seg>e</seg>
-                        <seg><note ana="hc:ExemplarNote hc:InterlinearGloss">a</note></seg>
-                    </choice><choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">!</pc><c> </c>
+                    <w lemma="bibo">bıb<choice><seg>e</seg><seg><note ana="hc:ExemplarNote hc:InterlinearGloss">a</note></seg></choice><choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">!</pc><c> </c>
                 </l>
             </lg>
                 <lg n="2" rhyme="bbbb">
@@ -210,7 +207,7 @@
                     <w lemma="femoralis">femorale</w><pc resp="#PR">.</pc><c> </c>
                 </l>
             </lg>
-            <ab><add hei:placeRef="hc:Inline" hand="H1"><w lemma="versus"><choice><abbr>w<am>&#x0309;</am></abbr><expan>vers</expan></choice><choice><am>ꝰ</am><ex>us</ex></choice></w></add></ab>
+            <note ana="hc:ExemplarNote" hei:placeRef="hc:Inline" hand="#H1"><w lemma="versus"><choice><abbr>w<am>&#x0309;</am></abbr><expan>vers</expan></choice><choice><am>ꝰ</am><ex>us</ex></choice></w></note>
             <lg n="6" rhyme="ffff">
                 <lb n="12"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
                 <l n="1"><w lemma="si">Sı</w><c> </c>
@@ -291,7 +288,7 @@
                     <w lemma="venio">venitıs</w><pc resp="#PR">?</pc><c> </c>
                 </l>
             </lg>
-            <ab><add hei:placeRef="hc:Inline" hand="H1"><w lemma="versus"><choice><abbr>w<am>&#x0309;</am></abbr><expan>vers</expan></choice><choice><am>ꝰ</am><ex>us</ex></choice></w></add></ab>
+            <note ana="hc:ExemplarNote" hei:placeRef="hc:Inline" hand="#H1"><w lemma="versus"><choice><abbr>w<am>&#x0309;</am></abbr><expan>vers</expan></choice><choice><am>ꝰ</am><ex>us</ex></choice></w></note>
             <lg n="8" rhyme="ghhh">
                 <lb n="20"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
                 <l n="1"><w lemma="noster">N<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>oste</ex>r</expan></choice></w><c> </c>
@@ -382,11 +379,12 @@
                     <w lemma="potator">potatori</w><pc resp="#PR">.</pc><c> </c>
                     </l>
             </lg>
-                <ab><add hei:placeRef="hc:Inline" hand="#H1">
-                    <hi rendition="hc:RedUnderlined"><w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w><c> </c>
-                        <w lemma="aliter">alıt<choice><am>&#x0309;</am><ex>er</ex></choice></w></hi>
-                </add></ab>            
-            
+                <note ana="hc:ExemplarNote" hei:placeRef="hc:Inline" hand="#H1">
+                    <hi rendition="hc:RedUnderlined">
+                        <w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w><c> </c>
+                        <w lemma="aliter">alıt<choice><am>&#x0309;</am><ex>er</ex></choice></w>
+                    </hi>
+                </note>            
             <lg n="11=10b" rhyme="jjjj">
                 <lb n="29"/><label ana="hc:DivisionMark"><hi hei:color="Red">¶</hi></label>
                 <l n="1"><w lemma="noster">N<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>ost</ex>r</expan></choice>u<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>

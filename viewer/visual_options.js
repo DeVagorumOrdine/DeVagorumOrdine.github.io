@@ -13,7 +13,8 @@ function applyDarstellung(selected){
         $('.tei-surplus').show()
         $('.tei-del').show();
         $('.tei-add').addClass('tei-add-pal');
-  
+        $('.tei-exemplar-note').show();
+        $('.tei-hi.Red').css('color', 'red');
         //In the options menu
         $('.suboptions-ed').hide();
   
@@ -30,6 +31,8 @@ function applyDarstellung(selected){
         $('.tei-del').hide();
         // $('.tei-pc').show();
         $('.tei-add').removeClass('tei-add-pal');
+        $('.tei-exemplar-note').hide();
+        $('.tei-hi.Red').css('color', 'black');
   
         punctuation();
   
@@ -66,9 +69,9 @@ function punctuation(){
   
   function l_show(){
     if ($('input[name=l-show]').is(':checked')){
-      $('.tei-l:not(.pre-lb-verse)').show();
+      $('.tei-l:not(.pre-lb-verse)').add('.tei-lg:not(.pre-lb-stanza)').show();
     } else {
-      $('.tei-l').hide();
+      $('.tei-l').add('.tei-lg').hide();
     };  
   };
   
@@ -98,6 +101,8 @@ function punctuation(){
       //Change order of lb and lg/l when next to each other
       $('.pre-lb-verse').show();
       $('.post-lb-verse').remove();
+      $('.pre-lb-stanza').show();
+      $('.post-lb-stanza').remove();
       
   
     } else if (selected == 'fac'){
@@ -132,6 +137,17 @@ function punctuation(){
         $(this).addClass('pre-lb-verse');
         $(this).hide();
       });
+
+      $.each ($('.tei-l.pre-lb-verse').prev('.tei-lg'), function(){
+        console.log($(this));
+        var clone = $(this).clone();
+        $(this).nextAll('.tei-lb').first().after(clone);
+        clone.removeClass('pre-lb-stanza');
+        clone.addClass('post-lb-stanza');
+        $(this).addClass('pre-lb-stanza');
+        $(this).hide();
+      });
+      
     };
   };
   

@@ -119,7 +119,7 @@
 }
 
 
-.tei-hi.hc-Red {
+.tei-hi.Red {
     color: Red;
 }
 
@@ -146,7 +146,7 @@
     position: relative;
 }
 
-/* INTERLINEAL GLOSSES */
+/* GLOSSES */
 
 .gloss {
     position: relative;
@@ -159,8 +159,12 @@
     left: 0;
     padding-right: 3px;
     padding-left: 3px;
-
 }
+
+.tei-exemplar-note {
+    color: #77a8a8;
+}
+
 
 
 /* POPUPS */

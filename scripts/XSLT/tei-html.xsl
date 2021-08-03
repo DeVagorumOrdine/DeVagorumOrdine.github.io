@@ -141,9 +141,9 @@
   
   
 <!-- Special Notes on Variants on Original Manuscript -->
-  <xsl:template match="tei:choice[count(tei:seg) > 1][.//tei:note[contains(@ana,'hc:ExemplarNote')]]">
+  <xsl:template match="tei:choice[count(tei:seg) > 1][.//tei:note[contains(@ana,'hc:InterlinearGloss')]]">
     <xsl:variable name="number_glosses" as="xs:integer">
-      <xsl:value-of select="count(./preceding::tei:note[contains(@ana,'hc:ExemplarNote')])"/>
+      <xsl:value-of select="count(./preceding::tei:note[contains(@ana,'hc:InterlinearGloss')])"/>
     </xsl:variable>
     <span class="gloss">
       <span>
@@ -171,6 +171,12 @@
   
   <xsl:template match="tei:note[contains(@ana,'hc:InterlinearGloss')]">
     <xsl:apply-templates select="node()"/>
+  </xsl:template>
+  
+  <xsl:template match="tei:note[contains(@ana,'hc:ExemplarNote')][not(contains(@ana,'hc:InterlinealGloss'))]">
+    <span class="tei-exemplar-note">
+      <xsl:apply-templates select="node()"/>  
+    </span>
   </xsl:template>
   
   
