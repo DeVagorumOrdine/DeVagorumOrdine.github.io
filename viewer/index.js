@@ -21,6 +21,11 @@ const urlParams = new URLSearchParams(current_url);
 const ms = urlParams.get('ms')
 const pg = urlParams.get('pg')
 
+
+// Set the height of the map, based on viewport
+$('#map').height( $(window).height() - 30 )
+
+
 // Map views always need a projection.  Here we just want to map image
 // coordinates directly to map coordinates, so we create a projection that uses
 // the image extent in pixels.
@@ -126,35 +131,20 @@ $(document).ready(function(){
   });
   
   
-  // Move the image when scrolling
-  
+  // SCROLL IMAGE
+  const map = $('#map');
   $(window).scroll(function() {
-    var current_margin = $('#map').css('margin-top');
-    current_margin = parseInt(current_margin);
-    
-    
-
-    var top_of_element = $("#map").offset().top;
-    var bottom_of_element = $("#map").offset().top + $("#map").outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-
-
-    if (top_of_screen > (bottom_of_element - 400)){
-      $('#map').css('margin-top', current_margin + 400);
-    } else if (bottom_of_screen < top_of_element +400){
-      $('#map').css('margin-top', current_margin - 400);
+    var map_offset = map.offset()['top'];
+    var distance = $(window).height() +  $(document).scrollTop() - map_offset - map.height();
+    var previous = parseInt(map.css('top'));
+    var movement = previous + distance - 20;
+    if (movement < 0) {
+      map.css('top', 0);  
+    } 
+    else if (distance < 0 || previous + map.height() + 30 < $('#edition').height() ) {
+      map.css('top', movement);
     };
-});
-  
-  
-  
-  
-  
-
-
-
-  
+  });
 
 
 });

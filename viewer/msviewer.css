@@ -1,9 +1,10 @@
 #map {
     max-width: 800px;
-    height: 1000px;
+    /* height: 1000px; */
     border: solid rgb(31, 2, 2) 5px;
     background-color: gray;
     /* position: absolute;
     right: 0; */
     margin-right: 2rem;
+    position: relative;
 }

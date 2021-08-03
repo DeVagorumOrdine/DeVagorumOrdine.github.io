@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS" xml:id="dvo_B">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cum in orbem universum</title>
+                <respStmt>
+                    <resp ref="#ed.Vollmann">nach der Übersetzung von</resp>
+                    <name>Carmina Burana. Ed. and transl. Benedikt Konrad
+                        Vollmann. Frankfurt a. M. 1987 (= Bibliothek des Mittelalters 13).</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p></p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>München</settlement>
+                        <repository>BSB</repository>
+                        <idno>Cod. lat. mon. 4660</idno>
+                        <msName>Codex Buranus</msName>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Vollmann">Carmina Burana. Ed. and transl. Benedikt Konrad
+                        Vollmann. Frankfurt a. M. 1987 (= Bibliothek des Mittelalters 13).</witness>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. and transl. Otto Schumann and
+                        Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" script="frühgotische Minuskel" medium="brown-red ink">carefully written</handNote><handNote/>
+                <handNote xml:id="H2" script="frühgotische Minuskel" medium="red ink"> corrections (same hand?)</handNote><handNote/>
+                <handNote xml:id="H3" script="unknown" medium="unknown">later corrections</handNote><handNote/>
+            </handNotes>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+<!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <lg n="1">
+                <l n="1">Wenn man singt: „Gehet hin in alle Welt!“, </l>
+                <l n="2">machen sich die Priester auf, eilen die Mönche, </l>
+                <l n="3">erheben sich die Leviten von der Verlesung des Evangeliums, </l>
+                <l n="4">um sich unserer Glaubensgemeinschaft anzuschließen, die das Heil des Lebens ist. </l>
+            </lg>
+            <lg n="2">
+                <l n="1">In unserer Glaubensgemeinschaft gilt das Schriftwort: ‚Prüfet alles!‘ </l>
+                <l n="2">Seht euch unseren Lebenswandel gründlich an </l>
+                <l n="3">und haltet durch in den Anfechtungen böser Kleriker, </l>
+                <l n="4">die euch nicht, wie es die Nächstenliebe fordert, großzügig unterstützen! </l>
+            </lg>
+            <lg n="3">
+                <l n="1">Auch wir sind jetzt Förderer christlicher Barmherzigkeit, </l>
+                <l n="2">weil wir Große und Kleine aufnehmen; </l>
+                <l n="3">wir nehmen Reiche auf – und Arme,</l>
+                <l n="4">die die frommen Mönche vor die Tür setzen. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Wir nehmen den Mönch auf mit seinem geschorenen Haarkranz </l>
+                <l n="2">und den Priester, wenn er mit seiner Gemahlin kommt, </l>
+                <l n="3">den Lehrer mit seinen Schülern, den Mann mit seiner Freundin, </l>
+                <l n="4">am liebsten aber den gutgekleideten Studenten. </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Märker, Bayern, Sachsen, Österreicher – </l>
+                <l n="2">alle, die ihr wahrhaft edel seid, bitte ich als meine Freunde, </l>
+                <l n="3">vernehmt die neuen Drekretalen: </l>
+                <l n="4">‚Verdammt seien die Geizhälse und alle, die nicht großzügig sind!‘  </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Unsere Glaubensgemeinschaft nimmt Gerechte auf und Ungerechte, </l>
+                <l n="2">Lahme und Schwache, vom Alter Gezeichnete, </l>
+                <l n="3">Raufbolde, Friedfertige, Umgängliche und Rasende, </l>
+                <l n="4">Böhmen, Deutsche, Slaven und Romanen, </l>
+            </lg>
+            <lg n="7">
+                <l n="1">Mittelgroße, Riesen, Zwerge, </l>
+                <l n="2">solche mit bescheidenem Wesen und Gecken. </l>
+            </lg>
+            <lg n="8">
+                <l n="1">Ich will euch die Regeln des Ordens der Fahrenden sagen: </l>
+                <l n="2">Sie zeichnen sich durch vornehme Lebensführung und umgängliche Art aus. </l>
+                <l n="3">Es erfreut sie in der Tat ein fetter Braten </l>
+                <l n="4">mehr als ein Stück Gerstenbrot. </l>
+            </lg>
+            <lg n="9">
+                <l n="1">Unser Orden verbietet strikt die Teilnahme am Frühgottesdienst, </l>
+                <l n="2">– böse Geister aller Art treiben in der Frühe ihr Unwesen, </l>
+                <l n="3">die in uns trügerische Gesichte hervorrufen –, </l>
+                <l n="4">vielmehr ist, wer um diese Zeit aufsteht, nicht bei klarem Verstand. </l>
+            </lg>
+            <lg n="10">
+                <l n="1">Unser Orden verbietet ein für allemal den Frühgottesdienst, </l>
+                <l n="2">vielmehr suchen wir gleich nach dem Aufstehen die Schenke heim; </l>
+                <l n="3">dort lassen wir Wein und Hühner kommen. </l>
+                <l n="4">Hier fürchten wir nichts außer den Drohungen des Hasard. </l>
+            </lg>
+            <lg n="11">
+                <l n="1">Unser Orden wir zu Recht eine Glaubensgemeinschaft genannt, </l>
+                <l n="2">weil sich zu ihr eine gemischtgeschlechtliche Gemeinde bekennt. </l>
+                <l n="3">Es kann ihr demzufolge der Artikel ‚der‘, ‚die‘ oder ‚das‘ beigesetzt werden, </l>
+                <l n="4">weil ja, wer so viele beherbergt, jedes Geschlecht annehmen kann. </l>
+            </lg>
+            <lg n="12">
+                <l n="1">Unser Orden verbietet, zwei Kleider zu haben; </l>
+                <l n="2">wer schon ein Untergewand hat, so daß er einigermaßen anständig herumläuft </l>
+                <l n="3">entledigt sich auf der Stelle des Mantels. Unter Decius’ Aufsicht </l>
+                <l n="4">schnallt ihm das Spiel ganz gewiß den Gürtel ab.</l>
+            </lg>
+            <lg n="13">
+                <l n="1">Was bezüglich der oberen Körperhälfte bestimt wurde, soll auch für die untere gelten: </l>
+                <l n="2">Wer ein Hemd hat, soll keine Hose tragen, </l>
+                <l n="3">und wenn ein Schuh nachkommt, sol man nicht zuvor einen Strumpf anziehen. </l>
+                <l n="4">Wer dagegen verstößt, wird exkommuniziert. </l>
+            </lg>
+            <lg n="14">
+                <l n="1">Unter gar keinen Umständen darf einer hungrig aus dem Wirtshaus hinausgehen, </l>
+                <l n="2">und wenn er arm ist, soll er auf jeden Fall um eine milde Gabe bitten. </l>
+                <l n="3">Oft vermehrt sich ein einziges Geldstück, </l>
+                <l n="4">wenn sich ein geschickter Spieler zum Spiel niederläßt. </l>
+            </lg>
+            <lg n="15">
+                <l n="1">Niemand soll, wenn er unterwegs ist, gegen den Wind marschieren</l>
+                <l n="2">und wegen seiner Armut eine geschmerzte Miene zur Schau tragen, </l>
+                <l n="3">vielmehr soll er immer ein hoffnungsfrohes Gesicht aufsetzen wie einer, der sich zu helfen weiß, </l>
+                <l n="4">denn auf ein großes Übel folgt ein Glückslos. </l>
+            </lg>
+            <lg n="16">
+                <l n="1">Sagt den Leuten, zu denen ihr kommt, warum </l>
+                <l n="2">ihr ihnen ihre schlechten Sitten vorhalten wollt: </l>
+                <l n="3">‚Ich bin gekommen, die Verworfenen zu verwerfen und die Gerechten zu erhöhen </l>
+                <l n="4">und die Gerechten von den Verworfenen zu scheiden.‘ </l>
+            </lg>
+        </body>
+    </text>
+</TEI>
