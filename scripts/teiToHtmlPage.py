@@ -21,6 +21,8 @@ for file in os.listdir('TEI'):
     if '_transl' in file:
         tr_res = translation_xml_html(file, translation_xslt)
         translation_json["texts"][tr_res[0]] = tr_res[1]
+    elif '_annotations' in file:
+        continue
     else:
         # print(file)
         dom = et.parse('TEI/'+file)

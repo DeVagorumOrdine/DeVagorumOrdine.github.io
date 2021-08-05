@@ -1,6 +1,7 @@
 from lxml import etree as et 
 import codecs 
 import os 
+import re 
 
 # Create the XML file
 stanzas = et.Element('stanzas')
@@ -27,11 +28,13 @@ newDOM.write('TEI/_strophenSynopse.xml', pretty_print=True, encoding="UTF-8", xm
 # Create the HTML
 
 wss = newDOM.findall('.//witness')
+htmlDOM =et.parse('viewer/strophen_synopse_template.html')
+root = htmlDOM.getroot()
 
-div = et.Element('div', {'class': 'container-fluid'})
-htmlDOM = et.ElementTree(div) 
+div = root.find('.//div[@id="main"]')
 
 for i in range(0, max([len(x) for x in wss])):
+    print(i)
     if i == 0:
         row = et.SubElement(div, 'div', {'class': 'row'})
         for wit in wss:
@@ -42,15 +45,20 @@ for i in range(0, max([len(x) for x in wss])):
         row = et.SubElement(div, 'div', {'class': 'row'})
         for wit in wss:
             if i < len(wit):
-                print(i)
-                el = et.SubElement(row, 'div', {'class': 'col-md-7r full sid-'+ wit[i].attrib['corresp']})
-                el2 = et.SubElement(el, 'h4', {'class': 'text-center'})
-                el2.text =  wit[i].attrib['corresp']
+                # print(i)
+                el = et.SubElement(row, 'div', {'class': 'col-md-7r'})
+                el1 = et.SubElement(el, 'div', {'class': 'full sid-'+ re.sub(',', '-', wit[i -1].attrib['corresp'])})
+                el2 = et.SubElement(el1, 'h4', {'class': 'text-center'})
+                el2.text =  wit[i-1].attrib['corresp']
+                el3 = et.SubElement(el1, 'span', {'class': 'inner-n'})
+                el3.text = wit[i-1].attrib['n']
             else:
                 el = et.SubElement(row, 'div', {'class': 'col-md-7r empty'})
                 el.text = " "
         
 
 
-
-htmlDOM.write('viewer/synopse_test.html', pretty_print=True, encoding="UTF-8", xml_declaration=False)
+for elem in root.iter():
+    if elem.text == None:
+        elem.text = ''
+htmlDOM.write('viewer/strophen_synopse.html', pretty_print= True, encoding="UTF-8", xml_declaration=False)

@@ -1,17 +1,28 @@
+* {
+    font-size: 12px;
+}
+
 .full {
-    height: 100px;
-    border: solid 5px;
-    border-color: green;
-    border-radius: 15px;
-    margin: 10px;
+    height: 50px;
+    /* border: solid 5px; */
+    /* border-color: green; */
+    border-radius: 10px;
+    margin: 4px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
 .empty {
-    height: 200px;
+    height: 50px;
 }
 
+.inner-n {
+    position: absolute;
+    bottom: 1rem;
+    right: 2.7rem;
+}
 
 
 
