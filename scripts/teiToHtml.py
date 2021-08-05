@@ -47,6 +47,7 @@ for file in os.listdir('TEI'):
 
         sigle = file[:-4]
 
+        
 
         # PAGES JSON
         final_json['texts'][sigle] = {}
@@ -84,6 +85,7 @@ for file in os.listdir('TEI'):
 
 
         # STANZAS JSON 
+        stanzas_json['stanzas'][sigle] = {}
         for stanza in root_orig.findall('.//tei:lg', ns):
             stz_nr = stanza.attrib['n']
             transform = et.XSLT(isolate_stanzas)
@@ -94,7 +96,7 @@ for file in os.listdir('TEI'):
             content = et.tostring(temp_dom2, encoding=str)
             content = specialChars(content)
             content = re.sub(r'\s{2,}', '', content)
-            stanzas_json['stanzas'][sigle + '-' + stz_nr] = content
+            stanzas_json['stanzas'][sigle][stz_nr] = content
 
 
 

@@ -19,11 +19,14 @@ $(document).ready(function(){
         columnBootst = spaltenzahl + 'r'
     };
     for(var i=0; i < spaltenzahl; i++){
-        console.log(stanzas["stanzas"]["B-3"]);
+        var index_dash = show_wits[i].indexOf("-");
+        var sigle = show_wits[i].substr(0,index_dash);
+        var num = show_wits[i].substr(index_dash +1);
+        console.log(sigle);
         $('#texts').append('<div class="col-md-'+ columnBootst +'">'+
             '<div class="text-col mb-4" id="textcol'+i+'">'+
-            '<h1 style="font-size:32px">' + show_wits[i].substr(0, show_wits[i].indexOf("-")) + '</h1>'+
-            stanzas['stanzas'][show_wits[i]]+
+            '<h1 style="font-size:32px">' + sigle + '</h1>'+
+            stanzas['stanzas'][sigle][num]+
             '</div>'+
         '</div>')
         

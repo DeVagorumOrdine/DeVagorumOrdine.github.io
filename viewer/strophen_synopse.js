@@ -40,8 +40,8 @@ $(document).ready(function(){
         
         console.log(wits.length);
         var new_window_width = 200 + 250 * wits.length;
-
-        wits = wits.join(',');
+        
+        wits = wits.sort().join(',');
         
         window.open('/synopse1.html?str=' + sid_comma +'&wit=' + wits, '', "width="+ new_window_width + 
                     ",height=500,top=300,left=100");

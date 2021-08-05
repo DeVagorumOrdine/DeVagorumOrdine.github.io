@@ -1,6 +1,8 @@
 import pages from './pages.json' ;
 import fragments from './html_fragments.json';
-// import {applyLayout} from './visual_options';
+import stanzas from './stanzas.json';
+import palette from './palette.json';
+
 const vis_opt = require("./visual_options");
 
 const colorMap = {1: 'red', 
@@ -38,6 +40,9 @@ function load_text(sel_col, sigle){
     $.each(fragments['texts'][sigle], function(key, val){
         text += val;
     });
+    $.each(stanzas['stanzas'], function(key,val){
+        console.log(key);
+    });
     sel_col.html(text);
     $('.tei-att-lemma').hide();
 };
@@ -59,6 +64,10 @@ function strophen_div(column){
         $(this).css('border', 'solid 2px ' + color);
         $(this).css('border-radius', '10px');
     });
+    // $(colId + ' > .stanza').css('margin', '2rem');
+    // $(colId + ' > .stanza').css('padding', '1rem');
+    // $(colId + ' > .stanza').css('border', 'solid 5px green');
+
 };
 
 function updateSpaltenzahlLinks(){
