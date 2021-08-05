@@ -4,8 +4,8 @@
   "description": "Easy viewer for manuscripts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel edition.html mss.html synopse.html team.html translation.html index.html strophen_synopse.html",
-    "build": "parcel build --public-url /resources edition.html mss.html synopse.html team.html translation.html index.html  strophen_synopse.html --no-source-maps",
+    "start": "parcel edition.html mss.html synopse.html team.html translation.html index.html strophen_synopse.html synopse1.html",
+    "build": "parcel build --public-url /resources edition.html mss.html synopse.html team.html translation.html index.html  strophen_synopse.html synopse1.html --no-source-maps",
     "website": "rm -r ./dist/* \n rm -r ../docs/resources/* \n npm run-script build\n cp ./dist/*.css ../docs/resources/\n cp ./dist/*.js ../docs/resources/\n cp ./dist/*.html ../docs/"
   },
   "author": "Gustavo Fernandez Riva",

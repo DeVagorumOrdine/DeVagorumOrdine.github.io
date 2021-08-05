@@ -59,10 +59,6 @@ function strophen_div(column){
         $(this).css('border', 'solid 2px ' + color);
         $(this).css('border-radius', '10px');
     });
-    // $(colId + ' > .stanza').css('margin', '2rem');
-    // $(colId + ' > .stanza').css('padding', '1rem');
-    // $(colId + ' > .stanza').css('border', 'solid 5px green');
-
 };
 
 function updateSpaltenzahlLinks(){

@@ -26,4 +26,25 @@ $(document).ready(function(){
         $('.sid-' + sid).css('background-color', 'white');
     })
 
+    $('.full').click(function(){
+        var cls = $(this).attr('class');
+        var sid = $(this).attr('class').substr(cls.indexOf("-") + 1);
+        var sid_comma = sid.replace('-',',');
+        var elements = $('.full.sid-'+ sid);
+        var wits = [];
+        elements.each(function(idx){
+            var wit = $(this).attr('class').split(' ')[1].substr(7);
+            wit += '-' + $(this).find('span.inner-n').text();
+            wits.push(wit);
+        });
+        
+        console.log(wits.length);
+        var new_window_width = 200 + 250 * wits.length;
+
+        wits = wits.join(',');
+        
+        window.open('/synopse1.html?str=' + sid_comma +'&wit=' + wits, '', "width="+ new_window_width + 
+                    ",height=500,top=300,left=100");
+    });
+
 });
