@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<stanzas>
+  <witness id="B">
+    <lg n="1" corresp="CB219,1"/>
+    <lg n="2" corresp="CB219,2"/>
+    <lg n="3" corresp="CB219,4"/>
+    <lg n="4" corresp="CB219,5"/>
+    <lg n="5" corresp="CB219,3"/>
+    <lg n="6" corresp="CB219,6"/>
+    <lg n="7" corresp="CB219,7"/>
+    <lg n="8" corresp="CB219,9"/>
+    <lg n="9" corresp="CB219,10"/>
+    <lg n="10" corresp="CB219,11"/>
+    <lg n="11" corresp="CB219,8"/>
+    <lg n="12" corresp="CB219,12"/>
+    <lg n="13" corresp="CB219,13"/>
+    <lg n="14" corresp="CB219,14"/>
+    <lg n="15" corresp="CB219,15"/>
+    <lg n="16" corresp="CB219,16"/>
+  </witness>
+  <witness id="Lz">
+    <lg n="1" corresp="CB219,9"/>
+    <lg n="2" corresp="CB219,10"/>
+    <lg n="3" corresp="CB219,12"/>
+    <lg n="4" corresp="DVO,d"/>
+    <lg n="5" corresp="DVO,e"/>
+    <lg n="6" corresp="DVO,f"/>
+    <lg n="7" corresp="DVO,g"/>
+    <lg n="8" corresp="DVO,h"/>
+    <lg n="9" corresp="DVO,k"/>
+    <lg n="10" corresp="DVO,i"/>
+    <lg n="11" corresp="DVO,l"/>
+    <lg n="12" corresp="CB191,12"/>
+    <lg n="13" corresp="CB191,11"/>
+  </witness>
+  <witness id="Pr">
+    <lg n="1" corresp="CB219,9"/>
+    <lg n="2" corresp="CB191,12"/>
+    <lg n="3" corresp="DVO,i"/>
+    <lg n="4" corresp="CB219,12"/>
+    <lg n="5" corresp="CB191,11"/>
+    <lg n="6" corresp="DVO,h"/>
+  </witness>
+  <witness id="Pé">
+    <lg n="1" corresp="DVO,d"/>
+    <lg n="2" corresp="DVO,k"/>
+    <lg n="3" corresp="CB219,9"/>
+    <lg n="4" corresp="DVO,l"/>
+    <lg n="5" corresp="DVO,h"/>
+    <lg n="6" corresp="CB219,10"/>
+    <lg n="7" corresp="DVO,g"/>
+    <lg n="8" corresp="CB219,12"/>
+    <lg n="9" corresp="DVO,i"/>
+    <lg n="10" corresp="CB191,11"/>
+    <lg n="11" corresp="CB191,12"/>
+  </witness>
+  <witness id="Vo">
+    <lg n="1" corresp="CB191,12"/>
+    <lg n="2" corresp="CB191b,3"/>
+    <lg n="3" corresp="CB191b,3a"/>
+    <lg n="4" corresp="CB191b,5"/>
+    <lg n="5" corresp="CB191b,2"/>
+    <lg n="6" corresp="CB191,16"/>
+    <lg n="7" corresp="CB191,11"/>
+    <lg n="8" corresp="DVO,d"/>
+    <lg n="9" corresp="DVO,e"/>
+    <lg n="10" corresp="DVO,f"/>
+    <lg n="11" corresp="DVO,l"/>
+  </witness>
+  <witness id="We">
+    <lg n="1" corresp="CB219,9"/>
+    <lg n="2" corresp="DVO,p"/>
+    <lg n="3" corresp="CB219,10"/>
+    <lg n="4" corresp="CB219,12"/>
+    <lg n="5" corresp="CB219,5"/>
+    <lg n="6" corresp="CB191,11"/>
+    <lg n="7" corresp="DVO,q"/>
+  </witness>
+  <witness id="Wi">
+    <lg n="1" corresp="DVO,d"/>
+    <lg n="2" corresp="CB219,9"/>
+    <lg n="3" corresp="DVO,h-1"/>
+    <lg n="4" corresp="DVO,l"/>
+    <lg n="5" corresp="DVO,i"/>
+    <lg n="6" corresp="DVO,k"/>
+    <lg n="7" corresp="DVO,g"/>
+    <lg n="8" corresp="CB219,10"/>
+    <lg n="9" corresp="CB219,12"/>
+    <lg n="10" corresp="CB191,12"/>
+    <lg n="11=10b" corresp="CB191,12"/>
+    <lg n="12" corresp="CB191,11"/>
+  </witness>
+</stanzas>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listAnnotation>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='1']/l[@n='4']/w[position()=6])"> Fleisch
+    war als Mahlzeit in der <emph rend="italic">Regula Benedicti</emph> nur kranken und schwachen
+    Mitbrüdern erlaubt; vgl. c. 36: <emph rend="italic">Sed et carnium esus infirmis omnimo
+      debilibus pro reparatione concedatur; at ubi meliorati fuerint, a carnibus more solito omnes
+      abstineant.</emph></note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='2']/l[@n='1']/w[position()=4])">Die Matutin
+    (auch Mette) ist das erste Stundengebet des liturgischen Tages. Diese sollen laut der <emph
+      rend="italic">Regula Benedicti</emph> bei Tagesbeginn stattfinden; vgl. c. 8: <emph
+      rend="italic">mox Matutini qui incipiente luce agendi sunt, subsequantur.</emph></note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='3']/l[@n='1']/w[position()=3])">Satirische
+    Anspielung auf die Mönchsregeln, z. B. die <emph rend="italic">Regula Benedicti</emph>.</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='3']/l[@n='2'])">Satirische Kritik am
+    (seidenen) Untergewand der Cluniazenser. Ähnlich in den Liedern <emph rend="italic">De
+      Clarevallensibus et Cluniacensibus</emph> und <emph rend="italic">De Mauro et Zoilo</emph>.
+    Vgl. Schüppert 1972, S. 186 f. und 117 f. Außerdem Sonntag 2008, S. 100 f.</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='4']/l[@n='1'])">Vgl. Gal. 4,4; Ed.: Vulgata
+    2018: <emph rend="italic">at ubi venit plenitudo temporis | misit Deus Filium suum</emph>;
+    Übers. Johannes Stettner 2018: „Aber als die Fülle der Zeit gekommen war, hat Gott seinen Sohn
+    gesandt“.</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='6']/l[@n='1'])">Vgl. <emph rend="italic"
+      >Disticha Catonis</emph> 4,16: <emph rend="italic">Utere quaesitis opibus, fuge nomen avari; |
+      Quid tibi divitiae prosint, si pauper abundes?</emph>; Übers. P. R.: „Gebrauche erworbene
+    Schätze, fliehe vor dem Ruch des Geizigen; Was nutzt dir schon der Reichtum, wenn du als Armer
+    im Überfluss lebst?“ Ed.: Disticha Catonis. Recensuit et apparatu critico instruxit Marcus Boas.
+    Opus post Marci Boas mortem edendum curavit Henricus Johannes Botschuyver. Amsterdam
+    1952.</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='6']/l[@n='3']/w[position()=5])">Sulamith
+    ist der Name der Geliebten in Salomos ‚Hohelied der Liebe‘ (<emph rend="italic">Canticum
+      Canticorum</emph>); vgl. Hld. 7,1.</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='7']/l[@n='1'])">Die Formulierung spielt auf
+    das Himmliche Jerusalem an. Denn im Kirchweihhymnus <emph rend="italic">Urbs Ierusalem
+      beata</emph> heißt es: <emph rend="italic">Portae nitent margaritis adytis patentibus</emph>.
+    (Vgl. Hld. 7,1.</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='9']/l[@n='4']/w[position()=2])">Inhaltliche
+    Konjektur in der Edition von Hilka/Schumann/Bischoff (1930–1970) zu <emph rend="italic"
+      >relevabitur</emph>, also zur Übersetzung: „wird der Bauch <emph rend="italic">erquickt</emph>
+    werden, indem er zum Zapfen geführt wird.“</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='10']/l[@n='4']/w[position()=5])"><emph
+      rend="italic">Femuralia</emph> oder auch <emph rend="italic">Feminalia</emph> bezeichnen
+    (abgeleitet von lat. <emph rend="italic">femur</emph>, ‚Oberschenkel‘) kurze Hosen, wie sie
+    schon beim römischen Militär getragen wurden. Vgl. Graham Summer: Roman Military Dress. Stroud
+    2009, S. 182.</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='12']/l[@n='4']">Scherzhaft-parodistische
+    Umkehrung von Lk 18,13; Ed.: Vulgata 2018: <emph rend="italic">Deus propitius esto mihi
+      peccatori</emph>; Übers. Thomas Johann Bauer 2018: „Gott, sei mir Sünder gnädig!“</note>
+  <note ana="hc:EditorialNote" 
+    target="Lz#xpath(//lg[@n='13']/l[@n='4']">Bezeichnung für die
+    Totenmesse, abgeleitet vom Incipit des Introitus zur Begräbnisfeier nach katholischem Ritus
+      (<emph rend="italic">Missale Romanum</emph>).</note>
+</listAnnotation>

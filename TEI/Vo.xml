@@ -56,8 +56,8 @@
     <text ana="hc:Poem hc:CompleteExpression">
         <body>
             <pb n="13v"/>
-            <lg n="1" rhyme="aaaa">
-                <l n="1">
+            <lg n="1" rhyme="aaaa" corresp="CB191,12">
+                <l n="1" corresp="CB191,12-1">
                     <lb n="13"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="meus">Meu<choice>
@@ -77,7 +77,7 @@
                     <w lemma="moror">mori</w>
                     <pc resp="#ed.Suttina">:</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="CB191,12-2">
                     <lb n="14"/>
                     <w lemma="ibi">Ibi</w><c> </c>
                     <w lemma="vivo">vı<choice>
@@ -89,7 +89,7 @@
                     <w lemma="os">ori</w>
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="CB191,12-3">
                     <lb n="15"/>
                     <w lemma="ut"><choice>
                             <orig>V</orig>
@@ -104,7 +104,7 @@
                     <w lemma="chorus">chori</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="CB191,12-4">
                     <lb n="16"/>
                     <w lemma="deus">Deus</w><c> </c>
                     <w lemma="sum">ſıt</w><c> </c>
@@ -117,8 +117,8 @@
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
-            <lg n="2" rhyme="bbbb">
-                <l n="1">
+            <lg n="2" rhyme="bbbb" corresp="CB191b,3">
+                <l n="1" corresp="CB191b,3-1">
                     <lb n="17"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="vinum">Vınu<choice>
@@ -140,7 +140,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="CB191b,3-2">
                     <lb n="18"/>
                     <w lemma="nam"><choice>
                             <orig>N</orig>
@@ -163,7 +163,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">;</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="CB191b,3-3">
                     <lb n="19"/>
                     <w lemma="dum"><choice>
                             <orig>D</orig>
@@ -181,7 +181,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">:</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="CB191b,3-4">
                     <lb n="20"/>
                     <w lemma="qui">Qui</w><c> </c>
                     <w lemma="vivo">vı<choice>
@@ -203,8 +203,8 @@
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
-            <lg n="3" rhyme="cccc">
-                <l n="1">
+            <lg n="3" rhyme="cccc" corresp="CB191b,3a">
+                <l n="1" corresp="CB191b,3a-1">
                     <lb n="21"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="vinum">Vini</w><c> </c>
@@ -216,7 +216,7 @@
                     <w lemma="pertranseo">pertranſıre</w>
                     <pc resp="#ed.Suttina">:</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="CB191b,3a-2">
                     <lb n="22"/>
                     <w lemma="vinum">Vınu<choice>
                             <am>&#x0304;</am>
@@ -237,7 +237,7 @@
                     <w lemma="salio">ſalıre</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="CB191b,3a-3">
                     <lb n="23"/>
                     <w lemma="et"><choice>
                             <orig>E</orig>
@@ -257,7 +257,7 @@
                     <w lemma="eo">ıre</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="CB191b,3a-4">
                     <lb n="24"/>
                     <w lemma="mutus"><choice>
                             <orig>M</orig>
@@ -275,8 +275,8 @@
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
-            <lg n="4" rhyme="dddd">
-                <l n="1">
+            <lg n="4" rhyme="dddd" corresp="CB191b,5">
+                <l n="1" corresp="CB191b,5-1">
                     <lb n="25"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="affero">Affertur</w><c> </c>
@@ -304,7 +304,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">:</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="CB191b,5-2">
                     <lb n="26"/>
                     <w lemma="masculinus">Masculınu<choice>
                             <am>&#x0304;</am>
@@ -321,7 +321,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">;</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="CB191b,5-3">
                     <lb n="27"/>
                     <w lemma="sed"><choice>
                             <orig>S</orig>
@@ -344,7 +344,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">:</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="CB191b,5-4">
                     <lb n="28"/>
                     <w lemma="loquor">Loqui</w><c> </c>
                     <w lemma="facio">faci<choice>
@@ -363,8 +363,8 @@
                 </l>
             </lg>
             <pb n="14r"/>
-            <lg n="5" rhyme="eeee">
-                <l n="1">
+            <lg n="5" rhyme="eeee" corresp="CB191b,2">
+                <l n="1" corresp="CB191b,2-1">
                     <lb n="1"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="potator">Potatores</w><c> </c>
@@ -377,7 +377,7 @@
                     <w lemma="benignus">benigni</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="CB191b,2-2">
                     <lb n="2"/>
                     <w lemma="tam"><choice>
                             <orig>T</orig>
@@ -403,7 +403,7 @@
                     <w lemma="dignus">ꝺigni</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="CB191b,2-3">
                     <lb n="3"/>
                     <w lemma="dum"><choice>
                             <orig>D</orig>
@@ -425,7 +425,7 @@
                     <w lemma="lignum">lıgni</w>
                     <pc resp="#ed.Suttina">:</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="CB191b,2-4">
                     <lb n="4"/>
                     <w lemma="non">Non</w><c> </c>
                     <w lemma="amo">amantes</w><c> </c>
@@ -445,8 +445,8 @@
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
-            <lg n="6" rhyme="ffff">
-                <l n="1">
+            <lg n="6" rhyme="ffff" corresp="CB191,16">
+                <l n="1" corresp="CB191,16-1">
                     <lb n="5"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="unusquisque"><choice>
@@ -474,7 +474,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">;</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="CB191,16-2">
                     <lb n="6"/>
                     <w lemma="ego"><choice>
                             <orig>E</orig>
@@ -498,7 +498,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">:</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="CB191,16-3">
                     <lb n="7"/>
                     <w lemma="sitis">Sıtim</w><c> </c>
                     <w lemma="et"><choice>
@@ -533,7 +533,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">;</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="CB191,16-4">
                     <lb n="8"/>
                     <w lemma="meus"><choice>
                             <orig>M</orig>
@@ -562,8 +562,8 @@
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
-            <lg n="7" rhyme="gggg">
-                <l n="1">
+            <lg n="7" rhyme="gggg" corresp="CB191,11">
+                <l n="1" corresp="CB191,11-1">
                     <lb n="9"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="ergo">Ergo</w><c> </c>
@@ -582,7 +582,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="CB191,11-2">
                     <lb n="10"/>
                     <w lemma="qui">Qua<choice>
                             <am>&#x0304;</am>
@@ -608,7 +608,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="CB191,11-3">
                     <lb n="11"/>
                     <w lemma="donec"><choice>
                             <orig>D</orig>
@@ -622,7 +622,7 @@
                             <ex>m</ex>
                         </choice></w><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="CB191,11-4">
                     <lb n="12"/>
                     <w lemma="canto"><choice>
                             <orig>C</orig>
@@ -641,8 +641,8 @@
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
-            <lg n="8" rhyme="hhhh">
-                <l n="1">
+            <lg n="8" rhyme="hhhh" corresp="DVO,d">
+                <l n="1" corresp="DVO,d-1">
                     <lb n="13"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="plenitudo">Plenitudo</w><c> </c>
@@ -655,7 +655,7 @@
                     <w lemma="exsulto">exultemus</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="DVO,d-2">
                     <lb n="14"/>
                     <w lemma="quamvis"><choice>
                             <orig>Q</orig>
@@ -682,7 +682,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="DVO,d-3">
                     <lb n="15"/>
                     <w lemma="licet"><choice>
                             <orig>L</orig>
@@ -703,7 +703,7 @@
                         </choice></w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="DVO,d-4">
                     <lb n="16"/>
                     <w lemma="ex"><choice>
                             <orig>E</orig>
@@ -722,8 +722,8 @@
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
-            <lg n="9" rhyme="iiii">
-                <l n="1">
+            <lg n="9" rhyme="iiii" corresp="DVO,e">
+                <l n="1" corresp="DVO,e-1">
                     <lb n="17"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="caelum">Celi</w><c> </c>
@@ -737,7 +737,7 @@
                             <ex>n</ex>
                         </choice>t</w><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="DVO,e-2">
                     <lb n="18"/>
                     <w lemma="et"><choice>
                             <orig>E</orig>
@@ -752,7 +752,7 @@
                         </choice>t</w>
                     <pc resp="#ed.Suttina">;</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="DVO,e-3">
                     <lb n="19"/>
                     <w lemma="nonne"><choice>
                         <orig>N</orig>
@@ -770,7 +770,7 @@
                         </choice>t</w>
                     <pc resp="#PR">,</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="DVO,e-4">
                     <lb n="20"/>
                     <w lemma="quam"><choice>
                             <am>Ꝙ&#x1DD3;</am>
@@ -802,8 +802,8 @@
                     <pc resp="#ed.Suttina">?</pc><c> </c>
                 </l>
             </lg>
-            <lg n="10" rhyme="jjjj">
-                <l n="1">
+            <lg n="10" rhyme="jjjj" corresp="DVO,f">
+                <l n="1" corresp="DVO,f-1">
                     <lb n="21"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="Cato">Catho</w><c> </c>
@@ -824,7 +824,7 @@
                         </choice>ſıtıs</w>
                     <pc resp="#PR">!‘</pc><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="DVO,f-2">
                     <lb n="22"/>
                     <w lemma="et">Et</w><c> </c>
                     <w lemma="hic">hoc</w><c> </c>
@@ -842,7 +842,7 @@
                     <w lemma="vita">vıtıs</w>
                     <pc resp="#ed.Suttina">;</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="DVO,f-3">
                     <lb n="23"/>
                     <w lemma="non"><choice>
                             <orig>N</orig>
@@ -857,13 +857,17 @@
                         </choice>ter</w><c> </c>
                     <w lemma="ingero">ingerit</w><c> </c>
                     <w lemma="pulcher">pulchra</w><c> </c>
-                    <w lemma="Sunamit"><choice>
+                    <w lemma="Sulamith"><choice>
                             <orig>ſ</orig>
                             <reg>S</reg>
-                        </choice>unamitıs</w>
+                        </choice>u
+                        <choice>
+                            <orig>n</orig>
+                            <reg resp="#PR">l</reg>
+                        </choice>amitıs</w>
                     <pc resp="#PR">.</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="DVO,f-4">
                     <lb n="24"/>
                     <w lemma="quis">Quıd</w><c> </c>
                     <w lemma="thesaurus">the<choice>
@@ -890,8 +894,8 @@
                     <pc resp="#ed.Suttina">?</pc><c> </c>
                 </l>
             </lg>
-            <lg n="11" rhyme="kkkk">
-                <l n="1">
+            <lg n="11" rhyme="kkkk" corresp="DVO,l">
+                <l n="1" corresp="DVO,l-1">
                     <lb n="25"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="audio">Audi<choice>
@@ -912,7 +916,7 @@
                             <ex>n</ex>
                         </choice>tem</w><c> </c>
                 </l>
-                <l n="2">
+                <l n="2" corresp="DVO,l-2">
                     <lb n="26"/>
                     <w lemma="ut"><choice>
                             <orig>V</orig>
@@ -927,7 +931,7 @@
                     <w lemma="rugio">rugıentem</w>
                     <pc resp="#PR">:</pc><c> </c>
                 </l>
-                <l n="3">
+                <l n="3" corresp="DVO,l-3">
                     <lb n="27"/>
                     <pc resp="#PR">„</pc>
                     <w lemma="quis">Quid</w><c> </c>
@@ -945,7 +949,7 @@
                     <w lemma="bibo">bıbentem</w>
                     <pc resp="#ed.Suttina">?</pc><c> </c>
                 </l>
-                <l n="4">
+                <l n="4" corresp="DVO,l-4">
                     <lb n="28"/>
                     <w lemma="vinum">Vinu<choice>
                             <am>&#x0304;</am>
