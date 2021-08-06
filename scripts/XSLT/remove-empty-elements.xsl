@@ -18,5 +18,7 @@
   <xsl:template match="tei:corr[not(string())]"></xsl:template>
   <xsl:template match="tei:sic[not(string())]"></xsl:template>
   <xsl:template match="tei:orig[not(string())]"></xsl:template>
+  <xsl:template match="tei:note[not(string())]"></xsl:template>
+  
   
 </xsl:stylesheet>
