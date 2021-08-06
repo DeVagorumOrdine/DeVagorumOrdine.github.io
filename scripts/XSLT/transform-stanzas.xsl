@@ -19,6 +19,7 @@
   <xsl:template match="tei:lg">
     <span xmlns="http://www.tei-c.org/ns/1.0" class="tei-lg">
       <br/>
+      <br/>
       <span class="n">
         <xsl:value-of select="./@n"/>
       </span>

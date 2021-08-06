@@ -2,6 +2,7 @@ from lxml import etree as et
 import codecs 
 import os 
 import re 
+import json 
 
 # Create the XML file
 stanzas = et.Element('stanzas')
@@ -65,3 +66,22 @@ for elem in root.iter():
     if elem.text == None:
         elem.text = ''
 htmlDOM.write('viewer/strophen_synopse.html', pretty_print= True, encoding="UTF-8", xml_declaration=False)
+
+
+#  Create JSON for the corresponding stanzas
+
+lgs = stanzas.findall('.//lg', ns)
+all_str_ids = set()
+corresp_json = {}
+for lg in lgs:
+    all_str_ids.add(lg.attrib['corresp'])
+    
+for str_id in all_str_ids:
+    corresp_json[str_id] = {}
+    for lg in stanzas.findall('.//lg[@corresp="'+ str_id +'"]', ns):
+        corresp_json[str_id][lg.getparent().attrib['id']] = lg.attrib['n']
+
+with codecs.open('viewer/stanzas_corresp.json', 'w', 'utf-8') as outfile:
+    json.dump(corresp_json, outfile)
+
+

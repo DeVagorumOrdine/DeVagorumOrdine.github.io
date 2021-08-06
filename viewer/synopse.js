@@ -2,6 +2,7 @@ import pages from './pages.json' ;
 import fragments from './html_fragments.json';
 import stanzas from './stanzas.json';
 import palette from './palette.json';
+import corresp from './stanzas_corresp.json';
 
 const vis_opt = require("./visual_options");
 
@@ -74,7 +75,7 @@ function addAlignmentAndStrophensynopse(){
     $('.stanza').hover(
         function(){
             $(this).find('span.align').show();
-            // $(this).find('span.all-str').show();
+            $(this).find('span.all-str').show();
         },
         function(){
             $(this).find('span.align').hide();
@@ -108,7 +109,30 @@ function addAlignmentAndStrophensynopse(){
         }
         });
     $('span.all-str').click(function(){
-
+        var sid = $(this).prevAll('span.corresp').text();
+        var number_of_wits = Object.keys(corresp[sid]).length;
+        if (number_of_wits > 1){
+            var new_window_width = 250 + 260 * number_of_wits;
+            window.open('/synopse1.html?str=' + sid, '', "width="+ new_window_width + 
+                    ",height=500,top=300,left=100");
+        } else {
+            if ( $(this).find('.msg-unika').length == 0 ){
+                $(this).append('<span class="msg-unika">Unika in dieser Hs.</span>')
+            }
+        }
+    });
+    $('span.all-str').hover(function(){
+        var sid = $(this).prevAll('span.corresp').text();
+        var number_of_wits = Object.keys(corresp[sid]).length;
+        if (number_of_wits < 2){
+            if ( $(this).find('.msg-unika').length == 0 ){
+                $(this).append('<span class="msg-unika">Unika in dieser Hs.</span>')
+            };
+            $(this).find('.msg-unika').show();
+        }
+    }, function(){
+        console.log('Off');
+        $(this).find('.msg-unika').hide();
     });
 
     }
@@ -132,7 +156,7 @@ $(document).ready(function(){
                     '</div>'+
                 '</div>'+
             '</div>'+
-            '<div class="text-col" id="textcol'+i+'">'+
+            '<div class="text-col p-3" id="textcol'+i+'" style="overflow-y:scroll;">'+
             '</div>'+
         '</div>')
         

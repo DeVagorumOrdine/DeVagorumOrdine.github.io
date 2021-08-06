@@ -1,4 +1,5 @@
 import palette from './palette.json' ;
+import stanzas_corresp from './stanzas_corresp.json';
 
 function hexToRgb(hex) {
     var bigint = parseInt(hex, 16);
@@ -36,23 +37,12 @@ $(document).ready(function(){
 
     $('.full').click(function(){
         var sid_comma = $(this).find('h4').text();
-        var strophen_elements = full_divs.filter(function(){
-                                    return $(this).find('h4').text() == sid_comma;
-                                    });
         
-        var wits = [];
-        strophen_elements.each(function(){
-            var wit = $(this).find('span.witness').text();
-            var inner_n = $(this).find('span.inner-n').text();;
-            wits.push( wit + '-' + inner_n )});
+        var wits = stanzas_corresp[sid_comma];
+        var new_window_width = 250 + 260 * Object.keys(wits).length;
         
         
-        // console.log(wits.length);
-        var new_window_width = 200 + 260 * wits.length;
-        
-        var wits_str = wits.sort().join(',');
-        
-        window.open('/synopse1.html?str=' + sid_comma +'&wit=' + wits_str, '', "width="+ new_window_width + 
+        window.open('/synopse1.html?str=' + sid_comma, '', "width="+ new_window_width + 
                     ",height=500,top=300,left=100");
     });
 

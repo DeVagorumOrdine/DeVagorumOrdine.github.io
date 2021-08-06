@@ -13,7 +13,6 @@
     display: table;
     margin: auto;
     max-height: 100px;
-    overflow-y: scroll;
     line-height: 1.5;
     /* margin-left: 2rem;
     position:absolute;
@@ -28,11 +27,18 @@
 
 .text-col {
     /* height: 300px; */
-    overflow-y: scroll;
+    
     background-color: white;
-    padding: 5px;
+    /* padding: 5px; */
     /* border-radius: 15px; */
 }
+
+
+
+/* #edition .tei-lg br {
+    line-height: 150%;
+    content: ' ';
+} */
 
 #texts {
     background-color: #f8f9fa;
@@ -224,6 +230,16 @@
     font-weight: bold;
 }
 
+.msg-unika {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    right: -4.5rem;
+    background-color: #DCDCDC;
+    font-size: 15px;
+
+}
+
 /* ALIGN AND STROPHENSYNOPSE */
 
 .align {
@@ -236,6 +252,7 @@
     /* visibility: hidden; */
 }
 .all-str {
+    position: relative;
     float: right;
     margin: 0px 2px 0px 2px;
     padding: 0px;

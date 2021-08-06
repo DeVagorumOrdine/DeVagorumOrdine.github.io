@@ -1,14 +1,15 @@
-import stanzas from './stanzas.json'
+import stanzas from './stanzas.json';
+import correspondences from './stanzas_corresp.json';
 
 // URL PARAM
 const current_url = window.location.search;
 const urlParams = new URLSearchParams(current_url);
-var show_wits = urlParams.get('wit').split(',');
 var str = urlParams.get('str');
-var spaltenzahl = show_wits.length
+var show_wits = correspondences[str]
+var spaltenzahl = Object.keys(show_wits).length
 
 $(document).ready(function(){
-
+    console.log(spaltenzahl);
     $('#strophe-id').text(str);
 
     var columnBootst = 2;
@@ -17,17 +18,16 @@ $(document).ready(function(){
     } else {
         columnBootst = spaltenzahl + 'r'
     };
-    for(var i=0; i < spaltenzahl; i++){
-        var index_dash = show_wits[i].indexOf("-");
-        var sigle = show_wits[i].substr(0,index_dash);
-        var num = show_wits[i].substr(index_dash +1);
-        console.log(sigle);
+
+    var col = 1;
+    $.each(show_wits, function(sigle, num){
         $('#texts').append('<div class="col-md-'+ columnBootst +'">'+
-            '<div class="text-col mb-4" id="textcol'+i+'">'+
+            '<div class="text-col mb-4" id="textcol'+ col +'">'+
             '<h1 style="font-size:32px">' + sigle + '</h1>'+
             stanzas['stanzas'][sigle][num]+
             '</div>'+
-        '</div>')
-        
-    };
+        '</div>');
+        col += 1;
+    });
+
 });

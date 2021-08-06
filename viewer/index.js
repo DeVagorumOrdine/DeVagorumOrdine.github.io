@@ -122,6 +122,8 @@ $(document).ready(function(){
   // APPEND THE TEXT
   $('#edition').append(fragments.texts[ms][pg]);
   
+  
+  
 
   // ÜBERSETZUNG
 
