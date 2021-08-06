@@ -124,14 +124,16 @@ function addAlignmentAndStrophensynopse(){
     $('span.all-str').hover(function(){
         var sid = $(this).prevAll('span.corresp').text();
         var number_of_wits = Object.keys(corresp[sid]).length;
-        if (number_of_wits < 2){
-            if ( $(this).find('.msg-unika').length == 0 ){
+        if ( $(this).find('.msg-unika').length == 0 ){
+            if (number_of_wits < 2){ 
                 $(this).append('<span class="msg-unika">Unika in dieser Hs.</span>')
-            };
-            $(this).find('.msg-unika').show();
+            } else {
+                $(this).append('<span class="msg-unika">'+ Object.keys(corresp[sid])+'</span>')
+            }
         }
+        $(this).find('.msg-unika').show();
+
     }, function(){
-        console.log('Off');
         $(this).find('.msg-unika').hide();
     });
 
