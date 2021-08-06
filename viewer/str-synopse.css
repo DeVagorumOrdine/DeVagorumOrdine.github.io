@@ -18,9 +18,15 @@
     height: 50px;
 }
 
+.witness {
+    visibility: hidden;
+    font: 0px;
+    height: 0em;
+}
+
 .inner-n {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.8rem;
     right: 2.7rem;
 }
 

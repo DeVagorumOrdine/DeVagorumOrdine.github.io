@@ -11,7 +11,6 @@ $(document).ready(function(){
 
     $('#strophe-id').text(str);
 
-    console.log(spaltenzahl);
     var columnBootst = 2;
     if (12 % spaltenzahl == 0){
         columnBootst = 12 / spaltenzahl

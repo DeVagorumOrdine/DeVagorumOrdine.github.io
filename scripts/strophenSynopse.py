@@ -48,8 +48,9 @@ for i in range(0, max([len(x) for x in wss])):
                 # print(i)
                 
                 el = et.SubElement(row, 'div', {'class': 'col-md-7r'})
-                el1 = et.SubElement(el, 'div', {'class': 'full witness' + wit.attrib['id'] + 
-                                    ' sid-'+ re.sub(',', '-', wit[i -1].attrib['corresp'])})
+                el1 = et.SubElement(el, 'div', {'class': 'full'})
+                witness_el = et.SubElement(el1, 'span', {'class':'witness'})
+                witness_el.text = wit.attrib['id']
                 el2 = et.SubElement(el1, 'h4', {'class': 'text-center'})
                 el2.text =  wit[i-1].attrib['corresp']
                 el3 = et.SubElement(el1, 'span', {'class': 'inner-n'})
