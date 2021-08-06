@@ -20,8 +20,10 @@
     <span xmlns="http://www.tei-c.org/ns/1.0" class="tei-lg">
       <br/>
       <span class="n">
-        <xsl:text>Str. </xsl:text>
         <xsl:value-of select="./@n"/>
+      </span>
+      <span class="corresp">
+        <xsl:value-of select="./@corresp"/>
       </span>
     </span>
     <xsl:apply-templates select="node()"/>

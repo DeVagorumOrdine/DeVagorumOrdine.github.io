@@ -26,6 +26,21 @@
     font-size: 18px;
 }
 
+.text-col {
+    /* height: 300px; */
+    overflow-y: scroll;
+    background-color: white;
+    padding: 5px;
+    /* border-radius: 15px; */
+}
+
+#texts {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    border-top: 1px solid #7c8895;
+}
+
+
 
 
 #optionen-toggle {
@@ -95,6 +110,7 @@
     padding-left: 0.5rem;
     font-size: x-large;
     padding-top: 2rem;
+    margin-top:2rem;
 }
 
 
@@ -206,6 +222,27 @@
 .corr-popup > .tei-sic,
 .corr-popup > .tei-corr{
     font-weight: bold;
+}
+
+/* ALIGN AND STROPHENSYNOPSE */
+
+.align {
+    float: right;
+    margin: 0px 2px 0px 2px;
+    padding: 0px;
+    color: grey;
+    font-size: small;
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+.all-str {
+    float: right;
+    margin: 0px 2px 0px 2px;
+    padding: 0px;
+    color: grey;
+    font-size: small;
+    cursor: pointer;
+    /* visibility: hidden; */
 }
 
 
