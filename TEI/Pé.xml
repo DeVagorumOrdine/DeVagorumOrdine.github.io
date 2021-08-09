@@ -150,7 +150,7 @@
                     <w lemma="queror">quere<choice><am>&#x0304;</am><ex>n</ex></choice>tem</w><c> </c>
                 </l>
                 <l n="2" corresp="DVO,l-2"><w lemma="ut"><choice><orig>v</orig><reg>u</reg></choice>t</w><c> </c>
-                    <w lemmaRef="leo">leonis</w><c> </c>
+                    <w lemma="leo">leonis</w><c> </c>
                     <w lemma="catulus">catulu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="valde">vald<choice><am>&#x02BC;</am><ex>e</ex></choice></w><c> </c>
                     <w lemma="rugio">rugie<choice><am>&#x0304;</am><ex>n</ex></choice>te<choice><am>&#x0304;</am><ex>m</ex></choice></w>

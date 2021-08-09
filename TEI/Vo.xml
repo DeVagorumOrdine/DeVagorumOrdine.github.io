@@ -956,10 +956,15 @@
                             <ex>m</ex>
                         </choice></w><c> </c>
                     <w lemma="qui">quod</w>
-                        <add resp="#ed.Suttina">
+                    <choice>
+                        <sic></sic>
+                        <corr resp="#ed.Suttina">
+                            <c> </c>
                             <w lemma="facio">facit</w>
-                        </add>
-                    <c> </c>
+                            <c> </c>
+                        </corr>
+                    </choice>
+                    
                     <w lemma="homo">ho<choice>
                             <abbr>ıe<am>&#x0304;</am></abbr>
                             <expan><ex>m</ex>i<ex>n</ex>e</expan>

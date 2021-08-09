@@ -84,7 +84,7 @@
             </lg>
             <lg n="2" rhyme="bbbb" corresp="DVO,p">
                 <l n="1" corresp="DVO,p-1"><w lemma="ordo">Ordo</w><c> </c>
-                    <w lemmaRef="noster">noster</w><c> </c>                    
+                    <w lemma="noster">noster</w><c> </c>                    
                     <w lemma="gravis">gravior</w><c> </c>
                     <w lemma="sum">est</w><c> </c>
                     <w lemma="quam">quam</w><c> </c>
@@ -214,7 +214,13 @@
                     <w lemma="institor">institorem</w><pc resp="#ed.Bolte">.</pc><c> </c>
                 </l>
                 <l n="6" corresp="CB219,5-7">
-                    <add resp="#ed.Bolte"><w lemma="magnus">Maxime</w></add><c> </c>
+                    <choice>
+                        <sic></sic>
+                        <corr resp="#ed.Bolte">
+                            <w lemma="magnus">Maxime</w>
+                            <c> </c>
+                        </corr>
+                    </choice>
                       <w lemma="diligo">d<choice><sic>elie</sic><corr resp="#ed.Bolte">iligi</corr></choice>mus</w><c> </c>
                       <w lemma="Decius"><choice><orig>d</orig><reg resp="#ed.Bolte">D</reg></choice>ec<choice><sic>e</sic><corr resp="#ed.Bolte">ii</corr></choice></w><c> </c>
                       <w lemma="cultor">cultorem</w><pc resp="#ed.Bolte">.</pc><c> </c>

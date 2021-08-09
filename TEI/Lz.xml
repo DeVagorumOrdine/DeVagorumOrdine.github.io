@@ -66,7 +66,7 @@
                         <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w> <c> </c>
                         <w lemma="natura">na<choice><am>&#x1DE3;</am><ex>tura</ex></choice></w> <pc resp="#PR">,</pc><c> </c>
                     </l>
-                    <l n="3" corresp="CB219,9-3">
+                    <l n="3" corresp="CB219,9-4">
                         <lb n="2"/>
                         <w lemma="qui">quos</w><c> </c>
                         <w lemma="amplus">amplı<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
@@ -74,7 +74,7 @@
                         <w lemma="triticum">trıtıcı</w><c> </c>
                         <w lemma="mensura">me<choice><am>&#x0304;</am><ex>n</ex></choice>ſu<choice><abbr>a<am>&#x0309;</am></abbr><expan><ex>r</ex>a</expan></choice></w><c> </c>
                     </l>
-                    <l n="4" corresp="CB219,9-4">
+                    <l n="4" corresp="CB219,9-3">
                         <w lemma="vel">v<choice><abbr>l<am>&#x02BC;</am></abbr><expan><ex>e</ex>l</expan></choice></w><c> </c>
                         <w lemma="qui">quos</w><c> </c>  
                         <w lemma="bonus">b<choice><abbr>n<am>&#x0304;</am></abbr><expan><ex>e</ex>n<ex>e</ex></expan></choice></w><c> </c>
@@ -83,7 +83,6 @@
                         <w lemma="assatura">aſſatu<choice><abbr>a<am>&#x0309;</am></abbr><expan><ex>r</ex>a</expan></choice></w><pc resp="#PR">.</pc><c> </c>
                     </l>
                 </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='1']/l[@n='4']/w[position()=6])">Fleisch war als Mahlzeit in der <emph rend="italic">Regula Benedicti</emph> nur kranken und schwachen Mitbrüdern erlaubt; vgl. c. 36: <emph rend="italic">Sed et carnium esus infirmis omnimo debilibus pro reparatione concedatur; at ubi meliorati fuerint, a carnibus more solito omnes abstineant.</emph></note>
             <lg n="2" rhyme="bccc" corresp="CB219,10">
                 <l n="1" corresp="CB219,10-1">
                     <lb n="3"/>
@@ -120,7 +119,6 @@
                     <w lemma="sanus">ſane</w><pc resp="#PR">.</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='2']/l[@n='1']/w[position()=4])">Die Matutin (auch Mette) ist das erste Stundengebet des liturgischen Tages. Diese sollen laut der <emph rend="italic">Regula Benedicti</emph> bei Tagesbeginn stattfinden; vgl. c. 8: <emph rend="italic">mox Matutini qui incipiente luce agendi sunt, subsequantur.</emph></note>
             <lg n="3" rhyme="dddd" corresp="CB219,12">
                 <l n="1" corresp= "CB219,12-1">
                     <lb n="5"/>
@@ -155,8 +153,6 @@
                     <w lemma="honestus">honeſte</w> <pc resp="#PR">.</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='3']/l[@n='1']/w[position()=3])">Satirische Anspielung auf die Mönchsregeln, z. B. die <emph rend="italic">Regula Benedicti</emph>.</note>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='3']/l[@n='2'])">Satirische Kritik am (seidenen) Untergewand der Cluniazenser. Ähnlich in den Liedern <emph rend="italic">De Clarevallensibus et Cluniacensibus</emph> und <emph rend="italic">De Mauro et Zoilo</emph>. Vgl. Schüppert 1972, S. 186 f. und 117 f. Außerdem Sonntag 2008, S. 100 f.</note>
             <lg n="4" rhyme="eeee" corresp="DVO,d">
                 <l n="1" corresp="DVO,d-1">
                     <lb n="7"/>
@@ -189,7 +185,6 @@
                     <w lemma="video">vıde<choice><am>ꝰ</am><ex>mus</ex></choice></w><pc resp="#PR">.</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='4']/l[@n='1'])">Vgl. Gal. 4,4; Ed.: Vulgata 2018: <emph rend="italic">at ubi venit plenitudo temporis | misit Deus Filium suum</emph>; Übers. Johannes Stettner 2018: „Aber als die Fülle der Zeit gekommen war, hat Gott seinen Sohn gesandt“.</note>
             <lg n="5" rhyme="ffff" corresp="DVO,e">
                 <l n="1" corresp="DVO,e-1">
                     <lb n="9"/>
@@ -258,8 +253,6 @@
                     <w lemma="sitis">ſıt<choice><am>ꝭ</am><ex>is</ex></choice></w><pc resp ="#PR">?</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='6']/l[@n='1'])">Vgl. <emph rend="italic">Disticha Catonis</emph> 4,16: <emph rend="italic">Utere quaesitis opibus, fuge nomen avari; | Quid tibi divitiae prosint, si pauper abundes?</emph>; Übers. P. R.: „Gebrauche erworbene Schätze, fliehe vor dem Ruch des Geizigen; Was nutzt dir schon der Reichtum, wenn du als Armer im Überfluss lebst?“ Ed.: Disticha Catonis. Recensuit et apparatu critico instruxit Marcus Boas. Opus post Marci Boas mortem edendum curavit Henricus Johannes Botschuyver. Amsterdam 1952.</note>            
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='6']/l[@n='3']/w[position()=5])">Sulamith ist der Name der Geliebten in Salomos ‚Hohelied der Liebe‘ (<emph rend="italic">Canticum Canticorum</emph>); vgl. Hld. 7,1.</note>
             <lg n="7" rhyme="hhhh" corresp="DVO,g">
                 <l n="1" corresp="DVO,g-1">
                     <lb n="13"/>
@@ -297,7 +290,6 @@
                     <w lemma="venio">venıt<choice><am>ꝭ</am><ex>is</ex></choice></w><pc resp="#PR">?</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='7']/l[@n='1'])">Die Formulierung spielt auf das Himmliche Jerusalem an. Denn im Kirchweihhymnus <emph rend="italic">Urbs Ierusalem beata</emph> heißt es: <emph rend="italic">Portae nitent margaritis adytis patentibus</emph>. (Vgl. Hld. 7,1.</note>
             <lg n="8" rhyme="iiii" corresp="DVO,h">
                 <l n="1" corresp="DVO,h-1">
                     <lb n="15"/>
@@ -364,7 +356,6 @@
                     <w lemma="ducillus">ducıllu<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">.</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='9']/l[@n='4']/w[position()=2])">Inhaltliche Konjektur in der Edition von Hilka/Schumann/Bischoff (1930–1970) zu <emph rend="italic">relevabitur</emph>, also zur Übersetzung: „wird der Bauch <emph rend="italic">erquickt</emph> werden, indem er zum Zapfen geführt wird.“</note>
             <lg n="10" rhyme="kkkk"  corresp="DVO,i">
                 <l n="1" corresp="DVO,i-1">
                     <lb n="19"/><w lemma="si">Sı</w><c> </c>
@@ -397,7 +388,6 @@
                     <w lemma="femoralis">femo<choice><abbr>a<am>&#x0309;</am></abbr><expan><ex>r</ex>a</expan></choice>le</w><pc resp="#PR">.</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='10']/l[@n='4']/w[position()=5])"><emph rend="italic">Femuralia</emph> oder auch <emph rend="italic">Feminalia</emph> bezeichnen (abgeleitet von lat. <emph rend="italic">femur</emph>, ‚Oberschenkel‘) kurze Hosen, wie sie schon beim römischen Militär getragen wurden. Vgl. Graham Summer: Roman Military Dress. Stroud 2009, S. 182.</note>
             <lg n="11" rhyme="llll"  corresp="DVO,l">
                 <l n="1" corresp="DVO,l-1">
                     <lb n="21"/>
@@ -466,7 +456,6 @@
                     <w lemma="potator">potato<choice><abbr>ı<am>&#x0309;</am></abbr><expan><ex>r</ex>i</expan></choice></w><pc resp="#PR">.</pc><c> </c>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='12']/l[@n='4']">Scherzhaft-parodistische Umkehrung von Lk 18,13; Ed.: Vulgata 2018: <emph rend="italic">Deus propitius esto mihi peccatori</emph>; Übers. Thomas Johann Bauer 2018: „Gott, sei mir Sünder gnädig!“</note>
             <lg n="13" rhyme="nnnn" corresp="CB191,11">
                 <l n="1" corresp="CB191,11-1">
                     <lb n="24"/>
@@ -500,7 +489,6 @@
                     <w lemma="aeternus">et<choice><abbr>n<am>&#x0309;</am></abbr><expan><ex>er</ex>n</expan></choice>a<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">.</pc>
                 </l>
             </lg>
-            <note ana="hc:EditorialNote" target="#xpath(//lg[@n='13']/l[@n='4']">Bezeichnung für die Totenmesse, abgeleitet vom Incipit des Introitus zur Begräbnisfeier nach katholischem Ritus (<emph rend="italic">Missale Romanum</emph>).</note>
         </body>
     </text>
 </TEI>

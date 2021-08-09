@@ -275,7 +275,12 @@ $(document).ready(function(){
         $(this).contents().unwrap();
       });
 
-      $(this).append('<span class="corr-popup"><i>lect.</i> '+ original.html() + '<br/>' +
+      var sic_string = '&#8709;'
+      if (original.length > 0){
+        sic_string = original.html()
+      }
+
+      $(this).append('<span class="corr-popup"><i>lect.</i> '+ sic_string + '<br/>' +
                       '<i>corr.</i> '+ ediert.html() +'</span>'); 
       $('.corr-popup').find('.tei-corr').show();
       $('.corr-popup').find('.tei-sic').show();
