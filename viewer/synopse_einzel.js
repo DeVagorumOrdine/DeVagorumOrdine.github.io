@@ -30,4 +30,6 @@ $(document).ready(function(){
         col += 1;
     });
 
+    $('.corresp').hide();
+
 });

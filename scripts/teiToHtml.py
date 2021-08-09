@@ -96,6 +96,7 @@ for file in os.listdir('TEI'):
             content = et.tostring(temp_dom2, encoding=str)
             content = specialChars(content)
             content = re.sub(r'\s{2,}', '', content)
+            content = re.sub(r'<br/>\s*<br/>', '', content)
             stanzas_json['stanzas'][sigle][stz_nr] = content
 
 
