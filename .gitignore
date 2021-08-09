@@ -5,3 +5,10 @@ viewer/.cache
 viewer/dist
 viewer/html_fragments copy.json
 viewer/package-lock.json 
+.vscode/
+404.html
+README.md
+dvo.xpr
+scripts/XSLT/plain_paleog.xsl
+scripts/XSLT/plain_reg.xsl
+scripts/__pycache__/
