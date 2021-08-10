@@ -57,12 +57,12 @@
                     <w lemma="vagus">vago<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c>
                     <w lemma="dico">dico</w><c> </c>
                     <w lemma="vos">vob<choice><am>&#x0304;</am><ex>is</ex></choice></w><c> </c>
-                    <w lemma="ius"><choice><orig>j</orig><reg>i</reg></choice>ura</w><c> </c>
+                    <w lemma="ius"><choice><orig>j</orig><reg>i</reg></choice>ura</w><pc resp="#PR">,</pc><c> </c>
                 </l>
                 <l n="2" corresp="CB219,9-2"><w lemma="qui">quor<choice><sic>a</sic><corr resp="#ed.Bolte">u</corr></choice><choice><am>&#x0304;</am><ex>m</ex></choice></w><!-- Brodführer schlägt quo<choice><am>&#x0304;</am><ex>n</ex></choice>iam vor --><c> </c> 
                     <w lemma="vita">vita</w><c> </c>
                     <del resp="#ed.Bolte"><w lemma="vagus">vago<choice><am>ꝝ</am><ex>rum</ex></choice></w></del><c> </c>
-                    <w lemma="nobilis">nobilis</w><c> </c>
+                    <w lemma="nobilis">nobilis</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="dulcis">dulcis</w><c> </c>
                     <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w><c> </c>
                     <w lemma="natura">natura</w><c> </c>
@@ -155,7 +155,7 @@
                     <w lemma="socius">socios</w><c> </c>
                     <w lemma="utor">uti</w><c> </c>
                     <w lemma="duplus">dupla</w><c> </c>
-                    <w lemma="vestis">veste</w><pc resp="#ed.Bolte">;</pc><c> </c>
+                    <w lemma="vestis">veste</w><c> </c>
                 </l>
                 <l n="3" corresp="CB219,12-3">
                     <w lemma="neque">nec</w><c> </c>
@@ -251,8 +251,8 @@
                 <l n="4" corresp="CB191,11-4">
                     <w lemma="canto">cantantes</w><c> </c>
                     <w lemma="pro">pro</w><c> </c>
-                    <w lemma="bibulus">bibulis</w><pc resp="#ed.Bolte">:</pc><c> </c>
-                    <w lemma="requiem">Requiem</w><c> </c>
+                    <w lemma="bibulus">bibulis</w><c> </c>
+                    <w lemma="requiem">requiem</w><c> </c>
                     <w lemma="aeternus">eternam</w><pc resp="#ed.Bolte">.</pc><c> </c>
                 </l>
             </lg>
@@ -274,7 +274,7 @@
                 </l>
                 <l n="3" corresp="DVO,q-3"><w lemma="tu"><choice><orig>t</orig><reg>T</reg></choice>u</w><c> </c>
                     <w lemma="autem">aute<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#ed.Bolte">,</pc><c> </c>
-                    <w lemma="dominus">d<choice><abbr>m<am>&#x0304;</am></abbr><expan><ex>o</ex>mine</expan></choice></w><pc resp="#ed.Bolte">,</pc><c> </c>
+                    <w lemma="dominus"><choice><orig>d</orig><reg resp="#ed.Bischoff">D</reg></choice><choice><abbr>m<am>&#x0304;</am></abbr><expan><ex>o</ex>mine</expan></choice></w><pc resp="#ed.Bolte">,</pc><c> </c>
                     <w lemma="noster">n<choice><abbr>r<am>&#x0304;</am></abbr><expan><ex>ost</ex>r</expan></choice>i</w><c> </c>
                     <w lemma="miseror">miserere</w><pc resp="#ed.Bolte">!</pc>
                 </l>

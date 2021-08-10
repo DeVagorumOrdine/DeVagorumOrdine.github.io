@@ -568,8 +568,8 @@
                     <pc>¶</pc><c> </c>
                     <w lemma="ergo">Ergo</w><c> </c>
                     <w lemma="super">su<choice>
-                        <abbr><am>ꝓ</am></abbr>
-                        <expan>p<ex>ro</ex></expan>
+                        <abbr><am>ꝑ</am></abbr>
+                        <expan><ex>per</ex></expan>
                     </choice></w><c> </c>
                     <w lemma="omnis">o<choice>
                             <abbr>ı<am>&#x0304;</am></abbr>
@@ -580,11 +580,14 @@
                             <am>&#x0304;</am>
                             <ex>m</ex>
                         </choice></w>
-                    <pc resp="#ed.Suttina">.</pc><c> </c>
+                    <pc resp="PR">,</pc><c> </c>
                 </l>
                 <l n="2" corresp="CB191,11-2">
                     <lb n="10"/>
-                    <w lemma="qui">Qua<choice>
+                    <w lemma="qui"><choice>
+                        <orig>Q</orig>
+                        <reg>q</reg>
+                    </choice>ua<choice>
                             <am>&#x0304;</am>
                             <ex>m</ex>
                         </choice></w><c> </c>
@@ -651,7 +654,7 @@
                         <expan><ex>empor</ex></expan>
                     </choice>ıs</w><c> </c>
                     <w lemma="venio">venit</w>
-                    <pc resp="#ed.Suttina">,</pc><c> </c>
+                    <pc resp="#ed.Suttina">;</pc><c> </c>
                     <w lemma="exsulto">exultemus</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                 </l>
@@ -719,7 +722,7 @@
                             <am>ꝰ</am>
                             <ex>us</ex>
                         </choice></w>
-                    <pc resp="#ed.Suttina">.</pc><c> </c>
+                    <pc resp="PR">!</pc><c> </c>
                 </l>
             </lg>
             <lg n="9" rhyme="iiii" corresp="DVO,e">
@@ -865,7 +868,7 @@
                             <orig>n</orig>
                             <reg resp="#PR">l</reg>
                         </choice>amitıs</w>
-                    <pc resp="#PR">.</pc><c> </c>
+                    <pc resp="#PR">!</pc><c> </c>
                 </l>
                 <l n="4" corresp="DVO,f-4">
                     <lb n="24"/>
@@ -946,15 +949,17 @@
                             <ex>m</ex>
                         </choice></w><c> </c>
                     <w lemma="video">vıdeo</w><c> </c>
-                    <w lemma="bibo">bıbentem</w>
-                    <pc resp="#ed.Suttina">?</pc><c> </c>
+                    <w lemma="bibo">bıbentem</w><c> </c>
                 </l>
                 <l n="4" corresp="DVO,l-4">
                     <lb n="28"/>
-                    <w lemma="vinum">Vinu<choice>
+                    <w lemma="vinum"><choice>
+                        <orig>V</orig>
+                        <reg resp="#PR">v</reg>
+                    </choice>inu<choice>
                             <am>&#x0304;</am>
                             <ex>m</ex>
-                        </choice></w><c> </c>
+                        </choice></w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="qui">quod</w>
                     <choice>
                         <sic></sic>
@@ -964,7 +969,6 @@
                             <c> </c>
                         </corr>
                     </choice>
-                    
                     <w lemma="homo">ho<choice>
                             <abbr>ıe<am>&#x0304;</am></abbr>
                             <expan><ex>m</ex>i<ex>n</ex>e</expan>

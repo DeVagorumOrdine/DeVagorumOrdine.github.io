@@ -33,6 +33,15 @@
     <lg n="12" corresp="CB191,12"/>
     <lg n="13" corresp="CB191,11"/>
   </witness>
+  <witness id="M">
+    <lg n="1" corresp="CB219,9"/>
+    <lg n="2" corresp="DVO,l"/>
+    <lg n="3" corresp="DVO,h"/>
+    <lg n="4" corresp="DVO,k"/>
+    <lg n="5" corresp="CB219,12"/>
+    <lg n="6" corresp="DVO,o"/>
+    <lg n="7" corresp="CB191,11"/>
+  </witness>
   <witness id="Pr">
     <lg n="1" corresp="CB219,9"/>
     <lg n="2" corresp="CB191,12"/>
@@ -79,7 +88,7 @@
   <witness id="Wi">
     <lg n="1" corresp="DVO,d"/>
     <lg n="2" corresp="CB219,9"/>
-    <lg n="3" corresp="DVO,h-1"/>
+    <lg n="3" corresp="DVO,h"/>
     <lg n="4" corresp="DVO,l"/>
     <lg n="5" corresp="DVO,i"/>
     <lg n="6" corresp="DVO,k"/>
