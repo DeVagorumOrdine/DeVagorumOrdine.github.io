@@ -33,13 +33,38 @@
 /* Startseite */
 
 .main-selector-div {
+    display: block; 
+    color: white;
+    font-style: bold;
     height: 300px;
     width: 100%;
     position:relative;
     text-align: center;
     margin-bottom: 20px;
-    background-color: rgba(119, 168, 168, .4);
+    /* background-color: rgba(119, 168, 168, .4); */
+    background-color: grey;
+    /* border: solid 2px rgba(119, 168, 168, .9); */
+    border: solid 2px black;
+}
+
+.main-selector-div:hover {
     border: solid 2px rgba(119, 168, 168, .9);
+    /* background-color: rgba(217, 236, 208, .7); */
+}
+
+.main-selector-div:hover .box-title {
+    color: white;
+    /* border: solid 2px rgba(119, 168, 168, 1); */
+    background-color: rgba(119, 168, 168, 1);
+    filter: opacity(1);
+}
+
+.box-title {
+    background-color: grey;
+    padding: 10px 15px 5px 15px ;
+    filter: opacity(0.9);
+    border: solid 1px black;
+    border-radius: 5px;
 }
 
 .main-selector-div div {
@@ -49,10 +74,28 @@
   transform: translate(-50%, -50%);
 }
 
-.main-selector-div:hover {
-    background-color: rgba(217, 236, 208, .7);
+
+
+.blur {
+    height: 100%;
+    width: 100%;
+    /* backdrop-filter: blur(4px);
+    -webkit-filter: blur(4px); */
+    background-size: 100%;
+    /* filter: blur(4px ) brightness(0.8); */
+    /* filter: drop-shadow(16px 16px 10px black); */
+    filter: opacity(50%) blur(4px);
+    /* background-color: rgba(217, 236, 208, .7);
+    background-blend-mode: multiply; */
 }
 
-.main-selector-div:hover div {
-    color: black;
+.main-selector-div:hover .blur {
+    filter: blur(1px) opacity(80%);
 }
+
+/* .main-selector-div div {
+    backdrop-filter: blur(0px);
+    -webkit-filter: blur(0px);
+} */
+
+
