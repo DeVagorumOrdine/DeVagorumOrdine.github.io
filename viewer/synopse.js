@@ -32,8 +32,6 @@ function load_text(sel_col, sigle){
 
 function strophen_div(column){
     var colId = '#textcol' + column;
-    
-    // $('.tei-lg').css('color','red');
     $(colId + ' .tei-lg br').remove();
     $(colId + ' .tei-lg').each(function(){
         console.log( $(this));
@@ -87,6 +85,7 @@ function addAlignmentAndStrophensynopse(){
         });
         
     $('span.align').click(function(){
+        var clicked_stanza = $(this).closest('.stanza');
         var stroph_id = $(this).parent().children('span.corresp').text();
         var corresp_str = $('.tei-lg').filter(function(){
             return $(this).find('span.corresp').text() == stroph_id;
@@ -97,14 +96,25 @@ function addAlignmentAndStrophensynopse(){
             var leit_scroll = $(this).closest('.text-col').scrollTop();
             corresp_str.each(function(){
                 if ($(this).offset().top != leit_position){
+                    var sel_stanza = $(this);
                     var el_offset = $(this).offset().top;
                     var el_scroll = $(this).closest('.text-col').scrollTop();
                     var new_scroll = el_offset + el_scroll - leit_position;
                     if ( new_scroll < 0){
                         new_scroll = 0
                     }
-                    console.log(new_scroll);
-                    $(this).closest('.text-col').scrollTop(new_scroll) ;
+                    // $(this).closest('.text-col').scrollTop(new_scroll) ;
+                    $(this).closest('.text-col').animate({scrollTop: new_scroll + 'px'}, 500, 'swing', function() { 
+                        var color = sel_stanza.closest('.stanza').css('border').split(' ').slice(2).join(' ');
+                        color = color.replace(')', ', 0.5)');
+                        console.log(color);
+                        sel_stanza.closest('.stanza').css('background-color', color);
+                        clicked_stanza.css('background-color', color);
+                        setTimeout(function(){
+                            sel_stanza.closest('.stanza').css('background-color', 'white');
+                            clicked_stanza.css('background-color', 'white');
+                        }, 500);
+                     });
                     }
                 });
             } 
