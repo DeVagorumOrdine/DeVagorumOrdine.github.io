@@ -1,4 +1,10 @@
-const footer = "<!-- Copyright --> <div class=\"container-fluid p-0\"><div class=\"row\" style=\"background-color: rgba(0, 0, 0, 0.05);\"><div class=\"col-md-4\"><img src=\"/img/GitHub-Mark-32px.png\"></img></div><div class=\"col-md-4 text-center p-4\"> <a href=\"https://creativecommons.org/licenses/by/2.0/de/\"><img src=\"https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg\"></img></a><br/>(CC BY 3.0 DE)<br/>Alle Texte in der Website werden unter der CC Namensnennung 3.0 Deutschland Lizenz veröffentlicht</div><div class=\"col-md-4\"><figure><img src=\"https://www.materiale-textkulturen.de/bilder/logo_mtk.svg\" alt=\"SFB 933 - Materiale Textkulturen Logo\" height=\"150\"></img><figCaption>Sonderforschungsbreich 933<br/>Materiale Textkulturen</figCaption></figure></div></div> </div><section></section>"
+const footer = "<!-- Copyright --> <div class=\"container-fluid p-0\"><div class=\"row\" style=\"background-color: rgba(0, 0, 0, 0.05);\"><div class=\"col-md-4 p-5\"><a href=\"https://github.com/DeVagorumOrdine/DeVagorumOrdine.github.io\"><img src=\"/img/GitHub-Mark-32px.png\"></img></a></div><div class=\"col-md-4 text-center p-4\"> <a href=\"https://creativecommons.org/licenses/by/2.0/de/\"><img src=\"https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg\"></img></a><br/>(CC BY 3.0 DE)<br/>Alle Texte in der Website werden unter der CC Namensnennung 3.0 Deutschland Lizenz veröffentlicht</div>"+
+"<div class=\"col-md-4\">"+
+"<div class=\"row pt-3\"><p class=\"mx-auto\">Mit Unterstützung von:</p></div>"+
+"<div class=\"row\">"+
+    "<div class=\"col-md-6\"><figure><img src=\"https://www.materiale-textkulturen.de/bilder/logo_mtk.svg\" alt=\"SFB 933 - Materiale Textkulturen Logo\" height=\"100\"></img><figCaption>Sonderforschungsbreich 933<br/>Materiale Textkulturen</figCaption></figure></div>"+
+    "<div class=\"col-md-6\"><figure><img src=\"http://devagorumordine.github.io/img/LMU_Logo.eps\" alt=\"LMU Logo\" height=\"100\"></img><figCaption>LMU - München</figCaption></figure></div>"+
+    "</div></div></div> </div><section></section>"
 
                 
 

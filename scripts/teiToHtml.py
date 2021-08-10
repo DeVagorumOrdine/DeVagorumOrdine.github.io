@@ -5,6 +5,7 @@ import os
 import json 
 
 from translation import translation_xml_html
+from annotationen import addNotes
 
 
 def specialChars(content):
@@ -55,12 +56,17 @@ for file in os.listdir('TEI'):
         # We remove empty elements that are useless in the visualization
         transform = et.XSLT(remove_empty_elements)
         newdom_no_empty = transform(dom)
-        root = newdom_no_empty.getroot()
+
+        # We add the comments
+        newdom_comments = addNotes(sigle, newdom_no_empty)
+        
 
         # First we transform all the stanzas and verses into milestones
         xslt_stanzas = et.XSLT(transform_stanzas)
-        newdom1 = xslt_stanzas(newdom_no_empty)
+        newdom1 = xslt_stanzas(newdom_comments)
         root = newdom1.getroot()
+
+        
 
         for page in root.findall('.//tei:pb', ns):
             page_number = page.attrib['n']
@@ -76,7 +82,7 @@ for file in os.listdir('TEI'):
             content = specialChars(content)
             
             content = content.replace('<div class="tei-text">', '')
-            content = re.sub(r'\s{2,}', '', content)
+            content = re.sub(r'\s{2,}', ' ', content)
             content = content[0:-6]
             
             
@@ -98,10 +104,6 @@ for file in os.listdir('TEI'):
             content = re.sub(r'\s{2,}', '', content)
             content = re.sub(r'<br/>\s*<br/>', '', content)
             stanzas_json['stanzas'][sigle][stz_nr] = content
-
-
-
-
 
 
 

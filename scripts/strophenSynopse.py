@@ -39,7 +39,7 @@ for i in range(0, max([len(x) for x in wss])):
     if i == 0:
         row = et.SubElement(div, 'div', {'class': 'row'})
         for wit in wss:
-            el = et.SubElement(row, 'div', {'class': 'col-md-7r witness-head'})
+            el = et.SubElement(row, 'div', {'class': 'col-md-8r witness-head'})
             el2 = et.SubElement(el, 'h2', {'class': 'text-center'})
             el2.text = wit.attrib['id']
     else:
@@ -48,7 +48,7 @@ for i in range(0, max([len(x) for x in wss])):
             if i < len(wit):
                 # print(i)
                 
-                el = et.SubElement(row, 'div', {'class': 'col-md-7r'})
+                el = et.SubElement(row, 'div', {'class': 'col-md-8r'})
                 el1 = et.SubElement(el, 'div', {'class': 'full'})
                 witness_el = et.SubElement(el1, 'span', {'class':'witness'})
                 witness_el.text = wit.attrib['id']
@@ -57,7 +57,7 @@ for i in range(0, max([len(x) for x in wss])):
                 el3 = et.SubElement(el1, 'span', {'class': 'inner-n'})
                 el3.text = wit[i-1].attrib['n']
             else:
-                el = et.SubElement(row, 'div', {'class': 'col-md-7r empty'})
+                el = et.SubElement(row, 'div', {'class': 'col-md-8r empty'})
                 el.text = " "
         
 

@@ -21,4 +21,6 @@
   <xsl:template match="tei:note[not(string())]"></xsl:template>
   
   
+  
+  
 </xsl:stylesheet>

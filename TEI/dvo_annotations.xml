@@ -12,11 +12,6 @@
       debilibus pro reparatione concedatur; at ubi meliorati fuerint, a carnibus more solito omnes
       abstineant.</emph></note>
   <note ana="hc:EditorialNote" 
-    target="B#xpath(//lg[@n='8']/l[@n='4']/w[position() >= 4 and position() <= 5])"
-    > Zur Deutung dieses Ausdrucks vgl. Johannes Hamacher: Zehntenkorn oder Brotration? 
-    Zur Bedeutung von <emph rend="italic">hordei mensura</emph> in CB 219. In: Mittellateinisches Jahrbuch 18 (1983), 
-    S. 194–196.</emph></note>
-  <note ana="hc:EditorialNote" 
     target="Lz#xpath(//lg[@n='2']/l[@n='1']/w[position()=4])
     B#xpath(//lg[@n='9']/l[@n='1']/w[position()=4])
     Pé#xpath(//lg[@n='6']/l[@n='1']/w[position()=4])
@@ -42,14 +37,6 @@
     Satirische Kritik am (seidenen) Untergewand der Cluniazenser. Ähnlich in den Liedern <emph rend="italic">De
       Clarevallensibus et Cluniacensibus</emph> und <emph rend="italic">De Mauro et Zoilo</emph>.
     Vgl. Schüppert 1972, S. 186 f. und 117 f. Außerdem Sonntag 2008, S. 100 f.</note>
-  <note ana="hc:EditorialNote" 
-    target="Lz#xpath(//lg[@n='4']/l[@n='1']/w[position() >= 2 and position() <= 3])
-    Pé#xpath(//lg[@n='4']/l[@n='1']/w[position() >= 1 and position() <= 2])
-    Vo#xpath(//lg[@n='4']/l[@n='1']/w[position() >= 1 and position() <= 2])
-    Wi#xpath(//lg[@n='4']/l[@n='1']/w[position() >= 1 and position() <= 2])">
-    Vgl. Gal. 4,4; Ed.: Vulgata 2018: <emph rend="italic">at ubi venit plenitudo temporis | misit Deus Filium suum</emph>;
-    Übers. Johannes Stettner 2018: „Aber als die Fülle der Zeit gekommen war, hat Gott seinen Sohn
-    gesandt“.</note>
   <note ana="hc:EditorialNote" 
     target="Lz#xpath(//lg[@n='6']/l[@n='1'])
     Vo#xpath(//lg[@n='10']/l[@n='1'])">
@@ -91,15 +78,6 @@
     Wi#xpath(//lg[@n='11=10b']/l[@n='4'])">
     Scherzhaft-parodistische Umkehrung von Lk 18,13; Ed.: Vulgata 2018: <emph rend="italic">Deus propitius esto mihi
       peccatori</emph>; Übers. Thomas Johann Bauer 2018: „Gott, sei mir Sünder gnädig!“</note>
-  <note ana="hc:EditorialNote" 
-    target="Lz#xpath(//lg[@n='13']/l[@n='4']/w[position() >= 4 and position() <= 5])
-    Pr#xpath(//lg[@n='5']/l[@n='4']/w[position() >= 4 and position() <= 5])
-    Pé#xpath(//lg[@n='10']/l[@n='4']/w[position() >= 4 and position() <= 5])
-    Vo#xpath(//lg[@n='7']/l[@n='4']/w[position() >= 4 and position() <= 5])
-    We#xpath(//lg[@n='6']/l[@n='4']/w[position() >= 4 and position() <= 5])
-    Wi#xpath(//lg[@n='12']/l[@n='4']/w[position() >= 4 and position() <= 5])">
-    Bezeichnung für die Totenmesse, abgeleitet vom Incipit des Introitus zur Begräbnisfeier nach katholischem Ritus
-      (<emph rend="italic">Missale Romanum</emph>).</note>
     <note ana="hc:EditorialNote" 
       target="B#xpath(//lg[@n='1']/l[@n='1'])">
       Vgl. Mk. 16,15: <emph rend="italic">et dixit eis | euntes in mundum universum praedicate evangelium omni creaturae</emph> 
@@ -128,15 +106,6 @@
       Meinung. Siehe Secta. In: Du Cange, et al.: Glossarium mediae et infimae latinitatis, éd. augm., Niort: L. Favre, 1883‑1887, Bd. 7, Sp. 388b–391a. Ich 
       folge der zweiten Bedeutung. Vgl. dazu auch Carmina Burana, hg. von Benedikt Konrad Vollmann. Frankfurt a.M. 1987, S. 1039 und 1246.</note>
     <note ana="hc:EditorialNote" 
-      target="B#xpath(//lg[@n='1']/l[@n='4']/w[position() >= 4 and position() <= 7])">
-      Vgl. Sir. 30,15: <emph rend="italic">salus animae in sanctitate iustitiae | et melior omni auro et argento | 
-      et corpus validum quam census inmensus</emph> (Übers. Barbara Feichtinger u. Ingo Schaaf: „Das Heil der Seele liegt in der 
-      Unantastbarkeit der Gerechtigkeit und ist besser als alles Gold und Silber, und ein starker Körper 〈ist besser〉 als ein riesiges Vermögen“)</note>
-    <note ana="hc:EditorialNote" 
-      target="B#xpath(//lg[@n='2']/l[@n='1']/w[position() >= 6 and position() <= 7])">
-      Vgl. 1 Thess. 5,21: <emph rend="italic">omnia autem probate | quod bonum est tenete</emph> 
-      (Übers. Christoph Kugelmeier: „prüft alles, was gut ist, behaltet bei!“</note>
-    <note ana="hc:EditorialNote" 
       target="B#xpath(//lg[@n='3']/l[@n='3'])">
       Vgl. <emph rend="italic">Regula Benedicti</emph> c. 59: <emph rend="italic">De filiis nobilium aut pauperum qui offeruntur</emph></note>
     <note ana="hc:EditorialNote" 
@@ -144,25 +113,12 @@
       Es gibt Interpretationen, die auf die Steiermark und solche, die auf die ‚Veroneser Mark‘ abzielen. Mit Vollmann ist die erste Alternative
       wahrscheinlicher. Vgl. mit Überblick über die Forschungsdiskussion: Carmina Burana, hg. von Benedikt Konrad Vollmann. 
       Frankfurt a.M. 1987, S. 1247</note>
-    <note ana="hc:EditorialNote" 
-      target="B#xpath(//lg[@n='5']/l[@n='3']/w[position() >= 1 and position() <= 2])">
-      Vgl. Psalm (Vulg.) 48,2: <emph rend="italic">Audite hoc omnes populi | auribus percipite universi habitatores occidentis</emph> 
-      (Übers. Francesco De Vecchi: „Hört das, ihr Völker alle, mit den Ohren vernehmt es, ihr gesamten Bewohner des Westens“</note>
       <note ana="hc:EditorialNote" 
         target="B#xpath(//lg[@n='8']/l[@n='4']/w[position()=1])">
         In der Edition von Hilka/Schumann/Bischoff (1930–1970) steht die (unsichere) Konjektur zu <emph rend="italic">severa</emph>, um die ‚Kargheit‘ des 
         Gerstenbrot im Gegensatz zu <emph rend="italic">pinguis</emph> im fetten Braten und zu betonen. Vgl. Johannes Hamacher: Zehntenkorn 
         oder Brotration? Zur Bedeutung von <emph rend="italic">hordei mensura</emph> in CB 219. In: Mittellateinisches Jahrbuch 18 (1983), 
         S. 194–196.</note>
-      <note ana="hc:EditorialNote" 
-        target="B#xpath(//lg[@n='10']/l[@n='4']/w[position()=5])">
-        Es handelt sich um ein Würfelspiel, das schon Chaucer in den <emph rend="italic">Canterbury Tales</emph> (VI, 591) erwähnt
-        und das metonymisch für das Glück und das Glücksspiel generell steht. Die Etymologie des Wortes aus dem Arabischen, Französischen oder Spanischen
-        ist unsicher. Zum mhd. <emph rend="italic">hasehart</emph> oder <emph rend="italic">hashart</emph>
-        vgl. Matthias Lexer: Mittelhochdeutsches Handwörterbuch, Bd. 1, Sp. 1192 [Mittelhochdeutsches Handwörterbuch von Matthias Lexer, digitalisierte Fassung im 
-        Wörterbuchnetz des Trier Center for Digital Humanities, Version 01/21, <https://www.woerterbuchnetz.de/Lexer>, abgerufen am 10.08.2021] und DWB, Bd. 10, Sp. 523 
-          [Deutsches Wörterbuch von Jacob Grimm und Wilhelm Grimm, digitalisierte Fassung im Wörterbuchnetz des Trier Center for Digital Humanities, Version 01/21, 
-          <https://www.woerterbuchnetz.de/DWB>, abgerufen am 10.08.2021; URL: https://woerterbuchnetz.de/?sigle=DWB&bookref=10,523,58#0]. </note>
       <note ana="hc:EditorialNote" 
         target="B#xpath(//lg[@n='14']/l[@n='1']/w[position()=4])">
         Vgl. Röm. 12,9 u. 13: <emph rend="italic">dilectio sine simulatione [...] hospitalitatem sectantes</emph> 
@@ -180,28 +136,28 @@
         (Übers. Frank Oborski: „Liebe ohne Heuchelei [...] nach Gastfreundlichkeit strebend“); hier profanisiert zur Einkehr im Wirtshaus. 
       </note>
       <note ana="hc:EditorialNote" 
-        target="B#xpath(//lg[@n='15]/l[@n='3']/w[position()=2])">
+        target="B#xpath(//lg[@n='15']/l[@n='3']/w[position()=2])">
         Vgl. Röm. 12,12: <emph rend="italic">spe gaudentes</emph> (Übers. Frank Oborski: „sich an der Hoffnung freuend“). 
       </note>
       <note ana="hc:EditorialNote" 
-        target="B#xpath(//lg[@n='15]/l[@n='3']/w[position()=2])">
+        target="B#xpath(//lg[@n='15']/l[@n='3']/w[position()=2])">
         Vgl. Mt. 25,32: <emph rend="italic">et congregabuntur ante eum omnes gentes | et separabit eos ab invicem | 
           sicut pastor segregat oves ab hedis</emph> (Übers. Gisela Meyer-Stüssi: „Und vor ihm werden alle Völker 
         versammelt werden, und er wird sie voneinander trennen, wie der Hirt Schafe von den Ziegenböcken trennt.“). 
       </note>
       <note ana="hc:EditorialNote" 
-        target="B#xpath(//lg[@n='16])">
+        target="B#xpath(//lg[@n='16'])">
         Zitat aus einem Lied Walthers von Châtillon: Moralisch-satirische Gedichte Walters von Chatillon. Aus deutschen, 
         englischen, französischen und italienischen Handschriften, hg. von Karl Strecker, Heidelberg 1929, Nr. 23).
       </note>
       <note ana="hc:EditorialNote" 
-        target="B#xpath(//lg[@n='16]/l[@n='4'])">
+        target="B#xpath(//lg[@n='16']/l[@n='4'])">
         Vgl. Mt. 25,32: <emph rend="italic">et congregabuntur ante eum omnes gentes | et separabit eos ab invicem | 
           sicut pastor segregat oves ab hedis</emph> (Übers. Gisela Meyer-Stüssi: „Und vor ihm werden alle Völker 
         versammelt werden, und er wird sie voneinander trennen, wie der Hirt Schafe von den Ziegenböcken trennt.“). 
       </note>
       <note ana="hc:EditorialNote" 
-        target="Vo#xpath(//lg[@n='4])">
+        target="Vo#xpath(//lg[@n='4'])">
         Zum Spiel mit den Genera vgl. auch CB 219, 11. 
       </note>
 </listAnnotation>

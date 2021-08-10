@@ -27,6 +27,7 @@ function load_text(sel_col, sigle){
 
     sel_col.html(text);
     $('.tei-att-lemma').hide();
+    $('.tei-note').hide();
 };
 
 function strophen_div(column){
@@ -66,7 +67,7 @@ function updateSpaltenzahlLinks(){
 function addAlignmentAndStrophensynopse(){
     $('.tei-lg').each(function(){
         if ( $(this).find('span.align').length < 1 ){
-            $(this).append('<span class="align">Align</span>')
+            $(this).append('<span class="align">Parallelansicht</span>')
             $('span.align').hide();
         };
         if ( $(this).find('span.all-str').length < 1 ){

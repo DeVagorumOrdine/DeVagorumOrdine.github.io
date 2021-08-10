@@ -8,6 +8,11 @@
   
   <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
   
+  
+<!--  <xsl:template match="tei:note/text()">
+    <xsl:value-of select="normalize-space(.)"/>
+  </xsl:template>-->
+  
   <!-- For the lg and l converted before -->
   <xsl:template match="tei:span">
     <xsl:copy-of select="."/>
@@ -42,6 +47,27 @@
   </xsl:template>
   
   
+  <xsl:template match="tei:note">
+    <span>
+      <xsl:attribute name="class">
+        <xsl:text>tei-note</xsl:text>
+      </xsl:attribute>
+      <span class="note-star">*</span>
+      <span class="note-number">
+        <xsl:value-of select="count(./preceding::tei:note)"/>
+      </span>
+      
+      <span class="note-content">
+        <xsl:apply-templates select="node()"/>
+      </span>
+    </span>
+  </xsl:template>
+  
+  <xsl:template match="tei:emph">
+    <em>
+      <xsl:apply-templates select="node()"/>
+    </em>
+  </xsl:template>
   
   <xsl:template match="tei:br">
     <xsl:copy-of select="."/>
