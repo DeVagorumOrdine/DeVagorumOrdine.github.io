@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS"
   exclude-result-prefixes="xs tei"
   version="2.0">
   
@@ -114,14 +115,27 @@
   
   
   <xsl:template match="tei:add">
-    <span class="tei-add">
+    <span>
+      <xsl:attribute name="class">
+        <xsl:text>tei-add</xsl:text>
+        <xsl:if test="contains(./@hei:placeRef, 'hc:PageMarginRight' )">
+          <xsl:text> tei-add-margin-right</xsl:text>
+        </xsl:if>
+      </xsl:attribute>
       <xsl:apply-templates select="node()"/>
     </span>
   </xsl:template>
   
   <xsl:template match="tei:del">
-    <span class="tei-del">
+    <span>
+      <xsl:attribute name="class">
+        <xsl:text>tei-del</xsl:text>
+        <xsl:if test="contains(./@rendition, 'hc:ImplicitlyDeleted' )">
+          <xsl:text> tei-del-implicit</xsl:text>
+        </xsl:if>
+      </xsl:attribute>
       <xsl:apply-templates select="node()"/>
+      
     </span>
   </xsl:template>
   

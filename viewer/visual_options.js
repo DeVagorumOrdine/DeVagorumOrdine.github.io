@@ -216,6 +216,38 @@ function punctuation(){
 
   }
     
+  // ADD AM RAND
+  function addRandPopup(){
+    $('.tei-add-margin-right').hover(
+      function(){
+        $(this).append('<span class="tei-add-margin-right-popup">Am rechtem Rand</span>')
+        if ($('input[name=lemma]').is(':checked')){
+          $(this).children('.tei-add-margin-right-popup').css('top', '-3.2rem')
+        } else {
+          $(this).children('.tei-add-margin-right-popup').css('top', '-1.5rem')
+        };
+      },
+      function(){
+        $(this).children('.tei-add-margin-right-popup').remove();
+        },
+      )
+    }
+  
+    // DEL AM RAND
+    function delRandPopup(){
+      $('.tei-del-implicit').hover(
+        function(){
+          $(this).append('<span class="tei-del-implicit-popup">Implizit ersetzt durch Schreiberkorrektur</span>');
+          if ($('input[name=lemma]').is(':checked')){
+            $(this).children('.tei-del-implicit-popup').css('top', '-4.2rem')
+          } else {
+            $(this).children('.tei-del-implicit-popup').css('top', '-2.5rem')
+          };
+        },
+        function(){
+          $(this).children('.tei-del-implicit-popup').remove();
+        })
+    }
     
 
 $(document).ready(function(){
@@ -292,7 +324,9 @@ $(document).ready(function(){
         
     },
     function(){$(this).find('.corr-popup').remove();})
+  
 
+  
 
   //LAYOUT
   applyLayout( $('input[name=layout]:checked').val() );
@@ -312,6 +346,8 @@ $(document).ready(function(){
   
   lemma();
   korrekturen();
+  addRandPopup();
+  delRandPopup();
   
   // GLOSSES
   if ( $('#edition').has('.gloss').length < 1){
@@ -326,4 +362,4 @@ $(document).ready(function(){
 });
 
 
-module.exports = { applyLayout, applyDarstellung, lemma };
+module.exports = { applyLayout, applyDarstellung, lemma, addRandPopup, delRandPopup };

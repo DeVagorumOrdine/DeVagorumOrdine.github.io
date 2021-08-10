@@ -181,6 +181,8 @@ $(document).ready(function(){
         // console.log($('input[name=darstellung]:checked').val());
         vis_opt.applyDarstellung( $('input[name=darstellung]:checked').val() );
         vis_opt.lemma();
+        vis_opt.addRandPopup();
+        vis_opt.delRandPopup();
         strophen_div(idnr);
 
         // Update global variable show_wits that stores the wits that are used in the params to load the page
@@ -192,7 +194,8 @@ $(document).ready(function(){
         
         $('.gloss').hide();
 
-        addAlignmentAndStrophensynopse()
+        addAlignmentAndStrophensynopse();
+        
 
     });
 
@@ -201,6 +204,7 @@ $(document).ready(function(){
     };
 
     addAlignmentAndStrophensynopse();
+    vis_opt.addRandPopup();
     
 
 
