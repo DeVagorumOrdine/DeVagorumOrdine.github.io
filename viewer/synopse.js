@@ -1,5 +1,6 @@
 import pages from './pages.json' ;
-import fragments from './html_fragments.json';
+import stanzas from './stanzas.json';
+// import fragments from './html_fragments.json';
 import palette from './palette.json';
 import corresp from './stanzas_corresp.json';
 
@@ -20,9 +21,10 @@ $.each(pages, function(key){
 
 function load_text(sel_col, sigle){
     var text = '';
-    $.each(fragments['texts'][sigle], function(key, val){
+    $.each(stanzas['stanzas'][sigle], function(key, val){
         text += val;
     });
+
     sel_col.html(text);
     $('.tei-att-lemma').hide();
 };
