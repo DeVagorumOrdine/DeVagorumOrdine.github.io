@@ -1,6 +1,5 @@
 import pages from './pages.json' ;
 import fragments from './html_fragments.json';
-import stanzas from './stanzas.json';
 import palette from './palette.json';
 import corresp from './stanzas_corresp.json';
 
@@ -30,14 +29,16 @@ function load_text(sel_col, sigle){
 
 function strophen_div(column){
     var colId = '#textcol' + column;
+    
     // $('.tei-lg').css('color','red');
-    $(colId + ' > .tei-lg > br').remove();
-    $(colId + ' > .tei-lg').each(function(){
+    $(colId + ' .tei-lg br').remove();
+    $(colId + ' .tei-lg').each(function(){
+        console.log( $(this));
         $(this).add($(this).nextUntil('.tei-lg')).wrapAll('<div class="stanza">');
     });
 
 
-    $(colId + ' > .stanza').each(function(){
+    $(colId + ' .stanza').each(function(){
         $(this).css('margin-top', '2rem');
         $(this).css('padding', '1rem');
         var stanza_id = $(this).children('span.tei-lg').children('span.corresp').text()
@@ -181,8 +182,8 @@ $(document).ready(function(){
         // console.log($('input[name=darstellung]:checked').val());
         vis_opt.applyDarstellung( $('input[name=darstellung]:checked').val() );
         vis_opt.lemma();
-        vis_opt.addRandPopup();
-        vis_opt.delRandPopup();
+        // vis_opt.addRandPopup();
+        // vis_opt.delRandPopup();
         strophen_div(idnr);
 
         // Update global variable show_wits that stores the wits that are used in the params to load the page
@@ -204,7 +205,7 @@ $(document).ready(function(){
     };
 
     addAlignmentAndStrophensynopse();
-    vis_opt.addRandPopup();
+    // vis_opt.addRandPopup();
     
 
 

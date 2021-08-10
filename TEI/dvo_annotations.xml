@@ -53,11 +53,11 @@
     schon beim römischen Militär getragen wurden. Vgl. Graham Summer: Roman Military Dress. Stroud
     2009, S. 182.</note>
   <note ana="hc:EditorialNote" 
-    target="Lz#xpath(//lg[@n='12']/l[@n='4']">Scherzhaft-parodistische
+    target="Lz#xpath(//lg[@n='12']/l[@n='4'])">Scherzhaft-parodistische
     Umkehrung von Lk 18,13; Ed.: Vulgata 2018: <emph rend="italic">Deus propitius esto mihi
       peccatori</emph>; Übers. Thomas Johann Bauer 2018: „Gott, sei mir Sünder gnädig!“</note>
   <note ana="hc:EditorialNote" 
-    target="Lz#xpath(//lg[@n='13']/l[@n='4']">Bezeichnung für die
+    target="Lz#xpath(//lg[@n='13']/l[@n='4'])">Bezeichnung für die
     Totenmesse, abgeleitet vom Incipit des Introitus zur Begräbnisfeier nach katholischem Ritus
       (<emph rend="italic">Missale Romanum</emph>).</note>
 </listAnnotation>

@@ -249,6 +249,40 @@ function punctuation(){
         })
     }
     
+  function notes(){
+      $('.tei-note .note-content').hide();
+      $('.tei-note .note-star').click(function(){
+        var id_n = $(this).next('.note-number').text();
+        $('<div class="note-flying" id="note_'+ id_n +'"></div>').appendTo('body');
+        $('#note_' + id_n).append('<span class="closer">X</span>');
+        $('#note_' + id_n).append('<div class="note-popup-text"></span>');
+        $('#note_' + id_n).children('.note-popup-text').html( $(this).parent().children('.note-content').html() );
+        var offset = $(this).offset();
+        $('#note_' + id_n).offset( { top: offset.top + 10, left: offset.left + 10 });
+        $('#note_' + id_n).width( $('#edition').width() );
+      });
+
+      $(document).on('click', '.closer', function(){
+        $(this).parent().remove();
+      })
+      $(document).on('mouseover', '.closer', function(){
+        $(this).parent().draggable();
+        $(this).parent().draggable('enable');
+      });
+      $(document).on('mouseout', '.closer', function(){
+        $(this).parent().draggable('disable');
+      });
+
+      
+    }
+
+  function notesShow(){
+    if ($('input[name=edit-komm]').is(':checked')){
+      $('.tei-note').show();
+    } else {
+      $('.tei-note').hide();
+    };
+  }
 
 $(document).ready(function(){
     //MENU DARSTELLUNG
@@ -281,6 +315,12 @@ $(document).ready(function(){
   $('input[name=korr]').on('input', function(){
     korrekturen();
     });
+
+  $('input[name=edit-komm]').on('input', function(){
+    notesShow();
+    });
+
+
 
   // KORR
   var bigCorr = $('.tei-corr').has('.tei-w, .tei-pc');
@@ -348,6 +388,11 @@ $(document).ready(function(){
   korrekturen();
   addRandPopup();
   delRandPopup();
+  notesShow();
+
+  // assign id to each note
+  // var number_notes = 0
+  notes();
   
   // GLOSSES
   if ( $('#edition').has('.gloss').length < 1){
@@ -362,4 +407,4 @@ $(document).ready(function(){
 });
 
 
-module.exports = { applyLayout, applyDarstellung, lemma, addRandPopup, delRandPopup };
+module.exports = { applyLayout, applyDarstellung, lemma };

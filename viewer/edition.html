@@ -6,6 +6,7 @@
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  type="text/javascript"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></link>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" type="text/javascript"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"></link>
@@ -45,8 +46,8 @@
          </div>
        </div>
        <div class="col-md-3">
-         <button class="btn btn-outline-secondary mb-3" id="optionen-toggle">Darstellungsoptionen
-         <button class="btn btn-outline-secondary mb-3" id="uebersetzung">Übersetzung
+         <button class="btn btn-outline-secondary mb-3" id="optionen-toggle">Optionen</button>
+         <button class="btn btn-outline-secondary mb-3" id="uebersetzung">Übersetzung</button>
       </div>
     </div>
  </div>
@@ -141,6 +142,12 @@
            Lemma beim Hover anzeigen
         </label>
      </div>
+     <div class="form-check primoption">
+      <input class="form-check-input" type="checkbox" name="edit-komm" id="edit-komm" value="" checked>
+      <label class="form-check-label" for="edit-komm">
+         Editorische Kommentare Anzeigen ( * )
+      </label>
+   </div>
   </div>
  </div>
 
