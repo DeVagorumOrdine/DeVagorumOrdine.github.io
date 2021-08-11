@@ -67,12 +67,15 @@ for file in os.listdir('TEI'):
         root = newdom1.getroot()
 
         
+        
 
         for page in root.findall('.//tei:pb', ns):
             page_number = page.attrib['n']
             # Do a transformation for each page that creates a DOM with that page just in here and then apply the transform to HTML
             transform = et.XSLT(page_extract)
             newdom2 = transform(newdom1, page=et.XSLT.strparam(page_number))
+
+            
 
             transform = et.XSLT(xsl_main)
             newdom3 = transform(newdom2)

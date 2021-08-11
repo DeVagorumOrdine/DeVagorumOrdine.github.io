@@ -28,7 +28,7 @@ def addNotes(sigle, dom):
                     annot.attrib['target'] = '#' + annot.attrib['target'].split('#')[1]
                     parent_element.insert(index + 1, annot )
 
-    print(root.xpath('.//tei:note', namespaces=ns))
+    # print(root.xpath('.//tei:note', namespaces=ns))
 
     resultDom = et.ElementTree(root)
     return resultDom

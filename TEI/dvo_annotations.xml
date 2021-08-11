@@ -100,7 +100,7 @@
         et surgens secutus est eum</emph> (Übers. Gisela Meyer-Stüssi: „Und als Jesus von dort weiterreiste, sah er einen Mann namens Matthäus, 
       der in einem Zollhaus saß, und er sagte zu ihm: ‚Folge mir!‘ Und er stand auf und folgte ihm.“)</note>
     <note ana="hc:EditorialNote" 
-      target="B#xpath(//lg[@n='1']/l[@n='1']/w[position()=1])">
+      target="B#xpath(//lg[@n='1']/l[@n='4']/w[position()=1])">
       Benedikt Konrad Vollmann übersetzt <emph rend="italic">secta</emph> als ‚Glaubensgemeinschaft‘. Darüber hinaus steht <emph rend="italic">
         secta</emph> viel häufiger in semantischer Nähe zu <emph rend="italic">opinio</emph> und bezeichnet eine ‚Philosophenschule‘ oder eine (auch häretische) 
       Meinung. Siehe Secta. In: Du Cange, et al.: Glossarium mediae et infimae latinitatis, éd. augm., Niort: L. Favre, 1883‑1887, Bd. 7, Sp. 388b–391a. Ich 

@@ -63,7 +63,7 @@
     </span>
   </xsl:template>
   
-  <xsl:template match="tei:emph">
+  <xsl:template match="emph[@rend='italic']">
     <em>
       <xsl:apply-templates select="node()"/>
     </em>
