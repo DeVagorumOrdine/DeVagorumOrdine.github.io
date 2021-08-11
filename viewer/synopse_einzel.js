@@ -21,6 +21,10 @@ $(document).ready(function(){
 
     var col = 1;
     $.each(show_wits, function(sigle, num){
+        // When we have a stanza repeated in a witness we should add _ in the json and now we filter it
+        if (sigle.indexOf('_') > 0){
+            sigle = sigle.substring(0, sigle.indexOf('_'));
+        };
         $('#texts').append('<div class="col-md-'+ columnBootst +'">'+
             '<div class="text-col mb-4" id="textcol'+ col +'">'+
             '<h1 style="font-size:32px">' + sigle + '</h1>'+
