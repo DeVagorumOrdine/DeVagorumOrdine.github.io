@@ -1,5 +1,33 @@
+@font-face {
+    font-family: Junicode;
+    src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode.ttf?raw=true);
+  }
+
+  @font-face {
+    font-family: OpenSans;
+    src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: OpenSans;
+    src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-Bold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: OpenSans;
+    src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-Italic.ttf);
+    font-style: italic;
+  }
+  @font-face {
+    font-family: OpenSans;
+    src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+  }
+
 * {
     font-size: 16px;
+    /* font-family: OpenSans; */
+    /* font-family: sans-serif; */
 }
 
 .main_title {
@@ -17,6 +45,17 @@
     text-align: justify;
     margin-right: auto;
     margin-left: auto;
+}
+
+
+.website_content h3 {
+    max-width: 45em;
+    /* text-align: center; */
+    margin-left: 12rem;
+    /* margin-left: auto; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 .website_content ul {

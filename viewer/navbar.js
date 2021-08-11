@@ -25,7 +25,7 @@ const navbar = "<button class= \"navbar-toggler \" type= \"button \" data-toggle
         "<div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">"+
           "<a class=\"dropdown-item\" href=\"/team.html?sp=3&wit=B\">Team</a>"+
           "<a class=\"dropdown-item\" href=\"/dank.html\">Danksagungen</a>"+
-          "<a class=\"dropdown-item\" href=\"/dank.html\">Lizenz</a>"+
+          "<a class=\"dropdown-item\" href=\"/lizenz.html\">Lizenz</a>"+
         "</div></li>"+
         // "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/synopse.html?sp=3&wit=B \">Synopse</a></li>"+
         // "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/team.html \">Team</a></li>"+
