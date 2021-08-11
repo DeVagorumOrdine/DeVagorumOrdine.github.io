@@ -86,6 +86,8 @@ function addAlignmentAndStrophensynopse(){
         
     $('span.align').click(function(){
         var clicked_stanza = $(this).closest('.stanza');
+        var color = clicked_stanza.css('border').split(' ').slice(2).join(' ');
+        color = color.replace(')', ', 0.5)');
         var stroph_id = $(this).parent().children('span.corresp').text();
         var corresp_str = $('.tei-lg').filter(function(){
             return $(this).find('span.corresp').text() == stroph_id;
@@ -105,14 +107,11 @@ function addAlignmentAndStrophensynopse(){
                     }
                     // $(this).closest('.text-col').scrollTop(new_scroll) ;
                     $(this).closest('.text-col').animate({scrollTop: new_scroll + 'px'}, 500, 'swing', function() { 
-                        var color = sel_stanza.closest('.stanza').css('border').split(' ').slice(2).join(' ');
-                        color = color.replace(')', ', 0.5)');
-                        console.log(color);
                         sel_stanza.closest('.stanza').css('background-color', color);
-                        clicked_stanza.css('background-color', color);
+                        corresp_str.closest('.stanza').css('background-color', color);
                         setTimeout(function(){
                             sel_stanza.closest('.stanza').css('background-color', 'white');
-                            clicked_stanza.css('background-color', 'white');
+                            corresp_str.closest('.stanza').css('background-color', 'white');
                         }, 500);
                      });
                     }
