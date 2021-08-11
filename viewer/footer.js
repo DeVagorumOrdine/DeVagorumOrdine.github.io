@@ -3,7 +3,7 @@ const footer = "<!-- Copyright --> <div class=\"container-fluid p-0\"><div class
 "<div class=\"row pt-3\"><p class=\"mx-auto\">Mit Unterstützung von:</p></div>"+
 "<div class=\"row\">"+
     "<div class=\"col-md-6\"><figure><img src=\"https://www.materiale-textkulturen.de/bilder/logo_mtk.svg\" alt=\"SFB 933 - Materiale Textkulturen Logo\" height=\"100\"></img><figCaption>Sonderforschungsbreich 933<br/>Materiale Textkulturen</figCaption></figure></div>"+
-    "<div class=\"col-md-6\"><figure><img src=\"http://devagorumordine.github.io/img/LMU_Logo.eps\" alt=\"LMU Logo\" height=\"100\"></img><figCaption>LMU - München</figCaption></figure></div>"+
+    "<div class=\"col-md-6\"><figure><img src=\"http://devagorumordine.github.io/img/LMU_Logo.svg\" alt=\"LMU Logo\" height=\"100\"></img><figCaption>LMU - München</figCaption></figure></div>"+
     "</div></div></div> </div><section></section>"
 
                 
