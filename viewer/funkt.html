@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Handschriften</title>    
+    <title>DVO - Funktionalität</title>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></link>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" type="text/javascript"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"></link>
     <script src="./navbar.js"></script>
     <script src="./footer.js"></script>
+    <link href="./general.css" rel="stylesheet"></link>
   </head>
 <body>
 <nav id="navbarcont" class="navbar navbar-expand-md bg-light navbar-light"></nav>
@@ -18,11 +19,133 @@
     </div>
     <div class="row">
         <div class="website_content">
+        <h1>OPTIONEN</h1>
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <p>Die Texte der Quellen wurden mit einer reichen Kodierung in XML-TEI erfasst. Jeder Text enthält eigentlich mehrere Schichten, die sich für die Leseerfahrung alternativ ein- und ausschalten lassen. Zum Beispiel, sowohl die Abkürzungszeichen als auch deren Auflösung wurden in den Transkriptionsdateien festgehalten. Beim Lesen kann man in den <code>Optionen</code> aussuchen, ob man die Abkürzungszeichen oder die Auflösung (in normaler oder kurzivierter Schrift) sieht. Alle verfügbare Optionen werden in dieser Seite erläutert.</p>
+            <p>Die XML-TEI Dateien folgen die Empfehlungen von <a href="https://heieditions.github.io/">heiEditions</a> für die Kodierung mittelalterlicher Texte. Die Dateien können <a href="">hier</a> gefunden werden</p>
+          </div>
+          <div class="col-md-4 col-sm-12">        </div>
+        </div>
 
-        
-    <p>Demnächst</p>
-    
-    
+          <h2>TEXTDARSTELLUNG</h2>
+          <div class="row">
+            <div class="col-md-8 col-sm-12"><p>Die Texte dieser Edition bestehen grundsätzlich aus zwei Schichten: der Transkription der Handschriften auf der einen Seite und der editorischen Bearbeitung derselben durch Normalisierungen, Korrekturen und Zeichensetzung auf der anderen Seite. Im Menu <code>Optionen</code> der Edition kann man zwischen den zwei Schichten (<code>Paläographische Transkription</code> und <code>Normalisiert/Ediert</code>) umschalten.</p></div>
+            <div class="col-md-4 col-sm-12"><img src="http://devagorumordine.github.io/img/paleo-normal.png" alt="paläographisch-normal" class="right-col-img"></img></div>
+          </div>
+        <h3>Die paläographische Transkriptionen</h3>
+        <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <p>
+            Die Transkriptionen folgen getreu den Handschriften und bilden auch farbige <strong>Initialen</strong> und <strong>Schreiberkorrekturen</strong>. <strong>Variierende Grapheme</strong> für gleiche Buchstaben sind auch umgesetzt (z. B. &lt;ſ&gt; und &lt;s&gt;; &lt;ı&gt; und &lt;i&gt;; &lt;ꝛ&gt; und &lt;r&gt;; &lt;ꝺ&gt; und &lt;d&gt;), zumal deren Verwendung auch in derselben Handschrift mitunter nicht einheitlich ist. Wenn die Entscheidung in einzelnen Fällen (v. a. bei ı) nicht eindeutig ist, steht das wahrscheinlichere Graphem.</p>
+            <p>Auch die zahlreichen <strong>Abkürzungen</strong> in den lateinischen Strophen wurden berücksichtigt und möglichst textnah umgesetzt. Uneindeutige Diakritika sind behutsam vereinheitlicht.</p>
+        </div>
+        <div class="col-md-4 col-sm-12">          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <p>
+              Die Transkription von We (Wernigerode, Zb 4m; seit Juli 1945 verschollen, wohl in britischem Privatbesitz, zum möglichen Verbleib der Handschrift vgl. die Aufsätze von Oppitz 1993 und Kofler 2008) folgt der sehr handschriftennahen Transkription von Brodführer (1914) in der Strophe 1 und 7. Da dieser nur den Anfang und den Schluss transkribiert, folgen die übrigen Strophen den Lesarten von Bolte 1928. 
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12">          </div>
+        </div>
+        <h3>Normalisiert/Ediert</h3>
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <p>
+                Alle <strong>Grapheme</strong> werden zu modernen Buchstabentypen umgesetzt. Die Verwendung von &lt;v&gt; und &lt;u&gt;, &lt;i&gt; und &lt;j&gt; sowie die Groß-/Kleinschreibung werden nach allgemeinen Konventionen des Lateinischen vereinheitlicht. Das Graphem &lt;ę&gt; wird als &lt;ae&gt; umschrieben, ansonsten steht das im mittelalterlichen Latein gewöhnliche &lt;e&gt; als Flexionsendung. Die Getrennt- und Zusammenschreibung folgt im Prinzip der Handschrift (wobei der handschriftliche Befund nicht immer eindeutig ist).
+              </p>
+              <p><strong>Abkürzungen</strong> werden aufgelöst. Es gibt keine Fällen, wo di Auflösung schwierig oder problematisch wäre. Nichtsdestotrost wird die Möglichkeit angeboten, diese Stelle kursiv darzustellen in den <code>Optionen</code> unter <code>Abbreviaturauflösungen kursiv</code>.</p>
+              <p>
+                Die <strong>Interpunktion</strong> folgt weitgehend den Vorschlägen in den älteren Editionen Hilka/Schumann/Bischoff (1930–1970), Suttina (1906/1907) und Bolte (1928). Die Interpunktion kann eine große Hilfe zum Textverständnis sein, ist aber gleichzeitig in gewisser Maße eine Interpretation des Textes. Deswegen kann man in den <code>Optionen</code> unter <code>Interpunktionszeichen</code> diese nicht anzeigen, falls man eine mehr herausfordernde, aber in geringerem Maße filtrierte Leseerfahrung will. 
+              </p>
+            </div>
+              <div class="col-md-4 col-sm-12">
+                <img class="right-col-img" src="https:///DeVagorumOrdine.github.io/img/norm-ediert.png" alt="normalisiert ediert menu"/>
+              </div>
+            </div>
+            <h2>Absetzung</h2>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  Texte werden in der Regel nach konventionellen semantischen Einheiten gegliedert. Im Fall von einem lateinischen Gedicht wie <em>De Vagorum Ordine</em>, sind diese Einheiten Strophen und Verse. In modernen Editionen wird das Layout des Textes dementsprechend gestaltet: jeder Vers in einer Zeile und extra Abstand zwischen Strophen. Oft werden die Strophen auch nummeriert.                  
+                </p>
+                <p>
+                  Die Layout-Konventionen waren oft in der mittelalterlichen Überlieferung anders. Verse und Strophen sind in der Quelle nicht abgesetzt, obwohl oft andere Symbole für die Trennung der Strophen und Verse zum Einsatz kommen.
+                </p>
+                <p>In den <code>Optionen</code> unter <code>Absetzung</code> kann man das Layout des Textes in der Visualisierung ändern. <code>Strophen und Verse Absetzen</code> folgt die modernen Konventionen nach der semantischen Gliederung. Jede Strophe wird nummeriert aber auch mit einem Identifikationssigle versehen. Diese Siglen werden unter <a href="">Synopse</a> erklärt.</p>
+                <p>Unter <code>Zeilen nach dem Faksimile absetzen</code> wird der Text nach den Zeilen in der Quelle dargestellt. Das hilft beim Lesen, wenn man nebenbei das Faksimile hat.</p>
+                <p>In beiden Fällen kann man die andere Gliederung in Grau dazwischen zeigen. <code>Zeilenbegin anzeigen</code> und <code></code>Verse- und Strophennummer anzeigen</code>.</p>
+
+              </div>
+            <div class="col-md-4 col-sm-12">          </div>
+          </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>Eingriffe bestehen in (seltenen) Korrekturen oder Ergänzungen bei offensichtlichen Fehlern. Als Fehler gelten nur Phänomene, die keinen (grammatikalischen) Sinn ergeben und die sich nicht wiederholen, also nicht Systemcharakter haben. Unreine Reime oder metrische Überlängen sowie Kürzen gelten nicht als Fehler.
+                In der Edition werden diese Eingriffe standardmäßig mit einer violettfärbigen Unterstreichung hervorgehoben. Bei einem Mouse-over wird die ursprüngliche Lesart (lect.) und die Korrektur (corr.) sichtbar. In der Option „Stellen mit editorischen Korrekturen unterstrichen“ kann man dieses Verhalten ein- oder ausschalten.                  
+                </p>
+              </div>
+              <div class="col-md-4 col-sm-12">          </div>
+              </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  
+                </p>
+              </div>
+            <div class="col-md-4 col-sm-12">          </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  
+                </p>
+              </div>
+              <div class="col-md-4 col-sm-12">          </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  
+                </p>
+              </div>
+            <div class="col-md-4 col-sm-12">          </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  
+                </p>
+              </div>
+            <div class="col-md-4 col-sm-12">          </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  
+                </p>
+              </div>
+            <div class="col-md-4 col-sm-12">          </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  
+                </p>
+              </div>
+            <div class="col-md-4 col-sm-12">          </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  
+                </p>
+              </div>
+            <div class="col-md-4 col-sm-12">          </div>
+            </div>
+      
 
         </div>    
     </div>

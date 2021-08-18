@@ -1,8 +1,23 @@
-@font-face {
-    font-family: Junicode;
-    src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode.ttf?raw=true);
+  @font-face {
+     font-family: Junicode;
+     src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode.ttf);
   }
-
+  @font-face {
+    font-family: Junicode;
+    src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode-Bold.ttf);
+    font-weight: bold;
+ }
+ @font-face {
+    font-family: Junicode;
+    src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode-Italic.ttf);
+    font-style: italic;
+ }
+ @font-face {
+    font-family: Junicode;
+    src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+  }
   @font-face {
     font-family: OpenSans;
     src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-Regular.ttf);
@@ -23,10 +38,32 @@
     font-weight: bold;
     font-style: italic;
   }
+  @font-face {
+    font-family: Spectral;
+    src: url(https://devagorumordine.github.io/font/spectral/Spectral-Regular.ttf);
+  }
+  @font-face {
+    font-family: Spectral;
+    src: url(https://devagorumordine.github.io/font/spectral/Spectral-Bold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: Spectral;
+    src: url(https://devagorumordine.github.io/font/spectral/Spectral-Italic.ttf);
+    font-style: italic;
+  }
+  @font-face {
+    font-family: Spectral;
+    src: url(https://devagorumordine.github.io/font/spectral/Spectral-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+  }
+
+
 
 * {
     font-size: 16px;
-    /* font-family: OpenSans; */
+    font-family: OpenSans;
     /* font-family: sans-serif; */
 }
 
@@ -45,17 +82,36 @@
     text-align: justify;
     margin-right: auto;
     margin-left: auto;
+
+    font-family: 'Spectral', serif;
+    font-size: 20px;
 }
 
+.website_content h1 {
+    max-width: 45em;
+    /* text-align: center; */
+    margin-left: 1rem;
+    /* margin-left: auto; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.website_content h2 {
+    max-width: 45em;
+    /* text-align: center; */
+    margin-left: 1rem;
+    /* margin-left: auto; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
 .website_content h3 {
     max-width: 45em;
     /* text-align: center; */
-    margin-left: 12rem;
+    margin-left: 3rem;
     /* margin-left: auto; */
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
 .website_content ul {
@@ -138,3 +194,14 @@
 } */
 
 
+.dvo-logo {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Rahmentexte */
+
+.right-col-img{
+    width: 300px;
+}

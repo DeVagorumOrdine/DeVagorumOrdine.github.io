@@ -38,7 +38,7 @@ var projection = new Projection({
 var msLayer =     new ImageLayer({
     source: new Static({
       attributions: pages[ms]['shelfmark'] + ', ' +  pg ,
-      url: 'https://devagorumordine.github.io/img/'+ ms +'_' + pg +'.jpg',
+      url: 'https://devagorumordine.github.io/img/mss/'+ ms +'_' + pg +'.jpg',
       projection: projection,
       imageExtent: extent,
     }),

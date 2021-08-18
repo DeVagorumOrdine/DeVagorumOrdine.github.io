@@ -1,7 +1,7 @@
-const navbar = "<button class= \"navbar-toggler \" type= \"button \" data-toggle= \"collapse \" data-target= \"#collapsibleNavbar \"> <span class= \"navbar-toggler-icon \"></span> \n </button> "+
-        "<div class= \"collapse navbar-collapse \" id= \"collapsibleNavbar \"> \n <!-- Links --> "+
-        "<ul class= \"navbar-nav \"> "+
-        "<li class= \"nav-item active \"> <a class= \"nav-link \" href= \"https://devagorumordine.github.io/ \">Startseite</a></li>"+
+const navbar = "<button class= \"navbar-toggler\" type= \"button\" data-toggle= \"collapse\" data-target=\"#collapsibleNavbar\" aria-controls=\"collapsibleNavbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button> "+
+        "<div class= \"collapse navbar-collapse \" id=\"collapsibleNavbar\">"+
+        "<ul class= \"navbar-nav mr-auto\"> "+
+        "<li class= \"nav-item active \"> <a class= \"nav-link \" href= \"https://devagorumordine.github.io/ \">De Vagorum Ordine</a></li>"+
         // "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/mss.html \">Edition</a></li>"+
         "<li class=\"nav-item dropdown\">"+
         "<a class=\"nav-link dropdown-toggle\" href=\"/synopse_intro.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"+
@@ -29,8 +29,12 @@ const navbar = "<button class= \"navbar-toggler \" type= \"button \" data-toggle
         "</div></li>"+
         // "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/synopse.html?sp=3&wit=B \">Synopse</a></li>"+
         // "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/team.html \">Team</a></li>"+
-        "</ul></div>"
+        "</ul>"+
+        // "<span class=\"navbar-text dvo-logo\">De Vagorum Ordine</span>"+
+        "</div>"
 
+
+        // "<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">"+
 $(document).ready(function(){
     $('#navbarcont').append(navbar);
 });
