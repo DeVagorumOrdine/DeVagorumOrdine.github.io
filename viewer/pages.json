@@ -1,11 +1,15 @@
 {
     "B": {
         "shelfmark": "München, BSB, Cod. lat. mon. 4660 (Carmen Buranum 219)",
-        "pages": ["95v", "96r", "96v"]
+        "pages": ["95v", "96r", "96v"],
+        "sizes": {"95v": [2781,3990], "96r": [2728,3972], "96v":[2781,3990]}
     },
     "Lz": {
         "shelfmark": "Leipzig, Universitätsbibliothek, Ms. 1250",
-        "pages": ["33r"]
+        "pages": ["33r"],
+        "sizes": {"33r": [3840,5760]},
+        "Licence": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "Attribution": "Provided by Leipzig University Library No Copyright - Public Domain Marked"
     },
     "M": {
         "shelfmark": "München, BSB, Cod. lat. mon. 18910",
@@ -17,11 +21,13 @@
     },
     "Pr": {
         "shelfmark": "Prag, Nationalbibliothek, V G 17",
-        "pages": ["96r"]
+        "pages": ["96r"],
+        "sizes": {"96r": [2411,3317]}
     },
     "Vo": {
         "shelfmark": "Volterra, Bibl. Guarnacci, 100 (8653)",
-        "pages": ["13v", "14r"]
+        "pages": ["13v", "14r"],
+        "sizes": {"13v": [2761,3690], "14r": [2806,3685]}
     },
     "We": {
         "shelfmark": "Gräflich Stolbergischen Bibliothek zu Wernigerode, Zb 4m",
@@ -30,6 +36,7 @@
     },
     "Wi": {
         "shelfmark": "Wittingau/Třeboň, Státní Archiv, A 7",
-        "pages": ["147v", "148r"]
+        "pages": ["147v", "148r"],
+        "sizes": {"147v": [2512,3176], "148r": [2428,3148]}
     }
 }

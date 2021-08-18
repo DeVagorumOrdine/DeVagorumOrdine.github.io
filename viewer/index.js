@@ -11,8 +11,6 @@ import { Feature } from 'ol';
 import {Circle, Fill, RegularShape, Stroke, Style} from 'ol/style';
 import {LineString, Point} from 'ol/geom';
 
-import FontSymbol from 'ol-ext/style/FontSymbol';
-
 import pages from './pages.json'
 import fragments from './html_fragments.json';
 
@@ -29,16 +27,17 @@ $('#map').height( $(window).height() - 30 )
 // Map views always need a projection.  Here we just want to map image
 // coordinates directly to map coordinates, so we create a projection that uses
 // the image extent in pixels.
-var extent = [0, 0, 2781, 3990];
+var extent = [0, 0, pages[ms]["sizes"][pg][0], pages[ms]["sizes"][pg][1]];
+console.log(pages[ms]["sizes"]);
 var projection = new Projection({
-  code: 'bsb-image',
+  code: 'projection1',
   units: 'pixels',
   extent: extent,
 });
 
 var msLayer =     new ImageLayer({
     source: new Static({
-      attributions: pages[ms]['shelfmark'] + ', ' +  pg,
+      attributions: pages[ms]['shelfmark'] + ', ' +  pg ,
       url: 'https://devagorumordine.github.io/img/'+ ms +'_' + pg +'.jpg',
       projection: projection,
       imageExtent: extent,
