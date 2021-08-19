@@ -10,12 +10,110 @@
     <script src="./navbar.js"></script>
     <script src="./footer.js"></script>
     <link href="./general.css" rel="stylesheet"></link>
+    <link href="./edition.css" rel="stylesheet"></link>
+    <script src="./visual_options.js"></script>
   </head>
 <body>
 <nav id="navbarcont" class="navbar navbar-expand-md bg-light navbar-light"></nav>
+
+<div id="anzeige-optionen">
+  <div style="display:block; background-color:#a87790; padding-top: 15px; padding-left: 1rem; border-top-left-radius: 15px; border-bottom: solid rgb(224, 191, 223) 1px;">
+     <p style="font-size: x-large;">Optionen<button class="close" id="close-options">x</button></p>
+    <p>(Auf dieser Seite haben diese Optionen keine Wirkung, aber Sie können helfen, die Erläuterungen zu verstehen.)</p>
+  </div>
+  <div class="darstellung-section">
+     <p>Textdarstellung</p>
+     <div class="form-check primoption">
+        <input class="form-check-input" type="radio" name="darstellung" id="transkriptionInput" value="transk"
+           checked>
+        <label class="form-check-label" for="transkriptionInput">
+           Paläographische Transkription
+        </label>
+     </div>
+     <div class="form-check primoption">
+        <input class="form-check-input" type="radio" name="darstellung" id="editionInput" value="edit">
+        <label class="form-check-label" for="editionInput">
+           Normalisiert/Ediert
+        </label>
+     </div>
+     <div class="form-check suboption suboptions-ed">
+       <input class="form-check-input" type="checkbox" name="italic-abbr" id="italic-abbr" value="">
+       <label class="form-check-label" for="italic-abbr">
+       Abbreviaturauflösungen kursiv
+    </label>
+     </div>
+     <div class="form-check suboption suboptions-ed">
+       <input class="form-check-input" type="checkbox" name="pc" id="pc" value="" checked>
+       <label class="form-check-label" for="pc">
+       Interpunktionszeichen
+    </label>
+     </div>
+  </div>
+ 
+  <div class="darstellung-section">
+    <p>Korrekturen</p>
+    <div class="form-check primoption">
+      <input class="form-check-input" type="checkbox" name="korr" id="korr" value="" checked>
+      <label class="form-check-label" for="korr">
+      Stellen mit editorische Korrekturen unterstreichen
+   </label>
+    </div>
+    <div class="form-check primoption">
+       <input class="form-check-input" type="checkbox" name="int-gloss" id="int-gloss" value="" checked>
+       <label class="form-check-label" for="int-gloss">
+       Interlineare Glossen anzeigen (Wi)
+    </label>
+     </div>
+ </div>
+
+  <div  class="darstellung-section">
+     <p>Absetzung</p>
+    <div class="form-check primoption">
+       <input class="form-check-input" type="radio" name="layout" id="semantic" value="sem"
+          checked>
+       <label class="form-check-label" for="semantic">
+          Strophen und Verse absetzen
+       </label>
+    </div>
+    <div class="form-check suboption suboptions-3">
+       <input class="form-check-input" type="checkbox" name="lb-show" id="lb-show" value="" checked>
+       <label class="form-check-label" for="lb-show">
+       Zeilenbegin anzeigen
+    </label>
+     </div>
+    <div class="form-check primoption">
+       <input class="form-check-input" type="radio" name="layout" id="facsimilar" value="fac">
+       <label class="form-check-label" for="facsimilar">
+          Zeilen nach dem Faksimile absetzen
+       </label>
+    </div>
+    <div class="form-check suboption suboptions-4">
+       <input class="form-check-input" type="checkbox" name="l-show" id="l-show" value="" checked>
+       <label class="form-check-label" for="l-show">
+       Verse- und Stropennummer anzeigen
+    </label>
+     </div>
+ </div>
+ <div  class="darstellung-section">
+    <p>Interaktion</p>
+   <div class="form-check primoption">
+      <input class="form-check-input" type="checkbox" name="lemma" id="lemma" value="" checked>
+      <label class="form-check-label" for="lemma">
+         Lemma beim Hover anzeigen
+      </label>
+   </div>
+   <div class="form-check primoption">
+    <input class="form-check-input" type="checkbox" name="edit-komm" id="edit-komm" value="" checked>
+    <label class="form-check-label" for="edit-komm">
+       Editorische Kommentare Anzeigen ( * )
+    </label>
+ </div>
+</div>
+</div>
+
 <div class="container">
     <div class="row justify-content-center m-4">
-        <h1 class="display-1">Funktionalität</h1>
+        <h1 class="display-3">FUNKTIONALITÄT</h1>
     </div>
     <div class="row">
         <div class="website_content">
@@ -25,7 +123,7 @@
             <p>Die Texte der Quellen wurden mit einer reichen Kodierung in XML-TEI erfasst. Jeder Text enthält eigentlich mehrere Schichten, die sich für die Leseerfahrung alternativ ein- und ausschalten lassen. Zum Beispiel, sowohl die Abkürzungszeichen als auch deren Auflösung wurden in den Transkriptionsdateien festgehalten. Beim Lesen kann man in den <code>Optionen</code> aussuchen, ob man die Abkürzungszeichen oder die Auflösung (in normaler oder kurzivierter Schrift) sieht. Alle verfügbare Optionen werden in dieser Seite erläutert.</p>
             <p>Die XML-TEI Dateien folgen die Empfehlungen von <a href="https://heieditions.github.io/">heiEditions</a> für die Kodierung mittelalterlicher Texte. Die Dateien können <a href="">hier</a> gefunden werden</p>
           </div>
-          <div class="col-md-4 col-sm-12">        </div>
+          <div class="col-md-4 col-sm-12" style="position: relative;"><button class="btn btn-outline-secondary mb-3 sticky-top" id="optionen-toggle">Optionen</button></div>
         </div>
 
           <h2>TEXTDARSTELLUNG</h2>
@@ -130,38 +228,49 @@
                 <img class="right-col-img" src="https:///DeVagorumOrdine.github.io/img/absetzung-zeile-bsp.png" alt="" style="width: 17rem;"></img>
             </div>
             </div>
-            
+            <h2>Interaktion</h2>
             <div class="row">
               <div class="col-md-8 col-sm-12">
                 <p>
-                  
+                  Ein Lemma (pl. Lemmata) ist in diesem Kontext das linguistische Stamm des Wortes, was die Identifikation und das Nachschlagen im Wörterbuch erleichtert. Die Lemmata wurden nicht automatisch, sondern manuell erstellt und in TEI kodiert. Die Option <code>Lemma beim Hover anzeigen</code> bestimmt, ob die lemmata der Wörter angezeigt werden, wenn das Mouse darüber ist. 
                 </p>
+                <p>
+                  Zum Text gibt es mehrere Kommentare, die Stellen erläutern oder intertextuelle Bezüge verzeichnen. Diese werden an der passenden Stellen mit einem Sterchen-Symbol gekennzeichnet. Beim Clicken öffnet sich ein Pop-Up mit dem Inhalt des Kommentars. Diese Zeichen kann man verstecken oder anzeigen mit der Option <code>Editorische Kommentare Anzeigen ( * )</code>.
+                </p>
+              </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="right-col-img" src="https:///DeVagorumOrdine.github.io/img/interaktion.png"/>
+              <img src="https:///DeVagorumOrdine.github.io/img/lemma.png"/>
+              <img class="right-col-img" src="https:///DeVagorumOrdine.github.io/img/kommentar.png" style="width: 25rem;"/>
+            </div>
+            </div>
+            <h1 id="synopse">Synopse</h1>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>Es gibt zwei Synopsen in dieser Edition: <strong>Textsynopse</strong> und <strong>Strophensynopse</strong>. Beide dienen dazu die Lieder zu vergleichen, bieten aber unterschiedliche Funktionen und Schwerpunkte an.</p>
               </div>
             <div class="col-md-4 col-sm-12">          </div>
             </div>
+            <h3>Textsynopse</h3>
             <div class="row">
               <div class="col-md-8 col-sm-12">
-                <p>
-                  
-                </p>
+                <p>In dieser Seite kann den Text von 1 bis 8 Textzeugen in Spalten laden. Der Auswahl der Strophenzahl erfolgt durch die horizontale Liste unter dem Titel. Daneben befinden sich einen Link zur Strophensynopse und die Visualisierungsoptionen. Strophen werden farbig markiert und befinden sich in der selbe Reihenfolge wie in der Handschrift. Strophen in <strong>grau</strong> sind in in nur eine Handschrift überliefert. Die andere Farben identifizieren jeweils die gleiche Strophen in mehreren Handschriften. Zum Beispiel, die Strophe ist blau in allen Hss (Bild).</p>
+               <p>Es gibt zwei Funktionen, wenn man mit dem Mouse auf einer Strophe ist: alle und paralellansicht.</p>
               </div>
-            <div class="col-md-4 col-sm-12">          </div>
+            <div class="col-md-4 col-sm-12">
+              
+            </img>
+            </div>
             </div>
             <div class="row">
               <div class="col-md-8 col-sm-12">
-                <p>
+                <p><strong>Paralellansicht</strong> hilft die korrelierenden Strophen in einer Reihe zu bringen.
                   
                 </p>
               </div>
-            <div class="col-md-4 col-sm-12">          </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="right-col-img" style="width: 25rem;" src="https:///DeVagorumOrdine.github.io/img/paralell.gif">
             </div>
-            <div class="row">
-              <div class="col-md-8 col-sm-12">
-                <p>
-                  
-                </p>
-              </div>
-            <div class="col-md-4 col-sm-12">          </div>
             </div>
             <div class="row">
               <div class="col-md-8 col-sm-12">

@@ -15,9 +15,10 @@
         "shelfmark": "München, BSB, Cod. lat. mon. 18910",
         "pages": ["193v"]
     },
-    "Pé": {
+    "Pe": {
         "shelfmark": "Pécs/Fünfkirchen, Bischöfliche Bibliothek, DD. III. 18",
-        "pages": ["95"]
+        "pages": ["95"],
+        "sizes": {"95": [2411,3317]}
     },
     "Pr": {
         "shelfmark": "Prag, Nationalbibliothek, V G 17",
@@ -31,7 +32,8 @@
     },
     "We": {
         "shelfmark": "Gräflich Stolbergischen Bibliothek zu Wernigerode, Zb 4m",
-        "pages": ["140r"]
+        "pages": ["140r"],
+        "sizes": {"140rr": [2411,3317]}
 
     },
     "Wi": {

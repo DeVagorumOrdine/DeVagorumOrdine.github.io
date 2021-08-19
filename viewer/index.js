@@ -102,7 +102,7 @@ map.addLayer(linesLayer)
 
 
 $(document).ready(function(){
-  
+  console.log(ms,pg)
   // HEADER and PAGINATION
   $('#current_page_header').append(pages[ms]['shelfmark']);
   $.each(pages[ms]['pages'], function(idx, val){
@@ -119,6 +119,7 @@ $(document).ready(function(){
   });
   
   // APPEND THE TEXT
+  
   $('#edition').append(fragments.texts[ms][pg]);
   
   

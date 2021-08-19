@@ -4,8 +4,8 @@
   "description": "Easy viewer for manuscripts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel edition.html mss.html synopse.html synopse_intro.html team.html translation.html index.html strophen_synopse.html synopse1.html funkt.html mss_bes.html bib.html dank.html lizenz.html",
-    "build": "parcel build --public-url /resources edition.html mss.html synopse.html synopse_intro.html team.html translation.html index.html funkt.html mss_bes.html bib.html dank.html  lizenz.html  strophen_synopse.html synopse1.html --no-source-maps",
+    "start": "parcel edition.html mss.html synopse.html synopse_intro.html team.html translation.html index.html strophen_synopse.html synopse1.html funkt.html mss_bes.html bib.html dank.html einf.html lizenz.html",
+    "build": "parcel build --public-url /resources edition.html mss.html synopse.html synopse_intro.html team.html translation.html index.html funkt.html mss_bes.html bib.html dank.html einf.html lizenz.html  strophen_synopse.html synopse1.html --no-source-maps",
     "tei": "cp ~/Dropbox/De\\ Vagorum\\ Ordine/*.xml ~/Dokumente/DeVagorumOrdine.github.io/TEI/",
     "website": "rm -r ./dist/* \n rm -r ../docs/resources/* \n npm run-script build\n cp ./dist/*.css ../docs/resources/\n cp ./dist/*.js ../docs/resources/\n cp ./dist/*.html ../docs/"
   },

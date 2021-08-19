@@ -39,7 +39,7 @@ for file in os.listdir('TEI'):
     if '_transl' in file:
         tr_res = translation_xml_html(file, translation_xslt)
         translation_json["texts"][tr_res[0]] = tr_res[1]
-    elif '_annotations' in file:
+    elif '_annotations' in file or '_strophenSynopse' in file:
         continue
     else:
         # print(file)
@@ -48,9 +48,9 @@ for file in os.listdir('TEI'):
 
         sigle = file[:-4]
 
-        
+        print(sigle)
 
-        # PAGES JSON
+        # HTML FRAGMENTS JSON
         final_json['texts'][sigle] = {}
 
         # We remove empty elements that are useless in the visualization
@@ -70,6 +70,7 @@ for file in os.listdir('TEI'):
         
 
         for page in root.findall('.//tei:pb', ns):
+            
             page_number = page.attrib['n']
             # Do a transformation for each page that creates a DOM with that page just in here and then apply the transform to HTML
             transform = et.XSLT(page_extract)
@@ -80,7 +81,7 @@ for file in os.listdir('TEI'):
             transform = et.XSLT(xsl_main)
             newdom3 = transform(newdom2)
             content = et.tostring(newdom3, encoding=str)
-
+            
 
             content = specialChars(content)
             
@@ -91,7 +92,7 @@ for file in os.listdir('TEI'):
             
 
             final_json['texts'][sigle][page_number] = content
-
+            print(sigle, page_number, content[:50])
 
         # STANZAS JSON 
         stanzas_json['stanzas'][sigle] = {}

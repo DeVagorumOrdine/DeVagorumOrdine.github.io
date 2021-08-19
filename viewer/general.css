@@ -69,7 +69,7 @@
 
 .main_title {
     text-align: center;
-    width: 40em;
+    width: 40rem;
     margin-right: auto;
     margin-left: auto;
     padding-top: 30px;
@@ -78,7 +78,7 @@
 }
 
 .website_content p {
-    max-width: 45em;
+    max-width: 50rem;
     text-align: justify;
     margin-right: auto;
     margin-left: auto;
@@ -87,8 +87,8 @@
     font-size: 20px;
 }
 
-.website_content h1 {
-    max-width: 45em;
+.website_content div h1 {
+    max-width: 50rem;
     /* text-align: center; */
     margin-left: 1rem;
     /* margin-left: auto; */
@@ -96,8 +96,8 @@
     margin-top: 20px;
 }
 
-.website_content h2 {
-    max-width: 45em;
+.website_content div h2 {
+    max-width: 50rem;
     /* text-align: center; */
     margin-left: 1rem;
     /* margin-left: auto; */
@@ -105,8 +105,8 @@
     margin-top: 20px;
 }
 
-.website_content h3 {
-    max-width: 45em;
+.website_content div h3 {
+    max-width: 50rem;
     /* text-align: center; */
     margin-left: 3rem;
     /* margin-left: auto; */
@@ -115,15 +115,49 @@
 }
 
 .website_content ul {
-    max-width: 45em;
+    max-width: 50rem;
     text-align: justify;
     margin-right: auto;
     margin-left: auto;
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+}
+
+.mss_list_item  {
+   max-width: 50rem;
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mss_list_item  h4{
+  margin-top: 3rem;
+  font-weight: bold;
 }
 
 .website_content li {
     margin: 10px;
+    font-family: 'Spectral', serif;
+    font-size: 20px;
 }
+
+.subsection {
+  max-width: 50rem;
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subsection h3 {
+  margin-left: 0 !important;
+  margin-top: 3rem !important;
+}
+
+h4 small.text-muted a{
+  font-size: 14px;
+  cursor: pointer;
+  color: brown;
+}
+
 
 /* Startseite */
 
