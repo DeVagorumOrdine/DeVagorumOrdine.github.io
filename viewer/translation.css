@@ -1,3 +1,69 @@
+@font-face {
+    font-family: Junicode;
+    src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode.ttf);
+ }
+ @font-face {
+   font-family: Junicode;
+   src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode-Bold.ttf);
+   font-weight: bold;
+}
+@font-face {
+   font-family: Junicode;
+   src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode-Italic.ttf);
+   font-style: italic;
+}
+@font-face {
+   font-family: Junicode;
+   src: url(https://devagorumordine.github.io/font/junicode-1.002/Junicode-BoldItalic.ttf);
+   font-weight: bold;
+   font-style: italic;
+ }
+ @font-face {
+   font-family: OpenSans;
+   src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-Regular.ttf);
+ }
+ @font-face {
+   font-family: OpenSans;
+   src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-Bold.ttf);
+   font-weight: bold;
+ }
+ @font-face {
+   font-family: OpenSans;
+   src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-Italic.ttf);
+   font-style: italic;
+ }
+ @font-face {
+   font-family: OpenSans;
+   src: url(https://devagorumordine.github.io/font/open_sans/OpenSans-BoldItalic.ttf);
+   font-weight: bold;
+   font-style: italic;
+ }
+ @font-face {
+   font-family: Spectral;
+   src: url(https://devagorumordine.github.io/font/spectral/Spectral-Regular.ttf);
+ }
+ @font-face {
+   font-family: Spectral;
+   src: url(https://devagorumordine.github.io/font/spectral/Spectral-Bold.ttf);
+   font-weight: bold;
+ }
+ @font-face {
+   font-family: Spectral;
+   src: url(https://devagorumordine.github.io/font/spectral/Spectral-Italic.ttf);
+   font-style: italic;
+ }
+ @font-face {
+   font-family: Spectral;
+   src: url(https://devagorumordine.github.io/font/spectral/Spectral-BoldItalic.ttf);
+   font-weight: bold;
+   font-style: italic;
+ }
+
+ * {
+     font-family: Spectral;
+     font-size: 18px;
+ }
+
 #text-tr {
     position: relative;
     margin: auto;
@@ -13,3 +79,4 @@
     text-indent: -10rem;
     padding-left: 10rem;
 }
+

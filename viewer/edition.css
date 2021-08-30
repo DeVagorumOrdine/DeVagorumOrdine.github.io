@@ -5,9 +5,6 @@
 
 /* Palette https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes13 */
 
-* {
-    font-size: 16px;
-}
 
 #edition {
     display: table;

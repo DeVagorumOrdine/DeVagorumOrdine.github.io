@@ -128,7 +128,7 @@ $(document).ready(function(){
   // ÜBERSETZUNG
 
   $('#uebersetzung').on('click', function(){
-    window.open('/translation.html?ms=' + ms, '', "width=500,height=600,top=300,left=1000");
+    window.open('/translation.html?ms=' + ms, '', "width=600,height=700,top=200,left=900");
     return false;
   });
   
