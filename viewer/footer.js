@@ -1,6 +1,6 @@
 const footer = "<!-- Copyright --> <div class=\"container-fluid p-0\"><div class=\"row\" style=\"background-color: rgba(0, 0, 0, 0.05);\">"+
 "<div class=\"col-md-4 pt-3 pl-5 text-left\"><a href=\"https://github.com/DeVagorumOrdine/DeVagorumOrdine.github.io\"><img src=\"/img/GitHub-Mark-32px.png\"></img></a></div>"+
-"<div class=\"col-md-4 text-center p-4\"> <a href=\"https://creativecommons.org/licenses/by/2.0/de/\"><img src=\"https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg\"></img></a><br/>(CC BY 3.0 DE)<br/>Alle Texte in der Website werden unter der CC Namensnennung 3.0 Deutschland Lizenz veröffentlicht</div>"+
+"<div class=\"col-md-4 text-center p-4\"> <a href=\"https://creativecommons.org/licenses/by/4.0/de/\"><img src=\"https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg\"></img></a><br/>(CC BY 4.0 DE)<br/>Alle Texte in der Website werden unter der CC Namensnennung 4.0 Deutschland Lizenz veröffentlicht</div>"+
 "<div class=\"col-md-4\">"+
 "<div class=\"row pt-3\"><div class=\"col-md-6\"><p >Mit Unterstützung von:</p></div></div>"+
 "<div class=\"row\">"+

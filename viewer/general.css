@@ -77,25 +77,25 @@
 
 }
 
-.website_content p {
+.website_content p, .website_content blockquote {
     max-width: 50rem;
     text-align: justify;
     margin-right: auto;
     margin-left: auto;
 
-    font-family: 'Spectral', serif;
+}
+
+.website_content p, .website_content ul *  {
+  font-family: 'Spectral', serif;
     font-size: 20px;
 }
 
-.website_content p * {
-  /* font-family: 'Spectral', serif; */
-  /* font-size: 20px; */
-}
-
-em {
+a, em, span {
   font-family: inherit;
   font-size: inherit;
 }
+
+
 
 .website_content div h1 {
     max-width: 50rem;
@@ -105,6 +105,8 @@ em {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+
 
 .website_content div h2 {
     max-width: 50rem;
@@ -168,10 +170,16 @@ h4 small.text-muted a{
   color: brown;
 }
 
+
+
 blockquote {
   background-color: white;
-  padding-left: 20%;
+  padding-left: 5rem;
+  padding-right: 5rem;
   line-height: 1.5em;
+
+  /* font-size: inherit; */
+  font-family: inherit;
 }
 
 a[data-toggle="tooltip"]{

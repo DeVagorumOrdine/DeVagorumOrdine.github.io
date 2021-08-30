@@ -28,16 +28,25 @@ $('#map').height( $(window).height() - 30 )
 // coordinates directly to map coordinates, so we create a projection that uses
 // the image extent in pixels.
 var extent = [0, 0, pages[ms]["sizes"][pg][0], pages[ms]["sizes"][pg][1]];
-console.log(pages[ms]["sizes"]);
+// console.log(pages[ms]["sizes"]);
 var projection = new Projection({
   code: 'projection1',
   units: 'pixels',
   extent: extent,
 });
 
+var licenceLink = pages[ms]['licence-link'];
+if ( licenceLink.length > 0){
+  licenceLink = '<a href="'+pages[ms]['licence-link']+'">'+ pages[ms]['licence'] + '</a><br/>' + pages[ms]['logo']
+} else {
+  licenceLink = pages[ms]['licence']
+};
+
 var msLayer =     new ImageLayer({
     source: new Static({
-      attributions: pages[ms]['shelfmark'] + ', ' +  pg ,
+      attributions: pages[ms]['shelfmark'] + ', ' +  pg + '<br/>' +       
+                    '<strong>Zuschreibung: </strong>'+ pages[ms]['attribution'] + '<br/>' + 
+                    '<strong>Lizenz: </strong>' + licenceLink,
       url: 'https://devagorumordine.github.io/img/mss/'+ ms +'_' + pg +'.jpg',
       projection: projection,
       imageExtent: extent,
