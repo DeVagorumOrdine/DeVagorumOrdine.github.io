@@ -272,3 +272,19 @@ a[data-toggle="tooltip"]{
 .right-col-img{
     width: 20rem;
 }
+
+
+
+/* RESPONSIVENESS */
+/* For the index.html */
+@media (max-width: 640px) 
+{
+    #background-title-img{
+        display: none;
+    }
+
+    p {
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+    }
+}
