@@ -158,6 +158,12 @@ h4 small.text-muted a{
   color: brown;
 }
 
+blockquote {
+  background-color: white;
+  padding-left: 20%;
+  line-height: 1.5em;
+}
+
 
 /* Startseite */
 

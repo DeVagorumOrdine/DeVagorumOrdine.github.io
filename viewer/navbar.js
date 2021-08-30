@@ -10,7 +10,7 @@ const navbar = "<button class= \"navbar-toggler\" type= \"button\" data-toggle= 
           "<a class=\"dropdown-item\" href=\"/mss.html?sp=3&wit=B\">Texte</a>"+
           "<a class=\"dropdown-item\" href=\"/mss_bes.html\">Handschriftenbeschreibungen</a>"+
           "<a class=\"dropdown-item\" href=\"/funkt.html\">Funktionalität</a>"+
-          "<a class=\"dropdown-item\" href=\"/funkt.html\">Bibliographie und Links</a>"+
+          "<a class=\"dropdown-item\" href=\"/bib.html\">Bibliographie und Links</a>"+
         "</div></li>"+
         "<li class=\"nav-item dropdown\">"+
         "<a class=\"nav-link dropdown-toggle\" href=\"/synopse_intro.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"+
