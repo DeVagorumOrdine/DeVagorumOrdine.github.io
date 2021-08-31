@@ -1,13 +1,12 @@
 includes
 index_files
-viewer/node_modules
-viewer/.cache
-viewer/dist
-viewer/html_fragments copy.json
-viewer/package-lock.json 
+dev/node_modules
+dev/.cache
+dev/dist
+dev/html_fragments copy.json
+dev/package-lock.json 
 .vscode/
 404.html
-README.md
 dvo.xpr
 scripts/XSLT/plain_paleog.xsl
 scripts/XSLT/plain_reg.xsl
