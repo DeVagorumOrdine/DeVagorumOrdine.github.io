@@ -1,6 +1,6 @@
 # De Vagorum Ordine
 
-This is the GitHub repository for the digital edition of *De Vagorum Ordine*, published in https://www.DeVagorumOrdine.github.io . 
+This is the GitHub repository for the digital edition of *De Vagorum Ordine*, published in https://DeVagorumOrdine.github.io . 
 
 Text is edited by [Philip Reich](https://www.germanistik.uni-muenchen.de/personal/mediaevistik/wiss_mitarbeiter/reich/index.html); website and data management by [Gustavo Fernández Riva](https://orcid.org/0000-0002-2202-6354
 ).
