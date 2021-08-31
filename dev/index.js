@@ -21,7 +21,7 @@ const pg = urlParams.get('pg')
 
 
 // Set the height of the map, based on viewport
-$('#map').height( $(window).height() - 30 )
+$('#map').height( $(window).height() - 30 );
 
 
 // Map views always need a projection.  Here we just want to map image
@@ -143,19 +143,24 @@ $(document).ready(function(){
   
   
   // SCROLL IMAGE
-  const map = $('#map');
-  $(window).scroll(function() {
-    var map_offset = map.offset()['top'];
-    var distance = $(window).height() +  $(document).scrollTop() - map_offset - map.height();
-    var previous = parseInt(map.css('top'));
-    var movement = previous + distance - 20;
-    if (movement < 0) {
-      map.css('top', 0);  
-    } 
-    else if (distance < 0 || previous + map.height() + 30 < $('#edition').height() ) {
-      map.css('top', movement);
-    };
-  });
+  
+  // Only move if we are in small screen, mobile
+  var vpWidth = $(window).width();
+  if (vpWidth > 767){
+    const map = $('#map');
+    $(window).scroll(function() {
+      var map_offset = map.offset()['top'];
+      var distance = $(window).height() +  $(document).scrollTop() - map_offset - map.height();
+      var previous = parseInt(map.css('top'));
+      var movement = previous + distance - 20;
+      if (movement < 0) {
+        map.css('top', 0);  
+      } 
+      else if (distance < 0 || previous + map.height() + 30 < $('#edition').height() ) {
+        map.css('top', movement);
+      };
+    });
+  }
 
 
 });

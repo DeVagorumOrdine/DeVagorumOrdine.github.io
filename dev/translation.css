@@ -66,16 +66,17 @@
   /* font-family: sans-serif; */
 }
 
-#text-tr {
+#text-tr * {
     position: relative;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     font-family: Spectral;
     font-size: 18px;
 }
 
 .tei-lg {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 .tei-l {
