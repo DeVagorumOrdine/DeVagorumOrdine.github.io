@@ -87,7 +87,7 @@
 
 .website_content p, .website_content ul *  {
   font-family: 'Spectral', serif;
-    font-size: 20px;
+  font-size: 20px;
 }
 
 a, em, span {
@@ -284,7 +284,12 @@ a[data-toggle="tooltip"]{
     }
 
     p {
-      padding-left: 0.7rem;
-      padding-right: 0.7rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .website_content p, .website_content ul *  {
+      font-size: 18px;
+      line-height: 1.4;
     }
 }
