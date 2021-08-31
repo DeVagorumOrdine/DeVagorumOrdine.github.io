@@ -81,8 +81,47 @@ body {
   flex-shrink: 0;
 }
 
+/* TOC */
+#toc {
+  position: fixed;
+  top: 4em;
+  left: 0.5rem;
+  width: 20rem;
+  height: 20rem;
+  z-index: 90;
+  padding: 1rem;
+  /* color: white; */
+  /* background-color: #a87790; */
+  
+}
+
+.dropdown-toggle-1 {
+  color: black;
+  background-color: #e0cfd8;
+  border: solid black 1px;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+.dropdown-menu-1 {
+  /* margin-top: 1em; */
+  background-color: #e0cfd8;
+  border: solid black 1px;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  list-style-type:none;
+}
 
 
+
+.dropdown-menu-1 > li a{
+  color: black;
+  line-height: 2em;
+  padding-left: 0;
+}
+
+
+/* GENERAL */
 
 .main_title {
     text-align: center;
@@ -312,6 +351,14 @@ a[data-toggle="tooltip"]{
     .right-col-img {
       padding-left: 1rem;
       margin-bottom: 2rem;
+    }
+
+    #toc {
+      position: relative;
+      top: 0;
+      height: auto;
+      padding: 0;
+      width: auto;
     }
 
     

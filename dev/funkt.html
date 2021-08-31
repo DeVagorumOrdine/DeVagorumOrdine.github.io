@@ -13,6 +13,7 @@
     <link href="./general.css" rel="stylesheet"></link>
     <link href="./edition.css" rel="stylesheet"></link>
     <script src="./visual_options.js"></script>
+    <script src="./dropdown-custom.js"></script>
 
 
   </head>
@@ -118,9 +119,34 @@
     <div class="row justify-content-center m-4">
         <h1>FUNKTIONALITÄT</h1>
     </div>
+    <div id="toc">
+      <div class="dropdown-1">
+        <button class="dropdown-toggle-1">INHALT</button>
+        <ul class="dropdown-menu-1">
+          <li><a class="dropdown-item-1" href="#optionen">Optionen</a>
+            <ul>
+              <li><a href="#textdarstellung">Textdarstellung</a>
+              <ul>
+                <li><a href="#paleographisch">Paläographische Transkriptionen</a></li>
+                <li><a href="#normalisiert">Normalisiert/Ediert</a></li>
+              </ul>
+            </li>
+            <li><a href="#korrekturen">Korrekturen</a></li>
+            <li><a href="#absetzung">Absetzung</a></li>
+            <li><a href="#interaktion">Interaktion</a></li>
+            </ul>
+          </li>
+          <li><a href="#synopse">Synopse</a>
+            <ul>
+              <li><a href="#textsynopse">Textsynopse</a></li>
+              <li><a href="#strophensynopse">Strophensynopse</a></li>
+            </ul></li>
+        </ul>
+      </div>
+    </div>  
     <div class="row">
         <div class="website_content">
-        <h1>OPTIONEN</h1>
+        <h1 id="optionen">OPTIONEN</h1>
         <div class="row">
           <div class="col-md-8 col-sm-12">
             <p>Die Texte der Quellen wurden mit einer reichen Kodierung in XML-TEI erfasst. Jeder Text enthält eigentlich mehrere Schichten, die sich für die Leseerfahrung alternativ ein- und ausschalten lassen. Zum Beispiel, sowohl die Abkürzungszeichen als auch deren Auflösung wurden in den Transkriptionsdateien festgehalten. Beim Lesen kann man in den <code>Optionen</code> aussuchen, ob man die Abkürzungszeichen oder die Auflösung (in normaler oder kurzivierter Schrift) sieht. Alle verfügbare Optionen werden in dieser Seite erläutert.</p>
@@ -129,13 +155,13 @@
           <div class="col-md-4 col-sm-12" style="position: relative;"><button class="btn btn-outline-secondary mb-3" style="margin-left: 1rem;" id="optionen-toggle">Optionen</button></div>
         </div>
 
-          <h2>TEXTDARSTELLUNG</h2>
+          <h2 id="textdarstellung">TEXTDARSTELLUNG</h2>
           <div class="row">
             <div class="col-md-8 col-sm-12"><p>Die Texte dieser Edition bestehen grundsätzlich aus zwei Schichten: der Transkription der Handschriften auf der einen Seite und der editorischen Bearbeitung derselben durch Normalisierungen, Korrekturen und Zeichensetzung auf der anderen Seite. Im Menu <code>Optionen</code> der Edition kann man zwischen den zwei Schichten (<code>Paläographische Transkription</code> und <code>Normalisiert/Ediert</code>) umschalten.</p></div>
             <div class="col-md-4 col-sm-12">
             </div>
           </div>
-        <h3>Die paläographische Transkriptionen</h3>
+        <h3 id="paleographisch">Die paläographische Transkriptionen</h3>
         <div class="row">
         <div class="col-md-8 col-sm-12">
           <p>
@@ -155,7 +181,7 @@
           </div>
           <div class="col-md-4 col-sm-12">          </div>
         </div>
-        <h3>Normalisiert/Ediert</h3>
+        <h3 id="normalisiert">Normalisiert/Ediert</h3>
           <div class="row">
             <div class="col-md-8 col-sm-12">
               <p>
@@ -170,7 +196,7 @@
                 <img class="right-col-img" src="https:///DeVagorumOrdine.github.io/img/norm-ediert.png" alt="normalisiert ediert menu"/>
               </div>
             </div>
-            <h2>Korrekturen</h2>
+            <h2 id="korrekturen">Korrekturen</h2>
             <div class="row">
               <div class="col-md-8 col-sm-12">
                 <p>Eingriffe bestehen in (seltenen) Korrekturen oder Ergänzungen bei offensichtlichen Fehlern. Als Fehler gelten nur Phänomene, die keinen (grammatikalischen) Sinn ergeben und die sich nicht wiederholen, also nicht Systemcharakter haben. Unreine Reime oder metrische Überlängen sowie Kürzen gelten nicht als Fehler.
@@ -199,7 +225,7 @@
               </div>
               <div class="col-md-4 col-sm-12">          </div>
             </div>
-            <h2>Absetzung</h2>
+            <h2 id="absetzung">Absetzung</h2>
             <div class="row">
               <div class="col-md-8 col-sm-12">
                 <p>
@@ -231,7 +257,7 @@
                 <img class="right-col-img" src="https:///DeVagorumOrdine.github.io/img/absetzung-zeile-bsp.png" alt="" style="width: 17rem;"></img>
             </div>
             </div>
-            <h2>Interaktion</h2>
+            <h2 id="interaktion">Interaktion</h2>
             <div class="row">
               <div class="col-md-8 col-sm-12">
                 <p>
@@ -254,7 +280,7 @@
               </div>
             <div class="col-md-4 col-sm-12">          </div>
             </div>
-            <h3>Textsynopse</h3>
+            <h3 id="textsynopse">Textsynopse</h3>
             <div class="row">
               <div class="col-md-8 col-sm-12">
                 <p>In dieser Seite kann den Text von 1 bis 8 Textzeugen in Spalten laden. Der Auswahl der Strophenzahl erfolgt durch die horizontale Liste unter dem Titel. Daneben befinden sich einen Link zur Strophensynopse und die Visualisierungsoptionen. Strophen werden farbig markiert und befinden sich in der selbe Reihenfolge wie in der Handschrift. Strophen in <strong>grau</strong> sind in in nur eine Handschrift überliefert. Die andere Farben identifizieren jeweils die gleiche Strophen in mehreren Handschriften. Zum Beispiel, die Strophe CB219,12 ist blau in allen Hss.</p>
@@ -281,6 +307,17 @@
                 </p>
               </div>
             <div class="col-md-4 col-sm-12">          </div>
+            </div>
+            <h3 id="strophensynopse">Strophensynopse</h3>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <p>TC.</p>
+               
+              </div>
+            <div class="col-md-4 col-sm-12">
+              
+            </img>
+            </div>
             </div>
       
 

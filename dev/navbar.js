@@ -28,8 +28,19 @@ const navbar = "<button class= \"navbar-toggler\" type= \"button\" data-toggle= 
           "<a class=\"dropdown-item\" href=\"/dank.html\">Danksagungen</a>"+
           "<a class=\"dropdown-item\" href=\"/lizenz.html\">Zitieren</a>"+
         "</div></li>"+
-        // "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/synopse.html?sp=3&wit=B \">Synopse</a></li>"+
-        // "<li class= \"nav-item \"><a class= \"nav-link \" href= \"/team.html \">Team</a></li>"+
+        "<li class=\"nav-item dropdown\">"+
+        "<a class=\"nav-link dropdown-toggle\" href=\"/einf.html#uebersetzungen\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"+
+          "Übersetzungen</a>"+
+        "<div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=B\">B</a>"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=Lz\">Lz</a>"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=M\">M</a>"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=Pe\">Pe</a>"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=Pr\">Pr</a>"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=Vo\">Vo</a>"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=We\">We</a>"+
+          "<a class=\"dropdown-item\" href=\"/https://devagorumordine.github.io/translation.html?ms=Wi\">Wi</a>"+
+        "</div></li>"+
         "</ul>"+
         // "<span class=\"navbar-text dvo-logo\">De Vagorum Ordine</span>"+
         "</div>"
