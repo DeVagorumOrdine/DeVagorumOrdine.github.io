@@ -67,6 +67,23 @@
     /* font-family: sans-serif; */
 }
 
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+
+
+
 .main_title {
     text-align: center;
     width: 40rem;
@@ -276,14 +293,13 @@ a[data-toggle="tooltip"]{
 
 
 /* RESPONSIVENESS */
-/* For the index.html */
 @media (max-width: 640px) 
 {
     #background-title-img{
         display: none;
     }
 
-    p {
+    p, h1, h2, h3, h4 {
       padding-left: 1rem;
       padding-right: 1rem;
     }
@@ -292,4 +308,11 @@ a[data-toggle="tooltip"]{
       font-size: 18px;
       line-height: 1.4;
     }
+
+    .right-col-img {
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    
 }
