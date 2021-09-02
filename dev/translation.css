@@ -81,7 +81,14 @@
 
 .tei-l {
     display: block;
-    text-indent: -10rem;
-    padding-left: 10rem;
+    text-indent: -8rem;
+    padding-left: 8rem;
 }
 
+@media (max-width: 640px) {
+  .tei-l {
+    text-indent: -2.5rem;
+    padding-left: 2.5rem;
+}
+
+}

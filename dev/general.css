@@ -95,7 +95,7 @@ body {
 
 .dropdown-toggle-1 {
   color: black;
-  background-color: #e0cfd8;
+  background-color: #f8f9fa;
   border: solid black 1px;
   padding: 0.5em;
   border-radius: 0.3em;
@@ -106,7 +106,7 @@ body {
   position: fixed;
   width: auto;
   height: auto;
-  background-color: #e0cfd8;
+  background-color: #f8f9fa;
   border: solid black 1px;
   padding: 0.5em;
   border-radius: 0.3em;
@@ -139,6 +139,7 @@ body {
     text-align: justify;
     margin-right: auto;
     margin-left: auto;
+    hyphens: auto;
 
 }
 
@@ -147,7 +148,7 @@ body {
   font-size: 20px;
 }
 
-a, em, span {
+a, em, span, strong {
   font-family: inherit;
   font-size: inherit;
 }
@@ -378,6 +379,7 @@ a[data-toggle="tooltip"]{
       right: 1em;
       margin: 0;
       padding: 0;
+      padding-top: 0.1em;
     }
 
     .dropdown-menu-1 {
