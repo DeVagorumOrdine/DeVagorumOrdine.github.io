@@ -92,7 +92,7 @@ for file in os.listdir('TEI'):
             
 
             final_json['texts'][sigle][page_number] = content
-            print(sigle, page_number, content[:50])
+            
 
         # STANZAS JSON 
         stanzas_json['stanzas'][sigle] = {}
@@ -112,13 +112,13 @@ for file in os.listdir('TEI'):
 
 
 
-with codecs.open('viewer/html_fragments.json', 'w', 'utf-8') as outfile:
+with codecs.open('dev/html_fragments.json', 'w', 'utf-8') as outfile:
     json.dump(final_json, outfile)
 
-with codecs.open('viewer/translation.json', 'w', 'utf-8') as outfile2:
+with codecs.open('dev/translation.json', 'w', 'utf-8') as outfile2:
     json.dump(translation_json, outfile2)
 
-with codecs.open('viewer/stanzas.json', 'w', 'utf-8') as outfile3:
+with codecs.open('dev/stanzas.json', 'w', 'utf-8') as outfile3:
     json.dump(stanzas_json, outfile3)
 
 

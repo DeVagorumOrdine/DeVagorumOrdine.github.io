@@ -30,9 +30,15 @@
     },
     "M": {
         "shelfmark": "München, BSB, Cod. lat. mon. 18910",
-        "pages": [
-            "193v"
-        ]
+        "pages": ["193v", "194r"],
+        "sizes": {
+            "193v": [2766,4052],
+            "194r": [2766,4094]
+        },
+        "licence": "",
+        "licence-link": "",
+        "attribution": "Bayerische Staatsbibliothek",
+        "logo": ""
     },
     "Pe": {
         "shelfmark": "Pécs/Fünfkirchen, Bischöfliche Bibliothek, DD. III. 18",
