@@ -509,7 +509,7 @@
                             <am>&#x0304;</am>
                             <ex>m</ex>
                         </choice></w><c> </c>
-                    <w lemma="odi">oꝺi<del resp="#ed.Suttina">o</del></w><c> </c>
+                    <w lemma="odi">oꝺi<choice><sic>o</sic><corr resp="#ed.Suttina"/></choice></w><c> </c>
                     <w lemma="multus">pluſ</w>
                     <c resp="#PR"> </c>
                     <w lemma="quam"><choice>
@@ -523,7 +523,7 @@
                             </choice>n<choice>
                                 <am>ꝰ</am>
                                 <ex>us</ex>
-                            </choice></w></del>
+                            </choice></w><c> </c></del>
                     <w lemma="funus">fu<choice>
                             <sic>m</sic>
                             <corr resp="#ed.Suttina">n</corr>

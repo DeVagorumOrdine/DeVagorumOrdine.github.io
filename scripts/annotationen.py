@@ -2,21 +2,26 @@ from lxml import etree as et
 import re 
 
 def addNotes(sigle, dom):
+    # balanced_par = "[^\(]*(\(.*\))[^\)]*"
+    # balanced_par ='\(.+\)[\s|"]'
+    balanced_par = '(?:\S+[\s]?)+'
     ns = {'tei':'http://www.tei-c.org/ns/1.0'}
     root = dom.getroot()
     annotationen = et.parse('TEI/dvo_annotations.xml')
     root_anno = annotationen.getroot()
 
     for annot in root_anno.iter('note'):
-        targets = re.findall('\w+#xpath\S+', annot.attrib['target'])
+        targets = re.findall('\w+#xpath' + balanced_par, annot.attrib['target'])
         for target in targets:
             wit = target.split('#')[0]
             if wit == sigle:
+                print(target)
                 xpath = target.split('xpath')[1][1:-1]
+                if xpath[-1] == ')':
+                    xpath = xpath[:-1]
                 xpath = xpath.replace('/lg', '/tei:lg')
                 xpath = xpath.replace('/l', '/tei:l')
                 xpath = xpath.replace('/w', '/tei:w')
-                # print(xpath)
                 target_element = root.xpath('.' + xpath, namespaces=ns)
                 if len(target_element) > 0:
                     

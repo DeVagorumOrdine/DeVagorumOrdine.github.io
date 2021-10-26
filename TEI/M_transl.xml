@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach Lz)</title>
+                <respStmt>
+                    <resp>übersetzt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Leipzig</settlement>
+                        <repository>Universitätsbibliothek</repository>
+                        <idno>Ms. 1250</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Bischoff">Carmina Burana. Ed. and transl. Otto Schumann and
+                        Bernhard Bischoff. Heidelberg 1930-1970.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <head>
+                Verordnungen der Kuppler
+            </head>
+            <lg n="1">
+                <l n="1">Ich will euch von den Regeln des Ordens der Vaganten berichten: </l>
+                <l n="2">Ihr Stand ist vornehm, ihre Art angenehm </l>
+                <l n="3">und ihren Hunger stillt ein fetter Braten. </l>
+                <l n="4">Sie sättigt ein Laib Weißbrot. </l>
+            </lg>
+            <lg n="2">
+                <l n="1">Ich hörte morgens einen Säufer (und ein Löwenjunges) allzu laut brüllen, </l>
+                <l n="2">„Wie kommt es, dass ich niemanden trinken sehe? </l>
+                <l n="3">Der Wein wird den Menschen doch zum Wissenden machen!“ </l>
+            </lg>
+            <lg n="3">
+                <l n="1">Also wollen wir schon morgens zum Becher schreiten </l>
+                <l n="2">bis wir an den Wänden den Mond sehen</l>
+                <l n="3">und mit ausgestreckten Armen das Bett umarmen. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Hast du keine Münzen, ist das bitter-giftig. </l>
+                <l n="2">Lege, was auch immer du hast, in deiner Erinnerung ab. </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Hast du keine Gulden, sollst du den Würfeln befehlen </l>
+                <l n="2">dass sie wacker im Wettstreit die Standarte tragen. </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Unsere Regel belehrt uns überaus deutlich: </l>
+                <l n="2">Keiner trägt unter seinen Kumpanen zwei Kleider; </l>
+                <l n="3">nur im Hemd – so sitzt du anständig da. </l>
+                <l n="4">Dann wirst du den Menschen deutlich offenbart sein. </l>
+            </lg>
+            <lg n="7">
+                <l n="1">Ich befehle euch, die eine Regel zu befolgen, </l>
+                <l n="2">mit den Würfeln zu spielen, das Glücksspiel immer zu lieben, </l>
+                <l n="3">mit geneigtem Haupt den Teufel zu grüßen </l>
+                <l n="4">und das zu trinken, was vom süßesten Weinstock fließt. </l>
+            </lg>
+            <lg n="8">
+                <l n="1">Also lasst uns, alle meine Kumpanen, ins Wirtshaus gehen, </l>
+                <l n="2">das ich niemals verschmähte und nie verschmähen werde, </l>
+                <l n="3">bis die heiligen Engel die Totenlampe tragen </l>
+                <l n="4">und für die Säufer singen: „Mögest du ruhen in Frieden!“ </l>
+            </lg>
+        </body>
+    </text>
+</TEI>

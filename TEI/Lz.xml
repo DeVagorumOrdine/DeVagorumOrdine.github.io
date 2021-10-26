@@ -131,7 +131,7 @@
                 <l n="2" corresp="CB219,12-2">
                     <w lemma="nullus"><choice><orig>N</orig><reg>n</reg></choice>ullu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="inter">ınt<choice><am>&#x0309;</am><ex>er</ex></choice></w><c> </c>
-                    <w lemma="socius">socıos</w><c> </c>
+                    <w lemma="socius">ſocıos</w><c> </c>
                     <w lemma="utor"><choice><orig>v</orig><reg>u</reg></choice>tı</w><c> </c>
                     <w lemma="duplus">dupla</w><c> </c>
                     <w lemma="vestis">veſte</w><pc resp="#PR">;</pc><c> </c>
@@ -335,9 +335,9 @@
                 <l n="2" corresp="DVO,k-2">
                     <w lemma="fortis">foꝛtıt<choice><am>&#x0309;</am><ex>er</ex></choice></w><c> </c>
                     <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
-                    <w lemma="stadium">stadıo</w><c> </c>
+                    <w lemma="stadium">ſtadıo</w><c> </c>
                     <w lemma="gero">ger<choice><abbr>e<am>&#x0309;</am></abbr><expan><ex>er</ex>e</expan></choice></w><c> </c>
-                    <w lemma="vexillum">vexıllu<choice><am>&#x0304;</am><ex>m</ex></choice></w> <choice><orig><pc>.</pc></orig><reg/></choice><c> </c>
+                    <w lemma="vexillum">vexıllu<choice><am>&#x0304;</am><ex>m</ex></choice></w><choice><orig><pc>.</pc></orig><reg/></choice><c> </c>
                 </l>
                 <l n="3" corresp="DVO,k-3">
                     <lb n="18"/><w lemma="et">et</w><pc resp="#PR">,</pc><c> </c>
@@ -420,7 +420,7 @@
                     <w lemma="facio">fa<choice><am>ᶜ</am><ex>cit</ex></choice></w><c> </c>
                     <w lemma="homo">h<choice><abbr>ı<am>&#x0304;</am></abbr><expan><ex>om</ex>in</expan></choice>e<choice><orig>ꝫ</orig><reg>m</reg></choice></w><choice><orig><pc>.</pc></orig><reg/></choice><c> </c>
                     <w lemma="omnis">o<choice><abbr>ı<am>&#x0304;</am></abbr><expan><ex>mn</ex>i</expan></choice>a</w><c> </c>
-                    <w lemma="scio">scıente<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">!“</pc><c> </c>
+                    <w lemma="scio">ſcıente<choice><am>&#x0304;</am><ex>m</ex></choice></w><pc resp="#PR">!“</pc><c> </c>
                 </l>
             </lg>
             <lg n="12" rhyme="mmmm"  corresp="CB191,12">

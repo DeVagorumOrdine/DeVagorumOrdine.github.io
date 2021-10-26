@@ -248,10 +248,11 @@
                         <w lemma="et">et</w><c> </c>
                         <w lemma="econtra">econtra</w><c> </c>
                         <w lemma="vanus"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>anos</w> <pc>.</pc><c> </c>
+                        <gap atLeast="22" atMost= "26" unit="character"/>
                     </l>
                 </lg>
             <lg n="8" rhyme="hhhh" corresp="CB219,9">
-                <l n="1" corresp="CB219,9-1"><lb n="21"/><w lemma="de"><hi hei:color="hc:Red">Ꝺ</hi>e</w><c> </c>
+                <l n="1" corresp="CB219,9-1"><lb n="21"/><gap atLeast="23" atMost= "27" unit="character"/><w lemma="de"><hi hei:color="hc:Red">Ꝺ</hi>e</w><c> </c>
                         <w lemma="vagus"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>ago<choice><am>ꝝ</am><ex>rum</ex></choice></w><c> </c>
                         <w lemma="ordo">ordıne</w><c> </c>
                         <w lemma="dico">dıco</w><c> </c>

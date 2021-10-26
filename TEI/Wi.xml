@@ -129,7 +129,7 @@
                     <w lemma="ad">ad</w><c> </c> 
                     <w lemma="poculum">poculu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="mane">mane</w><c> </c>
-                    <w lemma="transeo">t<choice><abbr>n<am>&#7635;</am></abbr><expan><ex>a</ex>n</expan></choice>ſeam<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
+                    <w lemma="transeo">t<choice><abbr>n<am>&#7635;</am></abbr><expan><ex>ra</ex>n</expan></choice>ſeam<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
                 </l>
                 <l n="2" corresp="DVO,h-2">
                     <w lemma="et">et</w><c> </c>
@@ -142,7 +142,7 @@
                 <l n="3" corresp="DVO,h-3">
                     <w lemma="donec">donec</w><c> </c>
                     <w lemma="in">ı<choice><am>&#x0304;</am><ex>n</ex></choice></w><c> </c>
-                    <w lemma="paries">pare<lb n="2"/>tıbus</w><c> </c>
+                    <w lemma="paries">parie<lb n="2"/>tıbus</w><c> </c>
                     <w lemma="lux">lucem</w><c> </c>
                     <choice> 
                         <seg><w lemma="habeo">habeam<choice><am>ꝰ</am><ex>us</ex></choice></w></seg>
@@ -153,7 +153,7 @@
                     <seg><w lemma="atque">ac</w></seg>
                     <seg><note ana="hc:ExemplarNote hc:InterlinearGloss"><w lemma="et">et</w></note></seg></choice><c> </c>
                     <w lemma="proserno"><choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>ſtratıs</w><c> </c> 
-                    <w lemma="manus">ma<choice><am>&#x0304;</am><ex>n</ex></choice>ib<choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">,</pc><c> </c>
+                    <w lemma="manus">ma<choice><am>&#x0304;</am><ex>n</ex></choice>ib<choice><am>ꝰ</am><ex>us</ex></choice></w><c> </c>
                     <lb n="3"/><w lemma="stratum">ſtratu<choice><am>&#x0304;</am><ex>m</ex></choice></w><c> </c>
                     <w lemma="capio">capiam<choice><am>ꝰ</am><ex>us</ex></choice></w><choice><orig><pc>/</pc></orig><reg><pc resp="#PR">.</pc></reg></choice><c> </c>
                 </l>

@@ -11,3 +11,4 @@ dvo.xpr
 scripts/XSLT/plain_paleog.xsl
 scripts/XSLT/plain_reg.xsl
 scripts/__pycache__/
+.idea

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS/tei_hes.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:hei="https://digi.ub.uni-heidelberg.de/schema/tei/heiEDITIONS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De vagorum ordine (nach Pé)</title>
+                <respStmt>
+                    <resp>vorgelegt von</resp>
+                    <persName xml:id="PR">Philip Reich</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Mögliche Vorarbeit für eine potentielle Veröffentlichung in KEMTE</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Pécs/Fünfkirchen</settlement>
+                        <repository>Bischöfliche Bibliothek</repository>
+                        <idno>DD. III. 18</idno>
+                    </msIdentifier>
+                </msDesc>
+                <listWit>
+                    <witness xml:id="ed.Kovachich">Formulae solennes styli in cancellaria, curiaque regum, foris minoribus, ac locis credibilibus, authenticisque Regni Hungariae olim usitati, hg. von Martinus Georgius Kovachich. Pest 1799, S. XI f.</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="H1" script="Bastarda" medium="brown ink">quickly written</handNote><handNote/>
+            </handNotes>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization><p></p></normalization>
+                <punctuation><p></p></punctuation>
+                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
+            </editorialDecl>
+            <listPrefixDef>
+                <prefixDef ident="hc" matchPattern="(.+)" replacementPattern="https://lod.ub.uni-heidelberg.de/ontologies/heieditions/hc/current/$1"/>
+            </listPrefixDef>
+        </encodingDesc>
+    </teiHeader>
+    <text ana="hc:Poem hc:CompleteExpression">
+        <body>
+            <lg n="1">
+                <l n="1">Die Jahreszeit der Fülle! Kommt, wir wollen jubilieren, </l>
+                <l n="2">wenn wir auch sehen, dass die Äste der Bäume kahl werden! </l>
+                <l n="3">Mögen wir auch keine vollen Speisekammern haben, </l>
+                <l n="4">kommt alle meine Kumpanen, lasst uns wacker trinken! </l>
+            </lg>
+            <lg n="2">
+                <l n="1">Hast du auch keine Münzen, sollst du den Würfeln befehlen, </l>
+                <l n="2">wacker auf dem Tisch die Standarte zu tragen, </l>
+                <l n="3">und wenn dir das Schicksal zugesteht, dass du jenes Spiel gewinnst, </l>
+                <l n="4">sollst du fröhlich und unverzagt zum Zapfhahn eilen. </l>    
+            </lg>
+            <lg n="3">
+                <l n="1">Ich will euch von den Regeln des Ordens der Vaganten berichten: </l>
+                <l n="2">Ihr Stand ist vornehm und ihre Art angenehm; </l>
+                <l n="3">sie frohlocken über einen fetten Braten </l>
+                <l n="4">und freuen sich sehr über Wein zum Trinken. </l>
+            </lg>
+            <lg n="4">
+                <l n="1">Ich sah, wie sich früh morgens ein Säufer bei den Nachbarn beklagte, </l>
+                <l n="2">und ganz wie ein Löwenjunges brüllte: </l>
+                <l n="3">„Wie kommt es, dass ich niemanden trinken sehe? </l>
+                <l n="4">Der Wein macht den Menschen doch sehr weise!“ </l>
+            </lg>
+            <lg n="5">
+                <l n="1">Also wollen wir uns schon morgens zum Becher recken </l>
+                <l n="2">und bis zur Abenddämmerung trinken, </l>
+                <l n="3">auf dass wir an den Wänden Lichter sehen </l>
+                <l n="4">und mit ausgestreckten Armen das Bett umarmen. </l>
+            </lg>
+            <lg n="6">
+                <l n="1">Unser Orden verbietet es, in den Frühgottesdienst zu gehen; </l>
+                <l n="2">Geister aller Art erheben sich morgens. </l>
+                <l n="3">Davon ereilen uns trügerische Wahnbilder; </l>
+                <l n="4">wenn jemand um diese Zeit aufsteht, wird er nicht bei klarem Verstand sein. </l>
+            </lg>
+            <lg n="7">
+                <l n="1">Ruft auch vielleicht unsere Herbergswirtin zwischen den Perlen </l>
+                <l n="2">aus der offenen Tür: „Woher seid ihr?“ </l>
+                <l n="3">Dann ist hier keine Traurigkeit, kein Hunger und kein Durst, </l>
+                <l n="4">sondern ewige Freude: Warum kommt ihr nicht?</l>
+            </lg>
+            <lg n="8">
+                <l n="1">Unsere Regel belehrt uns überaus deutlich, </l>
+                <l n="2">dass keiner unter seinen Kumpanen zwei Kleider habe; </l>
+                <l n="3">im bloßen Hemd sitzt du anständig da </l>
+                <l n="4">und die Leute werden dich in Ehren halten. </l>
+            </lg>
+            <lg n="9">
+                <l n="1">Hast du keine Münzen, ist das verzeihlich. </l>
+                <l n="2">Lege, was auch immer du hast, in deiner Erinnerung ab: </l>
+                <l n="3">Das Untergewand, das Hemd und dergleichen, </l>
+                <l n="4">der Schankwirt nimmt alles und schließlich selbst die Unterhose. </l>
+            </lg>
+            <lg n="10">
+                <l n="1">Kommt also meine Kumpane, lasst uns ins Wirtshaus gehen, </l>
+                <l n="2">das ich niemals verschmähte und nie verschmähen werde, </l>
+                <l n="3">bis ich die heiligen Engel kommen sehe, </l>
+                <l n="4">die für die Säufer singen: „Möget ihr ruhen in Frieden!“ </l>
+            </lg>
+            <lg n="12">
+                <l n="1">Ich habe den festen Vorsatz, im Wirtshaus zu sterben, </l>
+                <l n="2">wo es der durstigen Kehle nie an Trank mangelt, </l>
+                <l n="3">wo die Lauten klingen und die Gesänge im Chor widerhallen. </l>
+                <l n="4">Gott, mögest du mir, dem Säufer, gewogen sein!</l>
+            </lg>
+        </body>
+    </text>
+</TEI>
