@@ -29,7 +29,7 @@ newDOM.write('TEI/_strophenSynopse.xml', pretty_print=True, encoding="UTF-8", xm
 # Create the HTML
 
 wss = newDOM.findall('.//witness')
-htmlDOM =et.parse('viewer/strophen_synopse_template.html')
+htmlDOM =et.parse('dev/strophen_synopse_template.html')
 root = htmlDOM.getroot()
 
 div = root.find('.//div[@id="main"]')
@@ -65,7 +65,7 @@ for i in range(0, max([len(x) for x in wss])):
 for elem in root.iter():
     if elem.text == None:
         elem.text = ''
-htmlDOM.write('viewer/strophen_synopse.html', pretty_print= True, encoding="UTF-8", xml_declaration=False)
+htmlDOM.write('dev/strophen_synopse.html', pretty_print= True, encoding="UTF-8", xml_declaration=False)
 
 
 #  Create JSON for the corresponding stanzas
@@ -81,7 +81,7 @@ for str_id in all_str_ids:
     for lg in stanzas.findall('.//lg[@corresp="'+ str_id +'"]', ns):
         corresp_json[str_id][lg.getparent().attrib['id']] = lg.attrib['n']
 
-with codecs.open('viewer/stanzas_corresp.json', 'w', 'utf-8') as outfile:
+with codecs.open('dev/stanzas_corresp.json', 'w', 'utf-8') as outfile:
     json.dump(corresp_json, outfile)
 
 
