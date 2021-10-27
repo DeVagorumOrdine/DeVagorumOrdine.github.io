@@ -48,7 +48,7 @@
                 <pb n="95"/>
             <lg n="1" rhyme="aaaa"  corresp="DVO,d">
                 <l n="1" corresp="DVO,d-1"><lb n="1"/><w lemma="plenitudo">Plenitudo</w><c> </c>
-                    <w lemma="tempus">t<choice><abbr><am>ꝑ</am></abbr><expan><ex>empor</ex></expan></choice>is</w><pc resp="#PR">!</pc><c> </c>
+                    <w lemma="tempus">t<choice><abbr>pi<am>&#x0309;</am></abbr><expan><ex>empor</ex>i</expan></choice>s</w><pc resp="#PR">!</pc><c> </c>
                     <w lemma="venio"><choice><orig>v</orig><reg>V</reg></choice>e<choice><am>&#x0304;</am><ex>n</ex></choice>ite</w><pc resp="#PR">,</pc><c> </c>
                     <w lemma="exsulto">exulte<choice><am>&#x0304;</am><ex>m</ex></choice><choice><am>ꝰ</am><ex>us</ex></choice></w><pc resp="#PR">,</pc><c> </c>
                 </l>

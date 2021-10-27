@@ -386,7 +386,7 @@
                     <w lemma="ut">ut</w><c> </c>
                     <w lemma="vado"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>a<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="12"/>ꝺat</w><c> </c>
                     <w lemma="vix"><choice><orig>u</orig><reg resp="#PR">v</reg></choice>ix</w><c> </c>
-                    <w lemma="honestus">honeſte </w><choice><orig><pc>.</pc></orig><reg><pc resp="#ed.Vollmann">,</pc></reg></choice><c> </c>
+                    <w lemma="honestus">honeſte</w><choice><orig><pc>.</pc></orig><reg><pc resp="#ed.Vollmann">,</pc></reg></choice><c> </c>
                 </l>
                 <l n="3" corresp="CB219,12-3"><w lemma="pallium">pallium</w><c> </c>
                     <w lemma="mox">mox </w><c> </c>

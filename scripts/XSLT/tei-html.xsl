@@ -117,7 +117,9 @@
 
   <xsl:template match="tei:supplied">
     <span class="tei-supplied">
+      <span class="tei-supplied-bracket">[</span>
       <xsl:apply-templates select="node()"/>
+      <span class="tei-supplied-bracket">]</span>
     </span>
   </xsl:template>
   

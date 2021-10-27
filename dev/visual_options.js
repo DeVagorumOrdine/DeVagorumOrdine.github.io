@@ -14,6 +14,7 @@ function applyDarstellung(selected){
         $('.tei-del').show();
         $('.tei-add').addClass('tei-add-pal');
         $('.tei-hi.Red').css('color', 'red');
+        $('.tei-supplied').hide();
         //In the options menu
         $('.suboptions-ed').hide();
   
@@ -30,7 +31,7 @@ function applyDarstellung(selected){
         $('.tei-del').hide();
         $('.tei-add').removeClass('tei-add-pal');
         $('.tei-hi.Red').css('color', 'black');
-  
+        $('.tei-supplied').show();
         punctuation();
   
         //In the options menu
