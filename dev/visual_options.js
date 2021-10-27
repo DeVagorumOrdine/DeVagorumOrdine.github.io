@@ -255,7 +255,7 @@ function punctuation(){
       $('.tei-note .note-star').click(function(){
         var id_n = $(this).next('.note-number').text();
         $('<div class="note-flying" id="note_'+ id_n +'"></div>').appendTo('body');
-        $('#note_' + id_n).append('<span class="closer">X</span>');
+        $('#note_' + id_n).append('<span class="closer"><span>X</span></span>');
         $('#note_' + id_n).append('<div class="note-popup-text"></span>');
         $('#note_' + id_n).children('.note-popup-text').html( $(this).parent().children('.note-content').html() );
         var offset = $(this).offset();

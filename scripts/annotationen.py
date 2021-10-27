@@ -15,7 +15,6 @@ def addNotes(sigle, dom):
         for target in targets:
             wit = target.split('#')[0]
             if wit == sigle:
-                print(target)
                 xpath = target.split('xpath')[1][1:-1]
                 if xpath[-1] == ')':
                     xpath = xpath[:-1]
@@ -24,8 +23,8 @@ def addNotes(sigle, dom):
                 xpath = xpath.replace('/w', '/tei:w')
                 target_element = root.xpath('.' + xpath, namespaces=ns)
                 if len(target_element) > 0:
-                    
-                    target_element = target_element[0]
+                    print(wit,xpath, target_element)
+                    target_element = target_element[-1]
                     parent_element = target_element.getparent()
                     index = parent_element.index(target_element)
                     # del annot.attrib['target']
