@@ -61,7 +61,7 @@ for file in os.listdir('TEI'):
         newdom_comments = addNotes(sigle, newdom_no_empty)
         
 
-        # First we transform all the stanzas and verses into milestones
+        # We transform all the stanzas and verses into milestones
         xslt_stanzas = et.XSLT(transform_stanzas)
         newdom1 = xslt_stanzas(newdom_comments)
         root = newdom1.getroot()

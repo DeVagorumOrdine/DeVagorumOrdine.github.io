@@ -114,6 +114,12 @@
       <xsl:apply-templates select="node()"/>
     </span>
   </xsl:template>
+
+  <xsl:template match="tei:supplied">
+    <span class="tei-supplied">
+      <xsl:apply-templates select="node()"/>
+    </span>
+  </xsl:template>
   
   <xsl:template match="tei:am">
     <span class="tei-am">
@@ -178,6 +184,8 @@
       <xsl:apply-templates select="node()"/>
     </span>
   </xsl:template>
+
+  <xsl:template match="tei:choice/text()"></xsl:template>
   
   
 <!-- Special Notes on Variants on Original Manuscript -->
