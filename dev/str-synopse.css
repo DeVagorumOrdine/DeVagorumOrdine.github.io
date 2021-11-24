@@ -40,12 +40,16 @@
 
 
 
-/* SOLUTION FOR 5, 7 and 8 COLUMNS */
+/* SOLUTION FOR 5, 7 and 8, 9 COLUMNS */
 
 .col-xs-8r,
 .col-sm-8r,
 .col-md-8r,
 .col-lg-8r,
+.col-xs-9r,
+.col-sm-9r,
+.col-md-9r,
+.col-lg-9r,
 .col-xs-5r,
 .col-sm-5r,
 .col-md-5r,
@@ -58,6 +62,11 @@
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.col-xs-9r {
+    width: 10%;
+    float: left;
 }
 
 .col-xs-8r {
@@ -76,6 +85,10 @@
 }
 
 @media (min-width: 768px) {
+    .col-sm-9r {
+        width: 10%;
+        float: left;
+    }
     .col-sm-8r {
         width: 12.5%;
         float: left;
@@ -91,6 +104,10 @@
 }
 
 @media (min-width: 992px) {
+    .col-md-9r {
+        width: 10.75%;
+        float: left;
+    }
     .col-md-8r {
         width: 12.5%;
         float: left;
