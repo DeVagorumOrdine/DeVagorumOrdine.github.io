@@ -44,7 +44,6 @@
                 <punctuation>
                     <p/>
                 </punctuation>
-                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
             </editorialDecl>
             <listPrefixDef>
                 <prefixDef ident="hc" matchPattern="(.+)"
@@ -441,7 +440,7 @@
                             <abbr>e<am>&#x0304;</am></abbr>
                             <expan><ex>mn</ex>e</expan>
                         </choice>s</w><c> </c>
-                    <w lemma="malignus">mali<del resp="#PR">n</del>gni</w>
+                    <w lemma="malignus">mali<surplus resp="#PR">n</surplus>gni</w>
                     <pc resp="#ed.Suttina">.</pc><c> </c>
                 </l>
             </lg>
