@@ -23,7 +23,7 @@ def addNotes(sigle, dom):
                 xpath = xpath.replace('/w', '/tei:w')
                 target_element = root.xpath('.' + xpath, namespaces=ns)
                 if len(target_element) > 0:
-                    print(wit,xpath, target_element)
+                    # print(wit,xpath, target_element)
                     target_element = target_element[-1]
                     parent_element = target_element.getparent()
                     index = parent_element.index(target_element)
