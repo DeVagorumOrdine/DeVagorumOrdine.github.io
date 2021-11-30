@@ -13,7 +13,7 @@
         "logo": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"><img alt=\"Licence Creative Commons\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /></a>"
     },
     "Lz": {
-        "shelfmark": "Leipzig, Universitätsbibliothek, Ms. 1250",
+        "shelfmark": "Leipzig, Universitätsbibl., Ms. 1250",
         "pages": [
             "33r"
         ],
@@ -35,10 +35,10 @@
             "193v": [2766,4052],
             "194r": [2766,4094]
         },
-        "licence": "",
-        "licence-link": "",
+        "licence": "Public Domain",
+        "licence-link": "https://creativecommons.org/publicdomain/mark/1.0/",
         "attribution": "Bayerische Staatsbibliothek",
-        "logo": ""
+        "logo": "<a rel=\"license\" href=\"http://creativecommons.org/publicdomain/mark/1.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/p/mark/1.0/88x31.png\" /></a>"
     },
     "Pe": {
         "shelfmark": "Pécs/Fünfkirchen, Bischöfliche Bibliothek, DD. III. 18",
@@ -51,7 +51,7 @@
                 4876
             ]
         },
-        "licence": "",
+        "licence": "Alle Rechte Vorgehalten",
         "licence-link": "",
         "attribution": ""
     },
@@ -102,9 +102,9 @@
                 3317
             ]
         },
-        "licence": "",
+        "licence": "Alle Rechte Vorgehalten",
         "licence-link": "",
-        "attribution": ""
+        "attribution": "Gräflich Stolbergischen Bibliothek zu Wernigerode"
     },
     "Wi": {
         "shelfmark": "Wittingau/Třeboň, Státní Archiv, A 7",
@@ -122,7 +122,7 @@
                 3148
             ]
         },
-        "licence": "",
+        "licence": "Alle Rechte Vorgehalten",
         "licence-link": "",
         "attribution": ""
     }
