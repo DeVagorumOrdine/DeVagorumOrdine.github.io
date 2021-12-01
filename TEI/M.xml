@@ -68,13 +68,13 @@
                         <w lemma="ordo">ordo</w><c> </c>
                         <w lemma="nobilis">nobıl<choice><am>&#x02BC;</am><ex>is</ex></choice></w><pc resp="#PR">,</pc><c> </c>
                         <w lemma="sum">e<choice><am>&#x0304;</am><ex>st</ex></choice></w> <c> </c>
-                        <w lemma= "et">et</w>
+                        <w lemma= "et">et</w><c> </c>
                         <w lemma="dulcis">ꝺulc<choice><am>ꝭ</am><ex>is</ex></choice></w><c> </c>
                         <w lemma="natura">na<choice><am>&#x0309;</am><ex>tura</ex></choice></w><c> </c>
                     </l>
                     <l n="3" corresp="CB219,9-4">
                         <lb n="9"/>
-                        <w lemma="et"><choice><orig>E</orig><reg>e</reg></choice>t</w>
+                        <w lemma="et"><choice><orig>E</orig><reg>e</reg></choice>t</w><c> </c>
                         <w lemma="qui">quos</w><c> </c>
                         <w lemma="bonus">b<choice><abbr>n<am>&#x0304;</am></abbr><expan><ex>e</ex>n<ex>e</ex></expan></choice></w><c> </c>
                         <w lemma="satio">ſaciat</w><c> </c>
@@ -202,13 +202,14 @@
                     <w lemma="inter">ınt<choice><am>&#x0304;</am><ex>er</ex></choice></w><c> </c>
                     <w lemma="socius">ſocıos</w><c> </c>
                     <w lemma="fio">fıt</w><c> </c>
+                    <w lemma="cum">cum</w>
                     <w lemma="duplex">dupplıcı</w><c> </c>
                     <w lemma="vestis">veſte</w><pc resp="#PR">;</pc><c> </c>
                 </l>
                 <pb n="194r"/>
                 <l n="3" corresp="CB219,12-4">
                     <lb n="1"/>
-                    <w lemma="in"><choice><orig>J</orig><reg>i</reg></choice>n</w><c> </c>
+                    <w lemma="in"><choice><orig>J</orig><reg>i</reg></choice>n</w><c resp="#PR"> </c>
                     <w lemma="solus">ſola</w><c> </c>
                     <w lemma="camisia">camiſia</w><c> </c>
                     <w lemma="sic">ſıc</w><c> </c>
@@ -236,9 +237,9 @@
                 <l n="2" corresp="DVO,o-2">
                     <lb n="4"/>
                     <w lemma="in"><choice><orig>I</orig><reg>i</reg></choice>n</w><c> </c>
-                    <w lemma="alea">alea</w><choice><orig><pc resp="#H1">/</pc></orig><reg/></choice><c> </c>
-                    <w lemma="ludo">lud<choice><abbr>e<am>&#x0304;</am></abbr><expan><ex>er</ex>e</expan></choice></w><choice><orig><pc resp="#H1">/</pc></orig><reg/></choice><c> </c>
-                    <w lemma="semper">semper</w><choice><orig><pc resp="#H1">/</pc></orig><reg/></choice><c> </c>
+                    <w lemma="alea">alea</w><choice><orig><pc>/</pc></orig><reg/></choice><c> </c>
+                    <w lemma="ludo">lud<choice><abbr>e<am>&#x0304;</am></abbr><expan><ex>er</ex>e</expan></choice></w><choice><orig><pc>/</pc></orig><reg/></choice><c> </c>
+                    <w lemma="semper">semper</w><choice><orig><pc>/</pc></orig><reg/></choice><c> </c>
                     <w lemma="tessera">taſſeres</w><c> </c>
                     <w lemma="amo">amare</w><pc resp="#PR">,</pc><c> </c>
                 </l>
@@ -287,7 +288,7 @@
                 </l>
                 <l n="4"  corresp="CB191,11-4">
                     <lb n="10"/>
-                    <w lemma="canto">cantantes</w><c> </c>
+                    <w lemma="canto"><choice><orig>C</orig><reg>c</reg></choice>antantes</w><c> </c>
                     <w lemma="pro"><choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice></w><c resp="#PR"> </c>
                     <w lemma="bibulus">bıbulis</w><c> </c>
                     <w lemma="requies">requiem</w><c> </c>

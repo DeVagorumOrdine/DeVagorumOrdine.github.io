@@ -199,7 +199,8 @@
                         <w lemma="decretalis">ꝺecretales</w><choice><orig><pc>.</pc></orig><reg><pc resp="#ed.Vollmann">:</pc></reg></choice><c> </c>
                     </l>
                 <l n="4" corresp="CB219,3-4">
-                        <pc resp="#ed.Vollmann">‚</pc><w lemma="qui">q<choice><am>đ</am><ex>uod</ex></choice></w><c> </c>
+                        <pc resp="#ed.Vollmann">‚</pc>
+                        <w lemma="qui"><choice><orig>q</orig><reg>Q</reg></choice><choice><am>đ</am><ex>uod</ex></choice></w><c> </c>
                         <w lemma="avarus">a<choice><orig>u</orig><reg resp="#PR">v</reg></choice>ari</w><c> </c>
                         <w lemma="pereo">pereant</w><c> </c>
                         <w lemma="et">et</w><c> </c>
@@ -332,7 +333,7 @@
                     <w lemma="et">et</w><c> </c>
                     <w lemma="gallina">gallinaſ</w><pc>.</pc><c> </c>
                 </l>
-                <l n="4" corresp="CB219,11-4"><w lemma="nihil">nil</w><c> </c>
+                <l n="4" corresp="CB219,11-4"><w lemma="nihil"><choice><orig>n</orig><reg>N</reg></choice>il</w><c> </c>
                     <w lemma="hic">hıc</w><c> </c>
                     <w lemma="expavesco">expa<choice><orig>u</orig><reg resp="#PR">v</reg></choice>eſcimus</w><c> </c>
                     <lb n="7"/> <w lemma="praeter">preter</w><c> </c>
@@ -354,7 +355,7 @@
                     <w lemma="populus">populuſ</w><c> </c>
                     <w lemma="sector">ſectatur</w><pc>.</pc><c> </c> 
                 </l>
-                <l n="3" corresp="CB219,8-3"><w lemma="ergo">ergo</w><c> </c>
+                <l n="3" corresp="CB219,8-3"><w lemma="ergo"><choice><orig>e</orig><reg>E</reg></choice>rgo</w><c> </c>
                     <pc resp="#ed.Vollmann">›</pc><w lemma="hic">hıc</w><pc resp="#ed.Vollmann">‹</pc><c> </c>
                     <w lemma="et"><choice><abbr>⁊</abbr><expan>et</expan></choice></w><c> </c>
                     <pc resp="#ed.Vollmann">›</pc><w lemma="hic">hec</w><pc resp="#ed.Vollmann">‹</pc><c> </c>
@@ -424,7 +425,7 @@
                     <w lemma="non">non</w><c> </c>
                     <w lemma="fero">feratur</w><pc>.</pc><c> </c>
                 </l>
-                <l n="4" corresp="CB219,13-4"><w lemma="nam">nam</w><c> </c>
+                <l n="4" corresp="CB219,13-4"><w lemma="nam"><choice><orig>n</orig><reg>N</reg></choice>am</w><c> </c>
                     <w lemma="qui">qui</w><c> </c>
                     <w lemma="hic">hoc</w><c> </c>
                     <lb n="15"/><w lemma="transgredior">tranſgreditur</w> <pc resp="#ed.Vollmann">,</pc><c> </c>
@@ -446,7 +447,7 @@
                     <w lemma="peto">petat</w><c> </c>
                     <w lemma="munus">munuſ</w> <pc>.</pc><c> </c>
                 </l>
-                <l n="3" corresp="CB219,14-3"><w lemma="incrementum">incre<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="17"/>mentum</w><c> </c>
+                <l n="3" corresp="CB219,14-3"><w lemma="incrementum"><choice><orig>i</orig><reg>I</reg></choice>ncre<pc><orig>-</orig><reg resp= "#ed.Vollmann"></reg></pc><lb n="17"/>mentum</w><c> </c>
                     <w lemma="recipio">recıpıt </w><c> </c>
                     <w lemma="saepe">ſepe</w><c> </c>
                     <w lemma="nummus">nummuſ</w><c> </c>
@@ -504,7 +505,7 @@
                     <w lemma="mos">moreſ</w><c> </c>
                     <w lemma="exprobro">exprobrare</w><choice><orig><pc>.</pc></orig><reg><pc resp="#ed.Vollmann">:</pc></reg></choice><c> </c>
                 </l>
-                <l n="3" corresp="CB219,16-3"><pc resp="#ed.Vollmann">„</pc><w lemma="reprobo">re<choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>bare</w><c> </c>
+                <l n="3" corresp="CB219,16-3"><pc resp="#ed.Vollmann">„</pc><w lemma="reprobo"><choice><orig>r</orig><reg>R</reg></choice>e<choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>bare</w><c> </c>
                     <w lemma="reprobus">re<choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>boſ</w><c> </c>
                     <w lemma="et">et</w><c> </c>
                     <w lemma="probus"><choice><abbr><am>ꝓ</am></abbr><expan>p<ex>ro</ex></expan></choice>boſ</w><c> </c>

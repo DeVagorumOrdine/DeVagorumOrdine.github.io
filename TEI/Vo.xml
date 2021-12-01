@@ -44,6 +44,7 @@
                 <punctuation>
                     <p/>
                 </punctuation>
+                <!--               Philip: Du kannst normalization und punctuation mit einem p-Element ersetzen, wenn das die lieber ist -->
             </editorialDecl>
             <listPrefixDef>
                 <prefixDef ident="hc" matchPattern="(.+)"
@@ -188,7 +189,7 @@
                             <reg>v</reg>
                         </choice>ıs</w><c> </c>
                     <w lemma="in">ın</w><c> </c>
-                    <w lemma="saeculum">secula</w>
+                    <w lemma="saeculum">ſecula</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
                     <w lemma="tu">te</w><c> </c>
                     <w lemma="deus">Deu<choice>
@@ -268,7 +269,7 @@
                             <ex>n</ex>
                         </choice>dıam</w>
                     <pc resp="#ed.Suttina">,</pc><c> </c>
-                    <w lemma="surdus">surdıs</w><c> </c>
+                    <w lemma="surdus">ſurdıs</w><c> </c>
                     <w lemma="do">ꝺat</w><c> </c>
                     <w lemma="audio">audıre</w>
                     <pc resp="#ed.Suttina">.</pc><c> </c>
@@ -349,7 +350,7 @@
                     <w lemma="facio">faci<choice>
                             <sic resp="#ed.Suttina">a</sic>
                         </choice>t</w><c> </c>
-                    <w lemma="socius">socıos</w><c> </c>
+                    <w lemma="socius">ſocıos</w><c> </c>
                     <w lemma="bonus">optımu<choice>
                             <am>&#x0304;</am>
                             <ex>m</ex>
@@ -391,7 +392,7 @@
                             <orig>u</orig>
                             <reg>v</reg>
                         </choice>enes</w><c> </c>
-                    <w lemma="sum">su<choice>
+                    <w lemma="sum">ſu<choice>
                             <am>&#x0304;</am>
                             <ex>n</ex>
                         </choice>t</w><c> </c>
@@ -487,7 +488,7 @@
                             <ex>quam</ex>
                         </choice></w><c> </c>
                     <w lemma="possum">potui</w><c> </c>
-                    <w lemma="studeo">stud<choice>
+                    <w lemma="studeo">ſtud<choice>
                             <abbr>e<am>&#x0309;</am></abbr>
                             <expan><ex>er</ex>e</expan>
                         </choice></w><c> </c>
@@ -566,7 +567,7 @@
                     <lb n="9"/>
                     <pc>¶</pc><c> </c>
                     <w lemma="ergo">Ergo</w><c> </c>
-                    <w lemma="super">su<choice>
+                    <w lemma="super">ſu<choice>
                         <abbr><am>ꝑ</am></abbr>
                         <expan><ex>per</ex></expan>
                     </choice></w><c> </c>
@@ -860,13 +861,12 @@
                     <w lemma="ingero">ingerit</w><c> </c>
                     <w lemma="pulcher">pulchra</w><c> </c>
                     <w lemma="Sulamith"><choice>
-                            <orig>ſ</orig>
-                            <reg>S</reg>
-                        </choice>u
-                        <choice>
-                            <orig>n</orig>
-                            <reg resp="#PR">l</reg>
-                        </choice>amitıs</w>
+                        <orig>ſ</orig>
+                        <reg>S</reg>
+                    </choice>u<choice>
+                        <orig>n</orig>
+                        <reg resp="#PR">l</reg>
+                    </choice>amitıs</w>
                     <pc resp="#PR">!</pc><c> </c>
                 </l>
                 <l n="4" corresp="DVO,f-4">
