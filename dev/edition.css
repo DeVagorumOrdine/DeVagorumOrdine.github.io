@@ -207,6 +207,7 @@
 
 .tei-note .note-number {
     visibility: hidden;
+    font-size: 0 !important;
 }
 
 .note-flying {

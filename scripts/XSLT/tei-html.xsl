@@ -35,15 +35,16 @@
     <span class='tei-c'><xsl:apply-templates select="node()"/></span>
   </xsl:template>
 
-  <xsl:template match="tei:pc[@resp]">
+  <xsl:template match="tei:pc[@resp][not(@resp='#H1')]">
     <span class='tei-reg'>
       <span class="tei-pc"><xsl:value-of select="."/></span>
     </span>
   </xsl:template>
   <xsl:template match="tei:pc[not(@resp)]">
-    <span class='tei-orig'>
       <span class="tei-pc"><xsl:value-of select="."/></span>
-    </span>
+  </xsl:template>
+  <xsl:template match="tei:pc[@resp='#H1']">
+    <span class="tei-pc"><xsl:value-of select="."/></span>
   </xsl:template>
   
   

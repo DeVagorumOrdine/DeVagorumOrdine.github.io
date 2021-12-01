@@ -64,19 +64,6 @@
     <lg n="5" corresp="CB191,11"/>
     <lg n="6" corresp="DVO,h"/>
   </witness>
-  <witness id="Pé">
-    <lg n="1" corresp="DVO,d"/>
-    <lg n="2" corresp="DVO,k"/>
-    <lg n="3" corresp="CB219,9"/>
-    <lg n="4" corresp="DVO,l"/>
-    <lg n="5" corresp="DVO,h"/>
-    <lg n="6" corresp="CB219,10"/>
-    <lg n="7" corresp="DVO,g"/>
-    <lg n="8" corresp="CB219,12"/>
-    <lg n="9" corresp="DVO,i"/>
-    <lg n="10" corresp="CB191,11"/>
-    <lg n="11" corresp="CB191,12"/>
-  </witness>
   <witness id="Vo">
     <lg n="1" corresp="CB191,12"/>
     <lg n="2" corresp="CB191b,3"/>
