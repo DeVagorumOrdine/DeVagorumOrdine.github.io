@@ -6,6 +6,7 @@ const current_url = window.location.search;
 const urlParams = new URLSearchParams(current_url);
 var str = urlParams.get('str');
 var show_wits = correspondences[str]
+console.log(show_wits);
 var spaltenzahl = Object.keys(show_wits).length
 
 $(document).ready(function(){
@@ -20,7 +21,10 @@ $(document).ready(function(){
     };
 
     var col = 1;
-    $.each(show_wits, function(sigle, num){
+    $.each(show_wits, function(index, duo){
+        var sigle = duo[0];
+        var num = duo[1];
+        
         // When we have a stanza repeated in a witness we should add _ in the json and now we filter it
         if (sigle.indexOf('_') > 0){
             sigle = sigle.substring(0, sigle.indexOf('_'));

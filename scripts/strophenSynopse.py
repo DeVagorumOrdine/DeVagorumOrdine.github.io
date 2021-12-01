@@ -73,11 +73,12 @@ all_str_ids = set()
 corresp_json = {}
 for lg in lgs:
     all_str_ids.add(lg.attrib['corresp'])
+
     
 for str_id in all_str_ids:
     corresp_json[str_id] = {}
-    for lg in stanzas.findall('.//lg[@corresp="'+ str_id +'"]', ns):
-        corresp_json[str_id][lg.getparent().attrib['id']] = lg.attrib['n']
+    for idx, lg in enumerate(stanzas.findall('.//lg[@corresp="'+ str_id +'"]', ns)):
+        corresp_json[str_id][idx] = [lg.getparent().attrib['id'], lg.attrib['n']]
 
 with codecs.open('dev/stanzas_corresp.json', 'w', 'utf-8') as outfile:
     json.dump(corresp_json, outfile)
