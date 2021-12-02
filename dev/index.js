@@ -18,6 +18,8 @@ const current_url = window.location.search;
 const urlParams = new URLSearchParams(current_url);
 const ms = urlParams.get('ms')
 const pg = urlParams.get('pg')
+const td = urlParams.get('td')
+const layout = urlParams.get('layout')
 
 
 // Set the height of the map, based on viewport
@@ -117,11 +119,11 @@ $(document).ready(function(){
   $.each(pages[ms]['pages'], function(idx, val){
     if (val == pg){
       $('#pager').append('<li class="page-item active"><a class="page-link" href="'+
-                          '/edition.html?ms='+ ms + '&pg='+ val +
+                          '/edition.html?ms='+ ms + '&pg='+ val + '&td=' + td + '&layout=' + layout +
                           '">'+val+'</a></li>');  
     } else {
       $('#pager').append('<li class="page-item"><a class="page-link" href="'+
-                          '/edition.html?ms='+ ms + '&pg='+ val +
+                          '/edition.html?ms='+ ms + '&pg='+ val + '&td=' + td + '&layout=' + layout +
                           '">'+val+'</a></li>');
     }
       
@@ -161,6 +163,30 @@ $(document).ready(function(){
       };
     });
   }
+
+  // Add parameters for text darstellung and layout in the links
+  $('input[name=darstellung]').on('input', function(){
+    var selected = $(this).val();
+    $('.page-link').each(function(){
+      var href =  $(this).attr('href');
+      var href1 = href.replace(/&td=\w+/g, '');
+      href1 += '&td=' + selected;
+      console.log(href1);
+      $(this).attr('href', href1);
+    });  
+  });
+
+  $('input[name=layout]').on('input', function(){
+    var selected = $(this).val();
+    $('.page-link').each(function(){
+      var href =  $(this).attr('href');
+      var href1 = href.replace(/&layout=\w+/g, '');
+      href1 += '&layout=' + selected;
+      console.log(href1);
+      $(this).attr('href', href1);
+    });  
+  });
+  
 
 
 });

@@ -140,7 +140,7 @@ function punctuation(){
       });
 
       $.each ($('.tei-l.pre-lb-verse').prev('.tei-lg'), function(){
-        console.log($(this));
+        // console.log($(this));
         var clone = $(this).clone();
         $(this).nextAll('.tei-lb').first().after(clone);
         clone.removeClass('pre-lb-stanza');
@@ -206,14 +206,14 @@ function punctuation(){
       $('.gloss-target').css('text-decoration', 'none');
     }
 
-    $('.gloss').hover(
-      function(){
-        console.log('In');
-      },
-      function(){
-        console.log('Out');
-      }
-    );
+    // $('.gloss').hover(
+    //   function(){
+    //     console.log('In');
+    //   },
+    //   function(){
+    //     console.log('Out');
+    //   }
+    // );
 
   }
     
@@ -286,6 +286,33 @@ function punctuation(){
   }
 
 $(document).ready(function(){
+  var textdarstellung = 'transk';
+  var layout = 'sem';
+  const current_url = window.location.search;
+  const urlParams = new URLSearchParams(current_url);
+  var darstInUrl = urlParams.get('td');
+  var layoutInUrl = urlParams.get('layout');
+  if (darstInUrl == 'transk' || darstInUrl == null){
+    textdarstellung = 'transk';
+    $('input[value="transk"]').prop( "checked", true );
+    $('input[value="edit"]').prop( "checked", false );
+  } else if (darstInUrl == 'edit'){
+    textdarstellung = 'edit';
+    $('input[value="edit"]').prop( "checked", true );
+    $('input[value="transk"]').prop( "checked", false );
+  }
+  
+
+  if (layoutInUrl == 'sem' || layoutInUrl == null){
+    layout = 'sem';
+    $('input[value="sem"]').prop( "checked", true );
+    $('input[value="fac"]').prop( "checked", false );
+  } else if (layoutInUrl == 'fac'){
+    layout = 'fac';
+    $('input[value="fac"]').prop( "checked", true );
+    $('input[value="sem"]').prop( "checked", false );
+  }
+
     //MENU DARSTELLUNG
   $('#optionen-toggle').on('click', function(){
     if ($('#anzeige-optionen').css('right') != '0px'){
