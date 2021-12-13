@@ -22,6 +22,7 @@ $.each(pages, function(key){
 function load_text(sel_col, sigle){
     var text = '';
     $.each(stanzas['stanzas'][sigle], function(key, val){
+        console.log(key);
         text += val;
     });
 
@@ -34,7 +35,7 @@ function strophen_div(column){
     var colId = '#textcol' + column;
     $(colId + ' .tei-lg br').remove();
     $(colId + ' .tei-lg').each(function(){
-        console.log( $(this));
+        // console.log( $(this));
         $(this).add($(this).nextUntil('.tei-lg')).wrapAll('<div class="stanza">');
     });
 
@@ -45,7 +46,7 @@ function strophen_div(column){
         var stanza_id = $(this).children('span.tei-lg').children('span.corresp').text()
         
         // var color = colorMap[stanza_nr];
-        console.log(stanza_id);
+        // console.log(stanza_id);
         var color = palette['palette'][stanza_id.replace(',','-')];
         $(this).css('border', 'solid 2px ' + color);
         $(this).css('border-radius', '10px');
@@ -123,6 +124,7 @@ function addAlignmentAndStrophensynopse(){
         });
     $('span.all-str').click(function(){
         var sid = $(this).prevAll('span.corresp').text();
+        console.log(sid);
         var number_of_wits = Object.keys(corresp[sid]).length;
         if (number_of_wits > 1){
             var new_window_width = 250 + 260 * number_of_wits;

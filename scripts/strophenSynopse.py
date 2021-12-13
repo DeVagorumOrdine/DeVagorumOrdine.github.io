@@ -78,7 +78,8 @@ for lg in lgs:
 for str_id in all_str_ids:
     corresp_json[str_id] = {}
     for idx, lg in enumerate(stanzas.findall('.//lg[@corresp="'+ str_id +'"]', ns)):
-        corresp_json[str_id][idx] = [lg.getparent().attrib['id'], lg.attrib['n']]
+        # .partition is for the weird repeated stanza in Wi that has 11=10b
+        corresp_json[str_id][idx] = [lg.getparent().attrib['id'], lg.attrib['n'].partition('=')[0]]
 
 with codecs.open('dev/stanzas_corresp.json', 'w', 'utf-8') as outfile:
     json.dump(corresp_json, outfile)
