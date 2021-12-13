@@ -141,7 +141,11 @@ function addAlignmentAndStrophensynopse(){
             if (number_of_wits < 2){ 
                 $(this).append('<span class="msg-unika">Unika in dieser Hs.</span>')
             } else {
-                $(this).append('<span class="msg-unika">'+ Object.keys(corresp[sid])+'</span>')
+                var alle_stanzas = '';
+                for (var i=0; i < number_of_wits; i++){
+                    alle_stanzas += corresp[sid][i][0] + ' '
+                }
+                $(this).append('<span class="msg-unika">'+ alle_stanzas +'</span>')
             }
         }
         $(this).find('.msg-unika').show();
