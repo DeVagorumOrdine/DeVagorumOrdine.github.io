@@ -19,7 +19,7 @@ const navbar = "<button class= \"navbar-toggler\" type= \"button\" data-toggle= 
         "<div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">"+
           "<a class=\"dropdown-item\" href=\"/synopse.html?sp=3&wit=B\">Textsynopse</a>"+
           "<a class=\"dropdown-item\" href=\"/strophen_synopse.html\">Strophensynopse</a>"+
-        "</div></li>"+
+        "</div></li>"+ 
         "<li class=\"nav-item dropdown\">"+
         "<a class=\"nav-link dropdown-toggle\" href=\"/synopse_intro.html\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">"+
           "Zur Website</a>"+
